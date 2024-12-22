@@ -1,3 +1,5 @@
+@import url('./variable.css');
+
 body {
     padding: 55px;
 }
@@ -184,6 +186,185 @@ body {
     outline: 3px solid #b3b2b27c;
 }
 
+
+
+
+
+/*___________||  Video Play Animation Start Here  ||___________ */
+.my-video {
+    background-color: wheat;
+    width: 400px;
+    height: 330px;
+    position: relative;
+}
+
+.my-video .my-play-btn {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    padding: 18px 20px 18px 28px;
+    color: #a09696;
+}
+
+.my-video .my-play-btn:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: orange;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.my-video .my-play-btn:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: orange;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+.my-video .my-play-btn img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.my-video .my-play-btn span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid darkblue;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/*___________||  Video Play Animation End Here  ||___________ */
+
+
+
+
+
+
+
+/*___________||  Modal Start Here  ||___________ */
+.my-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    background-color: var(--modal-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-modal.active .modal-content {
+    transform: scale(1);
+}
+
+.my-modal .modal-content {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    max-height: 90dvh;
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 20px;
+    transform: scale(0);
+    transition-delay: .5s;
+    transition: transform .2s linear;
+}
+
+.my-modal .modal-body {
+    overflow: auto;
+    max-height: 2000px;
+    padding: 20px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.my-modal .modal-content .header {
+    background-color: blueviolet;
+    min-height: 80px;
+    padding: 20px;
+}
+
+.my-modal .modal-content .footer {
+    background-color: orange;
+    min-height: 55px;
+    padding: 20px;
+}
+
+.my-modal .modal-close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    width: 38px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-lg);
+    z-index: 4;
+    cursor: pointer;
+    transition: transform .1s linear;
+    user-select: none;
+}
+
+.my-modal .modal-close-btn:hover {
+    background-color: #201919;
+    color: wheat;
+}
+
+.my-modal .modal-close-btn:active {
+    transform: translateX(4px);
+}
+
+/*______ Modal End _____ */
 
 
 
