@@ -268,7 +268,7 @@ input[type="checkbox"]:focus {
 
 
 /*______  Button  ______*/
-.my-btn {
+/* .my-btn {
     cursor: pointer;
     padding: 14px 16px;
     font-family: var(--font-inter);
@@ -299,7 +299,7 @@ input[type="checkbox"]:focus {
 
 .my-btn-outline:hover {
     background-color: var(--gray-off);
-}
+} */
 
 /* Ripple effect */
 .ripple {
