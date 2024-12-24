@@ -4,23 +4,25 @@
 
 /* icon cnd */
 @import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
-@import url('https: //cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
 
 :root {
     /*______  Color  ______ */
-    --primary-color: ;
-    --secondy-color: ;
-    --primary-hover: ;
+    --primary-color: #0aad0a;
+    --primary-hover-color: #099309;
+    --secondary-color: #001E2B;
+    --orange: #ffc107;
+    --blue: #016bf8;
     --gray: #7c7c7c;
     --dark: #1b2023;
-    --dark-hover: #0b1215;
-    --green: #0aad0a;
-    --green-dark: #099309;
-    --orange: #FFC107;
+    --dark-hover: #0b1215ea;
     --white: #fff;
-    --white-off: #f3f3f3;
-    --white-off2: #f1dddd;
-    --white-off3: #b2a1a1;
+    --white-off: #F0F3F2;
+    --border-color: #eeeeee;
+    --red: red;
+
+
+    /* _______________  bg color in section _______________ */
     --modal-bg: #1a161656;
 
 
@@ -29,8 +31,8 @@
     --fs-xs: 11px;
     --fs-sm: 14px;
     --fs-md: 15px;
-    --fs-lg: 18px;
-    --fs-xl: 24px;
+    --fs-lg: 17px;
+    --fs-xl: 22px;
     --fs-xxl: 30px;
     --fs-xxxl: 46px;
 
@@ -63,9 +65,5 @@
     --shadow-0: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     --shadow-1: 0 2px 3px rgba(0, 0, 0, .04);
     --shadow-2: 0 2px 5px rgba(0, 0, 0, .07);
-
-
-
-    /* _______________  bg color in section _______________ */
 
 }

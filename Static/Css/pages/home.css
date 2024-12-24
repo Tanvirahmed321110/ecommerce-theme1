@@ -1,0 +1,42 @@
+header .header-top {
+    background-color: var(--white-off);
+    padding: 6px 0;
+}
+
+header .header-top .my-container {
+    padding: 0 16px;
+}
+
+header .header-top .left a:hover {
+    color: var(--primary-color);
+}
+
+
+
+/* Header Top Right */
+.header-top .social a {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border: 1px solid var(--white);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: var(--fs-md);
+}
+
+.header-top .social a i {
+    transition: .4s linear
+}
+
+.header-top .social a:hover i {
+    transform: rotate(360deg);
+}
+
+.header-top .social a:hover {
+    background-color: unset;
+    border: 1px solid var(--white);
+    outline: 1px solid var(--white);
+}

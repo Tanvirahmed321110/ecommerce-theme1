@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styled Checkbox & Radio with Checkmark</title>
+        <style>
+            :root {
+                --primary-hover-color: #099309;
+            }
+
+            /* Base Styles for Checkbox */
+            input[type="checkbox"],
+            input[type="radio"] {
+                width: 35px;
+                height: 35px;
+                appearance: none;
+                /* Remove default styling */
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                /* Rounded corners for checkbox */
+                display: inline-block;
+                margin: 5px;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                transition: background-color 0.3s, border-color 0.3s;
+            }
+
+            /* Hover Effect */
+            input[type="checkbox"]:hover,
+            input[type="radio"]:hover {
+                border-color: var(--primary-hover-color);
+            }
+
+            /* Checked State with Checkmark for Checkbox */
+            input[type="checkbox"]:checked {
+                background-color: var(--primary-hover-color);
+                border-color: var(--primary-hover-color);
+            }
+
+            input[type="checkbox"]:checked::after {
+                content: '✔';
+                /* Checkmark symbol */
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 2px;
+                left: 7px;
+            }
+
+            /* Checked State for Radio */
+            input[type="radio"]:checked {
+                background-color: var(--primary-hover-color);
+                border-color: var(--primary-hover-color);
+            }
+
+            input[type="radio"]:checked::after {
+                content: '';
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                top: 7px;
+                left: 7px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>Custom Checkbox with Checkmark</h3>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">Option 1</label>
+
+        <h3>Custom Radio with Inner Circle</h3>
+        <input type="radio" name="radioGroup" id="radio1">
+        <label for="radio1">Option A</label>
+
+        <input type="radio" name="radioGroup" id="radio2">
+        <label for="radio2">Option B</label>
+    </body>
+
+</html>
