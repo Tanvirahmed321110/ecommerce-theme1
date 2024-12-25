@@ -40,3 +40,147 @@ header .header-top .left a:hover {
     border: 1px solid var(--white);
     outline: 1px solid var(--white);
 }
+
+
+
+/*_______  Header Mediel  _______*/
+.header-mediel .my-container {
+    padding: 10px 16px;
+}
+
+.search-form {
+    width: 580px;
+}
+
+.header-mediel .search {
+    position: relative;
+    width: 500px;
+}
+
+.header-mediel .search-form input {
+    width: 500px;
+    border-radius: 7px;
+}
+
+.header-mediel .search-form .search-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    background-color: var(--primary-color);
+    height: 100%;
+    color: var(--white);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.header-mediel .search-form .search-icon:active {
+    background-color: var(--secondary-color) !important;
+}
+
+.header-mediel .search-form .search-icon:hover {
+    background-color: var(--primary-hover-color);
+}
+
+
+/* header midel right */
+.header-mediel .right-icons li {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background .15s linear;
+}
+
+.header-mediel .right-icons li:hover {
+    background-color: var(--white-off);
+    /* outline: 2px solid var(--white-off); */
+}
+
+.header-mediel .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-mediel .icon i {
+    font-size: calc(var(--fs-xl) + 3px);
+    font-weight: var(--fw-500);
+}
+
+
+
+/*_______  Header Bottom Start  _______*/
+.header-bottom .my-container {
+    padding: 10px 16px;
+}
+
+.header-bottom {
+    border-top: 1px solid var(--border-color);
+}
+
+.header-bottom .left {
+    width: 340px;
+}
+
+.header-bottom .all-department-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.header-bottom .all-department-btn i {
+    font-size: var(--fs-lg);
+}
+
+.header-bottom .my-nav-item {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-md);
+    position: relative;
+    transition: 1s linear;
+    padding: 6px 2px;
+}
+
+.header-bottom .my-nav-item:hover {
+    color: var(--primary-color);
+}
+
+.header-bottom .my-nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 1;
+    top: -4px;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: width 0.2s, height 0.2s, opacity 0.2s;
+}
+
+.header-bottom .my-nav-item:hover::after,
+.header-bottom .my-nav-item.active::after {
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+}
+
+
+
+.header-bottom .discount-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    position: relative;
+}
+
+.btn-parent {
+    padding: 2px;
+    outline: 1px solid var(--border-color);
+    border-radius: 55px;
+}

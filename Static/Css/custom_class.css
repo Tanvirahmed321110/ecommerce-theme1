@@ -29,6 +29,7 @@ h5,
 h6 {
     font-weight: var(--fw-600);
     line-height: 20px;
+    font-family: var(--font-inter);
 }
 
 h1 {
@@ -139,7 +140,7 @@ button {
 
 /*____________  Reused Class  ____________*/
 .my-container {
-    padding: 20px 116px;
+    padding: 20px 16px;
     margin: 0px auto;
     width: 100%;
     max-width: 1200px;

@@ -9,19 +9,21 @@
 }
 
 .my-tooltip .show-text {
-    visibility: hidden;
     position: absolute;
-    top: 28px;
-    right: 15px;
-    z-index: 5;
-    background-color: #201919;
+    bottom: -30px;
+    right: 2px;
+    z-index: 6;
+    background-color: var(--secondary-color);
     color: #fff;
-    padding: 4px 10px;
-    border-radius: 2px;
-    font-size: 13px;
+    padding: 4px 8px !important;
+    border-radius: 3px;
+    font-size: var(--fs-xs);
     transform: translateY(-3px);
     transition: .2s;
     opacity: 0;
+    max-width: 300px;
+    text-wrap: nowrap;
+    display: block;
 }
 
 .my-tooltip .show-text::after {
@@ -37,7 +39,6 @@
 }
 
 .my-tooltip:hover .show-text {
-    visibility: visible;
     transform: translateY(0px);
     opacity: 1;
 }
@@ -216,7 +217,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #363030;
+    background-color: var(--primary-hover-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -233,8 +234,8 @@
 
 .my-btn:hover::after,
 .my-btn-sm:hover::after {
-    transform: translateY(49px);
-    transition: transform .8s linear;
+    transform: translateY(0px);
+    transition: transform .4s linear;
 }
 
 .my-btn:focus,
@@ -261,6 +262,20 @@
     font-size: var(--fs-sm);
 }
 
+.my-primary-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.my-secendary-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.my-secendary-btn::after {
+    background-color: var(--secondary-hover);
+}
+
 .my-btn.my-btn-full {
     width: 100%;
 }
@@ -274,31 +289,36 @@
 /*_______________________________*\
   ||     Input  Start Here     ||
 \*_______________________________*/
-.my-input-group {
+.my-input-control {
     position: relative;
     margin: 5px 0;
 }
 
-.my-input-group input {
-    padding: 12px 14px;
-    border: 1px solid #f2f2f2;
+.my-input-control input {
+    padding: 9px 14px;
+    border: 1px solid var(--border-color);
     outline: none;
     border-radius: 4px;
-    transition: .12s linear;
-    font-family: inherit;
-    max-width: 450px;
+    transition: .15s linear;
+    font-family: var(--font-inter);
+    max-width: 540px;
+    width: 100%;
+    color: var(--gray);
+    background-color: transparent;
 }
 
-.my-input-group input::placeholder {
+.my-input-control input::placeholder {
     font-weight: var(--fw-500);
+    color: #a39e9e;
+    font-size: var(--fs-sm);
 }
 
-.my-input-group input:focus {
-    outline: 4px solid #b3b2b261;
+.my-input-control input:focus {
+    outline: 4px solid #0aad0a4d;
     padding-left: 20px;
 }
 
-.my-input-group .label {
+.my-input-control .label {
     position: absolute;
     left: 25px;
     top: -12px;
@@ -312,18 +332,21 @@
     transition: .12s linear;
 }
 
-.my-input-group input:focus+.label {
+.my-input-control input:focus+.label {
     top: -16px;
 }
 
-.my-input-group .error-text {
+.my-input-control .error-text {
     display: none;
-    font-size: var(--fs-sm);
+    font-size: calc(var(--fs-sm) - 1px);
     color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 4px;
 }
 
 /* add this class when error */
-.my-input-group .error-text.error-text-show {
+.my-input-control .error-text.error-text-show {
     display: block;
 }
 
@@ -705,6 +728,7 @@ input[type="checkbox"]:focus {
     transform: translateY(22px);
     max-height: 0px;
     min-width: 120px;
+    visibility: hidden;
 }
 
 .my-dropdown input[type='radio'] {
@@ -731,4 +755,28 @@ input[type="radio"]:checked::after {
     opacity: 1;
     top: 6px;
     max-height: 1000px;
+    visibility: visible;
+}
+
+
+
+
+/* base */
+.base-round {
+    position: absolute;
+    right: 1px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: var(--fs-xs);
+    color: var(--white);
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-round.active {
+    animation: top-down .45s linear infinite;
 }

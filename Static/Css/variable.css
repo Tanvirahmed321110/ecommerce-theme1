@@ -1,5 +1,5 @@
 /* Font Cnd */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* icon cnd */
@@ -15,10 +15,10 @@
     --blue: #016bf8;
     --gray: #7c7c7c;
     --dark: #1b2023;
-    --dark-hover: #0b1215ea;
+    --secondary-hover: #173846;
     --white: #fff;
     --white-off: #F0F3F2;
-    --border-color: #eeeeee;
+    --border-color: #ededed;
     --red: red;
 
 
@@ -33,7 +33,7 @@
     --fs-md: 15px;
     --fs-lg: 17px;
     --fs-xl: 22px;
-    --fs-xxl: 30px;
+    --fs-xxl: 35px;
     --fs-xxxl: 46px;
 
 
@@ -54,7 +54,8 @@
 
 
     --font-montserrat: "Montserrat", system-ui;
-    --font-inter: 'Inter', sans-serif;
+    --font-inter: "Poppins", serif;
+    ;
 
     --gradient-1: linear-gradient(to right, #0b3958, #185a86);
     --gradient-2: linear-gradient(to right, #11354d, #1c577e);
