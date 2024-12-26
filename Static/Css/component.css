@@ -198,8 +198,8 @@
 .my-btn-sm {
     cursor: pointer;
     user-select: none;
-    font-size: var(--fs-lg);
-    padding: 13px 17px;
+    font-size: var(--fs-md);
+    padding: 11px 16px;
     font-family: var(--font-inter);
     display: flex;
     align-items: center;
@@ -240,7 +240,7 @@
 
 .my-btn:focus,
 .my-btn:active {
-    outline: 4px solid #b3b2b261;
+    outline: 4px solid #a5a4a461;
 }
 
 .my-btn.my-btn-fill {
@@ -456,7 +456,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 6;
+    z-index: 7;
     background-color: var(--modal-bg);
     display: none;
     align-items: center;
@@ -480,8 +480,8 @@
     border-radius: var(--radius-lg);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
-    gap: 20px;
     transform: scale(0);
     transition-delay: .5s;
     transition: transform .2s linear;
@@ -491,9 +491,6 @@
 .my-modal .modal-body {
     overflow: auto;
     max-height: 2000px;
-    padding: 20px;
-    margin-right: 10px;
-    margin-top: 40px;
 }
 
 .my-modal .modal-content .header {
@@ -503,7 +500,7 @@
 }
 
 .my-modal .modal-content .footer {
-    background-color: orange;
+    background-color: var(--white-off);
     min-height: 55px;
     padding: 20px;
 }
@@ -512,9 +509,8 @@
     position: absolute;
     right: 0;
     top: 0;
-    background-color: red;
     width: 38px;
-    height: 35px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -523,15 +519,21 @@
     cursor: pointer;
     transition: transform .1s linear;
     user-select: none;
+    box-shadow: var(--shadow-3);
 }
 
-.my-modal .modal-close-btn:hover {
-    background-color: #201919;
-    color: wheat;
+.my-modal .body-content {
+    padding: 6px 16px;
+    border-left: 12px solid var(--white-off);
+}
+
+
+.my-modal .modal-close-btn::after {
+    content: unset;
 }
 
 .my-modal .modal-close-btn:active {
-    transform: translateX(4px);
+    transform: translateX(3px);
 }
 
 /*______ Modal End _____ */
@@ -543,27 +545,30 @@
   ||     Scrollbar Start Here     ||
 \*__________________________________*/
 .my-has-scrollbar::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+    width: 12px;
+    height: 14px;
+    background-color: whitesmoke;
 }
 
 .my-has-scrollbar:hover::-webkit-scrollbar {
-    width: 9px;
-    height: 8px;
-    background-color: var(--gray-off);
+    width: 12px;
+    height: 14px;
+    background-color: var(gray);
+    border: 1px solid var(--border-color2);
+    border-radius: 2px;
 }
 
 .my-has-scrollbar::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 20px;
+    border-radius: 2px;
+    background-color: var(--gray);
 }
 
 .my-has-scrollbar:hover::-webkit-scrollbar-thumb {
-    background-color: var(--dark-gray);
+    background-color: var(--gray);
 }
 
 .my-has-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: var(--gray);
+    background: var(--secondary-color);
 }
 
 
@@ -779,4 +784,101 @@ input[type="radio"]:checked::after {
 
 .base-round.active {
     animation: top-down .45s linear infinite;
+}
+
+
+
+
+
+
+/*_____________________________________*\
+  ||   Live Message Start Here      ||
+\*_____________________________________*/
+.message-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    z-index: 6;
+    display: none;
+}
+
+.message-btn.active {
+    display: flex;
+}
+
+.message-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    /* Replace with your desired red color */
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    animation: animations 2.1s infinite ease-in-out;
+    z-index: -1;
+}
+
+.message-btn i {
+    animation: scale 0.4s linear infinite alternate;
+    font-size: 28px;
+}
+
+@keyframes animations {
+    0% {
+        transform: scale(1);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scale(1.6);
+        opacity: .01;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.07);
+    }
+
+    0% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+/*________________________________*\
+  ||    Notice  Start Here      ||
+\*________________________________*/
+.my-notice {
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    background-color: var(--white-off);
+    border: 1px solid var(--border-color);
+    font-size: var(--fs-sm);
+    display: block;
+}
+
+
+
+.my-notice a {
+    font-weight: var(--fw-700);
+    color: var(--primary-color);
+}
+
+.my-notice a:hover {
+    color: var(--primary-hover-color);
 }

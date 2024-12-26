@@ -30,6 +30,7 @@ h6 {
     font-weight: var(--fw-600);
     line-height: 20px;
     font-family: var(--font-inter);
+    color: var(--secondary-color);
 }
 
 h1 {
@@ -80,9 +81,10 @@ a:active {
 
 
 p {
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     line-height: 22px;
     margin-bottom: 0 !important;
+    font-weight: var(--fw-500);
 }
 
 img {
@@ -403,7 +405,7 @@ button {
 }
 
 .my-bg-white-off {
-    background-color: var(--white-off);
+    background-color: var(--white-off) !important;
 }
 
 .my-bg-blue {
