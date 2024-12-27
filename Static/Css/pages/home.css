@@ -362,6 +362,65 @@ header .header-top .left a:hover {
 
 
 
+.login-register .login-register-btn {
+    padding: 14px 14px;
+}
+
+.login-register .other-option .my-btn::after {
+    background-color: blueviolet;
+}
+
+.login-register .other-option .my-btn-sm {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.login-register .modal-content {
+    max-height: 520px;
+    min-height: 520px;
+}
+
+.login-register .sign-up {
+    transform: translateX(0%);
+    height: 100%;
+    transition: .4s linear;
+}
+
+.login-register .sign-up.active {
+    transition: .4s linear;
+    transform: translateX(-110%);
+    height: 0;
+}
+
+.login-register .sign-in {
+    transition: .4s linear;
+    transform: translateX(-110%);
+    height: 0%;
+}
+
+.login-register .sign-in.active {
+    transform: translate(0%, 0%);
+    transition: .4s linear;
+    height: 100%;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**************************
 ****  Footer Start Here  ****
 ***************************/

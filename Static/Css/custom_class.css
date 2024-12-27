@@ -580,6 +580,14 @@ button {
     margin-top: 28px;
 }
 
+.my-mt-8 {
+    margin-top: 32px;
+}
+
+.my-mt-10 {
+    margin-top: 40px;
+}
+
 .my-mt-50 {
     margin-top: 50px;
 }

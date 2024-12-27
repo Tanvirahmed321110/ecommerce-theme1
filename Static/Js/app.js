@@ -1,28 +1,40 @@
 
 const shoppingCartBtn = document.getElementById('shopping-cart-btn')
 const shoppingCart = document.querySelector('.my-modal.shopping-cart')
+const loginRegisterClose = document.querySelector('.login-register .modal-close-btn')
+
 
 // Open Modal Function
-function openModalF(parent) {
-    shoppingCartBtn.addEventListener('click', function () {
-        parent.classList.add('active')
-        console.log(parent)
+function openModalF(modalId, btnId) {
+    const modal = document.getElementById(modalId)
+    const btn = document.getElementById(btnId)
+
+    btn.addEventListener('click', function () {
+        modal.classList.add('active')
     })
 }
-openModalF(shoppingCart)
+
+
+
+// call open modal F
+openModalF('shopping-cart', 'shopping-cart-btn')
+openModalF('login-register', 'user-btn')
+
 
 
 // Close Modal Function
-function closeButtonF(parent) {
+function closeButtonF(modalId) {
     const closeButtons = document.querySelectorAll('.close-btn')
+    const modal = document.getElementById(modalId)
 
     closeButtons.forEach(btn => {
         btn.addEventListener('click', function () {
-            parent.classList.remove('active')
+            modal.classList.remove('active')
         })
     })
 }
-closeButtonF(shoppingCart)
+closeButtonF('shopping-cart')
+closeButtonF('login-register')
 
 
 
@@ -102,3 +114,26 @@ document.getElementById('total-cart-item').innerText = document.querySelectorAll
 // call
 updateQuantity();
 setupDeleteButtons()
+
+
+
+
+
+// login and registy
+const loginBtn = document.getElementById('login-btn')
+if (loginBtn) {
+    const registerBtn = document.getElementById('register-btn')
+    const loginForm = document.querySelector('.login-register .sign-in')
+    const registerForm = document.querySelector('.login-register .sign-up')
+
+
+
+    loginBtn.addEventListener('click', function () {
+        loginForm.classList.add('active')
+        registerForm.classList.add('active')
+    })
+    registerBtn.addEventListener('click', function () {
+        loginForm.classList.remove('active')
+        registerForm.classList.remove('active')
+    })
+}

@@ -134,7 +134,7 @@
 
 
                                 <!-- user login -->
-                                <li class="my-tooltip">
+                                <li class="my-tooltip" id="user-btn">
                                     <span class="icon">
                                         <i class="ri-user-3-line"></i>
                                     </span>
@@ -178,7 +178,7 @@
                         <!-- right nav -->
                         <div class="my-flex-between right my-w-100">
                             <nav class="">
-                                <ul class="my-d-flex my-gap-6 my-align-center">
+                                <ul class="my-d-flex my-gap-5 my-align-center">
                                     <!-- single nav -->
                                     <li> <a class="my-nav-item active" href="#">Home</a> </li>
                                     <li> <a class="my-nav-item" href="#">About</a> </li>
@@ -219,7 +219,7 @@
         <!-- ************************************ -->
         <!--        Shopping Card Start  Here        -->
         <!-- ************************************ -->
-        <div class="my-modal shopping-cart">
+        <div class="my-modal shopping-cart" id="shopping-cart">
 
             <button class=" modal-close-btn close-btn my-btn">
                 <span><i class="fa-solid fa-xmark"></i></span>
@@ -552,7 +552,7 @@
                     </div>
                 </div>
                 <div class="footer my-flex-between">
-                    <button class="my-btn my-primary-btn"><span>Continue Shop</span></button>
+                    <button class="my-btn my-primary-btn"><a href="index.html">Continue Shopping</a></button>
                     <button class="my-secendary-btn my-btn"><span>Update Cart</span></button>
                 </div>
             </div>
@@ -566,6 +566,139 @@
         <button class="message-btn active my-flex-center" id="message-btn">
             <i class="fa-brands fa-facebook-messenger"></i>
         </button>
+
+
+
+
+        <!-- ************************************ -->
+        <!--         Login Modal Start  Here        -->
+        <!-- ************************************ -->
+        <div class="my-modal  login-register" id="login-register">
+            <div class="modal-content my-p-5">
+                <button class=" modal-close-btn my-primary-btn my-btn close-btn">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                </button>
+
+                <div>
+
+                    <!--_________  sign up form  _________-->
+                    <div class="sign-up">
+                        <h3 class="my-mt-2">Sign Up</h3>
+
+                        <form action="#" class="my-mt-10 my-flex-column my-gap-4">
+                            <div class="my-input-control">
+                                <input type="text" id="name" required>
+                                <label class="label" for="name">Name</label>
+                                <p class="error-text error-text-show">please enter name</p>
+                            </div>
+
+                            <div class="my-input-control">
+                                <input type="email" id="email" required>
+                                <label class="label" for="email">Email</label>
+                            </div>
+
+                            <div class="my-input-control">
+                                <input type="text" id="passowrd" required>
+                                <label class="label" for="password">Password</label>
+                            </div>
+
+                            <div>
+                                <button class="my-btn login-register-btn my-primary-btn my-w-100 "> <span>Sign Up</span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- or -->
+                        <div>
+                            <div class="border my-mt-4">
+                                -----------------------------
+                                <span class="my-d-inline-block my-px-1">OR</span>
+                                ----------------------------
+                            </div>
+
+                            <div class="other-option my-flex-between my-mt-2">
+                                <!-- Google Login -->
+                                <button class="my-btn my-btn-sm">
+                                    <span>Google <i class="fa-brands fa-google-plus-g"></i></span>
+                                </button>
+                                <!-- Google Login -->
+                                <button class="my-btn my-btn-sm">
+                                    <span>Twitter <i class="fa-brands fa-twitter"></i></span>
+                                </button>
+
+                                <!-- Facebook Login -->
+                                <button class="my-btn my-btn-sm">
+                                    <span>Facebook <i class="fa-brands fa-facebook"></i></span>
+                                </button>
+                            </div>
+
+                            <div class="my-mt-7 my-text-right">
+                                <p>Already Login? <button id="login-btn"
+                                        class="my-fw-bold my-text-primary">Login</button>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!--_________  sign in form  _________-->
+                    <div class="sign-in">
+                        <h3 class="my-mt-2">Sign In</h3>
+
+                        <form action="#" class="my-mt-10 my-flex-column my-gap-4">
+
+                            <div class="my-input-control">
+                                <input type="email" id="email" required>
+                                <label class="label" for="email">Email</label>
+                            </div>
+
+                            <div class="my-input-control">
+                                <input type="text" id="passowrd" required>
+                                <label class="label" for="password">Password</label>
+                            </div>
+
+                            <div>
+                                <button class="my-btn login-register-btn my-primary-btn my-w-100 "> <span>Sign In</span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- or -->
+                        <div>
+                            <div class="border my-mt-4">
+                                -----------------------------
+                                <span class="my-d-inline-block my-px-1">OR</span>
+                                ----------------------------
+                            </div>
+
+                            <div class="other-option my-flex-between my-mt-2">
+                                <!-- Google Login -->
+                                <button class="my-btn my-btn-sm">
+                                    <span>Google <i class="fa-brands fa-google-plus-g"></i></span>
+                                </button>
+                                <!-- Google Login -->
+                                <button class="my-btn my-btn-sm">
+                                    <span>Twitter <i class="fa-brands fa-twitter"></i></span>
+                                </button>
+
+                                <!-- Facebook Login -->
+                                <button class="my-btn my-btn-sm">
+                                    <span>Facebook <i class="fa-brands fa-facebook"></i></span>
+                                </button>
+                            </div>
+
+                            <div class="my-mt-7 my-text-right">
+                                <p>Don't have account? <button id="register-btn"
+                                        class="my-fw-bold my-text-primary">Register</button>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- js -->
         <script src="./Static/Js/app.js"></script>

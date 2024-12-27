@@ -227,6 +227,8 @@
 }
 
 .my-btn span,
+.my-btn a,
+.my-btn-sm a,
 .my-btn-sm span {
     position: relative;
     z-index: 4;
@@ -341,7 +343,7 @@
     font-size: calc(var(--fs-sm) - 1px);
     color: red;
     position: absolute;
-    bottom: -20px;
+    bottom: -18px;
     left: 4px;
 }
 
@@ -475,7 +477,7 @@
     position: relative;
     max-width: 400px;
     width: 100%;
-    max-height: 90dvh;
+    max-height: 100dvh;
     background-color: var(--white);
     border-radius: var(--radius-lg);
     display: flex;
