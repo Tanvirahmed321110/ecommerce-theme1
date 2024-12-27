@@ -4,82 +4,94 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Styled Checkbox & Radio with Checkmark</title>
+        <title>Document</title>
         <style>
-            :root {
-                --primary-hover-color: #099309;
+            /* Table container */
+            .table {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                border: 1px solid #ccc;
+                margin: 0 auto;
             }
 
-            /* Base Styles for Checkbox */
-            input[type="checkbox"],
-            input[type="radio"] {
-                width: 35px;
-                height: 35px;
-                appearance: none;
-                /* Remove default styling */
-                border: 2px solid #ccc;
-                border-radius: 5px;
-                /* Rounded corners for checkbox */
-                display: inline-block;
-                margin: 5px;
-                outline: none;
-                cursor: pointer;
-                position: relative;
-                transition: background-color 0.3s, border-color 0.3s;
+            /* Table row */
+            .table-row {
+                display: flex;
+                flex-wrap: wrap;
+                /* Wrap cells for small screens */
+                border-bottom: 1px solid #ccc;
             }
 
-            /* Hover Effect */
-            input[type="checkbox"]:hover,
-            input[type="radio"]:hover {
-                border-color: var(--primary-hover-color);
+            /* Header row styling */
+            .table-row.header {
+                font-weight: bold;
+                background-color: #f4f4f4;
             }
 
-            /* Checked State with Checkmark for Checkbox */
-            input[type="checkbox"]:checked {
-                background-color: var(--primary-hover-color);
-                border-color: var(--primary-hover-color);
+            /* Table cell */
+            .table-cell {
+                flex: 1;
+                /* Make cells take equal width */
+                padding: 10px;
+                text-align: left;
+                border-right: 1px solid #ccc;
+                box-sizing: border-box;
             }
 
-            input[type="checkbox"]:checked::after {
-                content: '✔';
-                /* Checkmark symbol */
-                color: white;
-                font-size: 20px;
-                position: absolute;
-                top: 2px;
-                left: 7px;
+            .table-cell:last-child {
+                border-right: none;
             }
 
-            /* Checked State for Radio */
-            input[type="radio"]:checked {
-                background-color: var(--primary-hover-color);
-                border-color: var(--primary-hover-color);
-            }
+            /* Responsive styling */
+            @media (max-width: 600px) {
+                .table-row {
+                    flex-direction: column;
+                    /* Stack cells vertically */
+                }
 
-            input[type="radio"]:checked::after {
-                content: '';
-                width: 20px;
-                height: 20px;
-                background-color: white;
-                border-radius: 50%;
-                position: absolute;
-                top: 7px;
-                left: 7px;
+                .table-cell {
+                    border-right: none;
+                    /* Remove cell borders */
+                    border-bottom: 1px solid #ccc;
+                    /* Add bottom border */
+                    position: relative;
+                    padding-left: 50%;
+                    /* Space for labels */
+                    text-align: right;
+                    /* Align content to the right */
+                }
+
+                .table-cell:before {
+                    content: attr(data-label);
+                    /* Use data-label for headers */
+                    position: absolute;
+                    left: 10px;
+                    font-weight: bold;
+                    text-align: left;
+                }
             }
         </style>
     </head>
 
     <body>
-        <h3>Custom Checkbox with Checkmark</h3>
-        <input type="checkbox" id="checkbox1">
-        <label for="checkbox1">Option 1</label>
-
-        <h3>Custom Radio with Inner Circle</h3>
-        <input type="radio" name="radioGroup" id="radio1">
-        <label for="radio1">Option A</label>
-
-        <input type="radio" name="radioGroup" id="radio2">
-        <label for="radio2">Option B</label>
+        <div class="table">
+            <div class="table-row header">
+                <div class="table-cell">Header 1</div>
+                <div class="table-cell">Header 2</div>
+                <div class="table-cell">Header 3</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell" data-label="Header 1">Data 1</div>
+                <div class="table-cell" data-label="Header 2">Data 2</div>
+                <div class="table-cell" data-label="Header 3">Data 3</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell" data-label="Header 1">Data 4</div>
+                <div class="table-cell" data-label="Header 2">Data 5</div>
+                <div class="table-cell" data-label="Header 3">Data 6</div>
+            </div>
+        </div>
     </body>
 
 </html>

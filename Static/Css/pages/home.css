@@ -381,25 +381,38 @@ header .header-top .left a:hover {
 }
 
 .login-register .sign-up {
-    transform: translateX(0%);
+    /* transform: translateX(0%); */
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
     height: 100%;
     transition: .4s linear;
 }
 
 .login-register .sign-up.active {
     transition: .4s linear;
-    transform: translateX(-110%);
+    transition-delay: .2s;
+    /* transform: translateX(-110%); */
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
     height: 0;
 }
 
 .login-register .sign-in {
     transition: .4s linear;
-    transform: translateX(-110%);
+    /* transform: translateX(-110%); */
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
     height: 0%;
 }
 
 .login-register .sign-in.active {
-    transform: translate(0%, 0%);
+    /* transform: translate(0%, 0%); */
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
     transition: .4s linear;
     height: 100%;
     margin-top: 50px;
@@ -409,18 +422,75 @@ header .header-top .left a:hover {
 
 
 
+.my-modal.notification-modal .modal-content {
+    max-width: 470px !important;
+}
+
+.my-modal.notification-modal .header {
+    background-color: transparent;
+    min-height: 50px;
+    padding: 20px 22px;
+    padding-top: 45px;
+}
+
+.my-modal.notification-modal .all-notification {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.my-modal.notification-modal .items {
+    padding: 20px;
+}
+
+.my-modal.notification-modal .item {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color2);
+}
+
+.my-modal.notification-modal .profile-img {
+    padding: 2px;
+    border: 1px solid var(--border-color);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+.my-modal.notification-modal .item .right {
+    min-width: 82px;
+}
+
+.my-modal.notification-modal .item .base {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: var(--primary-color);
+    text-transform: lowercase;
+    color: var(--white);
+    transition: .2s linear;
+    animation: base-animation 3s ease-in-out infinite;
+}
+
+@keyframes base-animation {
+    0% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(110%);
+    }
+
+    100% {
+        transform: translateX(-2px);
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.my-modal.notification-modal .my-modal.notification-modal .my-modal.notification-modal
 /**************************
 ****  Footer Start Here  ****
 ***************************/

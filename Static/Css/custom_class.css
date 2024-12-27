@@ -71,8 +71,12 @@ a {
     display: inline-block;
     color: inherit;
     transition: color .1s linear;
+    user-select: none;
 }
 
+button {
+    user-select: none;
+}
 
 button:active,
 a:active {

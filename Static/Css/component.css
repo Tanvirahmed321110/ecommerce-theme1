@@ -256,11 +256,15 @@
 }
 
 .my-btn.my-btn-outline {
-    border: 1px solid var(--white-off);
+    border: 1px solid var(--border-color2);
+}
+
+.my-btn.my-btn-outline::after {
+    background-color: var(--white-off);
 }
 
 .my-btn.my-btn-sm {
-    padding: 9px 12px;
+    padding: 7px 12px;
     font-size: var(--fs-sm);
 }
 
