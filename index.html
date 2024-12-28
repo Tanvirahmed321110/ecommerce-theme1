@@ -91,27 +91,220 @@
                             </a>
                         </div>
 
-                        <!-- header mediel search -->
+                        <!--______ header mediel search  ______-->
                         <div>
-                            <form action="#" class="search-form">
+                            <!-- form -->
+                            <form action="#" class="search-form my-p-relative">
                                 <div class="my-input-control">
                                     <div class="search">
-                                        <input class="my-radius-md" type="text" placeholder="Search product">
-                                        <button class="search-icon my-fs-lg my-flex-center"><i
-                                                class="ri-search-2-line"></i></button>
+                                        <input class="my-radius-md" type="text" placeholder="Search product"
+                                            id="search-input">
+                                        <button class="search-icon my-fs-lg my-flex-center">
+                                            <i class="ri-search-2-line"></i>
+                                        </button>
+
+                                        <!-- dropdown when focus -->
+                                        <div class="search-dropdown my-cart" id="search-dropdown">
+                                            <div class="body my-has-scrollbar">
+                                                <!--______  history  ______-->
+                                                <ul class="history my-flex-column my-gap-1 ">
+
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-dark hover-primary-color" href="#">
+                                                            Samsung mobile bd
+                                                        </a>
+                                                        <button class="close-history"><i
+                                                                class="fa-solid fa-xmark my-text-dark"></i></button>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-dark hover-primary-color" href="#">
+                                                            watch for women
+                                                        </a>
+                                                        <button class="close-history"><i
+                                                                class="fa-solid fa-xmark my-text-dark"></i></button>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-dark hover-primary-color" href="#">
+                                                            year phone
+                                                        </a>
+                                                        <button class="close-history"><i
+                                                                class="fa-solid fa-xmark my-text-dark"></i></button>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-dark hover-primary-color" href="#">
+                                                            food items
+                                                        </a>
+                                                        <button class="close-history"><i
+                                                                class="fa-solid fa-xmark my-text-dark"></i></button>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-dark hover-primary-color" href="#">
+                                                            cosmetic item
+                                                        </a>
+                                                        <button class="close-history"><i
+                                                                class="fa-solid fa-xmark my-text-dark"></i></button>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-dark hover-primary-color" href="#">
+                                                            baby toy for girls
+                                                        </a>
+                                                        <button class="close-history"><i
+                                                                class="fa-solid fa-xmark my-text-dark"></i></button>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-dark hover-primary-color" href="#">
+                                                            baby toy for girls
+                                                        </a>
+                                                        <button class="close-history"><i
+                                                                class="fa-solid fa-xmark my-text-dark"></i></button>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-dark hover-primary-color" href="#">
+                                                            baby toy for boy
+                                                        </a>
+                                                        <button class="close-history"><i
+                                                                class="fa-solid fa-xmark my-text-dark"></i></button>
+                                                    </li>
+                                                </ul>
+
+                                                <!--______  related items  ______-->
+                                                <ul class="related-items my-flex-column   my-gap-1">
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            Noodes
+                                                            <span class="related my-fw-bolder my-text-dark">mini
+                                                                pack</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="https://i.ibb.co.com/pfqNHWp/cart-5.jpg"
+                                                                alt="related item ">
+                                                        </div>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            Noodes lorem
+                                                            <span class="related my-fw-bolder my-text-dark">mini
+                                                                pack</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="https://i.ibb.co.com/pfqNHWp/cart-5.jpg"
+                                                                alt="related item ">
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            baby toy item
+                                                            <span class="related my-fw-bolder my-text-dark">price for
+                                                                bd</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="./Static/images/toy.webp" alt="related item ">
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            Noodes for baby
+                                                            <span class="related my-fw-bolder my-text-dark">mini
+                                                                pack</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="https://i.ibb.co.com/pfqNHWp/cart-5.jpg"
+                                                                alt="related item ">
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            Nodues
+                                                            <span class="related my-fw-bolder my-text-dark">200gm</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="https://i.ibb.co.com/qgQ6k1b/cart-2.jpg"
+                                                                alt="related item ">
+                                                        </div>
+                                                    </li>
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            Noodes
+                                                            <span class="related my-fw-bolder my-text-dark">mini
+                                                                pack</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="https://i.ibb.co.com/pfqNHWp/cart-5.jpg"
+                                                                alt="related item ">
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            baby toy item
+                                                            <span class="related my-fw-bolder my-text-dark">price for
+                                                                bd</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="./Static/images/toy.webp" alt="related item ">
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            Noodes for baby
+                                                            <span class="related my-fw-bolder my-text-dark">mini
+                                                                pack</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="https://i.ibb.co.com/pfqNHWp/cart-5.jpg"
+                                                                alt="related item ">
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- single history -->
+                                                    <li class="single-history my-flex-between my-fw-bold">
+                                                        <a class="my-text-gray hover-primary-color" href="#">
+                                                            Nodues
+                                                            <span class="related my-fw-bolder my-text-dark">200gm</span>
+                                                        </a>
+                                                        <div class="img">
+                                                            <img src="https://i.ibb.co.com/qgQ6k1b/cart-2.jpg"
+                                                                alt="related item ">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- error text -->
                                     <p class="error-text ">please search product name</p>
                                 </div>
+                                <!--     <span class="related my-fw-bolder my-text-dark">price</span> -->
+
                             </form>
                         </div>
 
                         <!-- _______  Header Midel Right ______ -->
                         <div class="right">
-                            <ul class="my-d-flex my-gap-1 my-align-center right-icons">
+                            <ul class="my-d-flex my-gap-0 my-align-center right-icons">
 
                                 <!-- delevary location -->
-                                <li class="my-tooltip">
+                                <li class="my-tooltip" id="notification-btn">
                                     <span class="icon">
                                         <i class="ri-notification-3-line"></i>
                                     </span>
@@ -167,11 +360,143 @@
             <div class="header-bottom">
                 <div class="my-container">
                     <div class="header-bottom-area my-d-flex my-align-center my-gap-10">
-                        <div class="left">
+                        <div class="left my-p-relative">
                             <div class="all-department-btn my-btn my-align-center my-gap-3">
                                 <i class="ri-menu-line"></i>
                                 <span>All Departments</span>
                                 <i class="ri-arrow-down-s-line"></i>
+                            </div>
+
+
+                            <!-- all-department -->
+                            <div class="all-department my-card ">
+                                <ul class="wrapper">
+                                    <!-- single dept -->
+                                    <li class="my-p-relative  my-flex-between my-gap-2 single-dept ">
+                                        <p>Baby Care Items </p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+
+                                        <!-- main dropdown -->
+                                        <ul class="dropdown my-flex-between my-align-start my-gap-1">
+                                            <li>
+                                                <ul class="col">
+                                                    <li><a href="#">Baby Toy</a></li>
+                                                    <li><a href="#">Baby Cream</a></li>
+                                                    <li><a href="#">Baby Watch</a></li>
+                                                    <li><a href="#">Baby Skin Care</a></li>
+                                                    <li><a href="#">Baby Pampash</a></li>
+                                                    <li><a href="#">Baby Saban</a></li>
+                                                    <li><a href="#">Baby Tissue</a></li>
+                                                    <li><a href="#">Baby Oil Soft</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="col">
+                                                    <li><a href="#">Baby Toy</a></li>
+                                                    <li><a href="#">Baby Cream</a></li>
+                                                    <li><a href="#">Baby Watch</a></li>
+                                                    <li><a href="#">Baby Skin Care</a></li>
+                                                    <li><a href="#">Baby Pampash</a></li>
+                                                    <li><a href="#">Baby Saban</a></li>
+                                                    <li class="">
+                                                        <div class="my-flex-between">
+                                                            <span>Toys</span>
+                                                            <i class="fa-solid fa-angle-right"></i>
+                                                        </div>
+
+                                                        <!-- dropdown -->
+                                                        <ul class="dropdown my-flex-column my-gap-1">
+                                                            <li><a href="#">Plastic Toy</a></li>
+                                                            <li><a href="#">Boy Toy</a></li>
+                                                            <li><a href="#">Child Toy</a></li>
+                                                            <li><a href="#">Girls Toy</a></li>
+                                                            <li><a href="#">Common Toy</a></li>
+                                                            <li class="">
+                                                                <div class="my-flex-between">
+                                                                    <span>Still Toys</span>
+                                                                    <i class="fa-solid fa-angle-right"></i>
+                                                                </div>
+                                                                <!-- dropdown -->
+                                                                <ul class="dropdown my-flex-column">
+                                                                    <li><a href="">Low Price</a></li>
+                                                                    <li><a href="">Height Price</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Cold Drinks & Juice </p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                        <div class="dropdown">
+                                            <ul class="col">
+                                                <li><a href="#">Baby Toy</a></li>
+                                                <li><a href="#">Baby Cream</a></li>
+                                                <li><a href="#">Baby Watch</a></li>
+                                                <li><a href="#">Baby Skin Care</a></li>
+                                                <li><a href="#">Baby Pampash</a></li>
+                                                <li><a href="#">Baby Saban</a></li>
+                                                <li><a href="#">Baby Tissue</a></li>
+                                                <li><a href="#">Baby Oil Soft</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Home Deco Items</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Chicken Meet & Fish</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Bekari & Bicute</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Egg & Butter</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Organic Oil </p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Plastic Items </p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Daily Food</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Room & Office Clening Kit </p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>Miliks Drink </p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                    <!-- single dept -->
+                                    <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                        <p>BreakFast & Instand Food </p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
@@ -574,7 +899,7 @@
         <!--         Login Modal Start  Here        -->
         <!-- ************************************ -->
         <div class="my-modal  login-register" id="login-register">
-            <div class="modal-content my-p-5">
+            <div class="modal-content my-p-4">
                 <button class=" modal-close-btn my-primary-btn my-btn close-btn">
                     <span><i class="fa-solid fa-xmark"></i></span>
                 </button>
@@ -692,6 +1017,10 @@
                                 <p>Don't have account? <button id="register-btn"
                                         class="my-fw-bold my-text-primary">Register</button>
                                 </p>
+
+                                <p class="my-fs-xs">Loss your password? <button id="register-btn"
+                                        class="my-fw-bold my-text-primary my-fs-xs">forgot password</button>
+                                </p>
                             </div>
                         </div>
 
@@ -706,7 +1035,7 @@
         <!-- ******************************************** -->
         <!--         Notification Modal Start  Here        -->
         <!-- ********************************************* -->
-        <div class="my-modal  notification-modal active" id="notification-modal">
+        <div class="my-modal  notification-modal " id="notification-modal">
             <div class="modal-content ">
                 <!-- close btn -->
                 <button class=" modal-close-btn my-primary-btn my-btn close-btn">
@@ -751,7 +1080,7 @@
 
                         <!-- single notification item -->
                         <div class="item  my-d-flex my-align-start my-gap-3">
-                            <!-- <div class="base">New</div> -->
+                            <div class="base">New</div>
 
                             <!-- image -->
                             <img class="profile-img" src="./Static/images/profile2.png" alt="profile">

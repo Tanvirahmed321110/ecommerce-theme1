@@ -785,6 +785,18 @@ button {
 }
 
 
+/* hover text */
+.hover-primary-color:hover {
+    color: var(--primary-color);
+}
+
+.hover-secondary-color:hover {
+    color: var(--secondary-color);
+}
+
+.hover-gray-color:hover {
+    color: var(--gray);
+}
 
 /*______  border radius  ______*/
 .my-radius-0 {

@@ -1,15 +1,17 @@
-import { openModalF, closeButtonF, updateQuantity } from './utilitis.js';
+import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF } from './utilitis.js';
 
 
 // call open modal F
 openModalF('shopping-cart', 'shopping-cart-btn')
 openModalF('login-register', 'user-btn')
+openModalF('notification-modal', 'notification-btn')
 
 
 
 // close modal
 closeButtonF('shopping-cart')
 closeButtonF('login-register')
+closeButtonF('notification-modal')
 
 
 
@@ -97,3 +99,11 @@ if (loginBtn) {
         registerForm.classList.remove('active');
     });
 }
+
+
+
+
+// open a search dropdown
+openSearchDropdown()
+//delete single history
+deleteF('.history .single-history', '.history .close-history')

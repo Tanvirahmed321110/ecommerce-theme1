@@ -24,6 +24,7 @@
     max-width: 300px;
     text-wrap: nowrap;
     display: block;
+    visibility: hidden;
 }
 
 .my-tooltip .show-text::after {
@@ -41,6 +42,7 @@
 .my-tooltip:hover .show-text {
     transform: translateY(0px);
     opacity: 1;
+    visibility: visible;
 }
 
 /*___________||  Tooltip Start Here  ||___________ */
@@ -560,7 +562,7 @@
     width: 12px;
     height: 14px;
     background-color: var(gray);
-    border: 1px solid var(--border-color2);
+    border: 1px solid var(--border-color);
     border-radius: 2px;
 }
 

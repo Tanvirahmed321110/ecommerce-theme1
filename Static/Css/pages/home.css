@@ -53,6 +53,7 @@ header .header-top .left a:hover {
 
 .search-form {
     width: 580px;
+    position: relative;
 }
 
 .header-mediel .search {
@@ -86,8 +87,101 @@ header .header-top .left a:hover {
     background-color: var(--primary-hover-color);
 }
 
+/* search dropdown */
+.search-form .search-dropdown {
+    position: absolute;
+    top: 45px;
+    left: -0px;
+    width: 100%;
+    max-height: 400px;
+    background-color: var(--white);
+    padding: 2px !important;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--border-color);
+    z-index: 5;
+    overflow-y: hidden;
+    display: none;
+}
 
-/* header midel right */
+.search-form .search-dropdown.my-cart {
+    padding: 12px 0 0 0 !important;
+}
+
+.search-form .search-dropdown .body {
+    padding: 0 16px;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+/* scrollbar */
+.search-form .search-dropdown .body.my-has-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.search-form .search-dropdown .body.my-has-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--border-color2);
+}
+
+.search-dropdown.my-cart {
+    padding: 18px 0 !important;
+}
+
+/* history */
+.search-dropdown .history {
+    display: none;
+}
+
+.search-dropdown .close-history {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.search-dropdown .close-history:hover {
+    background-color: var(--white-off);
+}
+
+
+.search-form .search-dropdown .history li:last-child {
+    padding-bottom: 10px;
+}
+
+/* related items */
+.search-form .related-items {
+    display: none;
+}
+
+/*_____ added a active class  _____*/
+.search-form .search-dropdown.active {
+    display: block;
+}
+
+/* Show history when active */
+.search-dropdown .history.active {
+    display: flex;
+}
+
+/* Show related items when active */
+.search-form .related-items.active {
+    display: flex;
+}
+
+.search-form .related-items img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid var(--white-off);
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*_____  header midel right  _____*/
 .header-mediel .right-icons li {
     position: relative;
     width: 36px;
@@ -102,7 +196,7 @@ header .header-top .left a:hover {
 
 .header-mediel .right-icons li:hover {
     background-color: var(--white-off);
-    /* outline: 2px solid var(--white-off); */
+    outline: 2px solid var(--white-off);
 }
 
 .header-mediel .icon {
@@ -136,6 +230,139 @@ header .header-top .left a:hover {
     color: var(--white);
     padding: 13px 18px;
     font-size: var(--fs-lg);
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+
+
+/*_______  all-department  _______*/
+.header-bottom .all-department {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.all-department.my-card {
+    padding: 4px 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: unset;
+}
+
+.header-bottom .all-department .wrapper::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+
+.header-bottom .all-department .wrapper::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: var(--border-color2);
+}
+
+.header-bottom .all-department .wrapper:hover::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.header-bottom .all-department .wrapper {
+    /* max-height: 400px; */
+    /* overflow-y: auto; */
+    /* width: 100%; */
+}
+
+.header-bottom .all-department .single-dept {
+    cursor: pointer;
+    padding: 4px 0;
+    padding: 6px 10px;
+    border-radius: 2px;
+}
+
+
+/* dropdown */
+.all-department .dropdown {
+    position: absolute;
+    left: 100%;
+    width: fit-content;
+    text-wrap: nowrap;
+    top: 0px;
+    background-color: var(--white);
+    padding: 10px 0px;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--border-color);
+    z-index: 12;
+    display: none;
+}
+
+.all-department .dropdown li {
+    position: relative;
+}
+
+
+
+
+.all-department li:hover>.dropdown {
+    opacity: 1;
+    top: 0px;
+    max-height: 1000px;
+    display: flex;
+}
+
+.all-department .dropdown li a:hover {
+    color: var(--primary-color);
+}
+
+.all-department .dropdown .col li {
+    padding: 4px 14px;
+    font-size: 13px;
+}
+
+.all-department .dropdown li i {
+    font-size: 11px;
+}
+
+.all-department .dropdown .col li:hover {
+    background-color: var(--white-off);
+    width: 100%;
+}
+
+/* single deprt */
+.all-department .single-dept.my-dropdown-parent {}
+
+.all-department .single-dept.my-dropdown-parent .my-dropdown {
+    left: 100%;
+    z-index: 5;
+}
+
+.header-bottom .all-department .single-dept p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.header-bottom .all-department .single-dept::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: .2s linear;
+}
+
+.header-bottom .all-department .single-dept:hover::after {
+    width: 4px;
+    left: 0;
+}
+
+.header-bottom .all-department .single-dept:hover {
+    background-color: var(--white-off);
 }
 
 .header-bottom .all-department-btn i {
@@ -363,7 +590,7 @@ header .header-top .left a:hover {
 
 
 .login-register .login-register-btn {
-    padding: 14px 14px;
+    padding: 14px 10px;
 }
 
 .login-register .other-option .my-btn::after {
@@ -422,15 +649,28 @@ header .header-top .left a:hover {
 
 
 
+
+/***************************************
+****   Notification Modal Start Here   ****
+****************************************/
 .my-modal.notification-modal .modal-content {
     max-width: 470px !important;
+}
+
+.my-modal.notification-modal .my-has-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.my-modal.notification-modal .my-has-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--border-color2);
 }
 
 .my-modal.notification-modal .header {
     background-color: transparent;
     min-height: 50px;
-    padding: 20px 22px;
-    padding-top: 45px;
+    padding: 40px 16px;
+    padding-bottom: 10px;
 }
 
 .my-modal.notification-modal .all-notification {
@@ -439,14 +679,29 @@ header .header-top .left a:hover {
 }
 
 .my-modal.notification-modal .items {
-    padding: 20px;
+    padding: 16px;
 }
 
+
+/* notification single item */
 .my-modal.notification-modal .item {
     position: relative;
     overflow: hidden;
-    padding: 10px 0;
+    padding: 6px 0;
     border-bottom: 1px solid var(--border-color2);
+}
+
+.my-modal.notification-modal .item:hover {
+    background-color: var(--white-off);
+}
+
+.my-modal.notification-modal .info p {
+    color: var(--secondary-color);
+}
+
+.my-modal.notification-modal .info p:last-child {
+    color: var(--gray);
+    font-size: 13px;
 }
 
 .my-modal.notification-modal .profile-img {

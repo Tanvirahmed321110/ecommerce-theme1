@@ -35,3 +35,71 @@ export function updateQuantity(inputField, operation) {
         inputField.value = currentValue - 1;
     }
 }
+
+
+
+export function openSearchDropdown() {
+    const input = document.getElementById('search-input')
+    const dropdwon = document.getElementById('search-dropdown')
+    const relatedItem = document.querySelector('.search-dropdown .related-items');
+
+    const history = document.querySelector('.search-dropdown .history');
+
+    input.addEventListener('focus', function () {
+        dropdwon.classList.add('active')
+        history.classList.add('active');
+    })
+
+    input.addEventListener('input', function () {
+        if (input.value.trim() !== '') {
+            if (history) {
+                history.classList.remove('active');
+            }
+            relatedItem.classList.add('active');
+
+        } else {
+            relatedItem.classList.remove('active');
+            history.classList.add('active');
+        }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (event) {
+        const isClickInside = dropdwon.contains(event.target) || input.contains(event.target);
+        if (!isClickInside) {
+            dropdwon.classList.remove('active'); // Close dropdown
+            if (history) {
+                history.classList.remove('active');
+            }
+            if (relatedItem) {
+                relatedItem.classList.remove('active');
+            }
+        }
+
+    });
+}
+
+
+
+export function deleteF(itemClass, btnsClass) {
+    const items = document.querySelectorAll(itemClass)
+    const btns = document.querySelectorAll(btnsClass)
+
+    if (btns.length === 0 || items.length === 0) {
+        console.error("No items or buttons found with the provided selectors.");
+        return;
+    }
+
+    btns.forEach((btn, index) => {
+        btn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent any default behavior (if needed)
+            event.stopPropagation();
+
+            if (items[index]) {
+                items[index].remove();
+            } else {
+                console.warn("No corresponding item found for this button.");
+            }
+        })
+    })
+}
