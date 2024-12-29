@@ -20,12 +20,25 @@
         <!-- ************************************ -->
         <header>
             <!-- __________  Header Top Start  __________ -->
-            <div class="header-top my-d-sm-none">
+            <div class="header-top ">
                 <div class="my-container">
                     <div class="header-top-area my-flex-between ">
 
+                        <!--******  header top for mobile  ******-->
+                        <div class="my-d-none header-top-mobile my-py-1 my-w-100 my-d-sm-flex ">
+                            <p class="my-fs-sm"><span class="my-fw-bolder ">Free Shipping</span> for 1000 taka
+                                up.</p>
+
+                            <!-- menu icon -->
+                            <button class="menu-icon" id="mobile-menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+
                         <!-- Header Top Left -->
-                        <div class="left  my-d-flex my-align-center my-gap-2">
+                        <div class="left my-d-sm-none  my-d-flex my-align-center my-gap-2">
                             <a href="#" class="my-d-flex my-align-center my-gap-1 my-fw-bold">
                                 <i class="fa-solid fa-envelope"></i>
                                 ecommerce@gamil.com
@@ -37,7 +50,7 @@
                         </div>
 
                         <!-- Header Top Right -->
-                        <div class="right my-d-flex my-align-center my-justify-center my-gap-5">
+                        <div class="right my-d-flex my-align-center my-justify-center my-gap-5 my-d-sm-none">
                             <!-- social -->
                             <ul class="social my-d-flex my-gap-1">
                                 <li>
@@ -94,7 +107,7 @@
                         <!--______ header mediel search  ______-->
                         <div>
                             <!-- form -->
-                            <form action="#" class="search-form my-p-relative">
+                            <form action="#" class="search-form my-p-relative ">
                                 <div class="my-input-control">
                                     <div class="search">
                                         <input class="my-radius-md" type="text" placeholder="Search product"
@@ -356,10 +369,28 @@
 
 
 
+
             <!-- __________  Header Bottom Start  __________ -->
-            <div class="header-bottom">
+            <div class="header-bottom my-d-sm-none  " id="mobile-sidebar">
+
+                <!--***** show only mobile  ***** -->
+                <div class="header-bottom-top my-d-none my-d-sm-flex my-p-3">
+                    <!-- Left -->
+                    <div class="left my-text-left">
+                        <a class="logo my-text-left" href="index.html">
+                            <h2 class="my-fw-bolder my-text-primary">Shoping.</h2>
+                        </a>
+                    </div>
+
+                    <!-- close btn -->
+                    <button class="close-modile-sidebar close-btn  my-btn-sm my-btn my-btn-outline"
+                        id="close-mobile-sidebar">
+                        <span> <i class="fa-solid fa-xmark my-fs-xl"></i></span>
+                    </button>
+                </div>
+
                 <div class="my-container">
-                    <div class="header-bottom-area my-d-flex my-align-center my-gap-10">
+                    <div class="header-bottom-area my-d-flex my-align-center my-gap-5">
                         <div class="left my-p-relative">
                             <div class="all-department-btn my-btn my-align-center my-gap-3">
                                 <i class="ri-menu-line"></i>
@@ -503,7 +534,7 @@
                         <!-- right nav -->
                         <div class="my-flex-between right my-w-100">
                             <nav class="">
-                                <ul class="my-d-flex my-gap-5 my-align-center">
+                                <ul class="my-d-flex my-gap-5 my-align-center nav-ul">
                                     <!-- single nav -->
                                     <li> <a class="my-nav-item active" href="#">Home</a> </li>
                                     <li> <a class="my-nav-item" href="#">About</a> </li>
@@ -519,7 +550,7 @@
                             </nav>
 
                             <!--  -->
-                            <div class="btn-parent">
+                            <div class="btn-parent discount-btn-parent">
                                 <button class="my-btn my-btn-pill my-secendary-btn my-btn-sm"><span>Get
                                         Discount</span></button>
                             </div>
@@ -527,6 +558,10 @@
                     </div>
                 </div>
             </div>
+
+
+
+
             <!-- __________  Header Bottom End  __________ -->
         </header>
         <!-- ************************************ -->
@@ -534,6 +569,89 @@
         <!-- ************************************ -->
 
 
+
+
+        <main>
+            <section class="hero-section">
+                <div class="my-container">
+                    <div class="hero-area my-d-flex">
+
+                        <!-- left -->
+                        <div class="left my-d-md-none">
+
+                        </div>
+
+                        <div class="right">
+                            <!-- slider -->
+                            <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true"
+                                cube-effect-shadow="true" cube-effect-slide-shadows="true" loop="true"
+                                autoplay='{"delay": 4000, "disableOnInteraction": false}' speed="3000"
+                                cube-effect-shadow-offset="10" cube-effect-shadow-scale="0.84">
+
+                                <!-- single slider -->
+                                <swiper-slide>
+                                    <div class="my-p-relative">
+                                        <img class="slider-img" src="https://i.ibb.co.com/ZLPkNpP/slider1.webp"
+                                            alt="slider1">
+                                        <div class="content">
+                                            <h4 class=" my-uppercase">Fruis Fresh</h4>
+                                            <h1 class="my-text-uppercase my-flex-column my-gap-1 my-mt-3">Vegatable
+                                                <span>100%
+                                                    Pure</span>
+                                            </h1>
+                                            <p class="my-mt-3 my-fw-bold">Free Delivery Available For This Month.</p>
+                                            <a class="my-btn my-primary-btn my-mt-6" href="#"><span>SHOP NOW</span></a>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+
+                                <!-- single slider -->
+                                <swiper-slide>
+                                    <div class="my-p-relative">
+                                        <img class="slider-img" src="https://i.ibb.co.com/VM2Pgrb/slider2.webp"
+                                            alt="slider2">
+
+                                        <!-- content -->
+                                        <div class="content">
+                                            <h4 class=" my-uppercase">Fruis Fresh</h4>
+                                            <h1 class="my-text-uppercase my-flex-column my-gap-1 my-mt-3">12% Disocunt
+                                                <span>
+                                                    Pure Food</span>
+                                            </h1>
+                                            <p class="my-mt-3 my-fw-bold">Free Delivery Available For This Month.</p>
+                                            <a class="my-btn my-primary-btn my-mt-6" href="#"><span>SHOP NOW</span></a>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+
+                                <!-- single slider -->
+                                <swiper-slide>
+                                    <div class="my-p-relative">
+                                        <img class="slider-img"
+                                            src="https://i.ibb.co.com/fxBsWNf/Alimentation-toilette-min.jpg"
+                                            alt="slider 3">
+
+                                        <!-- content -->
+                                        <div class="content">
+                                            <h4 class=" my-uppercase">Fruis Fresh</h4>
+                                            <h1 class="my-text-uppercase my-flex-column my-gap-1 my-mt-3">New Product
+                                                <span>100%
+                                                    Pure</span>
+                                            </h1>
+                                            <p class="my-mt-3 my-fw-bold">Free Delivery Available For This Month.</p>
+                                            <a class="my-btn my-primary-btn my-mt-6" href="#"><span>SHOP NOW</span></a>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                            </swiper-container>
+                        </div>
+
+                    </div>
+                </div>
+
+                </div>
+            </section>
+        </main>
 
 
 
@@ -1205,7 +1323,10 @@
             </div>
         </div>
 
+        <!-- slider js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         <!-- js -->
+        <!-- <script type="module" src="./Static/Js/slider.js"></script> -->
         <script type="module" src="./Static/Js/app.js"></script>
     </body>
 

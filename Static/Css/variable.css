@@ -69,3 +69,22 @@
     --shadow-2: 0 2px 5px rgba(0, 0, 0, .07);
 
 }
+
+
+
+
+
+
+/* responsive font */
+@media (max-width:991px) {
+    :root {
+        /*______  Font Size  ______ */
+        --fs-xs: 11px;
+        --fs-sm: 13px;
+        --fs-md: 14px;
+        --fs-lg: 16px;
+        --fs-xl: 20px;
+        --fs-xxl: 30px;
+        --fs-xxxl: 38px;
+    }
+}

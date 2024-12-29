@@ -5,6 +5,8 @@ import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF }
 openModalF('shopping-cart', 'shopping-cart-btn')
 openModalF('login-register', 'user-btn')
 openModalF('notification-modal', 'notification-btn')
+// open  mobile sidebar
+openModalF('mobile-sidebar', 'mobile-menu-icon')
 
 
 
@@ -12,6 +14,8 @@ openModalF('notification-modal', 'notification-btn')
 closeButtonF('shopping-cart')
 closeButtonF('login-register')
 closeButtonF('notification-modal')
+// close mobile sidebar
+closeButtonF('mobile-sidebar')
 
 
 
