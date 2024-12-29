@@ -24,12 +24,10 @@ export function closeButtonF(modalId) {
 
 
 // Sidebar toggle function
-function toggleF(sidebarId, buttonId) {
+export function toggleF(sidebarId, buttonId) {
     const sidebar = document.getElementById(sidebarId);
     const toggleBtn = document.getElementById(buttonId);
     const closeBtn = document.getElementById('close-mobile-sidebar')
-
-
 
     if (!sidebar || !toggleBtn) {
         console.error('Sidebar or Button not found. Check your IDs.');
@@ -43,20 +41,20 @@ function toggleF(sidebarId, buttonId) {
 
     });
 
-    // close menu icon
-    closeBtn.addEventListener('click', function () {
-        if (sidebar.classList.contains('active')) {
-            toggleBtn.classList.remove('active')
-        }
-        else {
-            toggleBtn.classList.add('active')
-        }
-    })
-
-
+    if (closeBtn) {
+        // close menu icon
+        closeBtn.addEventListener('click', function () {
+            if (sidebar.classList.contains('active')) {
+                toggleBtn.classList.remove('active')
+            }
+            else {
+                toggleBtn.classList.add('active')
+            }
+        })
+    }
 }
 
-toggleF('mobile-sidebar', 'mobile-menu-icon');
+
 
 
 

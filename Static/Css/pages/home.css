@@ -214,7 +214,7 @@ header .header-top .left a:hover {
 
 /*_______  Header Bottom Start  _______*/
 .header-bottom .my-container {
-    padding: 10px 16px;
+    padding: 16px 16px;
 }
 
 .header-bottom {
@@ -363,6 +363,8 @@ header .header-top .left a:hover {
     font-size: var(--fs-lg);
 }
 
+
+
 .header-bottom .my-nav-item {
     font-weight: var(--fw-600);
     font-size: var(--fs-md);
@@ -402,6 +404,10 @@ header .header-top .left a:hover {
     padding: 2px;
     outline: 1px solid var(--border-color);
     border-radius: 55px;
+}
+
+.header-bottom .btn-parent .my-btn-sm {
+    padding: 12px 18px;
 }
 
 /*******************************
@@ -582,7 +588,9 @@ header .header-top .left a:hover {
 
 
 
-
+/*************************************
+****   Login Modal Cart Start Here   ****
+**************************************/
 .login-register .login-register-btn {
     padding: 14px 10px;
 }
@@ -598,7 +606,8 @@ header .header-top .left a:hover {
 
 .login-register .modal-content {
     max-height: 520px;
-    min-height: 520px;
+    width: 100%;
+    max-width: 420px;
 }
 
 .login-register .sign-up {
@@ -649,6 +658,8 @@ header .header-top .left a:hover {
 ****************************************/
 .my-modal.notification-modal .modal-content {
     max-width: 470px !important;
+    width: 92%;
+    margin: 0 auto;
 }
 
 .my-modal.notification-modal .my-has-scrollbar::-webkit-scrollbar {
@@ -735,9 +746,10 @@ header .header-top .left a:hover {
 ****    Hero SLider Start Here   ****
 ***********************************/
 .hero-section {
-    margin: 2px 0 50px 0;
+    /* margin: 2px 0 55px 0; */
     height: 420px;
     width: 100%;
+    margin-top: 6px;
 }
 
 .hero-section .my-container {
@@ -751,7 +763,6 @@ header .header-top .left a:hover {
 
 .hero-area .left {
     width: 370px;
-    /* height: 1200px; */
 }
 
 .hero-area .right {
@@ -828,6 +839,12 @@ swiper-slide img {
     color: var(--secondary-color);
 }
 
+.hero-section .content h1 {
+    gap: 10px;
+    line-height: 40px;
+    margin-top: 16px;
+}
+
 @keyframes base-animation {
     0% {
         transform: translateX(-2px);
@@ -859,44 +876,17 @@ swiper-slide img {
 
 
 /*******************************
-****  Responsive code 768px  ****
+****  Responsive code 1080px  ****
 *******************************/
-@media (max-width:769px) {
+@media (max-width:1080px) {
 
     /* header top */
     .header-top-mobile {
         justify-content: space-between;
     }
 
-    .search-form {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 0 20px;
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 4;
-        border-top: 1px solid var(--white-off);
-        padding-top: 10px;
-    }
-
-    .header-mediel .search {
-        position: relative;
-        width: 100%;
-    }
-
-    .header-mediel .search-form input {
-        max-width: 600px;
-        width: 100%;
-        border-radius: 7px;
-    }
 
 
-    .hero-section {
-        margin-top: 80px;
-    }
 
 
     /* header bottom */
@@ -926,6 +916,13 @@ swiper-slide img {
         width: 100%;
     }
 
+
+
+    /*_______  all department  _______*/
+    .header-bottom-area .left {
+        width: 100%;
+    }
+
     .header-bottom .all-department-btn {
         width: 100%;
     }
@@ -933,6 +930,17 @@ swiper-slide img {
     .header-bottom-area .all-department {
         display: none;
     }
+
+    .header-bottom-area .all-department.active {
+        display: block;
+        z-index: 8;
+    }
+
+    .header-bottom-area .all-department.active .dropdown {
+        left: 45px;
+        top: 23px;
+    }
+
 
     .header-bottom-area .right {
         flex-direction: column;
@@ -978,5 +986,98 @@ swiper-slide img {
 
     .header-bottom-top .close-modile-sidebar {
         border: none;
+    }
+
+
+    /**************   Hero Section  ****************/
+    .hero-section .content h1 {
+        gap: 0;
+        line-height: 40px;
+    }
+
+    /*____ Shopping Cart ____ */
+    /* .my-modal.shopping-cart .modal-content {
+        width: 100%;
+    } */
+
+    .my-modal.shopping-cart .item {
+        gap: 20px;
+    }
+}
+
+
+@media (max-width:991px) {
+
+    /*_____  Header Mediel  _____ */
+    .header-mediel {
+        border-bottom: 1px solid var(--white-off);
+    }
+
+    .header-mediel .search {
+        position: relative;
+        width: 100%;
+    }
+
+    .header-mediel .search-form input {
+        max-width: 600px;
+        width: 100%;
+        border-radius: 7px;
+    }
+
+    .header-mediel .search-form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 4;
+        padding-top: 10px;
+    }
+
+    .hero-section {
+        margin-top: 80px;
+    }
+
+}
+
+
+
+
+@media (max-width:556px) {
+
+    /* shopping cart */
+    .my-modal.shopping-cart .modal-content {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .my-modal.shopping-cart .body-content {
+        overflow-x: auto;
+        width: 550px;
+    }
+
+    .my-modal.shopping-cart .body-content .items {
+        margin-right: 12px;
+        width: 550px;
+        overflow-x: auto;
+    }
+
+    .my-modal.shopping-cart .img img {
+        width: 50px;
+    }
+
+    .my-modal.shopping-cart .item {
+        gap: 12px;
+    }
+
+    .my-modal.shopping-cart .item .right {
+        gap: 12px;
+    }
+
+    .my-modal.shopping-cart .info h6 {
+        min-width: 150px;
     }
 }

@@ -22,23 +22,24 @@
             <!-- __________  Header Top Start  __________ -->
             <div class="header-top ">
                 <div class="my-container">
-                    <div class="header-top-area my-flex-between ">
 
-                        <!--******  header top for mobile  ******-->
-                        <div class="my-d-none header-top-mobile my-py-1 my-w-100 my-d-sm-flex ">
-                            <p class="my-fs-sm"><span class="my-fw-bolder ">Free Shipping</span> for 1000 taka
-                                up.</p>
 
-                            <!-- menu icon -->
-                            <button class="menu-icon" id="mobile-menu-icon">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
+                    <!--******  header top for mobile  ******-->
+                    <div class="my-d-none header-top-mobile my-py-1 my-w-100 my-d-lg-flex ">
+                        <p class="my-fs-sm"><span class="my-fw-bolder ">Free Shipping</span> for 1000 taka
+                            up.</p>
 
+                        <!-- menu icon -->
+                        <button class="menu-icon" id="mobile-menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+                    <div class="header-top-area my-d-lg-none my-flex-between ">
                         <!-- Header Top Left -->
-                        <div class="left my-d-sm-none  my-d-flex my-align-center my-gap-2">
+                        <div class="left my-d-flex my-align-center my-d-lg-none my-gap-2">
                             <a href="#" class="my-d-flex my-align-center my-gap-1 my-fw-bold">
                                 <i class="fa-solid fa-envelope"></i>
                                 ecommerce@gamil.com
@@ -98,7 +99,7 @@
                 <div class="my-container">
                     <div class="header-mediel-area my-flex-between">
                         <!-- Left -->
-                        <div class="left  my-text-left">
+                        <div class="left my-text-left">
                             <a class="logo my-text-left" href="index.html">
                                 <h2 class="my-fw-bolder my-text-primary">Shoping.</h2>
                             </a>
@@ -392,15 +393,17 @@
                 <div class="my-container">
                     <div class="header-bottom-area my-d-flex my-align-center my-gap-5">
                         <div class="left my-p-relative">
-                            <div class="all-department-btn my-btn my-align-center my-gap-3">
+
+                            <!-- all department button -->
+                            <div class="all-department-btn my-btn my-align-center my-gap-3" id="all-department-btn">
                                 <i class="ri-menu-line"></i>
                                 <span>All Departments</span>
                                 <i class="ri-arrow-down-s-line"></i>
                             </div>
 
 
-                            <!-- all-department -->
-                            <div class="all-department my-card ">
+                            <!-- all-department items -->
+                            <div class="all-department my-card " id="all-department-sidebar">
                                 <ul class="wrapper">
                                     <!-- single dept -->
                                     <li class="my-p-relative  my-flex-between my-gap-2 single-dept ">
@@ -534,7 +537,7 @@
                         <!-- right nav -->
                         <div class="my-flex-between right my-w-100">
                             <nav class="">
-                                <ul class="my-d-flex my-gap-5 my-align-center nav-ul">
+                                <ul class="my-d-flex my-gap-4 my-align-center nav-ul">
                                     <!-- single nav -->
                                     <li> <a class="my-nav-item active" href="#">Home</a> </li>
                                     <li> <a class="my-nav-item" href="#">About</a> </li>
@@ -577,7 +580,7 @@
                     <div class="hero-area my-d-flex">
 
                         <!-- left -->
-                        <div class="left my-d-md-none">
+                        <div class="left my-d-lg-none">
 
                         </div>
 

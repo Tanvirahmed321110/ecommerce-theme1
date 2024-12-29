@@ -1,4 +1,4 @@
-import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF } from './utilitis.js';
+import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF } from './utilitis.js';
 
 
 // call open modal F
@@ -6,7 +6,9 @@ openModalF('shopping-cart', 'shopping-cart-btn')
 openModalF('login-register', 'user-btn')
 openModalF('notification-modal', 'notification-btn')
 // open  mobile sidebar
-openModalF('mobile-sidebar', 'mobile-menu-icon')
+toggleF('mobile-sidebar', 'mobile-menu-icon');
+// for department
+toggleF('all-department-sidebar', 'all-department-btn')
 
 
 

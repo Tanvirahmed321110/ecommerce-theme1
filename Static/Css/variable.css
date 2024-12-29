@@ -13,7 +13,7 @@
     --secondary-color: #01293a;
     --orange: #ffc107;
     --blue: #016bf8;
-    --gray: #7c7c7c;
+    --gray: #707070;
     --dark: #1b2023;
     --secondary-hover: #173846;
     --white: #fff;
@@ -79,12 +79,12 @@
 @media (max-width:991px) {
     :root {
         /*______  Font Size  ______ */
-        --fs-xs: 11px;
-        --fs-sm: 13px;
-        --fs-md: 14px;
-        --fs-lg: 16px;
+        --fs-xs: 12px;
+        --fs-sm: 15px;
+        --fs-md: 16px;
+        --fs-lg: 18px;
         --fs-xl: 20px;
         --fs-xxl: 30px;
-        --fs-xxxl: 38px;
+        --fs-xxxl: 40px;
     }
 }

@@ -1076,6 +1076,26 @@ button {
         flex-direction: column;
     }
 
+    .my-flex-lg-column {
+        flex-direction: column;
+    }
+
+    .my-d-lg-none {
+        display: none;
+    }
+
+    .my-d-lg-block {
+        display: block;
+    }
+
+    .my-d-lg-flex {
+        display: flex;
+    }
+
+    .my-d-lg-grid {
+        display: grid;
+    }
+
     .my-grid-lg-1 {
         grid-template-columns: repeat(1, 1fr);
     }
