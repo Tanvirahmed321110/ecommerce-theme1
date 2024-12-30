@@ -29,7 +29,7 @@ h5,
 h6 {
     font-weight: var(--fw-600);
     line-height: 20px;
-    font-family: var(--font-inter);
+    font-family: var(--font-montserrat);
     color: var(--secondary-color);
 }
 
@@ -42,6 +42,7 @@ h1 {
 h2 {
     font-size: var(--fs-xxl);
     line-height: 30px;
+    font-weight: var(--fw-700);
 }
 
 h3 {
@@ -150,6 +151,10 @@ button {
     margin: 0px auto;
     width: 100%;
     max-width: 1200px;
+}
+
+.section-margin {
+    margin: 35px 0;
 }
 
 .checkbox {
@@ -969,19 +974,48 @@ button {
 
 
 /*_____  Grid  _____*/
-.my-grid-2 {
+.my-grid-2,
+.my-grid-3,
+.my-grid-4,
+.my-grid-5,
+.my-grid-6 {
     display: grid;
+}
+
+.my-grid-2 {
     grid-template-columns: repeat(2, 1fr);
 }
 
 .my-grid-3 {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .my-grid-4 {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.my-grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.my-grid-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.my-row-1 {
+    row-gap: 4px;
+}
+
+.my-row-2 {
+    row-gap: 8px;
+}
+
+.my-row-3 {
+    row-gap: 12px;
+}
+
+.my-row-4 {
+    row-gap: 16px;
 }
 
 .my-row-5 {
@@ -1107,6 +1141,18 @@ button {
     .my-grid-lg-3 {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .my-grid-lg-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .my-grid-5 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .my-grid-6 {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 
@@ -1144,6 +1190,14 @@ button {
     .my-grid-md-3 {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .my-grid-5 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .my-grid-6 {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 
@@ -1178,6 +1232,14 @@ button {
     }
 
     .my-grid-sm-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .my-grid-5 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .my-grid-6 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -1214,6 +1276,14 @@ button {
     }
 
     .my-grid-xs-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .my-grid-5 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .my-grid-6 {
         grid-template-columns: repeat(3, 1fr);
     }
 }

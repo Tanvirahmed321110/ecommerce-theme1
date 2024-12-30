@@ -201,14 +201,14 @@
     cursor: pointer;
     user-select: none;
     font-size: var(--fs-md);
-    padding: 11px 16px;
+    padding: 13px 16px;
     font-family: var(--font-inter);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: var(--fw-500);
     font-family: inherit;
-    border-radius: 3px;
+    border-radius: 8px;
     transition: .3s linear;
     position: relative;
     overflow: hidden;
@@ -266,8 +266,9 @@
 }
 
 .my-btn.my-btn-sm {
-    padding: 7px 12px;
+    padding: 10px 12px;
     font-size: var(--fs-sm);
+    border-radius: 6px;
 }
 
 .my-primary-btn {
@@ -889,4 +890,27 @@ input[type="radio"]:checked::after {
 
 .my-notice a:hover {
     color: var(--primary-hover-color);
+}
+
+
+
+.section-head {
+    /* padding: 20px 0;
+    background-color: var(--white-off); */
+}
+
+.section-head p {
+    position: relative;
+    color: var(--gray);
+}
+
+.section-head p::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 25px;
+    background-color: var(--border-color2);
+    width: 60px;
+    height: 2px;
+    transform: translate(-50%);
 }
