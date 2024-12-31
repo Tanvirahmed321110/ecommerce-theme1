@@ -21,6 +21,7 @@ body {
     color: var(--gray);
 }
 
+
 h1,
 h2,
 h3,
@@ -150,7 +151,7 @@ button {
     padding: 20px 16px;
     margin: 0px auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1250px;
 }
 
 .section-margin {
@@ -500,6 +501,27 @@ button {
 
 .my-pr-2 {
     padding-right: 10px;
+}
+
+
+.my-pb-1 {
+    padding-bottom: 8px;
+}
+
+.my-pb-2 {
+    padding-bottom: 16px;
+}
+
+.my-pb-3 {
+    padding-bottom: 16px;
+}
+
+.my-pb-4 {
+    padding-bottom: 16px;
+}
+
+.my-pb-5 {
+    padding-bottom: 20px;
 }
 
 
@@ -868,6 +890,7 @@ button {
 .my-flex-column,
 .my-justify-start,
 .my-justify-between,
+.my-justify-around,
 .my-flex-start {
     display: flex;
 }
@@ -918,12 +941,21 @@ button {
     justify-content: space-between;
 }
 
+.my-justify-around {
+    justify-content: space-around;
+
+}
+
 .my-flex-1 {
     flex-grow: 1;
 }
 
 .my-flex-column {
     flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 
@@ -1028,6 +1060,18 @@ button {
 
 .my-row-7 {
     row-gap: 28px;
+}
+
+.my-row-8 {
+    row-gap: 32px;
+}
+
+.my-row-9 {
+    row-gap: 36px;
+}
+
+.my-row-10 {
+    row-gap: 40px;
 }
 
 

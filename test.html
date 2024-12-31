@@ -2,186 +2,54 @@
 <html lang="en">
 
     <head>
-        <meta charset="utf-8" />
-        <title>Swiper demo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Scrollbar</title>
         <style>
-            html,
             body {
-                position: relative;
-                height: 100%;
-            }
-
-            body {
-                background: #eee;
-                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-                font-size: 14px;
-                color: #000;
+                height: 200vh;
+                /* Add extra height to enable scrolling */
                 margin: 0;
-                padding: 0;
+                font-family: Arial, sans-serif;
             }
 
-            swiper-container {
-                width: 300px;
-                height: 300px;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-left: -150px;
-                margin-top: -150px;
+            /* WebKit Browsers (Chrome, Edge, Safari) */
+            body::-webkit-scrollbar {
+                width: 12px;
+                /* Width of the scrollbar */
             }
 
-            swiper-slide {
-                background-position: center;
-                background-size: cover;
+            body::-webkit-scrollbar-track {
+                background: #2e2323;
+                /* Background color of the scrollbar track */
             }
 
-            swiper-slide img {
-                display: block;
-                width: 100%;
-            }
-
-            /* Video container styling */
-            .full-video-container {
-                position: relative;
-                z-index: 2;
-                max-width: 800px;
-                margin: 0 auto;
-                text-align: center;
-                padding: 20px;
-
-            }
-
-            .col-lg-10 h1 {
-                font-size: 52px;
-                margin-left: 30px;
-
-            }
-
-
-            /* Video styling */
-            #main_video {
-                width: 100%;
-                height: auto;
+            body::-webkit-scrollbar-thumb {
+                background: #007bff;
+                /* Scrollbar thumb (handle) color */
                 border-radius: 10px;
-                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-                background-color: #000;
-
+                /* Rounded corners for the scrollbar thumb */
+                border: 2px solid #693e3e;
+                /* Border around the thumb */
             }
 
-            /* Button and progress bar styling */
-            .play-button {
-                cursor: pointer;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: rgb(120, 84, 110);
-                font-size: 1.5rem;
-                margin-top: 15px;
-            }
-
-            .custom-progressbar {
-                width: 70%;
-                height: 5px;
-                margin-top: 10px;
-                background-color: rgb(149, 149, 149);
-                border-radius: 5px;
-                appearance: none;
-            }
-
-            /* Custom progress bar styling */
-            .custom-progressbar::-webkit-slider-thumb {
-                appearance: none;
-                width: 12px;
-                height: 12px;
-                background-color: rgb(120, 84, 110);
-                border-radius: 50%;
-                cursor: pointer;
-            }
-
-            .highlight {
-                color: rgb(120, 84, 110);
-            }
-
-            .normal {
-                color: rgb(149, 149, 149)
-            }
-
-            .custom-progressbar::-moz-range-thumb {
-                width: 12px;
-                height: 12px;
-                background-color: #007bff;
-                border-radius: 50%;
-                cursor: pointer;
+            /* Firefox Scrollbar Styling */
+            body {
+                scrollbar-color: #007bff #f0f0f0;
+                /* Thumb color and track color */
+                scrollbar-width: thin;
+                /* Thin scrollbar */
             }
         </style>
     </head>
 
     <body>
-
-        <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
-            cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
-            <swiper-slide>
-                <img src=" https://swiperjs.com/demos/images/nature-1.jpg" />
-            </swiper-slide>
-            <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </swiper-slide>
-            <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </swiper-slide>
-            <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </swiper-slide>
-        </swiper-container>
-
-
-        <div class="full-video-container">
-            <video loop="true" muted="" id="main_video">
-                <source src="https://download.odoocdn.com/videos/odoo_com/video_homepage.webm" type="video/webm">
-                <source src="https://download.odoocdn.com/videos/odoo_com/video_homepage.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <div class="d-flex justify-content-center align-items-center">
-                <a id="videoControl" class="play-button">Play</a>
-            </div>
-            <input id="videoProgress" type="range" min="0" max="100" value="0" class="custom-progressbar">
-        </div>
-
-        <script>
-            // Get elements
-            const video = document.getElementById('main_video');
-            const playButton = document.getElementById('videoControl');
-            const progressBar = document.getElementById('videoProgress');
-
-            // Play or pause video on button click
-            playButton.addEventListener('click', function () {
-                if (video.paused) {
-                    video.play();
-                    playButton.innerHTML = '<i class="fa fa-pause"></i>';
-                } else {
-                    video.pause();
-                    playButton.innerHTML = '<i class="fa fa-play"></i>';
-                }
-            });
-
-            // Update progress bar
-            video.addEventListener('timeupdate', function () {
-                const percentage = (video.currentTime / video.duration) * 100;
-                progressBar.value = percentage;
-            });
-
-            // Seek video on progress bar input
-            progressBar.addEventListener('input', function () {
-                const seekTime = (progressBar.value / 100) * video.duration;
-                video.currentTime = seekTime;
-            });
-        </script>
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+        <h1>Custom Scrollbar Example</h1>
+        <p>Scroll down to test the custom scrollbar style. The scrollbar thumb color is blue (#007bff), and the track
+            color is light gray (#f0f0f0).</p>
+        <p>To implement this style, you need to use <code>::-webkit-scrollbar</code> for WebKit browsers and
+            <code>scrollbar-color</code> for Firefox.
+        </p>
     </body>
 
 </html>
