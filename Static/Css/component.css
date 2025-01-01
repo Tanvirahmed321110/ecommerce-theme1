@@ -116,7 +116,7 @@
     overflow: hidden;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-1);
-    border: 1px solid var(--white-off);
+    border: 1px solid var(--border-color);
     background-color: var(--white);
     padding: 16px;
 }
