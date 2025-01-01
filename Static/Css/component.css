@@ -894,11 +894,6 @@ input[type="radio"]:checked::after {
 
 
 
-.section-head {
-    /* padding: 20px 0;
-    background-color: var(--white-off); */
-}
-
 .section-head p {
     position: relative;
     color: var(--gray);

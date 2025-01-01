@@ -1419,8 +1419,9 @@ footer .footer-pages .footer-head::after {
 
 
 
-.how-to-order .my-grid-md-2:last-child {}
-
+/**********************************
+****   How to Order Start   ****
+***********************************/
 .how-to-order .my-card {
     padding: 40px 25px;
     background-color: var(--border-color);
@@ -1447,6 +1448,29 @@ footer .footer-pages .footer-head::after {
 
 
 
+
+
+
+/**********************************
+****   About Start  Here  ****
+***********************************/
+.about .item {
+    padding: 5px;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    border: 1px solid var(--border-color);
+}
+
+.about .item .my-card {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /*******************************
 ****  Responsive code 1080px  ****
