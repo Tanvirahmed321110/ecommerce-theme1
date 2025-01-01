@@ -721,6 +721,59 @@ swiper-slide img {
 
 
 
+.subcibe-app {
+    background-image: url('/Static/images/mobile-bg.svg');
+    height: 455px;
+    width: 100%;
+    position: relative;
+}
+
+.subcibe-app::after {
+    content: '';
+    background-color: #615f5f23;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+}
+
+.subcibe-discount-area {
+    position: relative;
+    z-index: 5;
+}
+
+.subcibe-discount-area .left {
+    max-width: 500px;
+}
+
+.subcibe-discount-area .left form {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.subcibe-discount-area .left form input {
+    border: none;
+    background-color: transparent;
+}
+
+.subcibe-discount-area .left form .my-btn {
+    width: 140px;
+}
+
+.subcibe-discount-area .right img {
+    max-width: 360px;
+}
+
+
+
+
 /**********************************
 ****   Best Deals Start Here    ****
 ***********************************/
@@ -1233,13 +1286,22 @@ footer .footer-pages .footer-head::after {
 
 
 /*_______  Footer Bottom  _______*/
+.footer-bottom .my-container {
+    padding: 14px 16px;
+}
+
 .footer-bottom {
-    background-color: var(--secondary-hover);
+    background-color: rgb(26, 26, 49);
     color: var(--border-color2);
+}
+
+.footer-bottom p {
+    font-weight: 400 !important;
 }
 
 .footer-bottom h5 {
     color: var(--border-color2);
+    font-size: var(--fs-sm);
 }
 
 
@@ -1460,6 +1522,7 @@ footer .footer-pages .footer-head::after {
     width: 220px;
     height: 220px;
     border: 1px solid var(--border-color);
+    margin: 0 auto;
 }
 
 .about .item .my-card {
@@ -1469,7 +1532,13 @@ footer .footer-pages .footer-head::after {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--white-off);
     flex-direction: column;
+}
+
+
+.about .my-grid-4 {
+    padding-top: 28px;
 }
 
 /*******************************
@@ -1678,6 +1747,33 @@ footer .footer-pages .footer-head::after {
         gap: 8px;
     }
 
+
+    /* .subcibe-app */
+    .subcibe-discount-area {
+        justify-content: center;
+        align-items: center;
+        height: 640px;
+        position: relative;
+        top: 0;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .subcibe-discount-area .left {
+        order: 1;
+    }
+
+    .subcibe-discount-area .right {
+        order: 0;
+    }
+
+    .subcibe-app {
+        height: 680px;
+    }
+
+    .subcibe-discount-area .right img {
+        max-width: 240px;
+    }
 }
 
 

@@ -268,7 +268,7 @@
 .my-btn.my-btn-sm {
     padding: 10px 12px;
     font-size: var(--fs-sm);
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .my-primary-btn {
@@ -519,7 +519,7 @@
     right: 0;
     top: 0;
     width: 38px;
-    height: 34px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,6 +529,7 @@
     transition: transform .1s linear;
     user-select: none;
     box-shadow: var(--shadow-3);
+    border-radius: 2px;
 }
 
 .my-modal .body-content {
