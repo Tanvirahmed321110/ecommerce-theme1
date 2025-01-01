@@ -251,11 +251,10 @@ header .header-top .left a:hover {
     width: 100%;
     overflow: auto;
     min-height: 420px;
-    padding: 10px 12px !important;
 }
 
 .all-department.my-card {
-    padding: 4px 0;
+    padding: 6px 0px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     overflow: unset;
@@ -281,7 +280,7 @@ header .header-top .left a:hover {
 .header-bottom .all-department .single-dept {
     cursor: pointer;
     padding: 4px 0;
-    padding: 6px 10px;
+    padding: 6px 16px;
     border-radius: 2px;
 }
 
@@ -689,15 +688,28 @@ swiper-slide img {
 
 @keyframes base-animation {
     0% {
-        transform: translateX(-2px);
+        transform: translateX(100%);
+        /* Start at the right */
     }
 
-    50% {
-        transform: translateX(110%);
+    40% {
+        transform: translateX(0%);
+        /* Move completely to the left */
+    }
+
+    60% {
+        transform: translateX(0%);
+        /* Wait for 2 seconds at the left */
+    }
+
+    90% {
+        transform: translateX(100%);
+        /* Wait for 2 seconds at the left */
     }
 
     100% {
-        transform: translateX(-2px);
+        transform: translateX(100%);
+        /* Move back to the starting position (right) */
     }
 }
 
@@ -1513,14 +1525,175 @@ footer .footer-pages .footer-head::after {
 
 
 
+
+/**********************************
+****   Products  Start  Here  ****
+***********************************/
+.products {
+    /* background-color: var(--white-off); */
+}
+
+.products-area {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+    height: 2000px;
+}
+
+.products-area .left {
+    /* background-color: var(--white-off); */
+}
+
+.products-area .sticky {
+    position: sticky;
+    top: 40px;
+    left: 0;
+}
+
+.products-area .sticky .my-card {
+    background-color: var(--white-off);
+    border-radius: 8px;
+    padding: 0;
+    padding-top: 8px;
+    /* box-shadow: var(--shadow-1); */
+    border-color: var(--border-color);
+}
+
+.products-area .sticky .my-card ul li {
+    padding: 2px 0;
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+}
+
+.products-area .sticky .my-card ul li a {
+    width: 100%;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-color);
+    font-weight: var(--fw-600);
+    transform: unset;
+}
+
+
+.products-area .sticky .my-card ul li a i {
+    font-size: var(--fs-sm);
+    transition: .8s;
+    font-weight: var(--fw-600);
+}
+
+.products-area .sticky .my-card ul li a span {
+    transition: .6s;
+}
+
+.products-area .sticky .my-card ul li a span.active {
+    transform: rotate(90deg);
+}
+
+.products-area .sticky .my-card ul li a:hover {
+    color: var(--primary-color);
+}
+
+.products-area .sticky .my-card .nav-btn {
+    position: relative;
+    transition: .4s linear;
+}
+
+.products-area .sticky .my-card .nav-btn::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 12px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: .4s linear;
+}
+
+.products-area .sticky .my-card .nav-btn:hover::after {
+    left: 5px;
+}
+
+
+/*________   dropdown   ________*/
+.products-area .sticky .dropdown {
+    background-color: var(--white-off);
+    padding-bottom: 8px;
+    visibility: hidden;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+    max-height: 0;
+}
+
+.products-area .sticky .dropdown.active {
+    visibility: visible;
+    opacity: 1;
+    max-height: 1500px;
+
+
+}
+
+.products-area .sticky .dropdown li {
+    border: none !important;
+}
+
+.products-area .sticky .dropdown li a {
+    color: var(--gray) !important;
+    font-weight: var(--fw-500) !important;
+    font-size: var(--fs-sm) !important;
+    border-bottom: 1px solid var(--border-color2);
+    padding: 6px 34px !important;
+}
+
+.products-area .sticky .dropdown li a:hover {
+    color: var(--primary-color) !important;
+}
+
+
+.products-area .sticky .tips {}
+
+.products-area .sticky .tips li {
+    cursor: unset !important;
+    padding: 10px 18px !important;
+}
+
+.products-area .sticky .tips div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    box-shadow: var(--shadow-1);
+}
+
+.products-area .sticky .tips div i {
+    color: var(--primary-color);
+    font-size: var(--fs-lg);
+}
+
+.products-area .sticky .tips p {
+    font-size: 13px;
+    width: 75%;
+    line-height: 18px;
+}
+
+
+
 /**********************************
 ****   About Start  Here  ****
 ***********************************/
+.about .items {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .about .item {
     padding: 5px;
     border-radius: 50%;
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--white-off);
     border: 1px solid var(--border-color);
     margin: 0 auto;
 }
@@ -1532,13 +1705,14 @@ footer .footer-pages .footer-head::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white-off);
+    border: 1px solid var(--border-color) !important;
     flex-direction: column;
+    /* border: 1px solid var(--border-color2); */
 }
 
 
 .about .my-grid-4 {
-    padding-top: 28px;
+    padding-top: 20px;
 }
 
 /*******************************
