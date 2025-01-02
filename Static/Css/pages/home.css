@@ -1955,21 +1955,25 @@ footer .footer-pages .footer-head::after {
     /*********  Product Area  ********/
     .products-area {
         grid-template-columns: 1fr;
-        /* margin: 0 auto;
-        align-items: center;
-        justify-content: center; */
-        background-color: red;
     }
+
+
 
     .products-area .left {
         margin: 0 auto;
+        width: 350px;
+    }
+
+    .products-area .left .sticky {
+        width: 100%;
     }
 
     .popular-products-area {
         justify-content: center;
-        align-items: center !important;
+    }
+
+    .popular-products-area .product-cart {
         margin: 0 auto;
-        background-color: black;
     }
 }
 
