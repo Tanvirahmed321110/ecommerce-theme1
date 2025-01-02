@@ -2035,4 +2035,14 @@ footer .footer-pages .footer-head::after {
         max-width: 120px;
         border: none;
     }
+
+    .about .item {
+        padding: 5px;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-color: var(--white-off);
+        border: 1px solid var(--border-color);
+        margin: 0 auto;
+    }
 }

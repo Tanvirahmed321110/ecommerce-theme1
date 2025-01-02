@@ -933,6 +933,10 @@ input[type="radio"]:checked::after {
     border-color: var(--border-color2);
 }
 
+.product-cart:hover {
+    border-color: var(--primary-hover-color);
+}
+
 
 /*****  images  *****/
 .product-cart .images {
