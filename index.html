@@ -9,6 +9,8 @@
             content="Online shopping, Affordable products, Best deals, Discount offers, Buy products online, Shop now, Order online, Top quality products, Fast delivery, Secure online shopping, Product bazaar">
         <title>Home_Page</title>
 
+        <!-- slider -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <!-- common css -->
         <link rel="stylesheet" href="./Static/Css/common.css">
         <link rel="stylesheet" href="./Static/Css/pages/home.css">
@@ -411,7 +413,7 @@
                                         <span><i class="fa-solid fa-angle-right"></i></span>
 
                                         <!-- main dropdown -->
-                                        <ul class="dropdown my-flex-between my-align-start my-gap-1">
+                                        <ul class="dropdown my-flex-between my-align-start my-gap-6">
                                             <li>
                                                 <ul class="col">
                                                     <li><a href="#">Baby Toy</a></li>
@@ -589,15 +591,15 @@
 
                         <div class="right">
                             <!-- slider -->
-                            <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true"
+                            <swiper-container class="mySwiper hero" pagination="true" effect="cube" grab-cursor="true"
                                 cube-effect-shadow="true" cube-effect-slide-shadows="true" loop="true"
                                 autoplay='{"delay": 4000, "disableOnInteraction": false}' speed="3000"
                                 cube-effect-shadow-offset="10" cube-effect-shadow-scale="0.84">
 
                                 <!-- single slider -->
-                                <swiper-slide>
+                                <swiper-slide class="hero">
                                     <div class="my-p-relative">
-                                        <img class="slider-img" src="https://i.ibb.co.com/ZLPkNpP/slider1.webp"
+                                        <img class="slider-img hero" src="https://i.ibb.co.com/ZLPkNpP/slider1.webp"
                                             alt="slider1">
                                         <div class="content">
                                             <h4 class=" my-uppercase">Fruis Fresh</h4>
@@ -612,9 +614,9 @@
                                 </swiper-slide>
 
                                 <!-- single slider -->
-                                <swiper-slide>
+                                <swiper-slide class="hero">
                                     <div class="my-p-relative">
-                                        <img class="slider-img" src="https://i.ibb.co.com/VM2Pgrb/slider2.webp"
+                                        <img class="slider-img hero" src="https://i.ibb.co.com/VM2Pgrb/slider2.webp"
                                             alt="slider2">
 
                                         <!-- content -->
@@ -631,9 +633,9 @@
                                 </swiper-slide>
 
                                 <!-- single slider -->
-                                <swiper-slide>
+                                <swiper-slide class="hero">
                                     <div class="my-p-relative">
-                                        <img class="slider-img"
+                                        <img class="slider-img hero"
                                             src="https://i.ibb.co.com/fxBsWNf/Alimentation-toilette-min.jpg"
                                             alt="slider 3">
 
@@ -1989,9 +1991,51 @@
 
 
                                 </div>
+
+
+                                <div class="top-sell-products my-mt-50 ">
+
+                                    <!-- head -->
+                                    <div class="section-head my-text-center">
+                                        <h2>Top Sell Products</h2>
+                                        <p>Explore Top Sell Item</p>
+                                    </div>
+
+                                    <div class="swiper-container top-sell-slider my-mt-8">
+                                        <div class="swiper-wrapper">
+                                            <!-- Slide 1 -->
+                                            <div class="swiper-slide">
+                                                <h2>slider 1</h2>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <h2>slider 3</h2>
+                                            </div>
+                                            <!-- Slide 2 -->
+                                            <div class="swiper-slide">
+                                                <h2>slider 3</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Swiper Pagination (optional) -->
+                                    <div class="swiper-pagination"></div>
+
+                                    <!-- Swiper Navigation (optional) -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+
+                                <!-- Add more slides as needed -->
                             </div>
+
                         </div>
+
+
+
+
                     </div>
+                </div>
+                </div>
+                </div>
                 </div>
             </section>
 
@@ -2136,6 +2180,243 @@
 
 
 
+            <!--**************  Testimonial Section  ************* -->
+            <section class="section-margin customer-reviews">
+                <div class="my-container">
+                    <div class="section-head">
+                        <h2>What Our Customers Are Saying</h2>
+                        <p>Customer Reviews</p>
+                    </div>
+
+                    <div class="customer-reviews-area testimonial-slider swiper my-grid-3 my-gap-10">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- Single Review  -->
+                                <div class="sigle-review">
+                                    <div class="my-d-flex my-gap-2">
+
+                                        <!-- image -->
+                                        <div class="img-wrapper my-mb-2">
+                                            <img src="./Static/images/profile1.png" alt="profile image">
+                                        </div>
+
+                                        <!-- title -->
+                                        <div class="title">
+                                            <h4>Tanvir Ahmed</h4>
+                                            <div class="starts">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="my-fs-xs  my-mt-1">11 jan 2025</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- text -->
+                                    <div class="desc">
+                                        <h3 class="my-text-left">Good Service.</h3>
+                                        Thank you so much. adipisicing elit. Repudiandae impedit
+                                        recusandae,
+                                        illo, reprehenderit quas qui a rerum aliquam dicta id est iure, quod dolores
+                                        eligendi
+                                        nam explicabo ratione molestiae modi iusto molestias. Deleniti.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Review  -->
+                            <div class="swiper-slide">
+                                <div class="sigle-review">
+                                    <div class="my-d-flex my-gap-2">
+
+                                        <!-- image -->
+                                        <div class="img-wrapper my-mb-2">
+                                            <img src="https://cs.engineering.gwu.edu/sites/g/files/zaxdzs4271/files/2023-09/cs_profile_small_size.jpg"
+                                                alt="profile image">
+                                        </div>
+
+                                        <!-- title -->
+                                        <div class="title">
+                                            <h4>Rasel Khan</h4>
+                                            <div class="starts">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <p class="my-fs-xs  my-mt-1">1 jan 2025</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- text -->
+                                    <div class="desc">
+                                        <h3 class="my-text-left">Thank You</h3>
+                                        amet consectetur adipisicing elit. Repudiandae impedit
+                                        recusandae,
+                                        illo, reprehenderit quas qui a rerum aliquam dicta id est iure, quod dolores
+                                        eligendi
+                                        nam explicabo ratione molestiae modi iusto molestias. Deleniti.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+                                <!-- Single Review  -->
+                                <div class="sigle-review">
+                                    <div class="my-d-flex my-gap-2">
+
+                                        <!-- image -->
+                                        <div class="img-wrapper my-mb-2">
+                                            <img src="https://history.media.uconn.edu/wp-content/uploads/sites/36/2020/09/profile-small-size.jpg"
+                                                alt="profile image">
+                                        </div>
+
+                                        <!-- title -->
+                                        <div class="title">
+                                            <h4>Foysal Ahmed</h4>
+                                            <div class="starts">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="my-fs-xs  my-mt-1">11 jan 2025</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- text -->
+                                    <div class="desc">
+                                        <h3 class="my-text-left">Service is well</h3>
+                                        dolor sit amet consectetur adipisicing elit. Repudiandae impedit
+                                        recusandae,
+                                        illo, reprehenderit quas qui a rerum aliquam dicta id est iure, quod dolores
+                                        eligendi
+                                        nam explicabo ratione molestiae modi iusto molestias. Deleniti.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <!-- Single Review  -->
+                                <div class="sigle-review">
+                                    <div class="my-d-flex my-gap-2">
+
+                                        <!-- image -->
+                                        <div class="img-wrapper my-mb-2">
+                                            <img src="./Static/images/profile1.png" alt="profile image">
+                                        </div>
+
+                                        <!-- title -->
+                                        <div class="title">
+                                            <h4>Foysal Ahmed</h4>
+                                            <div class="starts">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="my-fs-xs  my-mt-1">11 jan 2025</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- text -->
+                                    <div class="desc">
+                                        <h3 class="my-text-left">Very Fast Delivary</h3>
+                                        hello dolor sit amet consectetur adipisicing elit. Repudiandae impedit
+                                        recusandae,
+                                        illo, reprehenderit quas qui a rerum aliquam dicta id est iure, quod dolores
+                                        eligendi
+                                        nam explicabo ratione molestiae modi iusto molestias. Deleniti.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <!-- Single Review  -->
+                                <div class="sigle-review">
+                                    <div class="my-d-flex my-gap-2">
+
+                                        <!-- image -->
+                                        <div class="img-wrapper my-mb-2">
+                                            <img src="https://history.media.uconn.edu/wp-content/uploads/sites/36/2020/09/profile-small-size.jpg"
+                                                alt="profile image">
+                                        </div>
+
+                                        <!-- title -->
+                                        <div class="title">
+                                            <h4>Foysal Ahmed</h4>
+                                            <div class="starts">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="my-fs-xs  my-mt-1">13 Feb 2025</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- text -->
+                                    <div class="desc">
+                                        <h3 class="my-text-left">Fast Delivary</h3>
+                                        They are adipisicing elit. Repudiandae impedit
+                                        recusandae,
+                                        illo, reprehenderit quas qui a rerum aliquam dicta id est iure, quod dolores
+                                        eligendi
+                                        nam explicabo ratione molestiae modi iusto molestias. Deleniti.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <!-- Single Review  -->
+                                <div class="sigle-review">
+                                    <div class="my-d-flex my-gap-2">
+
+                                        <!-- image -->
+                                        <div class="img-wrapper my-mb-2">
+                                            <img src="./Static/images/https://history.media.uconn.edu/wp-content/uploads/sites/36/2020/09/profile-small-size.jpg"
+                                                alt="profile image">
+                                        </div>
+
+                                        <!-- title -->
+                                        <div class="title">
+                                            <h4>Tanvir Ahmed</h4>
+                                            <div class="starts">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="my-fs-xs  my-mt-1">11 jan 2025</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- text -->
+                                    <div class="desc">
+                                        <h3 class="my-text-left">Service is well</h3>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit
+                                        recusandae,
+                                        illo, reprehenderit quas qui a rerum aliquam dicta id est iure, quod dolores
+                                        eligendi
+                                        nam explicabo ratione molestiae modi iusto molestias. Deleniti.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
 
 
@@ -3614,12 +3895,15 @@
         </div>
 
         <!-- slider js -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         <!-- js -->
-        <!-- <script type="module" src="./Static/Js/slider.js"></script> -->
+        <script type="module" src="./Static/Js/slider.js"></script>
         <script type="module" src="./Static/Js/app.js"></script>
 
         <script>
+
+
             // Counter animation
             function animateCounter(counter) {
                 const target = +counter.getAttribute("data-target");
