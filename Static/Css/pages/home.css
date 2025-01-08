@@ -70,6 +70,10 @@ header .header-top .left a:hover {
     border-radius: 7px;
 }
 
+.header-mediel .search-form input::placeholder {
+    font-family: var(--font-montserrat) !important;
+}
+
 .header-mediel .search-form .search-icon {
     position: absolute;
     right: 0;
@@ -420,6 +424,7 @@ header .header-top .left a:hover {
 
 .header-bottom .btn-parent .my-btn-sm {
     padding: 12px 18px;
+    border-radius: 8px;
 }
 
 /*******************************
@@ -1252,7 +1257,7 @@ footer .footer-pages .footer-head::after {
 }
 
 
-.footer-pages ontact .icon {
+.footer-pages .contact .icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1266,7 +1271,7 @@ footer .footer-pages .footer-head::after {
 .footer-pages .subcribe {
     background-color: var(--white-off);
     padding: 10px 12px;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .footer-pages .subcribe input {
@@ -1275,7 +1280,7 @@ footer .footer-pages .footer-head::after {
 }
 
 .footer-pages .social li {
-    border: 1px solid var(--gray);
+    /* border: 1px solid var(--gray); */
     width: 52px;
     height: 52px;
     display: flex;
@@ -1285,11 +1290,12 @@ footer .footer-pages .footer-head::after {
 }
 
 .footer-pages .social a {
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     opacity: 1;
-    background-color: var(--white-off) !important;
+    background-color: var(--border-color) !important;
+    border: none;
 
 }
 
@@ -1729,6 +1735,38 @@ footer .footer-pages .footer-head::after {
 
 
 
+/*_________________________*\
+  ||    Blog Section     ||
+\*_________________________*/
+.blog-area .left.my-card {
+    box-shadow: unset;
+    background-color: var(--white-off);
+    padding: 24px;
+}
+
+.blog-area .left img {
+    border-radius: 8px;
+}
+
+.blog-area .blog-footer {
+    border-top: 1px solid var(--border-color2);
+    padding-top: 4px;
+}
+
+
+/*****  Right   *****/
+.blog-area .right .my-card {
+    background-color: var(--white-off);
+
+}
+
+.blog-area .right .my-card img {
+    border-radius: 12px;
+    max-width: 280px;
+}
+
+
+
 
 
 
@@ -2099,6 +2137,17 @@ footer .footer-pages .footer-head::after {
 
     .popular-products-area .product-cart {
         margin: 0 auto;
+    }
+
+
+
+    /*****  blog  *****/
+    .blog-area .right .my-card {
+        flex-direction: column;
+    }
+
+    .blog-area .right .my-card img {
+        max-width: 100%;
     }
 }
 

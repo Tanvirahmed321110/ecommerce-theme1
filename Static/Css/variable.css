@@ -30,7 +30,7 @@
 
     /*______  Font Size  ______ */
     --fs-xs: 12px;
-    --fs-sm: 14px;
+    --fs-sm: 13.5px;
     --fs-md: 15px;
     --fs-lg: 17px;
     --fs-xl: 22px;
@@ -55,8 +55,6 @@
 
 
     --font-montserrat: "Montserrat", system-ui;
-    --font-inter: "Poppins", serif;
-    ;
 
     --gradient-1: linear-gradient(to right, #0b3958, #185a86);
     --gradient-2: linear-gradient(to right, #11354d, #1c577e);
