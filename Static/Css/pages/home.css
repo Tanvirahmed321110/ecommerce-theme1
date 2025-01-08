@@ -779,8 +779,8 @@ swiper-slide.hero img {
     align-items: center;
     justify-content: center;
     gap: 23px;
-    padding: 15px;
-    border-radius: 4px;
+    padding: 14px;
+    border-radius: 12px;
 }
 
 .subcibe-discount-area .left form input {
@@ -790,6 +790,7 @@ swiper-slide.hero img {
 
 .subcibe-discount-area .left form .my-btn {
     width: 140px;
+    padding: 18px 20px;
 }
 
 .subcibe-discount-area .right img {
@@ -1562,7 +1563,7 @@ footer .footer-pages .footer-head::after {
     position: sticky;
     top: 40px;
     left: 0;
-    width: 250px;
+    width: 275px;
 }
 
 .products-area .sticky .my-card {
@@ -1720,7 +1721,7 @@ footer .footer-pages .footer-head::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--border-color) !important;
+    border: 4px solid var(--border-color) !important;
     flex-direction: column;
     /* border: 1px solid var(--border-color2); */
 }
@@ -1870,11 +1871,90 @@ footer .footer-pages .footer-head::after {
 
 
 
+/*******************************
+****   Tabs Products Area   ****
+*******************************/
+.tab-area .tab-buttons {
+    background-color: var(--white-off);
+    padding: 10px 14px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.tab-area .tab-buttons button {
+    padding: 18px 24px;
+    background-color: var(--primary-color);
+    font-size: var(--fs-sm);
+    color: var(--white);
+    font-weight: var(--fw-600);
+}
+
+.tab-area .tab-buttons button.active {
+    background-color: var(--secondary-color);
+}
+
+.tab-area .tab-buttons button:hover {
+    background-color: var(--secondary-color);
+}
 
 
+.tabs-products .my-card .my-btn {
+    margin-top: 12px;
+}
+
+.tabs-products .my-card .rating i {
+    margin-left: -4px;
+    color: var(--primary-color);
+}
+
+.tabs-products .my-card {
+    box-shadow: var(--shadow-2);
+    border-color: var(--border-color);
+}
+
+.tabs-products .my-card p {
+    margin-top: 6px;
+}
+
+.tabs-products .my-grid-3 {
+    display: none;
+}
+
+.tabs-products .my-grid-3.active {
+    display: grid;
+}
 
 
+.tabs-products .product-cart .hide-icons {
+    transition-delay: .1s;
+}
 
+.tabs-products .my-card {
+    transition: .45s linear;
+}
+
+.tabs-products .my-card:hover {
+    transform: translateY(-8px);
+}
+
+.tabs-products .my-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(203, 35, 35, 0.115);
+    width: calc(100% - 3px);
+    height: 0;
+    transition: .55s linear;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+}
+
+.tabs-products .my-card:hover::after {
+    height: calc(100% - 3px);
+    z-index: -1;
+}
 
 
 
@@ -1982,7 +2062,7 @@ footer .footer-pages .footer-head::after {
 
     .header-bottom-area .discount-btn-parent .my-btn {
         width: 100%;
-        padding: 12px 14px;
+        padding: 16px 16px !important;
     }
 
     .header-bottom-top .close-modile-sidebar {
