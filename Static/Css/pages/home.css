@@ -1972,8 +1972,8 @@ footer .footer-pages .footer-head::after {
 
     /* header bottom */
     .header-bottom {
-        position: absolute;
-        top: 0;
+        position: fixed;
+        top: 0px;
         left: -100%;
         z-index: 8;
         background-color: var(--white);
@@ -1999,6 +1999,7 @@ footer .footer-pages .footer-head::after {
 
 
 
+
     /*_______  all department  _______*/
     .header-bottom-area .left {
         width: 100%;
@@ -2018,10 +2019,16 @@ footer .footer-pages .footer-head::after {
     }
 
     .header-bottom-area .all-department.active .dropdown {
-        left: 45px;
-        top: 23px;
+        left: 0px;
+        top: 26px;
+        gap: 0;
+        min-width: 150px;
+        width: 90%;
     }
 
+    .header-bottom-area .all-department.active .dropdown li {
+        padding: 5px 10px;
+    }
 
     .header-bottom-area .right {
         flex-direction: column;
@@ -2070,6 +2077,7 @@ footer .footer-pages .footer-head::after {
     }
 
 
+
     /**************   Hero Section  ****************/
     .hero-section .content h1 {
         gap: 0;
@@ -2087,34 +2095,73 @@ footer .footer-pages .footer-head::after {
 
 
 @media (max-width:991px) {
+    .header-top-mobile {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        z-index: 4;
+        padding: 12px 20px;
+        background-color: var(--white-off);
+        width: 100%;
+    }
+
+    .header-top-mobile .area {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
 
     /*_____  Header Mediel  _____ */
     .header-mediel {
         border-bottom: 1px solid var(--white-off);
+        position: fixed;
+        bottom: 2px;
+        left: 0;
+        z-index: 7;
+        background-color: var(--white);
+        box-shadow: var(--shadow-2);
+        width: 100%;
+        padding: 8px 10px;
+        border-top: 1px solid var(--border-color);
+        border-top-right-radius: 28px;
+        border-top-left-radius: 28px;
+    }
+
+    .header-mediel-area {
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .header-mediel .search {
         position: relative;
         width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+
+    .header-mediel .search-form {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: fixed;
+        top: 42px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 4;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background-color: var(--white);
+        box-shadow: var(--shadow-2);
     }
 
     .header-mediel .search-form input {
         max-width: 600px;
         width: 100%;
         border-radius: 7px;
-    }
-
-    .header-mediel .search-form {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 0 20px;
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 4;
-        padding-top: 10px;
     }
 
     .hero-section {
@@ -2231,6 +2278,12 @@ footer .footer-pages .footer-head::after {
     }
 }
 
+
+@media (max-width:768px) {
+    .hero-section .my-container {
+        padding: 15px 0;
+    }
+}
 
 
 
