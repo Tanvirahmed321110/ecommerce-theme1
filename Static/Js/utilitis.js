@@ -151,43 +151,46 @@ export function deleteF(itemClass, btnsClass) {
 // doropdown
 function dropdwonToggle(wrapperId) {
     const wrapper = document.getElementById(wrapperId)
-    const btns = wrapper.querySelectorAll('.nav-btn')
     // const dropdowns = wrapper.querySelectorAll('.dropdwon')
 
-    btns.forEach((btn, index) => {
-        btn.addEventListener('click', function () {
-            const dropdown = btn.querySelector('.dropdown');
-            const icon = btn.querySelector('span')
+    if (wrapper) {
+        const btns = wrapper.querySelectorAll('.nav-btn')
+
+        btns.forEach((btn, index) => {
+            btn.addEventListener('click', function () {
+                const dropdown = btn.querySelector('.dropdown');
+                const icon = btn.querySelector('span')
 
 
-            // Close all other dropdowns
-            btns.forEach(otherBtn => {
-                const otherDropdown = otherBtn.querySelector('.dropdown')
-                const otherIcon = otherBtn.querySelector('span')
+                // Close all other dropdowns
+                btns.forEach(otherBtn => {
+                    const otherDropdown = otherBtn.querySelector('.dropdown')
+                    const otherIcon = otherBtn.querySelector('span')
 
-                if (otherDropdown != dropdown) {
-                    otherDropdown.classList.remove('active')
-                    otherIcon.classList.remove('active')
+                    if (otherDropdown != dropdown) {
+                        otherDropdown.classList.remove('active')
+                        otherIcon.classList.remove('active')
+                    }
+                })
+                // btns.forEach((otherBtn) => {
+                //     const otherDropdown = otherBtn.querySelector('.dropdown');
+                //     const otherIcon = otherBtn.querySelector('span');
+
+                //     if (otherDropdown && otherDropdown !== dropdown) {
+                //         otherDropdown.classList.remove('active');
+                //         if (otherIcon) otherIcon.classList.remove('active');
+                //     }
+                // });
+
+
+                if (dropdown) {
+                    // Toggle the 'active' class on the dropdown
+                    dropdown.classList.toggle('active');
+                    icon.classList.toggle('active')
                 }
             })
-            // btns.forEach((otherBtn) => {
-            //     const otherDropdown = otherBtn.querySelector('.dropdown');
-            //     const otherIcon = otherBtn.querySelector('span');
-
-            //     if (otherDropdown && otherDropdown !== dropdown) {
-            //         otherDropdown.classList.remove('active');
-            //         if (otherIcon) otherIcon.classList.remove('active');
-            //     }
-            // });
-
-
-            if (dropdown) {
-                // Toggle the 'active' class on the dropdown
-                dropdown.classList.toggle('active');
-                icon.classList.toggle('active')
-            }
         })
-    })
+    }
 }
 
 
