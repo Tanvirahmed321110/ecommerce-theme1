@@ -244,6 +244,26 @@ header .header-top .left a:hover {
 }
 
 
+.header-bottom .my-nav-item .my-dropdown li {
+    color: var(--gray);
+    font-size: var(--fs-sm) !important;
+    font-weight: var(--fw-500);
+}
+
+.header-bottom .my-nav-item .my-dropdown li:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.header-bottom .my-nav-item .my-dropdown li a {
+    width: 100%;
+}
+
+
+
+
+
+
 
 
 
@@ -2095,6 +2115,10 @@ footer .footer-pages .footer-head::after {
 
 
 @media (max-width:991px) {
+    .message-btn {
+        bottom: 90px;
+    }
+
     .header-top-mobile {
         position: fixed;
         top: 0px;
@@ -2122,10 +2146,10 @@ footer .footer-pages .footer-head::after {
         background-color: var(--white);
         box-shadow: var(--shadow-2);
         width: 100%;
-        padding: 8px 10px;
+        padding: 4px 10px;
         border-top: 1px solid var(--border-color);
-        border-top-right-radius: 28px;
-        border-top-left-radius: 28px;
+        /* border-top-right-radius: 24px;
+        border-top-left-radius: 24px; */
     }
 
     .header-mediel-area {

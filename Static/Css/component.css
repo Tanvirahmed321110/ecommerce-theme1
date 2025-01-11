@@ -61,16 +61,40 @@
     max-height: 500px;
     overflow: auto;
     overflow-x: hidden;
+    text-wrap: nowrap;
 }
 
 .my-dropdown li {
     width: 100%;
 }
 
+.mega.my-dropdown-parent {
+    position: unset;
+}
 
+.mega-dropdown.my-dropdown {
+    width: 100%;
+    position: absolute;
+    padding: 40px;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(1fr, 4) !important;
+    z-index: 121 !important;
+    height: 2000px;
+}
 
+.mega-dropdown.my-dropdown ul li {
+    padding: 5px;
+}
 
+.mega-dropdown.my-dropdown img {
+    max-width: 150px;
+    padding: 2px;
+    border: 1px solid var(--white-off);
+}
 
+.mega-dropdown.my-dropdown .cat
 
 /*_____________________________________*\
   ||     Notification Styles Here     ||
