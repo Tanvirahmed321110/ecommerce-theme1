@@ -77,24 +77,29 @@
     position: absolute;
     padding: 40px;
     left: 0;
-    top: 0;
+    top: 30px !important;
     display: grid;
     grid-template-columns: repeat(1fr, 4) !important;
-    z-index: 121 !important;
-    height: 2000px;
+    z-index: 12 !important;
+    border-radius: 25px;
+    background-color: var(--white) !important;
+    border: 1px solid var(--border-color);
 }
 
 .mega-dropdown.my-dropdown ul li {
     padding: 5px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .mega-dropdown.my-dropdown img {
-    max-width: 150px;
+    max-width: 100%;
+    max-height: 200px;
     padding: 2px;
     border: 1px solid var(--white-off);
+    border-radius: 12px;
 }
 
-.mega-dropdown.my-dropdown .cat
+
 
 /*_____________________________________*\
   ||     Notification Styles Here     ||
@@ -341,7 +346,7 @@
 }
 
 .my-input-control input::placeholder {
-    font-weight: var(--fw-500);
+    font-weight: var(--fw-600);
     color: #a39e9e;
     font-size: var(--fs-sm);
 }

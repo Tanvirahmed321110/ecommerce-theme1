@@ -244,6 +244,11 @@ header .header-top .left a:hover {
 }
 
 
+
+.header-bottom .my-nav-item {
+    font-size: var(--fs-sm) !important;
+}
+
 .header-bottom .my-nav-item .my-dropdown li {
     color: var(--gray);
     font-size: var(--fs-sm) !important;
@@ -308,6 +313,15 @@ header .header-top .left a:hover {
     border-radius: 2px;
 }
 
+.header-bottom .my-dropdown li {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 3px;
+}
+
+
+.header-bottom .my-dropdown li:hover a {
+    color: var(--primary-color)
+}
 
 /* dropdown */
 .all-department .dropdown {
@@ -329,8 +343,9 @@ header .header-top .left a:hover {
 }
 
 .all-department .dropdown li a {
-    padding: 3px 0;
-    /* font-size: var(--fs-sm); */
+    padding: 2px 0;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-600);
 }
 
 .all-department li i {
@@ -372,7 +387,7 @@ header .header-top .left a:hover {
 
 .header-bottom .all-department .single-dept p {
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--fs-sm);
 }
 
 .header-bottom .all-department .single-dept::after {
@@ -1666,7 +1681,7 @@ footer .footer-pages .footer-head::after {
 .products-area .sticky .dropdown.active {
     visibility: visible;
     opacity: 1;
-    max-height: 1500px;
+    max-height: 1800px;
 
 
 }
@@ -1807,6 +1822,19 @@ footer .footer-pages .footer-head::after {
     box-shadow: var(--shadow-2);
 }
 
+
+.customer-reviews-area .swiper-slide {
+    background-color: transparent;
+    box-shadow: unset;
+}
+
+.tabs-products {
+    margin-top: 20px;
+}
+
+.tabs-products .my-card {
+    margin: 0 auto;
+}
 
 /* reivew image */
 .customer-reviews .img-wrapper {
@@ -1979,10 +2007,22 @@ footer .footer-pages .footer-head::after {
 
 
 
+
+
+
+
+
+
 /*******************************
 ****  Responsive code 1080px  ****
 *******************************/
 @media (max-width:1080px) {
+    .my-dropdown {
+        left: 0;
+        width: 100%;
+        visibility: hidden;
+        background-color: var(--white);
+    }
 
     /* header top */
     .header-top-mobile {
@@ -2017,6 +2057,23 @@ footer .footer-pages .footer-head::after {
         width: 100%;
     }
 
+    .header-bottom .my-container {
+        height: 100dvh;
+    }
+
+    .header-bottom-area {
+        flex-direction: column;
+        height: 100%;
+        gap: 25px;
+    }
+
+    .header-bottom .my-dropdown li {
+        border: none;
+    }
+
+    .header-bottom .my-dropdown li:hover a {
+        color: var(--secondary-color)
+    }
 
 
 
@@ -2043,7 +2100,7 @@ footer .footer-pages .footer-head::after {
         top: 26px;
         gap: 0;
         min-width: 150px;
-        width: 90%;
+        width: 100%;
     }
 
     .header-bottom-area .all-department.active .dropdown li {
@@ -2053,11 +2110,18 @@ footer .footer-pages .footer-head::after {
     .header-bottom-area .right {
         flex-direction: column;
         align-items: start;
+        gap: 30px;
+    }
+
+    .my-dropdown,
+    .mega-dropdown.my-dropdown {
+        background-color: var(--primary-color) !important;
+        color: var(--white);
     }
 
     .header-bottom-area .right nav {
         width: 100%;
-        max-height: 1200px;
+        max-height: 3900px;
         overflow-y: auto;
     }
 
@@ -2065,13 +2129,13 @@ footer .footer-pages .footer-head::after {
         flex-direction: column;
         align-items: start;
         width: 100%;
-        gap: 2px;
+        gap: 2px
     }
 
     .header-bottom-area .right .nav-ul li {
         width: 100%;
         border-top: 1px solid var(--border-color2);
-        padding: 6px 0;
+        padding: 8px 0;
     }
 
     .header-bottom-area .right .nav-ul li a {
@@ -2148,8 +2212,6 @@ footer .footer-pages .footer-head::after {
         width: 100%;
         padding: 4px 10px;
         border-top: 1px solid var(--border-color);
-        /* border-top-right-radius: 24px;
-        border-top-left-radius: 24px; */
     }
 
     .header-mediel-area {
@@ -2165,6 +2227,20 @@ footer .footer-pages .footer-head::after {
     }
 
 
+    .mega-dropdown.my-dropdown ul li {
+        padding: 5px;
+        border-bottom: 0px solid var(--border-color);
+    }
+
+    .mega-dropdown.my-dropdown img {
+        width: 200px;
+    }
+
+    .mega-dropdown.my-dropdown {
+        height: 4500px;
+        padding-bottom: 500px;
+        overflow: auto;
+    }
 
     .header-mediel .search-form {
         width: 100%;
@@ -2307,6 +2383,10 @@ footer .footer-pages .footer-head::after {
     .hero-section .my-container {
         padding: 15px 0;
     }
+
+    .tab-area .tab-buttons button {
+        width: 250px;
+    }
 }
 
 
@@ -2375,6 +2455,12 @@ footer .footer-pages .footer-head::after {
         background-color: var(--white-off);
         border: 1px solid var(--border-color);
         margin: 0 auto;
+    }
+
+    .subcibe-discount-area .left form {
+        gap: 0px;
+        padding: 10px 5px;
+        border-radius: 12px;
     }
 }
 
