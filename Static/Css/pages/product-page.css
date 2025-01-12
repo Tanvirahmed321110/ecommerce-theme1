@@ -1,9 +1,8 @@
 .product-area-top {
-    height: 700px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    gap: 40px;
+    grid-template-columns: 1.5fr 1.5fr;
+    gap: 60px;
 }
 
 
@@ -21,8 +20,8 @@
 /*****  Product Details  ******/
 .product-area-top .product-details {
     display: grid;
-    grid-template-columns: 1fr 230px;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 24px;
 }
 
 .datils-top {
@@ -45,7 +44,12 @@
 
 
 
-
+.short-desc .my-card {
+    padding: 20px;
+    box-shadow: unset;
+    border-color: var(--border-color2);
+    width: fit-content;
+}
 
 
 .color-size {
@@ -208,16 +212,18 @@
 
 
 /*****  Right Card  *****/
-.product-area-top .right {
-    /* color: var(--secondary-hover); */
+
+.product-page-area .right .my-card {
+    box-shadow: unset;
+    border-color: var(--border-color2);
 }
 
-.product-area-top .right i {
+.product-page-area .right i {
     color: var(--gray-color);
     font-size: var(--fs-sm);
 }
 
-.product-area-top .right .return {
+.product-page-area .right .return {
     border-top: 1px solid var(--border-color);
     padding-top: 12px;
 }
@@ -265,4 +271,56 @@
 
 .small-imgs img.active {
     border-color: var(--primary-hover-color);
+}
+
+
+
+
+
+
+
+
+
+/* tabs-area */
+.tabs-area .tab-buttons {
+    border-bottom: 1px solid var(--border-color2);
+}
+
+.tabs-area .tab-buttons button {
+    padding-bottom: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.tabs-area .tab-buttons button:hover,
+.tabs-area .tab-buttons button.active {
+    color: var(--primary-hover-color);
+    border-bottom: 2px solid var(--primary-hover-color);
+}
+
+
+
+
+
+
+/*****  information *****/
+.tabs-area .information {
+    max-width: 650px;
+}
+
+.tabs-area .information li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-top: 1px solid var(--border-color2);
+    gap: 24px;
+    color: var(--gray);
+}
+
+.tabs-area .information li h5 {
+    color: var(--gray);
+}
+
+.tabs-area .information li:nth-child(odd) {
+    background-color: var(--white-off);
 }

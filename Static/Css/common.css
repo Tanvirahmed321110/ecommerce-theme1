@@ -374,6 +374,7 @@ header .header-top .left a:hover {
 
 .hover:hover .all-department.other-page {
     display: block;
+    z-index: 4;
 }
 
 

@@ -65,7 +65,7 @@ export function updateQuantity(inputField, operation) {
     // Increment or decrement based on the operation
     if (operation === 'increment' && currentValue < 9) {
         inputField.value = currentValue + 1;
-    } else if (operation === 'decrement' && currentValue > 0) {
+    } else if (operation === 'decrement' && currentValue > 1) {
         inputField.value = currentValue - 1;
     }
 }
@@ -141,6 +141,21 @@ export function deleteF(itemClass, btnsClass) {
 
 
 
+
+
+// funciton active
+export function activeF(selector) {
+    const items = document.querySelectorAll(selector)
+
+    items.forEach(item => {
+        item.addEventListener('click', function () {
+            items.forEach(single => {
+                single.classList.remove('active')
+            })
+            item.classList.add('active')
+        })
+    })
+}
 
 
 

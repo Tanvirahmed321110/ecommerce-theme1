@@ -687,6 +687,20 @@
             <!-- ************************************ -->
             <!--         Product Details  Here          -->
             <!-- ************************************ -->
+
+            <section class="brigtcamp">
+                <div class="my-container">
+                    <ul class="my-d-flex my-align-center my-gap-5 brigtcamp-area">
+                        <li><a href="../index.html">Home</a> </li>
+                        <li><a href="../index.html">Chocolate</a></li>
+                        <li>Baby Creame Chocolate</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ************************************ -->
+            <!--         Product Details  Here          -->
+            <!-- ************************************ -->
             <section>
                 <div class="my-container">
                     <div class="product-page-area">
@@ -695,8 +709,8 @@
                             <!--*****   Big Image  *****-->
                             <div class="image">
                                 <div class="big-img-area my-w-100">
-                                    <img class="big-img my-w-100" src="../Static/images/product-single-img-1.jpg"
-                                        alt="product image">
+                                    <img class="big-img my-w-100" id="big-img"
+                                        src="../Static/images/product-single-img-1.jpg" alt="product image">
                                 </div>
                                 <div class="small-img-area my-has-scrollbar">
                                     <div class="small-imgs my-d-flex my-gap-3">
@@ -710,13 +724,15 @@
                                             alt="product image">
                                         <img class="small-img" src="../Static/images/product-single-img-1.jpg"
                                             alt="product image">
+                                        <img class="small-img" src="../Static/images/product-single-img-4.jpg"
+                                            alt="product image">
                                     </div>
                                 </div>
                             </div>
 
 
                             <!--*****   Product Details  *****-->
-                            <div class="product-details ">
+                            <div class="product-details">
                                 <div class="left">
                                     <h2>Baby Creame Chocolate</h2>
                                     <div class="my-d-flex my-gap-6  my-align-center">
@@ -729,7 +745,7 @@
 
                                     <div class="datils-top">
                                         <!-- ****  Raging  ****-->
-                                        <div class="rating my-mt-4 my-align-center my-w-100 my-d-flex my-gap-3">
+                                        <div class="rating my-mt-3 my-align-center my-w-100 my-d-flex my-gap-3">
                                             <a href="#" class="stars">
                                                 <i class="fa-solid fa-star"></i>
                                                 <i class="fa-solid fa-star"></i>
@@ -748,7 +764,7 @@
 
 
                                         <!-- ****  Price  ****-->
-                                        <div class="price my-mt-2 my-d-flex my-align-center my-gap-5">
+                                        <div class="price my-mt-3 my-d-flex my-align-center my-gap-5">
                                             <h3 class="new-price my-fw-bolder">
                                                 <i class="fa-solid fa-bangladeshi-taka-sign "></i>
                                                 <span>599.00</span>
@@ -812,10 +828,10 @@
                                         <div class="my-d-flex my-mt-5 my-align-center my-gap-5">
                                             <!-- quantity buttons -->
                                             <div class="my-d-flex quantity-buttons">
-                                                <input type="button" value="-" class="minus-btn">
+                                                <input type="button" value="-" class="minus-btn" id="minus-btn">
                                                 <input type="number" step="1" min="0" max="10" class="input-field"
-                                                    value="1">
-                                                <input type="button" value="+" class="plus-btn">
+                                                    id="input-quantity" value="1">
+                                                <input type="button" value="+" id="plus-btn" class="plus-btn">
                                             </div>
 
                                             <div class="my-d-flex wish-compare my-align-center my-gap-1">
@@ -887,81 +903,193 @@
                                     </div>
                                 </div>
 
-
-                                <!-- Right Card -->
-                                <div class="right">
-                                    <div class="my-card">
-                                        <div>
-                                            <h5 class="my-d-flex my-gap-2"><span><i
-                                                        class="fa-solid fa-truck-fast"></i></span>Delivary Options
-                                            </h5>
-                                            <ul class="my-mt-2 my-flex-column my-gap-1">
-                                                <li class="my-d-flex my-align-center my-gap-2">
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                    1 to 7 days delivary
-                                                </li>
-                                                <li class="my-d-flex my-align-center my-gap-2">
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                    Online Delivary
-                                                </li>
-                                            </ul>
-
-                                            <!-- Delivary Charge -->
-                                            <div class="my-mt-4">
-                                                <h5>
-                                                    Delivary Charge :
+                                <!-- Short Desc -->
+                                <div class="left-bottom  my-mt-4">
+                                    <div class="short-desc">
+                                        <div class="my-d-flex my-card  my-gap-10 my-d-flex my-align-start">
+                                            <div class="item">
+                                                <h5 class="my-d-flex my-gap-2"><span><i
+                                                            class="fa-solid fa-truck-fast"></i></span>Delivary
+                                                    Options
                                                 </h5>
-                                                <div class="my-pl-2 my-mt-2">
-                                                    <div class="my-d-flex my-align-center my-gap-1 my-mt-1">
+                                                <ul class="my-mt-3 my-flex-column my-gap-3  desc">
+                                                    <li class="my-d-flex my-align-center my-gap-1">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                        1 to 7 days delivary
+                                                    </li>
+                                                    <li class="my-d-flex my-align-center my-gap-1">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                        Online Delivary
+                                                    </li>
+                                                    <li class="my-d-flex my-align-center my-gap-1">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                        Cash on delivary
+                                                    </li>
+                                                    <li class="my-d-flex my-align-center my-gap-1 ">
                                                         <i class="fa-solid fa-circle-check"></i>
                                                         within dhaka <span>60 Taka</span>
-                                                    </div>
-                                                    <div class="my-d-flex my-align-center  my-gap-1 my-mt-1 ">
+                                                    </li>
+                                                    <li class="my-d-flex my-align-center  my-gap-1 ">
                                                         <i class="fa-solid fa-circle-check"></i>
                                                         outside dhaka <span>100 Taka</span>
-                                                    </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Return And Warrenty -->
+                                            <div class=" return my-flex-column my-gap-2">
+                                                <div>
+                                                    <h5>
+                                                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                                                        Return Warrenty
+                                                    </h5>
                                                 </div>
+                                                <ul class="my-flex-column my-gap-1 desc">
+                                                    <li class="my-d-flex my-align-center my-gap-1 my-mt-1">
+                                                        <span class="icon">
+                                                            <i class="fa-solid fa-circle-check"></i>
+                                                        </span>
+                                                        <p>Condition New</p>
+                                                    </li>
+                                                    <li class="my-d-flex my-align-center my-gap-1">
+                                                        <span class="icon">
+                                                            <i class="fa-solid fa-circle-check"></i>
+                                                        </span>
+                                                        <p>7 Days Return</p>
+                                                    </li>
+                                                    <li class="my-d-flex my-align-center my-gap-1">
+                                                        <span class="icon">
+                                                            <i class="fa-solid fa-circle-xmark"></i>
+                                                        </span>
+                                                        <p>Warrenty Not Available</p>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div>
-
-
-                                        <!-- Return And Warrenty -->
-                                        <div class="my-mt-4 return my-flex-column my-gap-1">
-                                            <div>
-                                                <h5>
-                                                    <i class="fa-solid fa-arrow-rotate-left"></i>
-                                                    Return Warrenty
-                                                </h5>
-                                            </div>
-                                            <ul>
-                                                <li class="my-d-flex my-align-center my-gap-2 my-mt-1">
-                                                    <span class="icon">
-                                                        <i class="fa-solid fa-circle-check"></i>
-                                                    </span>
-                                                    <p>Condition New</p>
-                                                </li>
-                                                <li class="my-d-flex my-align-center my-gap-2">
-                                                    <span class="icon">
-                                                        <i class="fa-solid fa-circle-check"></i>
-                                                    </span>
-                                                    <p>7 Days Return</p>
-                                                </li>
-                                                <li class="my-d-flex my-align-center my-gap-2">
-                                                    <span class="icon">
-                                                        <i class="fa-solid fa-circle-xmark"></i>
-                                                    </span>
-                                                    <p>Warrenty Not Available</p>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
+
+
+
+
+
+
+
+
+            <section class="tabs-area">
+                <div class="my-container">
+                    <div class="tab-head">
+                        <div class="tab-buttons my-d-flex my-align-start my-gap-8 ">
+                            <button class="my-fw-bold active">Product Details</button>
+                            <button class="my-fw-bold">Information</button>
+                            <button class="my-fw-bold">Review & Rating</button>
+                            <button class="my-fw-bold">Other</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents my-mt-4">
+                        <div class="product-details my-flex-column my-gap-6 my-w-50">
+                            <div>
+                                <h4>What is Chocolate?</h4>
+                                <p class="my-mt-2 my-w-75">
+                                    Olympic Knock Chocolate Coated Wafer Biscuit (Milk Cream) is a delectable snack that
+                                    is
+                                    perfect for satisfying your
+                                    sweet cravings. It is manufactured by Olympic ensuring that it is of the highest
+                                    quality. The chocolate coating and milk
+                                    cream filling create a perfect blend
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4>Why Choose it?</h4>
+                                <p class="my-mt-2">
+                                    NESTLÉ KITKAT Chocolate Bar is the ideal snack for those who really value their
+                                    break. Just unwrap the bar break off one
+                                    of the 4 fingers, snap it into two, and savor the deliciously smooth milk chocolate.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4>Seller</h4>
+                                <p class="my-mt-2 ">
+                                    DMart Pvt. LTD
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4>Disclaimer</h4>
+                                <p class=" my-mt-2">
+                                    Disclaimer
+                                    Image shown is a representation and may slightly vary from the actual product. Every
+                                    effort is made to maintain accuracy
+                                    of all information displayed.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="information">
+                            <h4>Details</h4>
+                            <ul class="my-flex-column my-gap-0 my-mt-4">
+                                <li>
+                                    <h5>Weight</h5>
+                                    <p>200 gm</p>
+                                </li>
+                                <li>
+                                    <h5>Flavor</h5>
+                                    <p>Dark Chocolate</p>
+                                </li>
+                                <li>
+                                    <h5>Ingredients</h5>
+                                    <p>Cocoa, Sugar, Milk Solids, Cocoa Butter, Emulsifier (Soy Lecithin)</p>
+                                </li>
+                                <li>
+                                    <h5>Packaging</h5>
+                                    <p>Eco-friendly Wrapper</p>
+                                </li>
+                                <li>
+                                    <h5>Brand</h5>
+                                    <p>Choco Bliss</p>
+                                </li>
+                                <li>
+                                    <h5>Country of Origin</h5>
+                                    <p>Belgium</p>
+                                </li>
+                                <li>
+                                    <h5>Allergen Information</h5>
+                                    <p>Contains Milk and Soy</p>
+                                </li>
+                                <li>
+                                    <h5>Shelf Life</h5>
+                                    <p>12 Months</p>
+                                </li>
+                                <li>
+                                    <h5>Storage Instructions</h5>
+                                    <p>Store in a cool and dry place, away from sunlight</p>
+                                </li>
+                                <li>
+                                    <h5>Calories</h5>
+                                    <p>120 kcal per serving (25g)</p>
+                                </li>
+                                <li>
+                                    <h5>Special Features</h5>
+                                    <p>70% Cocoa, Vegan-friendly</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
         </main>
 
 
@@ -2319,6 +2447,51 @@
 
         <script type="module" src="../Static/Js/utilitis.js"></script>
         <script type="module" src="../Static/Js/app.js"></script>
+
+        <script type="module">
+            // Base function for updating quantity
+            import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF } from '../Static/Js/utilitis.js';
+
+            function updateQty() {
+                const inputQuantity = document.getElementById('input-quantity')
+
+                document.getElementById('plus-btn').addEventListener('click', function () {
+                    updateQuantity(inputQuantity, 'increment')
+                    console.log('click')
+                })
+                document.getElementById('minus-btn').addEventListener('click', function () {
+                    updateQuantity(inputQuantity, 'decrement')
+                })
+            }
+            updateQty()
+
+
+
+            // image change
+            function bigImageChangeF() {
+                const bigImage = document.getElementById('big-img')
+                const smallImgs = document.querySelectorAll('.small-imgs img')
+
+                activeF('.small-imgs img')
+
+                smallImgs.forEach(img => {
+                    img.addEventListener('click', function () {
+                        bigImage.src = this.src
+                    })
+                })
+
+
+            }
+            bigImageChangeF()
+
+
+            // color and size
+            activeF('.colors li')
+            activeF('.size li')
+
+            // tab buttons
+            activeF('.tab-buttons button')
+        </script>
     </body>
 
 </html>

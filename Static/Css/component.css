@@ -1127,3 +1127,44 @@ input[type="radio"]:checked::after {
     visibility: visible;
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* brigtcamp-area */
+.brigtcamp-area {
+    background-color: var(--white-off);
+    padding: 16px;
+}
+
+.brigtcamp-area li {
+    font-weight: var(--fw-500);
+    position: relative;
+}
+
+.brigtcamp-area li::after {
+    content: '/';
+    position: absolute;
+    right: -13px;
+    top: 0px;
+}
+
+.brigtcamp-area li:last-child {
+    font-weight: var(--fw-600);
+}
+
+.brigtcamp-area li:last-child::after {
+    content: unset;
+}
+
+.brigtcamp-area li a:hover {
+    color: var(--primary-color);
+}
