@@ -204,8 +204,23 @@
     padding: 0 6px;
 }
 
-.product-area-top .right {}
 
+
+
+/*****  Right Card  *****/
+.product-area-top .right {
+    /* color: var(--secondary-hover); */
+}
+
+.product-area-top .right i {
+    color: var(--gray-color);
+    font-size: var(--fs-sm);
+}
+
+.product-area-top .right .return {
+    border-top: 1px solid var(--border-color);
+    padding-top: 12px;
+}
 
 
 
