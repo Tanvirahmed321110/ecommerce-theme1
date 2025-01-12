@@ -113,3 +113,39 @@ if (loginBtn) {
 openSearchDropdown()
 //delete single history
 deleteF('.history .single-history', '.history .close-history')
+
+
+
+
+
+
+// accordion
+function accordion() {
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const accordionItem = header.parentElement;
+            const content = accordionItem.querySelector('.accordion-content');
+            const isActive = header.classList.contains('active');
+
+            // Close all other items
+            document.querySelectorAll('.accordion-header').forEach(h => {
+                h.classList.remove('active');
+                h.nextElementSibling.style.height = '0';
+                h.nextElementSibling.style.opacity = '0';
+            });
+
+            // Toggle the current item
+            if (!isActive) {
+                header.classList.add('active');
+                content.style.height = '100px'; // Use scrollHeight to smoothly expand
+                content.style.opacity = '1';
+            } else {
+                header.classList.remove('active');
+                content.style.height = '0'; // Collapse the section
+                content.style.opacity = '0';
+            }
+        });
+    });
+}
+
+accordion()

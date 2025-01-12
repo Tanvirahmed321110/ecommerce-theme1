@@ -975,6 +975,96 @@ swiper-slide.hero img {
 
 
 
+/*******************************
+****   Accordion  Start Here  ****
+*******************************/
+.accordion {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-header {
+    padding: 15px;
+    background-color: var(--white);
+    cursor: pointer;
+    font-weight: var(--fw-600);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: var(--border-color);
+}
+
+.accordion-header.active {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.accordion-content {
+    padding: 0 15px;
+    background-color: var(--white);
+    height: 0;
+    /* Start with collapsed height */
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.accordion-content p {
+    font-size: var(--fs-md);
+    color: var(--gray);
+}
+
+
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-header.active+.accordion-content {
+    height: auto;
+    opacity: 1;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 
 
