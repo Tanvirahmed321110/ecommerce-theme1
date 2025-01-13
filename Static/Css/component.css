@@ -59,8 +59,7 @@
     box-shadow: var(--shadow-2);
     border: 1px solid var(--white-off);
     max-height: 500px;
-    overflow: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     text-wrap: nowrap;
 }
 
