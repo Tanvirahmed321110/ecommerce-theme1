@@ -86,8 +86,6 @@ setupDeleteButtons();
 
 
 
-
-
 // Login modal and register
 const loginBtn = document.getElementById('login-btn');
 if (loginBtn) {

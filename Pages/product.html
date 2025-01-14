@@ -984,103 +984,578 @@
             <section class="tabs-area">
                 <div class="my-container">
                     <div class="tab-head">
-                        <div class="tab-buttons my-d-flex my-align-start my-gap-8 ">
-                            <button class="my-fw-bold active">Product Details</button>
-                            <button class="my-fw-bold">Information</button>
-                            <button class="my-fw-bold">Review & Rating</button>
-                            <button class="my-fw-bold">Other</button>
+                        <div class="tab-buttons  my-d-flex my-align-start my-gap-8 ">
+                            <button class="my-fw-bold active" data-tab="tab1">Product Details</button>
+                            <button class="my-fw-bold" data-tab="tab2">Information</button>
+                            <button class="my-fw-bold" data-tab="tab3">Review & Rating</button>
+                            <button class="my-fw-bold" data-tab="tab4">Other</button>
                         </div>
                     </div>
 
-                    <div class="tab-contents my-mt-4">
-                        <div class="product-details my-flex-column my-gap-6 my-w-50">
-                            <div>
-                                <h4>What is Chocolate?</h4>
-                                <p class="my-mt-2 my-w-75">
-                                    Olympic Knock Chocolate Coated Wafer Biscuit (Milk Cream) is a delectable snack that
-                                    is
-                                    perfect for satisfying your
-                                    sweet cravings. It is manufactured by Olympic ensuring that it is of the highest
-                                    quality. The chocolate coating and milk
-                                    cream filling create a perfect blend
-                                </p>
-                            </div>
+                    <div class="tab-contents  my-mt-4">
 
-                            <div>
-                                <h4>Why Choose it?</h4>
-                                <p class="my-mt-2">
-                                    NESTLÉ KITKAT Chocolate Bar is the ideal snack for those who really value their
-                                    break. Just unwrap the bar break off one
-                                    of the 4 fingers, snap it into two, and savor the deliciously smooth milk chocolate.
-                                </p>
-                            </div>
+                        <!--*****  For Product Details  *****-->
+                        <div class="tab-content  active" id="tab1">
+                            <div class="product-details my-flex-column my-gap-6 my-w-50 ">
+                                <div>
+                                    <h4>What is Chocolate?</h4>
+                                    <p class="my-mt-2 my-w-75">
+                                        Olympic Knock Chocolate Coated Wafer Biscuit (Milk Cream) is a delectable snack
+                                        that
+                                        is
+                                        perfect for satisfying your
+                                        sweet cravings. It is manufactured by Olympic ensuring that it is of the highest
+                                        quality. The chocolate coating and milk
+                                        cream filling create a perfect blend
+                                    </p>
+                                </div>
 
-                            <div>
-                                <h4>Seller</h4>
-                                <p class="my-mt-2 ">
-                                    DMart Pvt. LTD
-                                </p>
-                            </div>
+                                <div>
+                                    <h4>Why Choose it?</h4>
+                                    <p class="my-mt-2">
+                                        NESTLÉ KITKAT Chocolate Bar is the ideal snack for those who really value their
+                                        break. Just unwrap the bar break off one
+                                        of the 4 fingers, snap it into two, and savor the deliciously smooth milk
+                                        chocolate.
+                                    </p>
+                                </div>
 
-                            <div>
-                                <h4>Disclaimer</h4>
-                                <p class=" my-mt-2">
-                                    Disclaimer
-                                    Image shown is a representation and may slightly vary from the actual product. Every
-                                    effort is made to maintain accuracy
-                                    of all information displayed.
-                                </p>
+                                <div>
+                                    <h4>Seller</h4>
+                                    <p class="my-mt-2 ">
+                                        DMart Pvt. LTD
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4>Disclaimer</h4>
+                                    <p class=" my-mt-2">
+                                        Disclaimer
+                                        Image shown is a representation and may slightly vary from the actual product.
+                                        Every
+                                        effort is made to maintain accuracy
+                                        of all information displayed.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="information">
-                            <h4>Details</h4>
-                            <ul class="my-flex-column my-gap-0 my-mt-4">
-                                <li>
-                                    <h5>Weight</h5>
-                                    <p>200 gm</p>
-                                </li>
-                                <li>
-                                    <h5>Flavor</h5>
-                                    <p>Dark Chocolate</p>
-                                </li>
-                                <li>
-                                    <h5>Ingredients</h5>
-                                    <p>Cocoa, Sugar, Milk Solids, Cocoa Butter, Emulsifier (Soy Lecithin)</p>
-                                </li>
-                                <li>
-                                    <h5>Packaging</h5>
-                                    <p>Eco-friendly Wrapper</p>
-                                </li>
-                                <li>
-                                    <h5>Brand</h5>
-                                    <p>Choco Bliss</p>
-                                </li>
-                                <li>
-                                    <h5>Country of Origin</h5>
-                                    <p>Belgium</p>
-                                </li>
-                                <li>
-                                    <h5>Allergen Information</h5>
-                                    <p>Contains Milk and Soy</p>
-                                </li>
-                                <li>
-                                    <h5>Shelf Life</h5>
-                                    <p>12 Months</p>
-                                </li>
-                                <li>
-                                    <h5>Storage Instructions</h5>
-                                    <p>Store in a cool and dry place, away from sunlight</p>
-                                </li>
-                                <li>
-                                    <h5>Calories</h5>
-                                    <p>120 kcal per serving (25g)</p>
-                                </li>
-                                <li>
-                                    <h5>Special Features</h5>
-                                    <p>70% Cocoa, Vegan-friendly</p>
-                                </li>
-                            </ul>
+
+
+
+                        <!--*****  For Product information  *****-->
+                        <div class="tab-content" id="tab2">
+                            <div class="information">
+                                <h4>Details</h4>
+                                <ul class="my-flex-column my-gap-0 ">
+                                    <li>
+                                        <h5>Weight</h5>
+                                        <p>200 gm</p>
+                                    </li>
+                                    <li>
+                                        <h5>Flavor</h5>
+                                        <p>Dark Chocolate</p>
+                                    </li>
+                                    <li>
+                                        <h5>Ingredients</h5>
+                                        <p>Cocoa, Sugar, Milk Solids, Cocoa Butter, Emulsifier (Soy Lecithin)</p>
+                                    </li>
+                                    <li>
+                                        <h5>Packaging</h5>
+                                        <p>Eco-friendly Wrapper</p>
+                                    </li>
+                                    <li>
+                                        <h5>Brand</h5>
+                                        <p>Choco Bliss</p>
+                                    </li>
+                                    <li>
+                                        <h5>Country of Origin</h5>
+                                        <p>Belgium</p>
+                                    </li>
+                                    <li>
+                                        <h5>Allergen Information</h5>
+                                        <p>Contains Milk and Soy</p>
+                                    </li>
+                                    <li>
+                                        <h5>Shelf Life</h5>
+                                        <p>12 Months</p>
+                                    </li>
+                                    <li>
+                                        <h5>Storage Instructions</h5>
+                                        <p>Store in a cool and dry place, away from sunlight</p>
+                                    </li>
+                                    <li>
+                                        <h5>Calories</h5>
+                                        <p>120 kcal per serving (25g)</p>
+                                    </li>
+                                    <li>
+                                        <h5>Special Features</h5>
+                                        <p>70% Cocoa, Vegan-friendly</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+                        <!--*****  For Product Rating and Review  *****-->
+                        <div class="tab-content" id="tab3">
+                            <div class="rating-review">
+
+                                <!-- No Review -->
+                                <div class="empty-review  ">
+                                    <div class="my-card">
+                                        <div class="head my-border-bottom my-pb-4  my-flex-between my-align-center">
+                                            <div>
+                                                <h4>Reviews (0)</h4>
+                                                <p class="my-mt-1">Get specific details about this product from
+                                                    customers
+                                                    who
+                                                    own it.</p>
+                                            </div>
+
+
+                                            <div>
+                                                <button class="my-btn my-btn-outline" id="review-open-btn">
+                                                    <span class="my-fw-bold">Write a
+                                                        Review</span>
+                                                </button>
+
+                                                <!--*****  Review Modal  *****-->
+                                                <div class="my-modal" id="review-modal">
+                                                    <div class="modal-content my-p-5">
+
+                                                        <!-- close btn -->
+                                                        <button class="modal-close-btn my-primary-btn my-btn close-btn">
+                                                            <span><i class="fa-solid fa-xmark"></i></span>
+                                                        </button>
+
+                                                        <div>
+                                                            <!--_________ form  _________-->
+                                                            <div class="sign-in">
+                                                                <h3 class="my-mt-2">Submit Your Review</h3>
+
+                                                                <form action="#"
+                                                                    class="my-mt-8 my-flex-column my-gap-5">
+
+                                                                    <div class="rating-add my-mb-2">
+                                                                        <h5>Add Your Rating</h5>
+                                                                        <div class="rating-stars my-mt-1">
+                                                                            <i class="fas fa-star" data-value="1"></i>
+                                                                            <i class="fas fa-star" data-value="2"></i>
+                                                                            <i class="fas fa-star" data-value="3"></i>
+                                                                            <i class="fas fa-star" data-value="4"></i>
+                                                                            <i class="fas fa-star" data-value="5"></i>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="my-input-control">
+                                                                        <input type="text" id="name" required>
+                                                                        <label class="label" for="name">Name</label>
+                                                                    </div>
+
+                                                                    <div class="my-input-control">
+                                                                        <input type="email" id="email" required>
+                                                                        <label class="label" for="email">Email</label>
+                                                                    </div>
+
+                                                                    <div class="my-input-control">
+                                                                        <input type="email" id="headline" required>
+                                                                        <label class="label"
+                                                                            for="headline">Headline</label>
+                                                                    </div>
+
+                                                                    <div class="my-input-control">
+                                                                        <textarea name="desc" id="desc"></textarea>
+                                                                        <label class="label"
+                                                                            for="desc">Description</label>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <button
+                                                                            class="my-btn login-register-btn my-primary-btn my-w-100 ">
+                                                                            <span>Submit</span>
+                                                                        </button>
+                                                                    </div>
+
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- body -->
+                                        <div class="body my-flex-center">
+                                            <div class="my-text-center">
+                                                <div class="icon my-flex-center my-text-center">
+                                                    <i class="fa-regular my-fw-bolder my-fs-xl fa-circle"></i>
+                                                </div>
+
+                                                <p>
+                                                    This product has no reviews yet. Be the first one to write a review
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--*****  Has Review  *****-->
+                                <div class="has-review my-mt-6">
+                                    <div class="review-grap-area">
+                                        <div class="top my-border my-p-4 my-radius-md">
+                                            <div>
+                                                <h4>Customer reviews</h4>
+
+                                                <div class="my-mt-3 my-flex-between">
+                                                    <div class="rating my-text-orange">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class=" fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="my-d-flex my-align-center my-gap-2">
+                                                        <p>4.5 out of 5</p>
+                                                        <span>(20)</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- grap -->
+                                            <div class="graps  my-flex-column my-gap-1  my-mt-4">
+
+                                                <!-- item 5 -->
+                                                <div class="item">
+                                                    <div class="my-flex-between my-gap-1">
+                                                        <span class="my-fw-bold rate my-fs-md">5</span>
+                                                        <div class="line">
+                                                            <div class="line-fill"></div>
+                                                        </div>
+                                                        <div class="persent my-fw-bold my-text-right">66%</div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 5 -->
+                                                <div class="item">
+                                                    <div class="my-flex-between my-gap-1">
+                                                        <span class="my-fw-bold rate my-fs-md">4</span>
+                                                        <div class="line">
+                                                            <div class="line-fill"></div>
+                                                        </div>
+                                                        <div class="persent my-fw-bold my-text-right">14%</div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 5 -->
+                                                <div class="item">
+                                                    <div class="my-flex-between my-gap-1">
+                                                        <span class="my-fw-bold rate my-fs-md">3</span>
+                                                        <div class="line">
+                                                            <div class="line-fill"></div>
+                                                        </div>
+                                                        <div class="persent my-fw-bold my-text-right">10%</div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 5 -->
+                                                <div class="item">
+                                                    <div class="my-flex-between my-gap-1">
+                                                        <span class="my-fw-bold rate my-fs-md">2</span>
+                                                        <div class="line">
+                                                            <div class="line-fill"></div>
+                                                        </div>
+                                                        <div class="persent my-fw-bold my-text-right">0%</div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 1 -->
+                                                <div class="item">
+                                                    <div class="my-flex-between my-gap-1">
+                                                        <span class="my-fw-bold rate my-fs-md">1</span>
+                                                        <div class="line">
+                                                            <div class="line-fill"></div>
+                                                        </div>
+                                                        <div class="persent my-fw-bold my-text-right">10%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <!--*****  User Review   *****-->
+                                    <div class="user-reviews my-border my-p-5 my-radius-md">
+                                        <div class="user-review">
+                                            <div class="header  my-flex-between  my-align-center">
+                                                <h3>Reviews</h3>
+                                                <div class="filter-dropdown">
+                                                    <select id="filter" class="filter-select">
+                                                        <option value="low-to-high">Price: Low to High</option>
+                                                        <option value="high-to-low">Price: High to Low</option>
+                                                        <option value="1-star">1 Star</option>
+                                                        <option value="2-star">2 Stars</option>
+                                                        <option value="3-star">3 Stars</option>
+                                                        <option value="4-star">4 Stars</option>
+                                                        <option value="5-star">5 Stars</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <!--*****  Customer Rewives  *****-->
+                                            <div class="customers my-mt-6">
+
+                                                <!-- Single Review -->
+                                                <div class="customer my-border-bottom my-pb-4 ">
+                                                    <div class="my-d-flex  my-gap-6">
+                                                        <div class="img ">
+                                                            <img class="profile" src="../Static/images/customer1.jpg"
+                                                                alt="customer review img">
+                                                        </div>
+
+                                                        <div class="right">
+                                                            <div class="name-date my-flex-between my-align-start">
+                                                                <div>
+                                                                    <h6>Md Tanvir Ahmed</h6>
+                                                                    <div class="stars my-mt-0 my-text-orange">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="my-fs-xs my-text-right my-text-primary">29 Feb
+                                                                    2024
+                                                                </p>
+
+                                                            </div>
+
+                                                            <!-- Body -->
+                                                            <div class="body">
+                                                                <h5 class="my-mt-4">Need to recheck the weight
+                                                                </h5>
+                                                                <p class="my-mt-2">
+                                                                    Product quality is good. But, weight seemed less
+                                                                    than
+                                                                    1kg.
+                                                                    Since it is being sent in open package, there is a
+                                                                    possibility of pilferage in between. FreshCart sends
+                                                                    the
+                                                                    veggies and fruits through sealed plastic covers and
+                                                                    Barcode
+                                                                    on
+                                                                    the weight
+                                                                </p>
+
+                                                                <div class="imgs my-mt-2 my-d-flex my-gap-2">
+                                                                    <img src="../Static/images/product1.jpg" alt="">
+                                                                    <img src="../Static/images/product1.jpg" alt="">
+                                                                    <img src="../Static/images/product1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Like Button -->
+                                                            <div class="review-footer   my-mt-3">
+                                                                <button>
+                                                                    <span class="my-fs-md">12</span> <i
+                                                                        class="fa-regular fa-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--*****  Reply  ***** -->
+                                                    <div class="reply-review my-my-2 my-w-100 my-d-flex my-gap-6">
+                                                        <div class="img ">
+                                                            <img class="profile" src="../Static/images/customer3.jpg"
+                                                                alt="customer review img">
+                                                        </div>
+
+
+                                                        <div class=" my-w-100">
+                                                            <div class="my-flex-between my-w-100">
+                                                                <h6 class="my-text-primary">Seller Response</h6>
+                                                                <p class="my-fs-xs my-text-primary">29 Feb 2024</p>
+                                                            </div>
+
+                                                            <div class="body">
+                                                                Thanks a lot borhter.
+                                                            </div>
+
+                                                            <!-- Like Button -->
+                                                            <div class="review-footer   my-mt-1">
+                                                                <button>
+                                                                    <span class="my-fs-md">0</span> <i
+                                                                        class="fa-regular fa-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Review -->
+                                                <div class="customer my-border-bottom my-pb-4 ">
+                                                    <div class="my-d-flex  my-gap-6">
+                                                        <div class="img ">
+                                                            <img class="profile" src="../Static/images/customer2.jpg"
+                                                                alt="customer review img">
+                                                        </div>
+
+                                                        <div class="right">
+                                                            <div class="name-date my-flex-between my-align-start">
+                                                                <div>
+                                                                    <h6>Md Tanvir Ahmed</h6>
+                                                                    <div class="stars my-mt-0 my-text-orange">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="my-fs-xs my-text-right my-text-primary">29 Feb
+                                                                    2024
+                                                                </p>
+
+                                                            </div>
+
+                                                            <!-- Body -->
+                                                            <div class="body">
+                                                                <h5 class="my-mt-4">Need to recheck the weight
+                                                                </h5>
+                                                                <p class="my-mt-2">
+                                                                    Product quality is good. But, weight seemed less
+                                                                    than
+                                                                    1kg.
+                                                                    Since it is being sent in open package, there is a
+                                                                    possibility of pilferage in between. FreshCart sends
+                                                                    the
+                                                                    veggies and fruits through sealed plastic covers and
+                                                                    Barcode
+                                                                    on
+                                                                    the weight
+                                                                </p>
+
+                                                                <div class="imgs my-mt-2 my-d-flex my-gap-2">
+                                                                    <img src="../Static/images/product1.jpg" alt="">
+                                                                    <img src="../Static/images/product3.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Like Button -->
+                                                            <div class="review-footer   my-mt-3">
+                                                                <button>
+                                                                    <span class="my-fs-md">0</span> <i
+                                                                        class="fa-regular fa-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Review -->
+                                                <div class="customer my-border-bottom my-pb-4 ">
+                                                    <div class="my-d-flex  my-gap-6">
+                                                        <div class="img ">
+                                                            <img class="profile" src="../Static/images/customer1.jpg"
+                                                                alt="customer review img">
+                                                        </div>
+
+                                                        <div class="right">
+                                                            <div class="name-date my-flex-between my-align-start">
+                                                                <div>
+                                                                    <h6>Md Tanvir Ahmed</h6>
+                                                                    <div class="stars my-mt-0 my-text-orange">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="my-fs-xs my-text-right my-text-primary">29 Feb
+                                                                    2024
+                                                                </p>
+
+                                                            </div>
+
+                                                            <!-- Body -->
+                                                            <div class="body">
+                                                                <h5 class="my-mt-4">Need to recheck the weight
+                                                                </h5>
+                                                                <p class="my-mt-2">
+                                                                    Product quality is good. But, weight seemed less
+                                                                    than
+                                                                    1kg.
+                                                                    Since it is being sent in open package, there is a
+                                                                    possibility of pilferage in between. FreshCart sends
+                                                                    the
+                                                                    veggies and fruits through sealed plastic covers and
+                                                                    Barcode
+                                                                    on
+                                                                    the weight
+                                                                </p>
+
+                                                                <div class="imgs my-mt-2 my-d-flex my-gap-2">
+                                                                    <img src="../Static/images/product2.jpg" alt="">
+                                                                    <img src="../Static/images/product3.jpg" alt="">
+                                                                    <img src="../Static/images/product1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Like Button -->
+                                                            <div class="review-footer   my-mt-3">
+                                                                <button>
+                                                                    <span class="my-fs-md">0</span> <i
+                                                                        class="fa-regular fa-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--*****  Reply  ***** -->
+                                                    <div class="reply-review my-my-2 my-w-100 my-d-flex my-gap-6">
+                                                        <div class="img ">
+                                                            <img class="profile" src="../Static/images/customer3.jpg"
+                                                                alt="customer review img">
+                                                        </div>
+
+
+                                                        <div class=" my-w-100">
+                                                            <div class="my-flex-between my-w-100">
+                                                                <h6 class="my-text-primary">Seller Response</h6>
+                                                                <p class="my-fs-xs my-text-primary">29 Feb 2024</p>
+                                                            </div>
+
+                                                            <div class="body">
+                                                                Thanks a lot borhter.
+                                                            </div>
+
+                                                            <!-- Like Button -->
+                                                            <div class="review-footer  my-text-right my-mt-1">
+                                                                <button>
+                                                                    <span class="my-fs-md">0</span> <i
+                                                                        class="fa-regular fa-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="tab4">
+
                         </div>
                     </div>
                 </div>
@@ -1100,7 +1575,7 @@
         <!--        Footer Start  Here           -->
         <!-- ************************************ -->
 
-        <footer class="section-margin">
+        <footer class=" section-margin">
             <div class="footer-area">
 
                 <!--_________  Footer Top  ________-->
@@ -1114,15 +1589,18 @@
                                     <span class="my-text-primary my-fs-xl"><i
                                             class="fa-solid fa-location-dot"></i></span>
                                     <div>
-                                        <h3 class="my-fw-bolder">Areas we deliver to</h3>
+                                        <h3 class="my-fw-bolder">
+                                            Areas we deliver to</h3>
                                         <p class="my-mt-1">
-                                            we are product delivary to 60+ zilla
+                                            we are product delivary
+                                            to 60+ zilla
                                         </p>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <button class="my-btn my-btn my-primary-btn"><span>View ALL</span></button>
+                                    <button class="my-btn my-btn my-primary-btn"><span>View
+                                            ALL</span></button>
                                 </div>
                             </div>
 
@@ -1370,92 +1848,134 @@
                     <div class="footer-mediel-area">
                         <!-- Brand -->
                         <div class="brand my-flex-column my-gap-6">
-                            <h3 class="my-uppercase footer-head">Brand Derectiory</h3>
+                            <h3 class="my-uppercase footer-head">
+                                Brand Derectiory</h3>
 
                             <!-- single brand item -->
                             <div class="my-flex-column my-align-start my-gap-1 ">
-                                <h4 class="footer-head">Fashion:</h4>
+                                <h4 class="footer-head">Fashion:
+                                </h4>
                                 <ul class="my-d-flex my-align-center my-gap-6 brand-item flex-wrap">
                                     <li><a class="footer-nav" href="#">Jeans</a></li>
                                     <li><a class="footer-nav" href="#">Jacket</a></li>
                                     <li><a class="footer-nav" href="#">Shoes</a></li>
-                                    <li><a class="footer-nav" href="#">Sweater</a></li>
+                                    <li><a class="footer-nav" href="#">Sweater</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Hat</a></li>
-                                    <li><a class="footer-nav" href="#">Sunglasses</a></li>
+                                    <li><a class="footer-nav" href="#">Sunglasses</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Jacket</a></li>
                                     <li><a class="footer-nav" href="#">Shoes</a></li>
-                                    <li><a class="footer-nav" href="#">Sweater</a></li>
+                                    <li><a class="footer-nav" href="#">Sweater</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Hat</a></li>
-                                    <li><a class="footer-nav" href="#">Sunglasses</a></li>
+                                    <li><a class="footer-nav" href="#">Sunglasses</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Belt</a></li>
                                 </ul>
                             </div>
 
                             <!-- single brand item -->
                             <div class="my-flex-column my-align-start my-gap-1  ">
-                                <h4 class="footer-head">Home Deco:</h4>
+                                <h4 class="footer-head">Home Deco:
+                                </h4>
                                 <ul class="my-d-flex my-align-start my-gap-6 brand-item flex-wrap">
-                                    <li><a class="footer-nav" href="#">Cushions</a></li>
+                                    <li><a class="footer-nav" href="#">Cushions</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Lamps</a></li>
-                                    <li><a class="footer-nav" href="#">Curtains</a></li>
+                                    <li><a class="footer-nav" href="#">Curtains</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Rugs</a></li>
-                                    <li><a class="footer-nav" href="#">Wall Art</a></li>
-                                    <li><a class="footer-nav" href="#">Mirrors</a></li>
+                                    <li><a class="footer-nav" href="#">Wall Art</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Mirrors</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Vases</a></li>
-                                    <li><a class="footer-nav" href="#">Bookshelves</a></li>
+                                    <li><a class="footer-nav" href="#">Bookshelves</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Chairs</a></li>
                                     <li><a class="footer-nav" href="#">Tables</a></li>
-                                    <li><a class="footer-nav" href="#">Storage Units</a></li>
+                                    <li><a class="footer-nav" href="#">Storage
+                                            Units</a></li>
                                 </ul>
                             </div>
 
                             <!-- single brand item -->
                             <div class="my-flex-column my-align-start my-gap-1 ">
-                                <h4 class="footer-head">Instant Food:</h4>
+                                <h4 class="footer-head">Instant
+                                    Food:</h4>
                                 <ul class="my-d-flex my-align-center my-gap-6 brand-item flex-wrap">
-                                    <li><a class="footer-nav" href="#">Instant Noodles</a></li>
-                                    <li><a class="footer-nav" href="#">Ready Meals</a></li>
-                                    <li><a class="footer-nav" href="#">Canned Soup</a></li>
-                                    <li><a class="footer-nav" href="#">Frozen Pizza</a></li>
-                                    <li><a class="footer-nav" href="#">Microwave Popcorn</a></li>
-                                    <li><a class="footer-nav" href="#">Instant Oatmeal</a></li>
-                                    <li><a class="footer-nav" href="#">Frozen Fries</a></li>
-                                    <li><a class="footer-nav" href="#">Instant Rice</a></li>
+                                    <li><a class="footer-nav" href="#">Instant
+                                            Noodles</a></li>
+                                    <li><a class="footer-nav" href="#">Ready Meals</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Canned Soup</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Frozen
+                                            Pizza</a></li>
+                                    <li><a class="footer-nav" href="#">Microwave
+                                            Popcorn</a></li>
+                                    <li><a class="footer-nav" href="#">Instant
+                                            Oatmeal</a></li>
+                                    <li><a class="footer-nav" href="#">Frozen
+                                            Fries</a></li>
+                                    <li><a class="footer-nav" href="#">Instant
+                                            Rice</a></li>
                                 </ul>
                             </div>
 
 
                             <!-- single brand item -->
                             <div class="my-flex-column my-align-start my-gap-1 ">
-                                <h4 class="footer-head">Baby Items:</h4>
+                                <h4 class="footer-head">Baby Items:
+                                </h4>
                                 <ul class="my-d-flex my-align-center my-gap-6 brand-item flex-wrap">
-                                    <li><a class="footer-nav" href="#">Plastic Toy</a></li>
-                                    <li><a class="footer-nav" href="#">Stuffed Toy</a></li>
-                                    <li><a class="footer-nav" href="#">Baby T-Shirt</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Bib</a></li>
+                                    <li><a class="footer-nav" href="#">Plastic Toy</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Stuffed Toy</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Baby
+                                            T-Shirt</a></li>
+                                    <li><a class="footer-nav" href="#">Baby Bib</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Diaper</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Cream</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Shampoo</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Savan</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Blanket</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Bottle</a></li>
+                                    <li><a class="footer-nav" href="#">Baby Cream</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Baby
+                                            Shampoo</a></li>
+                                    <li><a class="footer-nav" href="#">Baby Savan</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Baby
+                                            Blanket</a></li>
+                                    <li><a class="footer-nav" href="#">Baby Bottle</a>
+                                    </li>
                                 </ul>
                             </div>
 
                             <!-- single brand item -->
                             <div class="my-flex-column my-align-start my-gap-1">
-                                <h4 class="footer-head">Other Items:</h4>
+                                <h4 class="footer-head">Other Items:
+                                </h4>
                                 <ul class="my-d-flex my-align-center my-gap-6 brand-item flex-wrap">
-                                    <li><a class="footer-nav" href="#">Plastic Toy</a></li>
-                                    <li><a class="footer-nav" href="#">Stuffed Toy</a></li>
-                                    <li><a class="footer-nav" href="#">Baby T-Shirt</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Bib</a></li>
+                                    <li><a class="footer-nav" href="#">Plastic Toy</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Stuffed Toy</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Baby
+                                            T-Shirt</a></li>
+                                    <li><a class="footer-nav" href="#">Baby Bib</a>
+                                    </li>
                                     <li><a class="footer-nav" href="#">Diaper</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Cream</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Shampoo</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Savan</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Blanket</a></li>
-                                    <li><a class="footer-nav" href="#">Baby Bottle</a></li>
+                                    <li><a class="footer-nav" href="#">Baby Cream</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Baby
+                                            Shampoo</a></li>
+                                    <li><a class="footer-nav" href="#">Baby Savan</a>
+                                    </li>
+                                    <li><a class="footer-nav" href="#">Baby
+                                            Blanket</a></li>
+                                    <li><a class="footer-nav" href="#">Baby Bottle</a>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -1472,18 +1992,30 @@
 
                             <!-- single page item -->
                             <div class="item">
-                                <h4 class="footer-head"> Our Business</h4>
+                                <h4 class="footer-head"> Our
+                                    Business</h4>
                                 <div class="my-mt-7 my-flex-column my-gap-1">
                                     <a class="logo my-text-left" href="index.html">
-                                        <h2 class="my-fw-bolder my-text-primary">Shoping.</h2>
+                                        <h2 class="my-fw-bolder my-text-primary">
+                                            Shoping.</h2>
                                     </a>
                                     <div class="my-mt-4">
-                                        <h5 class="my-text-white support-text"> Always Here for You.</h5>
-                                        <p class="my-mt-1">"We always strive to provide the best products.
-                                            Your support is extremely important to us." Thank you for visit our
+                                        <h5 class="my-text-white support-text">
+                                            Always Here for You.
+                                        </h5>
+                                        <p class="my-mt-1">"We
+                                            always strive to provide
+                                            the best products.
+                                            Your support is
+                                            extremely important to
+                                            us." Thank you for visit
+                                            our
                                             website</p>
 
-                                        <p class="my-mt-2">Hello ipsum dolor sit amet consectetur adipisicing elit.
+                                        <p class="my-mt-2">Hello
+                                            ipsum dolor sit amet
+                                            consectetur adipisicing
+                                            elit.
                                             Fugit sed
                                             quisquam ex.</p>
                                     </div>
@@ -1492,7 +2024,8 @@
 
                             <!-- single page item -->
                             <div class="item">
-                                <h4 class="footer-head">Customer Services</h4>
+                                <h4 class="footer-head">Customer
+                                    Services</h4>
                                 <ul class="my-mt-7 my-flex-column my-gap-1">
                                     <li>
                                         <a class="nav-item" href="#">
@@ -1543,7 +2076,8 @@
 
                             <!-- single page item -->
                             <div class="item">
-                                <h4 class="footer-head">Useful Pages</h4>
+                                <h4 class="footer-head">Useful Pages
+                                </h4>
                                 <ul class="my-mt-7 my-flex-column my-gap-1">
                                     <li>
                                         <a class="nav-item" href="#">
@@ -1629,7 +2163,8 @@
 
                             <!-- single page item -->
                             <div class="item">
-                                <h4 class="footer-head">Popular Categories</h4>
+                                <h4 class="footer-head">Popular
+                                    Categories</h4>
                                 <ul class="my-mt-7 my-flex-column my-gap-1">
                                     <li>
                                         <a class="nav-item" href="#">
@@ -1692,13 +2227,15 @@
 
                             <!-- single page item -->
                             <div class="item contact">
-                                <h4 class="footer-head"> contact We</h4>
+                                <h4 class="footer-head"> contact We
+                                </h4>
 
                                 <ul class="my-mt-7 my-flex-column my-gap-4">
                                     <li class="my-d-flex my-gap-6 my-align-center">
                                         <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
                                         <div>
-                                            <p>House 25, Road 5, Block-A, Mirpur</p>
+                                            <p>House 25, Road 5,
+                                                Block-A, Mirpur</p>
                                             <p>Dhaka-Bangladesh</p>
                                         </div>
                                     </li>
@@ -1712,7 +2249,8 @@
                                     <li class="my-d-flex my-gap-6 my-align-center">
                                         <span class="icon"><i class="fa-regular fa-envelope"></i></span>
                                         <div>
-                                            <p>shopping@gmail.com</p>
+                                            <p>shopping@gmail.com
+                                            </p>
                                         </div>
                                     </li>
                                 </ul>
@@ -1721,7 +2259,8 @@
 
                             <!-- single page item -->
                             <div class="item">
-                                <h4 class="footer-head"> Follow Us</h4>
+                                <h4 class="footer-head"> Follow Us
+                                </h4>
 
                                 <form action="#" class="subcribe my-d-flex my-mt-7">
                                     <input type="email" placeholder="Type your email">
@@ -1758,8 +2297,8 @@
                 <div class="my-container">
                     <div class="footelr-bottom-area my-flex-between my-flex-sm-column my-gap-5">
                         <div class="left">
-                            <p class="my-fw-normal">copy right &copy;design by tanvir.a <a class="my-text-primary"
-                                    href="#">webiste name</a></p>
+                            <p class="my-fw-normal">copy right &copy;design
+                                by tanvir.a <a class="my-text-primary" href="#">webiste name</a></p>
                         </div>
 
                         <div class="right">
@@ -1803,7 +2342,9 @@
 
                         <!-- notice -->
                         <div class="my-notice">
-                            <p>Get discount <strong>12%</strong> go to <a href="#"> checkout</a></p>
+                            <p>Get discount <strong>12%</strong> go to
+                                <a href="#"> checkout</a>
+                            </p>
                         </div>
 
                         <!-- all cart items -->
@@ -1855,7 +2396,8 @@
                                         <!-- old price -->
                                         <del class="old-price my-fs-xs my-align-center ">
                                             <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                            <p class="my-fs-xs">299.00</p>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
                                         </del>
                                     </div>
                                 </div>
@@ -1875,10 +2417,12 @@
                                     <div class="my-align-start my-gap-2 my-flex-column info">
                                         <div>
                                             <h6>
-                                                <a class="" href="./Pages/product.html">New Product Chan
+                                                <a class="" href="./Pages/product.html">New
+                                                    Product Chan
                                                 </a>
                                             </h6>
-                                            <p class="my-fs-xs">100gm</p>
+                                            <p class="my-fs-xs">100gm
+                                            </p>
                                         </div>
 
                                         <!-- delete button -->
@@ -1955,7 +2499,8 @@
                                         <!-- old price -->
                                         <del class="old-price my-fs-xs my-align-center ">
                                             <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                            <p class="my-fs-xs">69.00</p>
+                                            <p class="my-fs-xs">69.00
+                                            </p>
                                         </del>
                                     </div>
                                 </div>
@@ -1974,10 +2519,12 @@
                                     <div class="my-align-start my-gap-2 my-flex-column info">
                                         <div>
                                             <h6>
-                                                <a class="" href="./Pages/product.html">Baby Icecrem
+                                                <a class="" href="./Pages/product.html">Baby
+                                                    Icecrem
                                                 </a>
                                             </h6>
-                                            <p class="my-fs-xs">100ml</p>
+                                            <p class="my-fs-xs">100ml
+                                            </p>
                                         </div>
 
                                         <!-- delete button -->
@@ -2023,7 +2570,8 @@
                                                 <a class="" href="./Pages/product.html">NutriChoice
                                                     Digestive</a>
                                             </h6>
-                                            <p class="my-fs-xs">300gm</p>
+                                            <p class="my-fs-xs">300gm
+                                            </p>
                                         </div>
 
                                         <!-- delete button -->
@@ -2053,7 +2601,8 @@
                                         <!-- old price -->
                                         <del class="old-price my-fs-xs my-align-center ">
                                             <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                            <p class="my-fs-xs">290.00</p>
+                                            <p class="my-fs-xs">290.00
+                                            </p>
                                         </del>
                                     </div>
                                 </div>
@@ -2105,7 +2654,8 @@
                                         <!-- old price -->
                                         <del class="old-price my-fs-xs my-align-center ">
                                             <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                            <p class="my-fs-xs">299.00</p>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
                                         </del>
                                     </div>
                                 </div>
@@ -2116,8 +2666,10 @@
                     </div>
                 </div>
                 <div class="footer my-flex-between">
-                    <button class="my-btn my-primary-btn"><a href="index.html">Continue Shopping</a></button>
-                    <button class="my-secendary-btn my-btn"><span>Update Cart</span></button>
+                    <button class="my-btn my-primary-btn"><a href="index.html">Continue
+                            Shopping</a></button>
+                    <button class="my-secendary-btn my-btn"><span>Update
+                            Cart</span></button>
                 </div>
             </div>
         </div>
@@ -2153,7 +2705,8 @@
                             <div class="my-input-control">
                                 <input type="text" id="name" required>
                                 <label class="label" for="name">Name</label>
-                                <p class="error-text error-text-show">please enter name</p>
+                                <p class="error-text error-text-show">
+                                    please enter name</p>
                             </div>
 
                             <div class="my-input-control">
@@ -2167,7 +2720,8 @@
                             </div>
 
                             <div>
-                                <button class="my-btn login-register-btn my-primary-btn my-w-100 "> <span>Sign Up</span>
+                                <button class="my-btn login-register-btn my-primary-btn my-w-100 ">
+                                    <span>Sign Up</span>
                                 </button>
                             </div>
                         </form>
@@ -2223,7 +2777,8 @@
                             </div>
 
                             <div>
-                                <button class="my-btn login-register-btn my-primary-btn my-w-100 "> <span>Sign In</span>
+                                <button class="my-btn login-register-btn my-primary-btn my-w-100 ">
+                                    <span>Sign In</span>
                                 </button>
                             </div>
                         </form>
@@ -2253,12 +2808,13 @@
                             </div>
 
                             <div class="my-mt-7 my-text-right">
-                                <p class="my-fs-sm">Don't have account? <button id="register-btn"
-                                        class="my-fw-bold my-text-primary">Register</button>
+                                <p class="my-fs-sm">Don't have account?
+                                    <button id="register-btn" class="my-fw-bold my-text-primary">Register</button>
                                 </p>
 
-                                <p class="my-fs-xs">Loss your password? <button id="register-btn"
-                                        class="my-fw-bold my-text-primary my-fs-xs">forgot password</button>
+                                <p class="my-fs-xs">Loss your password?
+                                    <button id="register-btn" class="my-fw-bold my-text-primary my-fs-xs">forgot
+                                        password</button>
                                 </p>
                             </div>
                         </div>
@@ -2282,7 +2838,8 @@
 
                 <div class="my-flex-between header">
                     <h3>Notification</h3>
-                    <button class="my-fw-bold"><span>Mark all</span></button>
+                    <button class="my-fw-bold"><span>Mark
+                            all</span></button>
                 </div>
 
                 <div class="all-notification my-has-scrollbar my-mt-0">
@@ -2297,12 +2854,16 @@
                             <div class="info my-w-100">
                                 <div class="my-flex-between my-align-end my-w-100">
                                     <div class="my-w-100">
-                                        <p><strong>Tanvir Ahmed</strong> wants to edit <strong>Design System
+                                        <p><strong>Tanvir Ahmed</strong>
+                                            wants to edit <strong>Design
+                                                System
                                             </strong>thanks
                                             you so much tanvir.</p>
                                         <div class="my-flex-between my-mt-1 ">
-                                            <small class=" my-d-inline-block">Friday 2.23pm</small>
-                                            <p class="my-fw-bold">12 min ago</p>
+                                            <small class=" my-d-inline-block">Friday
+                                                2.23pm</small>
+                                            <p class="my-fw-bold">12 min
+                                                ago</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2327,10 +2888,15 @@
                             <div class="info my-w-100">
                                 <div class="my-flex-between my-align-end my-w-100">
                                     <div class="my-w-100">
-                                        <p><strong>Md Foysal</strong> create a new <strong>component </strong></p>
+                                        <p><strong>Md Foysal</strong>
+                                            create a new
+                                            <strong>component </strong>
+                                        </p>
                                         <div class="my-flex-between my-mt-1 ">
-                                            <small class=" my-d-inline-block">Friday 1.42pm</small>
-                                            <p class="my-fw-bold">2 hours ago</p>
+                                            <small class=" my-d-inline-block">Friday
+                                                1.42pm</small>
+                                            <p class="my-fw-bold">2
+                                                hours ago</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2347,10 +2913,15 @@
                             <div class="info my-w-100">
                                 <div class="my-flex-between my-align-end my-w-100">
                                     <div class="my-w-100">
-                                        <p><strong>Md Foysal</strong> create a new <strong>component </strong></p>
+                                        <p><strong>Md Foysal</strong>
+                                            create a new
+                                            <strong>component </strong>
+                                        </p>
                                         <div class="my-flex-between my-mt-1 ">
-                                            <small class=" my-d-inline-block">Friday 1.42pm</small>
-                                            <p class="my-fw-bold">2 hours ago</p>
+                                            <small class=" my-d-inline-block">Friday
+                                                1.42pm</small>
+                                            <p class="my-fw-bold">2
+                                                hours ago</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2367,10 +2938,15 @@
                             <div class="info my-w-100">
                                 <div class="my-flex-between my-align-end my-w-100">
                                     <div class="my-w-100">
-                                        <p><strong>Md Foysal</strong> create a new <strong>component </strong></p>
+                                        <p><strong>Md Foysal</strong>
+                                            create a new
+                                            <strong>component </strong>
+                                        </p>
                                         <div class="my-flex-between my-mt-1 ">
-                                            <small class=" my-d-inline-block">Friday 1.42pm</small>
-                                            <p class="my-fw-bold">2 hours ago</p>
+                                            <small class=" my-d-inline-block">Friday
+                                                1.42pm</small>
+                                            <p class="my-fw-bold">2
+                                                hours ago</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2387,10 +2963,15 @@
                             <div class="info my-w-100">
                                 <div class="my-flex-between my-align-end my-w-100">
                                     <div class="my-w-100">
-                                        <p><strong>Md Foysal</strong> create a new <strong>component </strong></p>
+                                        <p><strong>Md Foysal</strong>
+                                            create a new
+                                            <strong>component </strong>
+                                        </p>
                                         <div class="my-flex-between my-mt-1 ">
-                                            <small class=" my-d-inline-block">Friday 1.42pm</small>
-                                            <p class="my-fw-bold">2 hours ago</p>
+                                            <small class=" my-d-inline-block">Friday
+                                                1.42pm</small>
+                                            <p class="my-fw-bold">2
+                                                hours ago</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2407,10 +2988,15 @@
                             <div class="info my-w-100">
                                 <div class="my-flex-between my-align-end my-w-100">
                                     <div class="my-w-100">
-                                        <p><strong>Md Foysal</strong> create a new <strong>component </strong></p>
+                                        <p><strong>Md Foysal</strong>
+                                            create a new
+                                            <strong>component </strong>
+                                        </p>
                                         <div class="my-flex-between my-mt-1 ">
-                                            <small class=" my-d-inline-block">Friday 1.42pm</small>
-                                            <p class="my-fw-bold">2 hours ago</p>
+                                            <small class=" my-d-inline-block">Friday
+                                                1.42pm</small>
+                                            <p class="my-fw-bold">2
+                                                hours ago</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2429,10 +3015,15 @@
                             <div class="info my-w-100">
                                 <div class="my-flex-between my-align-end my-w-100">
                                     <div class="my-w-100">
-                                        <p><strong>Hello Tanvir</strong> Your Passsword has<strong>Reset </strong></p>
+                                        <p><strong>Hello Tanvir</strong>
+                                            Your Passsword
+                                            has<strong>Reset </strong>
+                                        </p>
                                         <div class="my-flex-between my-mt-1 ">
-                                            <small class=" my-d-inline-block">Friday 12.00am</small>
-                                            <p class="my-fw-bold">2 days ago</p>
+                                            <small class=" my-d-inline-block">Friday
+                                                12.00am</small>
+                                            <p class="my-fw-bold">2 days
+                                                ago</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2451,6 +3042,12 @@
         <script type="module">
             // Base function for updating quantity
             import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF } from '../Static/Js/utilitis.js';
+
+
+            openModalF('review-modal', 'review-open-btn')
+            closeButtonF('review-modal')
+
+
 
             function updateQty() {
                 const inputQuantity = document.getElementById('input-quantity')
@@ -2489,8 +3086,118 @@
             activeF('.colors li')
             activeF('.size li')
 
-            // tab buttons
-            activeF('.tab-buttons button')
+
+
+
+
+
+
+
+            // review img
+            function reviewImgaeF() {
+                const imgs = document.querySelectorAll('.has-review .body img')
+
+                if (imgs) {
+                    imgs.forEach(img => {
+                        img.addEventListener('click', function () {
+                            const isActive = img.classList.contains('active');
+                            imgs.forEach(single => {
+                                single.classList.remove('active')
+                            })
+                            if (!isActive) {
+                                img.classList.toggle('active')
+                            }
+                        })
+                    })
+                }
+            }
+            reviewImgaeF()
+
+
+
+
+
+
+
+            // Call the function for your specific tabs
+
+            function setupTabs(tabBtnSelector, tabContentSelector) {
+                document.querySelectorAll(tabBtnSelector).forEach(button => {
+                    button.addEventListener('click', () => {
+
+                        // Remove active class from all buttons
+                        document.querySelectorAll(tabBtnSelector).forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+
+                        // Add active class to clicked button
+                        button.classList.add('active');
+
+                        // Remove active class from all tab contents
+                        document.querySelectorAll(tabContentSelector).forEach(content => {
+                            content.classList.remove('active');
+                        });
+
+                        // Get the tab ID from the button
+                        const tabId = button.getAttribute('data-tab');
+                        const selectedTabContent = document.getElementById(tabId);
+
+                        // Add active class to the corresponding tab content
+                        if (selectedTabContent) {
+                            selectedTabContent.classList.add('active');
+                        }
+                    });
+                });
+            }
+
+            setupTabs('.tab-buttons button', '.tab-contents .tab-content');
+
+
+
+
+
+
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const stars = document.querySelectorAll('.rating-stars i');
+                let currentRating = 0;
+
+                stars.forEach((star) => {
+                    // Highlight stars on hover
+                    star.addEventListener('mouseover', () => {
+                        resetStars();
+                        highlightStars(star.dataset.value);
+                    });
+
+                    // Remove highlight when hover ends
+                    star.addEventListener('mouseout', () => {
+                        resetStars();
+                        highlightStars(currentRating);
+                    });
+
+                    // Set rating on click
+                    star.addEventListener('click', () => {
+                        currentRating = star.dataset.value;
+                        highlightStars(currentRating);
+                    });
+                });
+
+                function highlightStars(rating) {
+                    stars.forEach((star) => {
+                        if (star.dataset.value <= rating) {
+                            star.classList.add('selected');
+                        }
+                    });
+                }
+
+                function resetStars() {
+                    stars.forEach((star) => {
+                        star.classList.remove('selected');
+                    });
+                }
+            });
+
+
         </script>
     </body>
 

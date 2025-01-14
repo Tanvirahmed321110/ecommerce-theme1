@@ -2108,16 +2108,16 @@
 
                                     <div>
                                         <div class="tab-buttons my-flex-center my-flex-sm-column  my-gap-0">
-                                            <button data-category="top-selling">
+                                            <button data-tab="1">
                                                 <div>Top Selling </div>
                                             </button>
-                                            <button class="active" data-category="top-rating">
+                                            <button class="active" data-tab="2">
                                                 <div>Top Rating </div>
                                             </button>
-                                            <button data-category="new-products">
+                                            <button data-tab="3">
                                                 <div>New Products</div>
                                             </button>
-                                            <button data-category="combo">
+                                            <button data-tab="4">
                                                 <div>This Week</div>
                                             </button>
                                         </div>
@@ -2127,7 +2127,7 @@
                                         <div class="tabs-products my-mt-8">
 
                                             <!-- for chicken -->
-                                            <div class="top-selling  my-grid-3 active my-gap-4 my-grid-sm-1">
+                                            <div class="top-selling  my-grid-3 active my-gap-4 my-grid-sm-1" id="tab1">
                                                 <!-- single card -->
                                                 <div class="my-card product-cart">
 
@@ -2314,9 +2314,7 @@
                                             </div>
 
                                             <!-- for chicken -->
-                                            <div class="top-rating  my-grid-3  my-gap-4 my-grid-sm-1">
-
-
+                                            <div class="top-rating  my-grid-3  my-gap-4 my-grid-sm-1" id="tab2">
 
                                                 <!-- single card -->
                                                 <div class="my-card product-cart">
@@ -2502,7 +2500,7 @@
                                             </div>
 
                                             <!-- for burger -->
-                                            <div class="new-products  my-grid-3 my-gap-4 my-grid-sm-1">
+                                            <div class="new-products  my-grid-3 my-gap-4 my-grid-sm-1" id="tab3">
                                                 <!-- single card -->
                                                 <div class="my-card product-cart">
                                                     <a href="#" class="my-p-relative">
@@ -2683,6 +2681,11 @@
                                                             Card</span>
                                                     </a>
                                                 </div>
+
+                                            </div>
+
+                                            <!-- this week -->
+                                            <div id="tab4">
 
                                             </div>
                                         </div>
@@ -4875,38 +4878,40 @@
 
 
 
+            function setupTabs(tabBtnSelector, tabContentSelector) {
+                document.querySelectorAll(tabBtnSelector).forEach(button => {
+                    button.addEventListener('click', () => {
 
-
-
-            // Tabs
-            function tabs(btnSelector, contentSelector) {
-                document.querySelectorAll(btnSelector).forEach(button => {
-                    button.addEventListener("click", () => {
-
-                        document.querySelectorAll(btnSelector).forEach(btn => {
-                            btn.classList.remove("active");
+                        // Remove active class from all buttons
+                        document.querySelectorAll(tabBtnSelector).forEach(btn => {
+                            btn.classList.remove('active');
                         });
 
-                        // Remove 'active' from all category sections
-                        document.querySelectorAll(contentSelector).forEach(section => {
-                            section.classList.remove("active");
+                        // Add active class to clicked button
+                        button.classList.add('active');
+
+                        // Remove active class from all tab contents
+                        document.querySelectorAll(tabContentSelector).forEach(content => {
+                            content.classList.remove('active');
                         });
 
-                        button.classList.add("active");
+                        // Get the tab ID from the button
+                        const tabId = button.getAttribute('data-tab');
+                        const selectedTabContent = document.getElementById(`tab${tabId}`);
 
-                        // Add 'active' to the selected category
-                        const category = button.getAttribute("data-category");
-                        const selectedSection = document.querySelector(`.tabs-products .${category}`);
-                        if (selectedSection) {
-                            selectedSection.classList.add("active");
+                        // Add active class to the corresponding tab content
+                        if (selectedTabContent) {
+                            selectedTabContent.classList.add('active');
                         }
                     });
                 });
             }
 
+            setupTabs('.tab-buttons button', '.tabs-products .top-selling');
 
-            // call tab funciton
-            tabs('.tab-buttons button', '.tabs-products .my-grid-3')
+
+
+
         </script>
 
 
