@@ -1192,6 +1192,15 @@ input[type="radio"]:checked::after {
     background-color: rgb(237, 234, 234);
     max-width: 400px;
     color: green;
+    display: none;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.my-message-box.active {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .my-message-box.warning {
@@ -1212,21 +1221,19 @@ input[type="radio"]:checked::after {
 /*________________________________*\
   ||        Popup   Here      ||
 \*________________________________*/
-.my-popup {
-    position: absolute;
-    right: 24px;
-    top: 24px;
+.my-popup.my-card {
+    position: fixed !important;
+    right: -100%;
+    top: 50px;
     z-index: 12;
     padding: 0;
-    overflow: unset;
-    transform: translateX(200%);
     border: 1px solid var(--border-color);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: .2s linear;
 }
 
 .my-popup.active {
-    transform: translateX(0%);
+    right: 30px;
 }
 
 .my-popup .icon {

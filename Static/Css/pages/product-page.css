@@ -540,3 +540,27 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+
+@media (max-width:480px) {
+    .product-details {
+        width: 100%;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    .short-desc .my-card {
+        padding: 20px;
+        box-shadow: unset;
+        border-color: var(--border-color2);
+        width: fit-content;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

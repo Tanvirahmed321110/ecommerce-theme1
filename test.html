@@ -2,434 +2,101 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accordion</title>
+        <meta charset="utf-8" />
+        <title>Swiper demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <!-- Demo styles -->
         <style>
-            .accordion {
+            html,
+            body {
+                position: relative;
+                height: 100%;
+            }
+
+            body {
+                background: #eee;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+
+            .cards.swiper {
                 width: 100%;
-                max-width: 600px;
-                margin: 0 auto;
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                overflow: hidden;
-                font-family: Arial, sans-serif;
+                height: 100%;
+                max-height: 400px;
             }
 
-            .accordion-item {
-                border-bottom: 1px solid #ddd;
-            }
-
-            .accordion-header {
-                padding: 15px;
-                background-color: #f5f5f5;
-                cursor: pointer;
-                font-weight: bold;
+            .cards .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
-                transition: background-color 0.3s, color 0.3s;
             }
 
-            .accordion-header:hover {
-                background-color: #eaeaea;
-            }
-
-            .accordion-header.active {
-                background-color: #007bff;
-                color: #fff;
-            }
-
-            .accordion-content {
-                padding: 0 15px;
-                background-color: #fff;
-                height: 0;
-                /* Start with collapsed height */
-                overflow: hidden;
+            .cards .swiper-slide img {
                 display: block;
-                opacity: 0;
-                transition: height 0.3s ease, opacity 0.3s ease;
-            }
-
-            .accordion-item:last-child {
-                border-bottom: none;
-            }
-
-            .accordion-icon {
-                transition: transform 0.3s ease;
-            }
-
-            .accordion-header.active .accordion-icon {
-                transform: rotate(180deg);
-            }
-
-            .accordion-header.active+.accordion-content {
-                height: auto;
-                opacity: 1;
-            }
-
-            /* Fade-in animation */
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-
-                to {
-                    opacity: 1;
-                }
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                align-items: stretch;
             }
         </style>
     </head>
 
     <body>
-        <div class="accordion">
-            <div class="accordion-item">
-                <h4 class="accordion-header">
-                    Weight
-                    <span class="accordion-icon">▼</span>
-                </h4>
-                <div class="accordion-content">
-                    <p>200 gm</p>
-                </div>
+        <!-- Swiper -->
+        <div class="swiper cards mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
             </div>
-            <div class="accordion-item">
-                <h4 class="accordion-header">
-                    Flavor
-                    <span class="accordion-icon">▼</span>
-                </h4>
-                <div class="accordion-content">
-                    <p>Dark Chocolate</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h4 class="accordion-header">
-                    Ingredients
-                    <span class="accordion-icon">▼</span>
-                </h4>
-                <div class="accordion-content">
-                    <p>Cocoa, Sugar, Milk Solids, Cocoa Butter, Emulsifier (Soy Lecithin)</p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-            <div>
-                <div class="tab-buttons my-flex-center my-flex-sm-column  my-gap-0">
-                    <button data-tab="1">
-                        <div>Top Selling </div>
-                    </button>
-                    <button class="active" data-tab="2">
-                        <div>Top Rating </div>
-                    </button>
-                    <button data-tab="3">
-                        <div>New Products</div>
-                    </button>
-                    <button data-tab="4">
-                        <div>This Week</div>
-                    </button>
-                </div>
-
-
-
-                <div class="tabs-products my-mt-8">
-
-                    <!-- for chicken -->
-                    <div class="top-selling  my-grid-3 active my-gap-4 my-grid-sm-1" id="tab1">
-                        <!-- single card -->
-                        <div class="my-card product-cart">
-
-                            <a href="#" class="my-p-relative">
-                                <img src="./Static/images/food_01.jpg" alt="food">
-
-                                <!-- ****  Hide icons  ****-->
-                                <ul class="hide-icons my-d-flex my-gap-1 ">
-                                    <li class="hide-icon my-tooltip  my-flex-center">
-                                        <i class="fa-regular fa-eye"></i>
-                                        <div class="show-text">Quick View</div>
-                                    </li>
-                                    <li class="hide-icon my-tooltip my-flex-center">
-                                        <i class="fa-solid fa-code-compare"></i>
-                                        <div class="show-text">Complare Product</div>
-                                    </li>
-                                    <li class="hide-icon my-tooltip  my-flex-center">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <div class="show-text">Add to love list</div>
-                                    </li>
-                                </ul>
-                            </a>
-
-                            <div>
-                                <a href="#">
-                                    <h4 class="my-mt-5 title">Chicken and Olive Pizza</h4>
-                                </a>
-                                <p class="">Food burgers are one of the most popular fast-food
-                                    items around the
-                                    world,
-                                </p>
-                            </div>
-
-                            <!-- Rating -->
-                            <div class="rating my-mt-4 my-d-flex my-align-center my-gap-4">
-                                <a href="#" class="starts">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </a>
-
-                                <div class="my-d-flex my-align-center my-gap-1">
-                                    <div class="avg">4.7</div>
-                                    <small>(21)</small>
-                                </div>
-                            </div>
-
-                            <!-- Price -->
-                            <div class="price my-d-flex my-align-center my-gap-4 my-mt-4">
-                                <h3 class="new-price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>550</h3>
-                                <del class="old-price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>590</del>
-                            </div>
-
-                            <!-- add to card -->
-                            <a class="my-btn my-primary-btn cart-btn" href="#"><span>+ Add To
-                                    Card</span>
-                            </a>
-                        </div>
-
-
-                    </div>
-
-                    <!-- for chicken -->
-                    <div class="top-rating  my-grid-3  my-gap-4 my-grid-sm-1" id="tab2">
-
-                        <!-- single card -->
-                        <div class="my-card product-cart">
-                            <a href="#" class="my-p-relative">
-                                <img src="./Static/images/food_04.jpg" alt="food">
-
-                                <!-- ****  Hide icons  ****-->
-                                <ul class="hide-icons my-d-flex my-gap-1 ">
-                                    <li class="hide-icon my-tooltip  my-flex-center">
-                                        <i class="fa-regular fa-eye"></i>
-                                        <div class="show-text">Quick View</div>
-                                    </li>
-                                    <li class="hide-icon my-tooltip my-flex-center">
-                                        <i class="fa-solid fa-code-compare"></i>
-                                        <div class="show-text">Complare Product</div>
-                                    </li>
-                                    <li class="hide-icon my-tooltip  my-flex-center">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <div class="show-text">Add to love list</div>
-                                    </li>
-                                </ul>
-                            </a>
-
-                            <div>
-                                <a href="#">
-                                    <h4 class="my-mt-5 title">Chicken and Olive Pizza</h4>
-                                </a>
-                                <p>
-                                    Food burgers are one of the most popular fast-food items
-                                    around the world,
-                                </p>
-                            </div>
-
-                            <!-- Rating -->
-                            <div class="rating my-mt-4 my-d-flex my-align-center my-gap-4">
-                                <a href="#" class="starts">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </a>
-
-                                <div class="my-d-flex my-align-center my-gap-1">
-                                    <div class="avg">4.4</div>
-                                    <small>(12)</small>
-                                </div>
-                            </div>
-
-                            <!-- Price -->
-                            <div class="price my-d-flex my-align-center my-gap-4 my-mt-4">
-                                <h3 class="new-price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>395</h3>
-                            </div>
-
-                            <!-- add to card -->
-                            <a class="my-btn my-primary-btn cart-btn" href="#"><span>+ Add To
-                                    Card</span></a>
-                        </div>
-
-
-
-                    </div>
-
-                    <!-- for burger -->
-                    <div class="new-products  my-grid-3 my-gap-4 my-grid-sm-1" id="tab3">
-                        <!-- single card -->
-                        <div class="my-card product-cart">
-                            <a href="#" class="my-p-relative">
-                                <img src="./Static/images/food_01.jpg" alt="food">
-
-                                <!-- ****  Hide icons  ****-->
-                                <ul class="hide-icons my-d-flex my-gap-1 ">
-                                    <li class="hide-icon my-tooltip  my-flex-center">
-                                        <i class="fa-regular fa-eye"></i>
-                                        <div class="show-text">Quick View</div>
-                                    </li>
-                                    <li class="hide-icon my-tooltip my-flex-center">
-                                        <i class="fa-solid fa-code-compare"></i>
-                                        <div class="show-text">Complare Product</div>
-                                    </li>
-                                    <li class="hide-icon my-tooltip  my-flex-center">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <div class="show-text">Add to love list</div>
-                                    </li>
-                                </ul>
-                            </a>
-
-                            <div>
-                                <a href="#">
-                                    <h4 class="my-mt-5 title">Chicken and Olive Pizza</h4>
-                                </a>
-                                <p class="">Food burgers are one of the most popular fast-food
-                                    items around the
-                                    world,
-                                </p>
-                            </div>
-
-                            <!-- Rating -->
-                            <div class="rating my-mt-4 my-d-flex my-align-center my-gap-4">
-                                <a href="#" class="starts">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </a>
-
-                                <div class="my-d-flex my-align-center my-gap-1">
-                                    <div class="avg">4.7</div>
-                                    <small>(21)</small>
-                                </div>
-                            </div>
-
-                            <!-- Price -->
-                            <div class="price my-d-flex my-align-center my-gap-4 my-mt-4">
-                                <h3 class="new-price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>550</h3>
-                                <del class="old-price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>590</del>
-                            </div>
-
-                            <!-- add to card -->
-                            <a class="my-btn my-primary-btn cart-btn" href="#"><span>+ Add To
-                                    Card</span></a>
-                        </div>
-
-                        <!-- single card -->
-                        <div class="my-card product-cart">
-                            <a href="#" class="my-p-relative">
-                                <img src="./Static/images/food_02.jpg" alt="food">
-
-                                <!-- ****  Hide icons  ****-->
-                                <ul class="hide-icons my-d-flex my-gap-1 ">
-                                    <li class="hide-icon my-tooltip  my-flex-center">
-                                        <i class="fa-regular fa-eye"></i>
-                                        <div class="show-text">Quick View</div>
-                                    </li>
-                                    <li class="hide-icon my-tooltip my-flex-center">
-                                        <i class="fa-solid fa-code-compare"></i>
-                                        <div class="show-text">Complare Product</div>
-                                    </li>
-                                    <li class="hide-icon my-tooltip  my-flex-center">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <div class="show-text">Add to love list</div>
-                                    </li>
-                                </ul>
-                            </a>
-
-                            <a href="#">
-                                <h4 class="my-mt-5 title">Chicken and Olive Pizza</h4>
-                            </a>
-                            <p class="">Food burgers are one of the most popular fast-food items
-                                around the world,
-                            </p>
-
-                            <!-- Rating -->
-                            <div class="rating my-mt-4 my-d-flex my-align-center my-gap-4">
-                                <a href="#" class="starts">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </a>
-
-                                <div class="my-d-flex my-align-center my-gap-1">
-                                    <div class="avg">4.8</div>
-                                    <small>(5)</small>
-                                </div>
-                            </div>
-
-                            <!-- Price -->
-                            <div class="price my-d-flex my-align-center my-gap-4 my-mt-4">
-                                <h3 class="new-price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>460</h3>
-                                <del class="old-price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>500</del>
-                            </div>
-
-                            <!-- add to card -->
-                            <a class="my-btn my-primary-btn cart-btn" href="#"><span>+ Add To
-                                    Card</span></a>
-                        </div>
-
-
-
-
-                    </div>
-
-                    <!-- this week -->
-                    <div class=" my-grid-3 my-gap-4 my-grid-sm-1" id="tab3">
-
-                    </div>
-                </div>
-            </div>
-
-
-
+            <div class="swiper-pagination"></div>
         </div>
 
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
         <script>
-            function accordion() {
-                document.querySelectorAll('.accordion-header').forEach(header => {
-                    header.addEventListener('click', () => {
-                        const accordionItem = header.parentElement;
-                        const content = accordionItem.querySelector('.accordion-content');
-                        const isActive = header.classList.contains('active');
-
-                        // Close all other items
-                        document.querySelectorAll('.accordion-header').forEach(h => {
-                            h.classList.remove('active');
-                            h.nextElementSibling.style.height = '0';
-                            h.nextElementSibling.style.opacity = '0';
-                        });
-
-                        // Toggle the current item
-                        if (!isActive) {
-                            header.classList.add('active');
-                            content.style.height = `${content.scrollHeight}px`; // Use scrollHeight to smoothly expand
-                            content.style.opacity = '1';
-                        } else {
-                            header.classList.remove('active');
-                            content.style.height = '0'; // Collapse the section
-                            content.style.opacity = '0';
-                        }
-                    });
-                });
-            }
+            var swiper = new Swiper(".cards", {
+                slidesPerView: 3, // Default for larger devices
+                spaceBetween: 30,
+                freeMode: true,
+                loop: true,
+                autoplay: {
+                    delay: 2500,  // Time between each slide transition in milliseconds (2.5 seconds)
+                    disableOnInteraction: false,  // Keep autoplay running even after user interaction
+                },
+                speed: 600,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    // For devices >= 320px (small devices)
+                    320: {
+                        slidesPerView: 1, // Show 1 slide for small devices
+                    },
+                    // For devices >= 768px (medium devices)
+                    768: {
+                        slidesPerView: 3, // Show 3 slides for medium to larger devices
+                    },
+                },
+            });
 
         </script>
     </body>
