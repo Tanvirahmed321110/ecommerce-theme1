@@ -1145,7 +1145,9 @@ input[type="radio"]:checked::after {
 
 
 
-/* brigtcamp-area */
+/*________________________________*\
+  ||     Brightcamp  Here      ||
+\*________________________________*/
 .brigtcamp-area {
     background-color: var(--white-off);
     padding: 16px;
@@ -1173,4 +1175,103 @@ input[type="radio"]:checked::after {
 
 .brigtcamp-area li a:hover {
     color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+/*________________________________*\
+  ||     Message Box  Here      ||
+\*________________________________*/
+.my-message-box {
+    background-color: rgb(237, 234, 234);
+    max-width: 400px;
+    color: green;
+}
+
+.my-message-box.warning {
+    background-color: khaki;
+    color: rebeccapurple;
+}
+
+.my-message-box.error {
+    background-color: rgb(220, 220, 220);
+    color: red;
+}
+
+
+
+
+
+
+/*________________________________*\
+  ||        Popup   Here      ||
+\*________________________________*/
+.my-popup {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    z-index: 12;
+    padding: 0;
+    overflow: unset;
+    transform: translateX(200%);
+    border: 1px solid var(--border-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .2s linear;
+}
+
+.my-popup.active {
+    transform: translateX(0%);
+}
+
+.my-popup .icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid var(--border-color);
+    margin-top: 12px;
+    background-color: var(--primary-color);
+}
+
+.my-popup .icon i {
+    font-size: var(--fs-xl);
+    color: var(--white);
+}
+
+.my-popup .content {
+    padding: 16px;
+}
+
+.my-popup .head {
+    margin-bottom: 12px;
+    padding: 6px;
+    text-align: center;
+    color: var(--white);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.my-popup.error .icon {
+    background-color: var(--red);
+}
+
+.my-popup.error p {
+    color: var(--red);
+}
+
+.my-popup .close-btn {
+    border-radius: 0;
+    border-bottom-right-radius: 8px;
+}
+
+.my-popup .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
