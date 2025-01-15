@@ -1184,6 +1184,12 @@ footer .footer-pages .footer-head::after {
     /* header top */
     .header-top-mobile {
         justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-top-mobile .area {
+        width: 100%;
+        justify-content: space-between;
     }
 
 

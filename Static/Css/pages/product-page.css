@@ -235,7 +235,6 @@
     width: 8px;
     height: 8px;
     border-radius: 12px;
-    /* background-color: var(--border-color2); */
 }
 
 .small-img-area::-webkit-scrollbar-thumb {
@@ -309,7 +308,7 @@
 
 
 
-/*****  information *****/
+/*****  information  *****/
 .tabs-area .information {
     max-width: 650px;
 }
@@ -338,6 +337,7 @@
 
 
 
+/****  Rating review  *****/
 .rating-review .rating-stars i {
     font-size: var(--fs-lg);
     color: #ccc;
@@ -370,7 +370,7 @@
 
 
 
-/* has-review */
+/*****  has-review  *****/
 .has-review {
     display: grid;
     grid-template-columns: 1.1fr 3fr;
@@ -399,7 +399,7 @@
     height: 100%;
 }
 
-// Set widths based on nth-child
+
 .item:nth-child(1) .line .line-fill {
     width: 66%;
 }
@@ -426,7 +426,7 @@
 
 
 
-
+/*****  has-review  *****/
 .filter-dropdown {
     display: flex;
     align-items: center;
@@ -454,8 +454,7 @@
 }
 
 
-/* customers */
-
+/*****  customers  *****/
 .has-review .customer {
     padding-top: 16px;
 }
@@ -493,10 +492,51 @@
 }
 
 
-/* reply review */
+/*****  reply review  *****/
 .reply-review {
     padding: 12px;
     padding-right: 24px;
     padding-left: 80px;
     background-color: var(--white-off);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+    .product-area-top {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .tabs-area {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .empty-review .left {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .empty-review .head button {
+        width: fit-content;
+        word-wrap: nowrap;
+        text-wrap: nowrap;
+    }
+
+
+
+    /* Has Review */
+    .has-review {
+        grid-template-columns: 1fr;
+    }
 }

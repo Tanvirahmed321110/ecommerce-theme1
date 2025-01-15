@@ -1104,10 +1104,11 @@
                             <div class="rating-review">
 
                                 <!-- No Review -->
-                                <div class="empty-review  ">
+                                <div class="empty-review ">
                                     <div class="my-card">
-                                        <div class="head my-border-bottom my-pb-4  my-flex-between my-align-center">
-                                            <div>
+                                        <div
+                                            class="head my-border-bottom my-pb-4 my-gap-2  my-flex-between my-align-center">
+                                            <div class="left">
                                                 <h4>Reviews (0)</h4>
                                                 <p class="my-mt-1">Get specific details about this product from
                                                     customers
@@ -1192,7 +1193,7 @@
 
                                         <!-- body -->
                                         <div class="body my-flex-center">
-                                            <div class="my-text-center">
+                                            <div class="my-text-center ">
                                                 <div class="icon my-flex-center my-text-center">
                                                     <i class="fa-regular my-fw-bolder my-fs-xl fa-circle"></i>
                                                 </div>
@@ -1225,8 +1226,9 @@
                                                         <span>(20)</span>
                                                     </div>
                                                 </div>
-
                                             </div>
+
+
                                             <!-- grap -->
                                             <div class="graps  my-flex-column my-gap-1  my-mt-4">
 
@@ -1281,6 +1283,11 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <button class="my-btn my-btn-outline my-mt-4" id="review-open-btn">
+                                                <span class="my-fw-bold">Write a
+                                                    Review</span>
+                                            </button>
                                         </div>
 
 
@@ -3119,8 +3126,7 @@
 
 
 
-            // Call the function for your specific tabs
-
+            // Tabs review details and informaiton
             function setupTabs(tabBtnSelector, tabContentSelector) {
                 document.querySelectorAll(tabBtnSelector).forEach(button => {
                     button.addEventListener('click', () => {
