@@ -983,10 +983,11 @@ swiper-slide.hero img {
     max-width: 640px;
     margin: 0 auto;
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
     font-family: Arial, sans-serif;
     margin-top: 40px;
+    user-select: none;
 }
 
 .accordion-item {
@@ -1002,6 +1003,11 @@ swiper-slide.hero img {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s, color 0.3s;
+    font-size: var(--fs-md);
+}
+
+.accordion-header span {
+    font-size: var(--fs-xs);
 }
 
 .accordion-header:hover {
@@ -1014,7 +1020,7 @@ swiper-slide.hero img {
 }
 
 .accordion-content {
-    padding: 0 15px;
+    padding: 0 18px;
     background-color: var(--white);
     height: 0;
     /* Start with collapsed height */
