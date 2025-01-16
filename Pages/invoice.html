@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Invoice_Page</title>
+
+        <style>
+            /*________  Reset Code  ________ */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+
+            /*________  Tag Style  ________ */
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background-color: #ededed;
+                font-family: system-ui, -apple-system;
+                color: #707070;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 600;
+                line-height: 20px;
+                font-family: var(--font-montserrat);
+                color: #01293a;
+            }
+
+            h1 {
+                font-size: var(--fs-xxxl);
+                font-weight: var(--fw-700);
+                line-height: 65px;
+            }
+
+            h2 {
+                font-size: var(--fs-xxl);
+                line-height: 38px;
+                font-weight: var(--fw-700);
+            }
+
+            h3 {
+                font-size: 22px;
+                line-height: 29px;
+            }
+
+            h4 {
+                font-size: var(--fs-lg);
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+
+            h6 {
+                font-size: var(--fs-sm);
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                color: inherit;
+                transition: color .1s linear;
+                user-select: none;
+            }
+
+            button {
+                user-select: none;
+            }
+
+            button:active,
+            a:active {
+                transform: translateY(-3px);
+            }
+
+
+            p {
+                font-size: var(--fs-sm);
+                line-height: 22px;
+                margin-bottom: 0 !important;
+                font-weight: var(--fw-500);
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            input,
+            textarea,
+            select {
+                width: 100%;
+                font-size: var(--fs-md);
+                border: none;
+                outline: none;
+                border: 1px solid var(--white-off);
+                padding: 8px;
+                border-radius: 4px;
+            }
+
+            input:focus,
+            textarea:focus,
+            select:focus {
+                outline: 1px solid var(--white-off-2)
+            }
+
+            textarea {
+                resize: none;
+                width: 100%;
+                height: 120px;
+            }
+
+            select option {
+                padding-right: 20px;
+            }
+
+            button {
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background-color: transparent;
+                color: inherit;
+                font-size: inherit;
+                word-spacing: 3px;
+                transition: .2s ease-in-out;
+                font-family: var(--font-inter);
+            }
+
+
+
+            table {
+                border-collapse: collapse;
+                padding: 0 10px;
+                width: 100%;
+            }
+
+            th {
+                font-weight: var(--fw-700);
+                background-color: var(--border-color);
+            }
+
+            th,
+            td {
+                padding: 13px 8px;
+                color: var(--secondary-hover);
+            }
+
+            tr {
+                border-bottom: 1px solid var(--border-color);
+                padding: 3px 10px;
+            }
+
+            .my-text-primary {
+                color: #e7761a;
+            }
+
+            .my-text-secondary {
+                color: #01293a;
+            }
+
+
+
+
+            .my-btn {
+                background-color: #dc7018;
+                padding: 8px 17px;
+                border-radius: 7px;
+                color: white;
+            }
+
+
+
+
+
+
+
+            /*_____  Margin  _____*/
+            .my-m-0 {
+                margin: 0;
+            }
+
+            .my-mt-0 {
+                margin-top: 0 !important;
+            }
+
+            .my-mt-1 {
+                margin-top: 4px;
+            }
+
+            .my-mt-2 {
+                margin-top: 8px;
+            }
+
+            .my-mt-3 {
+                margin-top: 12px;
+            }
+
+            .my-mt-4 {
+                margin-top: 16px;
+            }
+
+            .my-mt-5 {
+                margin-top: 20px;
+            }
+
+            .my-mt-6 {
+                margin-top: 24px;
+            }
+
+            .my-mt-7 {
+                margin-top: 28px;
+            }
+
+            .my-mt-8 {
+                margin-top: 32px;
+            }
+
+            .my-mt-10 {
+                margin-top: 40px;
+            }
+
+            .my-mt-50 {
+                margin-top: 50px;
+            }
+
+            .my-mt-100 {
+                margin-top: 70px;
+            }
+
+
+
+            /*______  Margin Y  ______*/
+            .my-my-1 {
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+
+            .my-my-2 {
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+
+            .my-my-3 {
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+
+            .my-my-4 {
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+
+            .my-my-5 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .my-my-6 {
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+
+            .my-my-50 {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+
+
+
+
+
+            /* invoice */
+            .invoice {
+                max-width: 750px;
+                margin: 0 auto;
+                background-color: #fff;
+                width: 100%;
+                padding: 40px;
+            }
+
+            table tr:last-child {
+                border-bottom: 0;
+            }
+
+
+            /*______ Font Weight  ______*/
+            .my-fw-normal {
+                font-weight: 400;
+            }
+
+            .my-fw-medium {
+                font-weight: 500;
+            }
+
+            .my-fw-bold {
+                font-weight: 600;
+            }
+
+            .my-fw-bolder {
+                font-weight: 700;
+            }
+
+
+
+
+            /*_____  Text Alignment _____ */
+            .my-text-center {
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .my-text-left {
+                text-align: left;
+            }
+
+            .my-text-right {
+                text-align: right;
+            }
+
+            /*______  Flex  ______*/
+            .my-d-flex,
+            .my-flex-center,
+            .my-flex-between,
+            .my-align-center,
+            .my-align-start,
+            .my-flex-column,
+            .my-justify-start,
+            .my-justify-between,
+            .my-justify-around,
+            .my-flex-start {
+                display: flex;
+            }
+
+            .my-flex-center {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .my-flex-between {
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .my-flex-start {
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .my-align-center {
+                align-items: center;
+            }
+
+            .my-align-start {
+                align-items: flex-start;
+            }
+
+            .my-align-end {
+                align-items: flex-end;
+            }
+
+
+            .my-justify-start {
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .my-justify-end {
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            .my-justify-center {
+                justify-content: center;
+            }
+
+            .my-justify-between {
+                justify-content: space-between;
+            }
+
+            .my-justify-around {
+                justify-content: space-around;
+
+            }
+
+            .my-flex-1 {
+                flex-grow: 1;
+            }
+
+            .my-flex-column {
+                flex-direction: column;
+            }
+
+            .flex-wrap {
+                flex-wrap: wrap;
+            }
+
+
+            /* Gap */
+            .my-gap-1 {
+                gap: 4px;
+            }
+
+            .my-gap-2 {
+                gap: 8px;
+            }
+
+            .my-gap-3 {
+                gap: 12px;
+            }
+
+            .my-gap-4 {
+                gap: 16px;
+            }
+
+            .my-gap-5 {
+                gap: 20px;
+            }
+
+            .my-gap-6 {
+                gap: 24px;
+            }
+
+            .my-gap-7 {
+                gap: 28px;
+            }
+
+            .my-gap-8 {
+                gap: 32px;
+            }
+
+            .my-gap-9 {
+                gap: 36px;
+            }
+
+            .my-gap-10 {
+                gap: 40px;
+            }
+
+            .my-gap-50 {
+                gap: 50px;
+            }
+
+
+
+            table {
+                border-collapse: collapse;
+                padding: 0 10px;
+                width: 100%;
+            }
+
+            th {
+                font-weight: 600;
+                background-color: #ededed;
+            }
+
+            th,
+            td {
+                padding: 13px 8px;
+                color: #01293a;
+            }
+
+            tr {
+                border-bottom: 1px solid #ededed;
+                padding: 3px 10px;
+            }
+        </style>
+    </head>
+
+
+    <body class="invoice-page">
+
+
+
+
+        <section class="my-mt-100">
+            <div class="my-container">
+                <div class="invoice my-mt-0">
+
+                    <!--*****  Top   *****-->
+                    <div class="top my-flex-between">
+                        <h3>Thank You <span class="my-text-primary">Tanvir</span>, <div>Here Your Order Details</div>
+                        </h3>
+                        <div>
+                            <button class="my-btn my-primary-btn">
+                                <span><i class="fa-solid fa-print"></i> Print</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--*****  Address   *****-->
+                    <div class="address my-flex-between my-mt-100">
+
+                        <!-- order -->
+                        <div class="order">
+                            <ul class="my-flex-column my-gap-2">
+                                <li class="my-text-secondary ">
+                                    <div class="my-d-flex my-gap-2">Order No: <span
+                                            class="my-fw-bold">#4454E45520445</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="my-d-flex my-gap-2">
+                                        Order Placed at: <span class="my-fw-bold">12/12/2024, 06.22 PM</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="my-d-flex my-gap-2">Order Delivered at: <span
+                                            class="my-fw-bold">12/12/2024, 06.22 PM</span></div>
+                                </li>
+                                <li>
+                                    <div class="my-d-flex my-gap-2">Order Status: <span
+                                            class="my-fw-bolder my-text-green" style="color:#dc7018">Delivered</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="address">
+                            <ul class="my-flex-column my-gap-2">
+                                <li class="my-text-secondary ">
+                                    <div class="my-d-flex my-gap-2">Delivery To:
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="my-fw-bolder my-text-primary">
+                                        Md Tanvir Ahmed
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        House 12, Block A,Mirpur 10,Mirpur
+                                    </p>
+                                    <p>
+                                        Dhaka Bangladesh
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="order-from my-mt-50">
+                        <div>
+                            <p>Order from</p>
+                            <h5 class="my-fw-bold">MD Hasal Ali</h5>
+                            <p>Shop 22, Model Town , Gulshan-2 , Dhaka</p>
+                        </div>
+
+                        <table class="my-my-4 my-w-100">
+                            <thead>
+                                <tr>
+                                    <th class="my-text-left">Item Name</th>
+                                    <th class="my-text-right">Quantity</th>
+                                    <th class="my-text-right">Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="my-text-left">Burger sm</td>
+                                    <td class="my-text-right">01</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>122
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left">Mojo 250ml</td>
+                                    <td class="my-text-right">02</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>40
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left">sos</td>
+                                    <td class="my-text-right">05</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>20
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left">pizza</td>
+                                    <td class="my-text-right">01</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>100
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left">7up</td>
+                                    <td class="my-text-right">02</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left"></td>
+                                    <td class="my-text-right my-fw-bold">Item Total: </td>
+                                    <td class="my-text-right my-fw-bold">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>232
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left"></td>
+                                    <td class="my-text-right my-fw-bold">Delivary Charge:</td>
+                                    <td class="my-text-right my-fw-bold">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>60
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left"></td>
+                                    <td class="my-text-right my-fw-bold">Discount</td>
+                                    <td class="my-text-right my-fw-bold">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left"></td>
+                                    <td class="my-text-right my-fs-lg my-fw-bolder">Grand Total:</td>
+                                    <td class="my-text-right my-fs-lg my-fw-bolder">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-sm"></i>392
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </body>
+
+</html>
