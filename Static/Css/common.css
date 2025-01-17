@@ -1079,6 +1079,11 @@ footer .footer-pages .footer-head::after {
 }
 
 
+.error-page {
+    height: 100dvh;
+    width: 100%;
+}
+
 
 
 
