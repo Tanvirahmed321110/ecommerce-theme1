@@ -335,6 +335,9 @@
     transition: .15s;
     border: 1px solid var(--border-color2);
     border-radius: 10px;
+    padding: 16px;
+    color: var(--gray);
+    font-family: inherit;
 }
 
 .my-input-control input {
@@ -351,10 +354,12 @@
     font-weight: var(--fw-500);
 }
 
-.my-input-control input::placeholder {
-    font-weight: var(--fw-600);
+.my-input-control input::placeholder,
+textarea::placeholder {
+    font-weight: var(--fw-500);
     color: #a39e9e;
     font-size: var(--fs-sm);
+    font-family: inherit;
 }
 
 .my-input-control input:focus,
@@ -370,9 +375,9 @@
     background-color: var(--white);
     padding: 2px 6px;
     z-index: 2;
-    color: var(--gray);
+    color: var(--secondary-hover);
     cursor: pointer;
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     user-select: none;
     transition: .12s linear;
 }
@@ -781,8 +786,13 @@ input[type="checkbox"]:focus {
 }
 
 .my-dropdown input[type='radio'] {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
+}
+
+input[type='radio'] {
+    width: 12px;
+    height: 12px;
 }
 
 input[type="radio"]:checked::after {

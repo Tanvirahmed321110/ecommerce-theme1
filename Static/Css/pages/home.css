@@ -951,27 +951,7 @@ swiper-slide.hero img {
     transition: .45s linear;
 }
 
-.tabs-products .my-card:hover {
-    transform: translateY(-8px);
-}
 
-.tabs-products .my-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(203, 35, 35, 0.115);
-    width: calc(100% - 3px);
-    height: 0;
-    transition: .55s linear;
-    border: 2px solid var(--white);
-    border-radius: 8px;
-}
-
-.tabs-products .my-card:hover::after {
-    height: calc(100% - 3px);
-    z-index: -1;
-}
 
 
 /* tab area products slider css */

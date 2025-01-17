@@ -1,0 +1,56 @@
+.checkout-main {
+    background-color: var(--white-off);
+}
+
+
+.brigtcamp .brigtcamp-area {
+    background-color: var(--white);
+}
+
+
+
+
+
+/*****  checkout-area  *****/
+.checkout-area {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+}
+
+.checkout-area .left .my-card {
+    padding: 20px;
+    box-shadow: unset;
+    border-color: var(--border-color2);
+}
+
+
+
+.checkout-area .form input {
+    max-width: 100%;
+}
+
+.checkout-area .left,
+.checkout-area .right {
+    background-color: var(--white);
+    padding: 35px;
+}
+
+
+.checkout-area .address-options .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--border-color);
+    padding: 8px 10px;
+}
+
+.checkout-area .address-options .icon i {
+    font-size: var(--fs-lg);
+}
+
+
+/* hide-input */
+.mobile-banking .hide-input {
+    display: none;
+}
