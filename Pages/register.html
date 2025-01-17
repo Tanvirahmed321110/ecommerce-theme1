@@ -9,7 +9,7 @@
             content="Online shopping, Affordable products, Best deals, Discount offers, Buy products online, Shop now, Order online, Top quality products, Fast delivery, Secure online shopping, Product bazaar">
         <link rel="stylesheet" href="../Static/Css/common.css">
         <link rel="stylesheet" href="../Static/Css/pages/checkout.css">
-        <title>Login_Page</title>
+        <title>Register_Page</title>
     </head>
 
     <body>
@@ -31,7 +31,7 @@
 
 
                         <div class="right">
-                            <h3 class="my-fw-bolder">Login</h3>
+                            <h3 class="my-fw-bolder">Register</h3>
                         </div>
                     </div>
                 </div>
@@ -50,18 +50,23 @@
                 <div class="my-container-sm">
                     <div class="area">
                         <div class="my-grid-2 my-grid-sm-1  my-align-center my-gap-50">
+
                             <!--*****  Image Area  ***** -->
                             <div class="left-image">
-                                <img src="../Static/images/login_image.svg" alt="">
+                                <img src="../Static/images/register.svg" alt="">
                             </div>
 
                             <div class="">
                                 <div>
-                                    <h2>Sign in to Shopping</h2>
+                                    <h2>Get Start Shopping</h2>
                                     <p>Welcome back to Shopping! Enter your email to get started.</p>
                                 </div>
 
                                 <form action="#" class=" my-mt-10 my-radius-md my-flex-column my-gap-4">
+                                    <div class="my-input-control">
+                                        <label for="name" class="label">Name</label>
+                                        <input type="text" id="name">
+                                    </div>
                                     <div class="my-input-control">
                                         <label for="email" class="label">Email</label>
                                         <input type="email" id="email">
@@ -71,20 +76,9 @@
                                         <input type="password" id="password">
                                     </div>
 
-                                    <div class="my-flex-between">
-                                        <div class="my-d-flex my-align-center my-gap-2">
-                                            <input type="checkbox" id="remember">
-                                            <label for="remember">Remember me</label>
-                                        </div>
-                                        <p>
-                                            Forgot Password? <a class="my-text-primary my-fw-bold"
-                                                href="../Pages/forgot.html">Reset it.</a>
-                                        </p>
-                                    </div>
-
                                     <div>
                                         <button class="my-btn login-register-btn my-primary-btn my-w-100 ">
-                                            <span>Sign In</span>
+                                            <span>Sign Up</span>
                                         </button>
                                     </div>
                                 </form>
@@ -114,9 +108,8 @@
                                     </div>
 
                                     <div class="my-mt-2 my-text-right">
-                                        <p>Dont have account?
-                                            <a class="my-text-primary my-fw-bold" href="../Pages/register.html">Create
-                                                account</a>
+                                        <p>Already have account?
+                                            <a class="my-text-primary my-fw-bold" href="../Pages/login.html">Login </a>
                                         </p>
                                     </div>
                                 </div>

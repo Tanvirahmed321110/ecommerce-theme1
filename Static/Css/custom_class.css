@@ -165,11 +165,16 @@ tr {
 
 
 /*____________  Reused Class  ____________*/
-.my-container {
+.my-container,
+.my-container-sm {
     padding: 20px 16px;
     margin: 0px auto;
     width: 100%;
     max-width: 1280px;
+}
+
+.my-container-sm {
+    max-width: 1000px;
 }
 
 .section-margin {
@@ -247,6 +252,10 @@ tr {
 
 .my-shadow-1 {
     box-shadow: var(--shadow-1);
+}
+
+.my-shadow-2 {
+    box-shadow: var(--shadow-2);
 }
 
 
@@ -521,6 +530,10 @@ tr {
 
 .my-p-5 {
     padding: 20px;
+}
+
+.my-p-6 {
+    padding: 24px;
 }
 
 .my-pl-0 {

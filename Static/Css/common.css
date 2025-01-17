@@ -694,11 +694,11 @@ header .header-top .left a:hover {
     padding: 14px 10px;
 }
 
-.login-register .other-option .my-btn::after {
+.other-option .my-btn::after {
     background-color: blueviolet;
 }
 
-.login-register .other-option .my-btn-sm {
+.other-option .my-btn-sm {
     background-color: var(--blue);
     color: var(--white);
 }
