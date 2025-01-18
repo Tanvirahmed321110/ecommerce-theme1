@@ -1320,8 +1320,130 @@ input[type="radio"]:checked::after {
 
 
 
+/******   List View   ******/
+.list-view-area table th {
+    background-color: var(--border-color);
+}
 
 
+.list-view-table {
+    width: 750px;
+    overflow-x: auto;
+}
+
+.list-view-table table {
+    width: 100%;
+}
+
+.list-view-area table tr:nth-child(even) {
+    background-color: var(--white-off);
+    border-bottom: 1px solid var(--border-color2);
+}
+
+.list-view-area table tr {
+    position: relative;
+    transition: .2s linear;
+}
+
+.list-view-area table tr::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: .2s linear;
+    z-index: -1;
+}
+
+.list-view-area table tbody tr:hover::after {
+    width: 12px;
+    height: 12px;
+    z-index: 2;
+}
+
+.list-view-area th,
+.list-view-area td {
+    padding: 8px 14px;
+    text-align: center;
+    max-width: 222px;
+    min-width: 90px;
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+.list-view-area th {
+    padding: 20px 14px;
+    border-bottom: 1px solid var(--border-color2);
+}
+
+
+
+.list-view-area .status {
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-size: 11px;
+    text-transform: lowercase;
+}
+
+.list-view-area .status.delivered {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.list-view-area .status.cancel {
+    background-color: var(red);
+    color: var(--white);
+}
+
+.list-view-area .status.way {
+    background-color: var(--orange);
+}
+
+.list-view-area .status.pending {
+    background-color: var(--border-color2);
+    color: var(--gray);
+}
+
+
+
+
+
+
+
+
+/******  Pagination  ******/
+.pagination {
+    /* background-color: var(--white-off); */
+    padding: 12px;
+}
+
+.pagination ul li a {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color2);
+    gap: 4px;
+    font-weight: var(--fw-600);
+}
+
+.pagination ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.pagination ul li a.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.pagination ul li a i {
+    font-size: var(--fs-xs);
+}
 
 
 
@@ -1330,5 +1452,30 @@ input[type="radio"]:checked::after {
         max-width: 640px;
         margin: 0 auto;
         margin-top: 90px;
+    }
+
+    .orders-page {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .list-view-table {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:769px) {
+    .list-view-table {
+        width: 460px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:480px) {
+    .list-view-table {
+        width: 380px;
+        margin: 0 auto;
     }
 }

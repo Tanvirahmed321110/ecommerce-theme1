@@ -1,0 +1,131 @@
+.order-details-page .cart-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+
+/* Main container */
+.delivery-progress {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Progress container */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+.progress-line {
+    height: 3px;
+    background-color: #4caf50;
+    width: 370px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    right: 30px;
+    z-index: 0;
+}
+
+.progress-circle {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+}
+
+.progress-circle.active {
+    background-color: #4caf50;
+}
+
+.progress-circle.completed {
+    background-color: #4caf50;
+}
+
+/* Progress stages list */
+.progress-stages {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.progress-stages li {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Active stage text */
+.progress-stages li.active {
+    font-weight: var(--fw-600);
+    color: #4caf50;
+}
+
+
+
+/* Order status */
+.status {
+    padding: 2px 6px;
+    font-size: var(--fs-xs);
+    border-radius: 16px;
+    color: var(--white);
+}
+
+.on-delivary {
+    background-color: #4caf50;
+    color: var(--white);
+}
+
+.processing {
+    background-color: #ccc;
+}
+
+.delivered {
+    background-color: var(--primary-color);
+}
+
+/* ordered-items */
+
+
+.ordered-items {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.ordered-items .name {
+    width: 180px;
+    text-align: left;
+}
+
+
+@media(max-width:769px) {
+    .order-details-area {
+        padding: 16px;
+    }
+
+    .start-end {
+        flex-direction: column;
+    }
+
+    .progress-line {
+        width: 250px;
+    }
+}

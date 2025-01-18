@@ -8,8 +8,8 @@
         <meta name="keywords"
             content="Online shopping, Affordable products, Best deals, Discount offers, Buy products online, Shop now, Order online, Top quality products, Fast delivery, Secure online shopping, Product bazaar">
         <link rel="stylesheet" href="../Static/Css/common.css">
-        <link rel="stylesheet" href="../Static/Css/pages/checkout.css">
-        <title>Checkout_Page</title>
+        <link rel="stylesheet" href="../Static/Css/pages/order_details.css">
+        <title>Order_details_Page</title>
     </head>
 
     <body>
@@ -691,290 +691,130 @@
                 <div class="my-container">
                     <ul class="my-d-flex my-mt-2 my-align-center my-gap-5 brigtcamp-area">
                         <li><a href="../index.html">Home</a> </li>
-                        <li>Checkout</li>
+                        <li><a href="../index.html">Orders</a> </li>
+                        <li>Order Details</li>
                     </ul>
                 </div>
             </section>
 
 
-
-            <section class="checkout">
+            <section class="order-details-page">
                 <div class="my-container">
-                    <div class="head checkout-head">
-                        <h2>Checkout</h2>
-                        <p class="my-fs-xs">Already have an account? Click here to <a class="my-text-primary my-fw-bold"
-                                href="../Pages/login.html">Sign
-                                in</a>.
-                        </p>
-                    </div>
+                    <h2>Order Details</h2>
 
-                    <div class="checkout-area my-mt-4">
-
-                        <!--*****  Left Delivary and Cart  *****-->
-                        <div class="left my-flex-column my-gap-10">
-                            <div class="address-area">
-
-                                <!-- address head -->
-                                <div class="my-flex-between my-gap-4">
-                                    <h4><span><i class="fa-solid fa-location-dot"></i></span> Delivary Options</h4>
-                                    <button class="my-btn my-btn-sm my-primary-btn" id="open-address-modal">
-                                        <span>Add new
-                                            address</span>
-                                    </button>
-
-
-                                    <!-- Delivary Address Modal -->
-                                    <div class="my-modal  " id="shipping-address-modal">
-                                        <div class=" modal-content my-p-4">
-                                            <button class=" modal-close-btn my-primary-btn my-btn close-btn">
-                                                <span><i class="fa-solid fa-xmark"></i></span>
-                                            </button>
-
-                                            <div>
-                                                <!--_________  sign up form  _________-->
-                                                <div class="sign-up">
-                                                    <div>
-                                                        <h3 class="my-mt-2">New Shipping Address</h3>
-                                                        <p>Add new shipping address for your order delivery.</p>
-                                                    </div>
-
-                                                    <form action="#" class="my-mt-10 my-flex-column my-gap-5">
-                                                        <div class="my-input-control">
-                                                            <input type="text" id="name" required>
-                                                            <label class="label" for="name">Name</label>
-                                                        </div>
-
-                                                        <div class="my-input-control">
-                                                            <input type="text" id="address-1">
-                                                            <label class="label" for="address-1">Address 1</label>
-                                                        </div>
-
-                                                        <div class="my-input-control">
-                                                            <input type="text" id="address-2">
-                                                            <label class="label" for="address-2">Address 2</label>
-                                                        </div>
-
-                                                        <div class="my-input-control">
-                                                            <input type="text" id="city">
-                                                            <label class="label" for="city">City</label>
-                                                        </div>
-
-                                                        <div class="my-input-control">
-                                                            <input type="number" id="zip-code">
-                                                            <label class="label" for="zip-code">Zip Code</label>
-                                                        </div>
-
-                                                        <div class="my-input-control">
-                                                            <input type="number" id="phone">
-                                                            <label class="label" for="phone">Phone</label>
-                                                        </div>
-
-                                                        <div class="my-d-flex my-gap-2 my-align-center">
-                                                            <input type="checkbox" id="default">
-                                                            <label for="default">Set as Default</label>
-                                                        </div>
-
-                                                        <div>
-                                                            <button
-                                                                class="my-btn login-register-btn my-primary-btn my-w-100 ">
-                                                                <span>Save Address</span>
-                                                            </button>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                    <div class="order-details my-mt-5">
+                        <div class="order-details-area my-p-6 my-radius-md my-border2">
+                            <div class="my-flex-between">
+                                <div>
+                                    <p>Order ID</p>
+                                    <h3>#7473831</h3>
                                 </div>
-
-
-                                <div class="address-options my-grid-2 my-grid-md-1 my-gap-8 my-mt-3">
-
-                                    <!--*****  For Home  *****-->
-                                    <div class="home my-card">
-                                        <div class="icon"><i class="fa-solid fa-house-chimney"></i></div>
-                                        <div class="my-d-flex my-align-center my-gap-2">
-                                            <input type="radio" id="home" name="address">
-                                            <label for="home">Home</label>
-                                        </div>
-                                        <div class="my-mt-5">
-                                            <h5 class="my-text-gray">Md Tanvir Ahmed</h5>
-                                            <div class="my-mt-0">
-                                                <p class="my-fs-sm">4450 North Avenue Oakland,</p>
-                                                <p class="my-fs-sm">Dhaka, Bangladesh</p>
-                                                <p>++ 017 0923 8376</p>
-                                            </div>
-                                            <div class="my-mt-3 my-text-primary">
-                                                Default address
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!--*****  For Office  *****-->
-                                    <div class="office my-card">
-                                        <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
-                                        <div class="my-d-flex my-align-center my-gap-2">
-                                            <input type="radio" id="office" name="address">
-                                            <label for="office">Office</label>
-                                        </div>
-                                        <div class="my-mt-4">
-                                            <h5 class="my-text-gray">Md Tanvir Ahmed</h5>
-                                            <div class="my-mt-0">
-                                                <p class="my-fs-sm">House 13, Block B, Mirpur 12,</p>
-                                                <p class="my-fs-sm">Dhaka, Bangladesh</p>
-                                                <p>++ 017 0923 8376</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="on-delivary status">
+                                    On Deliver
                                 </div>
                             </div>
 
 
+                            <div class="my-grid-2 my-gap-4 my-grid-md-1 my-mt-5">
 
+                                <!-- order start and end -->
+                                <div class="my-card my-bg-white-off my-flex-column my-gap-3">
+                                    <span class="cart-icon my-flex-center my-fs-lg"><i
+                                            class="fa-solid fa-truck-fast"></i></span>
+                                    <h5 class="my-mt-3">Hi Tanvir , Package on deliver</h5>
 
-                            <!-- Delivary Note -->
-                            <div>
-                                <!-- Delivary Note Head -->
-                                <div class="my-flex-between my-gap-4">
-                                    <h4><span><i class="fa-regular fa-message"></i></span> Delivary instructions</h4>
-                                </div>
-
-                                <div class="my-mt-3">
-                                    <div class="my-input-control">
-                                        <textarea name="" placeholder="write delivary instructions" id=""></textarea>
-                                        <p class="my-fs-xs">Add instructions for how you want your order shopped
-                                            and/or delivered</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-
-                            <!--*****  Payment  *****-->
-                            <div>
-                                <!-- Payment -->
-                                <div class="">
-                                    <h4><span><i class="fa-regular fa-credit-card"></i></span> Payment Method</h4>
-                                </div>
-
-                                <div class="my-mt-3">
-                                    <div class="cash-on-delivary  my-card">
-                                        <div class=" my-d-flex my-gap-6">
-                                            <span><input type="radio" name="payment-option"></span>
-                                            <div>
-                                                <h5>Cadit / Debit card</h5>
-                                                <p class="my-mt-1">Safe money transfer using your bank accou k account.
-                                                </p>
-                                            </div>
+                                    <div class="my-flex-between my-mt-0 start-end my-flex-sm-column">
+                                        <div
+                                            class="my-text-secondary my-d-flex my-align-center my-gap-2 my-bg-white my-radius-pill my-p-2 my-px-3 my-fs-xs">
+                                            <div><i class="fa-solid fa-truck-arrow-right"></i></div>
+                                            <div>Mirpur , Dhaka</div>
+                                        </div>
+                                        <div class="my-d-flex my-align-center ">
+                                            <span class="my-text-secondary my-flex-sm-column">
+                                                <i
+                                                    class="fa-solid fa-circle my-fs-xs"></i></span>----------------<span><i
+                                                    class="fa-solid fa-caret-right my-fs-xs my-text-secondary"></i>
+                                            </span>
                                         </div>
 
-                                        <!--***  Form  ***-->
-                                        <form action="#" class="my-mt-6 form my-flex-column my-gap-7">
-                                            <div class="my-input-control">
-                                                <label class="label" for="card-number">Card Number</label>
-                                                <input type="number" placeholder="Enter Card Number" id="card-number">
-                                            </div>
-
-                                            <div class="my-input-control">
-                                                <label class="label" for="name-number">Name on card</label>
-                                                <input type="text" placeholder=" Card Name" id="name-number">
-                                            </div>
-
-                                            <div class="my-grid-2 my-gap-4 my-grid-sm-1">
-
-
-                                                <div class="my-input-control">
-                                                    <label class="label" for="ex-date">Expiry date</label>
-                                                    <input type="date" placeholder="Enter Expiry Date" id="ex-date">
-                                                </div>
-
-                                                <div class="my-input-control">
-                                                    <label class="label" for="cvc-number">CVC Code</label>
-                                                    <input type="number" placeholder="Enter CVC" id="cvc-number">
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="my-mt-3">
-                                    <div class="my-card">
-                                        <div class="my-d-flex my-gap-6">
-                                            <span class="my-mt-1 my-fs-lg"><i
-                                                    class="fa-solid fa-mobile-screen-button"></i></span>
-                                            <div>
-                                                <h5>Mobile Banking</h5>
-                                                <p class="my-mt-1">Pay with Bikash or Nogod.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="my-mt-4 mobile-banking">
-                                            <div class="my-d-flex my-align-center my-gap-4">
-                                                <div class="my-d-flex my-align-center my-gap-2">
-                                                    <input type="radio" id="Bikash" class="mobile-bank-input"
-                                                        name="payment-option">
-                                                    <label for="Bikash" class="my-fw-bold">Bikash</label>
-                                                </div>
-                                                <div class="my-d-flex my-align-center my-gap-2">
-                                                    <input type="radio" id="nogod" name="payment-option"
-                                                        class="mobile-bank-input">
-                                                    <label for="nogod" class="my-fw-bold">Nogod</label>
-                                                </div>
-                                            </div>
-
-                                            <!-- hide input -->
-                                            <div class="my-input-control ">
-                                                <input class="my-mt-2 hide-input" type="number" id="accountInput"
-                                                    placeholder="Enter Account">
-                                            </div>
+                                        <div
+                                            class="my-text-secondary my-d-flex my-align-center my-gap-2 my-bg-white my-radius-pill my-p-2 my-px-3 my-fs-xs">
+                                            <span><i class="fa-solid fa-location-dot"></i></span>
+                                            <div>Block E , Rampura Dhaka</div>
                                         </div>
                                     </div>
+
+
+                                    <!-- order progress -->
+                                    <div class="delivery-progress ">
+                                        <div class="progress-container">
+                                            <div class="progress-circle active">1</div>
+                                            <div class="progress-line"></div>
+                                            <div class="progress-circle active">2</div>
+                                            <div class="progress-line"></div>
+                                            <div class="progress-circle active">3</div>
+                                            <div class="progress-line"></div>
+                                            <div class="progress-circle active">4</div>
+                                            <div class="progress-line"></div>
+                                            <div class="progress-circle">5</div>
+                                        </div>
+                                        <ul class="progress-stages">
+                                            <li class="active">Order Placed</li>
+                                            <li class="active">Processing</li>
+                                            <li class="active">Shipped</li>
+                                            <li class="active">Out for Delivery</li>
+                                            <li>Delivered</li>
+                                        </ul>
+                                    </div>
+
+
                                 </div>
 
-
-                                <div class="my-mt-3">
-                                    <div class="cash-on-delivary my-d-flex my-gap-6  my-card">
-                                        <span><input type="radio" name="payment-option"></span>
+                                <div class="my-grid-2 my-gap-4">
+                                    <div class="my-card my-bg-white-off my-flex-column my-gap-3 my-justify-between">
+                                        <span class="cart-icon my-flex-center  my-fs-lg"><i
+                                                class="fa-solid fa-truck"></i></span>
                                         <div>
-                                            <h5>Cash on Delivery</h5>
-                                            <p class="my-mt-1">Pay with cash when your order is delivered.</p>
+                                            <div>Estimated Arrival</div>
+                                            <h4 class="my-mt-2">23 March 2025</h4>
+                                        </div>
+                                    </div>
+                                    <div class="my-card my-bg-white-off my-flex-column my-gap-3 my-justify-between">
+                                        <span class="cart-icon my-flex-center my-fs-lg"><i
+                                                class="fa-regular fa-clock"></i></span>
+                                        <div>
+                                            <div>Delivered in</div>
+                                            <h4 class="my-mt-2">4 Days</h4>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="my-d-flex my-gap-4 my-align-center my-mt-4">
-                                    <input type="checkbox" checked id="cash">
-                                    <label for="cash">Delivary address and payment address are same.</label>
-                                </div>
                             </div>
-                        </div>
+
+                            <div class="my-mt-6 my-grid-2 my-gap-4 my-grid-md-1">
+                                <div class="my-card my-justify-center my-align-center my-flex-column my-gap-3">
+                                    <div class="my-card my-w-50 my-w-sm-100 my-d-flex my-align-center">
+                                        <h5>Order Date :</h5>
+                                        <p class="my-fs-xs my-ml-6 my-pl-4">23 Jan 2024</p>
+                                    </div>
+
+                                    <div class="my-card my-w-50 my-w-sm-100 my-d-flex my-align-center">
+                                        <h5>Bank Info :</h5>
+                                        <p class="my-fs-xs my-ml-6 my-pl-4">1241<span>*******</span>4520</p>
+                                    </div>
+
+                                    <div class="my-card my-w-50 my-w-sm-100 my-d-flex my-align-center">
+                                        <h5>Total Bill :</h5>
+                                        <h4 class="my-ml-6 my-pl-4"> <i
+                                                class="fa-solid fa-bangladeshi-taka-sign"></i>1200</h4>
+                                    </div>
 
 
-
-
-
-
-
-
-
-
-
-                        <!-- Left Delivary and Cart -->
-                        <div class="right">
-
-                            <div class="my-border2 right-area my-radius-md my-p-4">
-                                <!--*****  Order Details  ***** -->
-                                <div class="order-details">
-                                    <h5 class="my-fw-bolder">Order Details</h5>
-                                    <ul class="my-mt-4 my-flex-column my-gap-0 order-cart  my-has-scrollbar-sm ">
+                                </div>
+                                <div class="my-card">
+                                    <h5 class="my-fw-bolder">Ordered items</h5>
+                                    <ul
+                                        class="my-mt-4 d my-flex-column ordered-items my-gap-0 order-cart  my-has-scrollbar-sm ">
 
                                         <!--single  order item -->
                                         <li class="my-flex-between my-gap-3 my-py-1 my-border-bottom">
@@ -1036,46 +876,10 @@
 
                                     </ul>
                                 </div>
+                            </div>
 
-                                <div class="order-summery my-mt-8">
-                                    <h5 class="my-fw-bolder">Order Summery</h5>
+                            <div class="my-mt-5">
 
-                                    <ul class="my-mt-4">
-                                        <li class="my-flex-between  my-pb-1">
-                                            <div>Sub total</div>
-                                            <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>1220</div>
-                                        </li>
-                                        <li class="my-flex-between  my-pb-1">
-                                            <div>Delivary</div>
-                                            <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>Free</div>
-                                        </li>
-                                        <li class="my-flex-between  my-pb-1">
-                                            <div>Discount</div>
-                                            <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>20</div>
-                                        </li>
-                                        <li class="my-border-bottom my-py-1"></li>
-                                        <li class="my-flex-between  my-mt-1">
-                                            <h4>Total</h4>
-                                            <h4><i class="fa-solid fa-bangladeshi-taka-sign"></i>1320</h4>
-                                        </li>
-                                    </ul>
-
-
-                                    <!-- Offer code -->
-                                    <form action="#" class="subcribe my-d-flex my-mt-5">
-                                        <input type="email" placeholder="Enter Promo Code">
-                                        <button class="my-btn my-btn my-primary-btn"><span>Submit</span></button>
-                                    </form>
-
-                                    <div class="my-mt-5">
-                                        <a href="../Pages/order_complete.html"
-                                            class="my-btn my-secendary-btn"><span>Confrim Order</span></a>
-                                    </div>
-                                    <div class="my-mt-4">
-                                        <a class="my-btn my-btn-outline" href="./cart.html"><span>Back To
-                                                Cart</span></a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -2560,9 +2364,7 @@
             // Base function for updating quantity
             import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF } from '../Static/Js/utilitis.js';
 
-            openModalF('shipping-address-modal', 'open-address-modal')
-            closeButtonF('review-modal')
-            closeButtonF('shipping-address-modal')
+
 
             document.querySelectorAll('input[name="payment-option"]').forEach(radio => {
                 radio.addEventListener('change', () => {

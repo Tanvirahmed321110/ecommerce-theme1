@@ -1468,7 +1468,9 @@ footer .footer-pages .footer-head::after {
 
     .footer-top-area .head {
         flex-direction: column;
-        gap: 12px;
+        gap: 20px;
+        align-items: flex-start;
+
     }
 
 }
