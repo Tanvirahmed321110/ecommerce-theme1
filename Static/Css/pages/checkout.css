@@ -10,6 +10,10 @@
 
 
 /*****  checkout-area  *****/
+.checkout .my-container {
+    padding-top: 0;
+}
+
 .checkout-area {
     display: grid;
     grid-template-columns: 1.7fr 1fr;
@@ -61,6 +65,11 @@
 /********  Check out Right  ********/
 .checkout-area .right {
     padding: 22px;
+}
+
+.right-area {
+    position: sticky;
+    top: 40px;
 }
 
 .order-details .name {

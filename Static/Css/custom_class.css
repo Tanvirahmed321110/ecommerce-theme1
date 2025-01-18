@@ -318,6 +318,20 @@ tr {
     width: 88px;
 }
 
+.max-250 {
+    max-width: 250px;
+    width: 100%;
+}
+
+.max-350 {
+    max-width: 350px;
+    width: 100%;
+}
+
+.max-450 {
+    max-width: 450px;
+    width: 100%;
+}
 
 /* wrap */
 .my-text-nowrap {

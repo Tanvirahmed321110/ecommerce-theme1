@@ -1001,12 +1001,20 @@ swiper-slide.hero img {
     border-radius: 8px;
     overflow: hidden;
     font-family: Arial, sans-serif;
-    margin-top: 40px;
     user-select: none;
+}
+
+.accordion-area.my-grid-2 {
+    align-items: flex-start;
+    margin-top: 40px;
 }
 
 .accordion-item {
     border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-item h4 {
+    color: var(--gray);
 }
 
 .accordion-header {
