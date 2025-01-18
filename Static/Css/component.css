@@ -601,15 +601,29 @@ textarea::placeholder {
     background-color: whitesmoke;
 }
 
-.my-has-scrollbar:hover::-webkit-scrollbar {
+.my-has-scrollbar-sm::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: whitesmoke;
+}
+
+.my-has-scrollbar:hover::-webkit-scrollbar,
+.my-has-scrollbar-sm:hover::-webkit-scrollbar {
     background-color: var(gray);
     border: 1px solid var(--border-color);
     border-radius: 2px;
 }
 
-.my-has-scrollbar::-webkit-scrollbar-thumb {
+
+.my-has-scrollbar::-webkit-scrollbar-thumb,
+.my-has-scrollbar-sm::-webkit-scrollbar-thumb {
     border-radius: 2px;
     background-color: var(--gray);
+}
+
+.my-has-scrollbar-sm::-webkit-scrollbar-thumb {
+    background-color: var(--border-color2);
+    border-radius: 12px;
 }
 
 .my-has-scrollbar:hover::-webkit-scrollbar-thumb {
@@ -1189,7 +1203,17 @@ input[type="radio"]:checked::after {
 
 
 
+/* subcribe */
+.subcribe {
+    background-color: var(--white-off);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
 
+.subcribe input {
+    background-color: transparent;
+    border: none;
+}
 
 
 
@@ -1291,4 +1315,20 @@ input[type="radio"]:checked::after {
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    .brigtcamp {
+        max-width: 640px;
+        margin: 0 auto;
+        margin-top: 90px;
+    }
 }

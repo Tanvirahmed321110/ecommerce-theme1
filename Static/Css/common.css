@@ -1016,16 +1016,7 @@ footer .footer-pages .footer-head::after {
     font-size: var(--fs-lg);
 }
 
-.footer-pages .subcribe {
-    background-color: var(--white-off);
-    padding: 10px 12px;
-    border-radius: 8px;
-}
 
-.footer-pages .subcribe input {
-    background-color: transparent;
-    border: none;
-}
 
 .footer-pages .social li {
     /* border: 1px solid var(--gray); */

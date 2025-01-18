@@ -9,12 +9,10 @@
 
 
 
-
-
 /*****  checkout-area  *****/
 .checkout-area {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.7fr 1fr;
     gap: 50px;
 }
 
@@ -53,4 +51,68 @@
 /* hide-input */
 .mobile-banking .hide-input {
     display: none;
+}
+
+
+
+
+
+
+/********  Check out Right  ********/
+.checkout-area .right {
+    padding: 22px;
+}
+
+.order-details .name {
+    width: 140px;
+}
+
+.order-cart {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.checkout-area .right .my-border-top,
+.checkout-area .right .my-border-bottom,
+.checkout-area .right .my-border2 {
+    border-color: var(--border-color2)
+}
+
+
+
+
+
+
+@media (max-width:1080px) {
+    .checkout-area {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-area,
+    .checkout-head,
+    .brigtcamp .brigtcamp-area {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .checkout-head {
+        margin-bottom: 24px;
+    }
+
+
+    .checkout-area .left,
+    .checkout-area .right {
+        background-color: var(--white);
+        padding: 24px;
+    }
+}
+
+
+@media (max-width:480px) {
+
+    .checkout-area .left,
+    .checkout-area .right {
+        background-color: var(--white);
+        padding: 16px;
+    }
 }

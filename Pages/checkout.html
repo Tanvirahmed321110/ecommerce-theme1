@@ -700,9 +700,9 @@
 
             <section class="">
                 <div class="my-container">
-                    <div class="head">
+                    <div class="head checkout-head">
                         <h2>Checkout</h2>
-                        <p class="my-fs-xs">Already have an account? Click here to <a class="my-text-primary"
+                        <p class="my-fs-xs">Already have an account? Click here to <a class="my-text-primary my-fw-bold"
                                 href="../Pages/login.html">Sign
                                 in</a>.
                         </p>
@@ -717,10 +717,76 @@
                                 <!-- address head -->
                                 <div class="my-flex-between my-gap-4">
                                     <h4><span><i class="fa-solid fa-location-dot"></i></span> Delivary Options</h4>
-                                    <button class="my-btn my-btn-sm my-primary-btn">
+                                    <button class="my-btn my-btn-sm my-primary-btn" id="open-address-modal">
                                         <span>Add new
                                             address</span>
                                     </button>
+
+
+                                    <!-- Delivary Address Modal -->
+                                    <div class="my-modal  " id="shipping-address-modal">
+                                        <div class=" modal-content my-p-4">
+                                            <button class=" modal-close-btn my-primary-btn my-btn close-btn">
+                                                <span><i class="fa-solid fa-xmark"></i></span>
+                                            </button>
+
+                                            <div>
+                                                <!--_________  sign up form  _________-->
+                                                <div class="sign-up">
+                                                    <div>
+                                                        <h3 class="my-mt-2">New Shipping Address</h3>
+                                                        <p>Add new shipping address for your order delivery.</p>
+                                                    </div>
+
+                                                    <form action="#" class="my-mt-10 my-flex-column my-gap-5">
+                                                        <div class="my-input-control">
+                                                            <input type="text" id="name" required>
+                                                            <label class="label" for="name">Name</label>
+                                                        </div>
+
+                                                        <div class="my-input-control">
+                                                            <input type="text" id="address-1">
+                                                            <label class="label" for="address-1">Address 1</label>
+                                                        </div>
+
+                                                        <div class="my-input-control">
+                                                            <input type="text" id="address-2">
+                                                            <label class="label" for="address-2">Address 2</label>
+                                                        </div>
+
+                                                        <div class="my-input-control">
+                                                            <input type="text" id="city">
+                                                            <label class="label" for="city">City</label>
+                                                        </div>
+
+                                                        <div class="my-input-control">
+                                                            <input type="number" id="zip-code">
+                                                            <label class="label" for="zip-code">Zip Code</label>
+                                                        </div>
+
+                                                        <div class="my-input-control">
+                                                            <input type="number" id="phone">
+                                                            <label class="label" for="phone">Phone</label>
+                                                        </div>
+
+                                                        <div class="my-d-flex my-gap-2 my-align-center">
+                                                            <input type="checkbox" id="default">
+                                                            <label for="default">Set as Default</label>
+                                                        </div>
+
+                                                        <div>
+                                                            <button
+                                                                class="my-btn login-register-btn my-primary-btn my-w-100 ">
+                                                                <span>Save Address</span>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
 
@@ -900,7 +966,109 @@
 
                         <!-- Left Delivary and Cart -->
                         <div class="right">
-                            right
+
+                            <div class="my-border2 my-radius-md my-p-4">
+                                <!--*****  Order Details  ***** -->
+                                <div class="order-details">
+                                    <h5 class="my-fw-bolder">Order Details</h5>
+                                    <ul class="my-mt-4 my-flex-column my-gap-0 order-cart  my-has-scrollbar-sm ">
+
+                                        <!--single  order item -->
+                                        <li class="my-flex-between my-gap-3 my-py-1 my-border-bottom">
+                                            <img class="w-15" src="../Static/images/product1.jpg" alt="produts">
+                                            <div class="name">
+                                                <h6>Haldiram's Sev Bhujia </h6>
+                                                <small>200gm</small>
+                                            </div>
+                                            <div class="my-fs-md">1</div>
+                                            <div class="price w-12">
+                                                <h6><i class="fa-solid fa-bangladeshi-taka-sign"></i>200</h6>
+                                                <del class="my-fs-xs"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i>220</del>
+                                            </div>
+                                        </li>
+
+                                        <!--single  order item -->
+                                        <li class="my-flex-between my-gap-3 my-py-1 my-border-bottom">
+                                            <img class="w-15" src="../Static/images/product2.jpg" alt="produts">
+                                            <div class="name">
+                                                <h6>Haldiram's Sev Bhujia </h6>
+                                                <small>200gm</small>
+                                            </div>
+                                            <div class="my-fs-md">1</div>
+                                            <div class="price w-12">
+                                                <h6><i class="fa-solid fa-bangladeshi-taka-sign"></i>155</h6>
+                                            </div>
+                                        </li>
+
+                                        <!--single  order item -->
+                                        <li class="my-flex-between my-gap-3 my-py-1 my-border-bottom">
+                                            <img class="w-15" src="../Static/images/product3.jpg" alt="produts">
+                                            <div class="name">
+                                                <h6>'s Sev Bhujia </h6>
+                                                <small>500ml</small>
+                                            </div>
+                                            <div class="my-fs-md">1</div>
+                                            <div class="price w-12">
+                                                <h6><i class="fa-solid fa-bangladeshi-taka-sign"></i>195</h6>
+                                                <del class="my-fs-xs"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i>220</del>
+                                            </div>
+                                        </li>
+
+                                        <!--single  order item -->
+                                        <li class="my-flex-between my-gap-3 my-border-bottom">
+                                            <img class="w-15" src="../Static/images/product1.jpg" alt="produts">
+                                            <div class="name">
+                                                <h6>Haldiram's Sev Bhujia </h6>
+                                                <small>200gm</small>
+                                            </div>
+                                            <div class="my-fs-md">1</div>
+                                            <div class="price w-12">
+                                                <h6><i class="fa-solid fa-bangladeshi-taka-sign"></i>200</h6>
+                                                <del class="my-fs-xs"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i>220</del>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="order-summery my-mt-8">
+                                    <h5 class="my-fw-bolder">Order Summery</h5>
+
+                                    <ul class="my-mt-4">
+                                        <li class="my-flex-between  my-pb-1">
+                                            <div>Sub total</div>
+                                            <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>1220</div>
+                                        </li>
+                                        <li class="my-flex-between  my-pb-1">
+                                            <div>Delivary</div>
+                                            <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>Free</div>
+                                        </li>
+                                        <li class="my-flex-between  my-pb-1">
+                                            <div>Discount</div>
+                                            <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>20</div>
+                                        </li>
+                                        <li class="my-border-bottom my-py-1"></li>
+                                        <li class="my-flex-between  my-mt-1">
+                                            <h4>Total</h4>
+                                            <h4><i class="fa-solid fa-bangladeshi-taka-sign"></i>1320</h4>
+                                        </li>
+                                    </ul>
+
+
+                                    <!-- Offer code -->
+                                    <form action="#" class="subcribe my-d-flex my-mt-5">
+                                        <input type="email" placeholder="Enter Promo Code">
+                                        <button class="my-btn my-btn my-primary-btn"><span>Submit</span></button>
+                                    </form>
+
+                                    <div class="my-mt-5">
+                                        <button class="my-btn my-secendary-btn"><span>Confrim Order</span></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2384,8 +2552,9 @@
             // Base function for updating quantity
             import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF } from '../Static/Js/utilitis.js';
 
-
+            openModalF('shipping-address-modal', 'open-address-modal')
             closeButtonF('review-modal')
+            closeButtonF('shipping-address-modal')
 
             document.querySelectorAll('input[name="payment-option"]').forEach(radio => {
                 radio.addEventListener('change', () => {
