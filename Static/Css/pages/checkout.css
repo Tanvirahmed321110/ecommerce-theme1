@@ -101,11 +101,42 @@
 .cart-page {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 50px;
+    gap: 60px;
 }
 
+.cart-page .shopping-cart .item {
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 0;
+}
 
+.my-container .brigtcamp-white-off {
+    background-color: var(--white-off);
+}
 
+.cart-page .shopping-cart .right {
+    width: 40%;
+}
+
+.cart-page .quantity-buttons {
+    width: 160px;
+    background-color: var(--white-off);
+    padding: 6px;
+}
+
+.cart-page .quantity-buttons input {
+    background-color: var(--white);
+    border-radius: 0;
+}
+
+.cart-page .quantity-buttons .price {
+    width: 100px;
+}
+
+.cart-page .checkout-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 @media (max-width:1080px) {
     .checkout-area {
@@ -132,7 +163,61 @@
 }
 
 
+@media (max-width:991px) {
+    .cart-page {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .cart-page .items {
+        overflow-x: auto;
+        width: 100%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+
+    .cart-page .quantity-buttons .price {
+        width: 80px;
+    }
+}
+
+@media (max-width:556px) {
+    .cart-page .shopping-cart .right {
+        width: 45%;
+        gap: 15px;
+    }
+
+    .cart-page .shopping-cart .item {
+        gap: 15px;
+    }
+}
+
 @media (max-width:480px) {
+
+
+    .cart-page .items {
+        overflow-x: auto;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .cart-page .items .item .left {
+        gap: 5px
+    }
+
+    .cart-page .item img {
+        width: 60px;
+    }
+
+    .cart-page .quantity-buttons {
+        width: 208px !important;
+        background-color: var(--white-off);
+        padding: 6px;
+    }
 
     .checkout-area .left,
     .checkout-area .right {
