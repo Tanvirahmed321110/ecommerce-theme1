@@ -997,8 +997,8 @@ swiper-slide.hero img {
     width: 100%;
     max-width: 640px;
     margin: 0 auto;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border: 1px solid var(--border-color2);
+    border-radius: 12px;
     overflow: hidden;
     font-family: Arial, sans-serif;
     user-select: none;

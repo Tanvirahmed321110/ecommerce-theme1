@@ -707,6 +707,7 @@ header .header-top .left a:hover {
     max-height: 520px;
     width: 100%;
     max-width: 420px;
+    padding: 22px;
 }
 
 .login-register .sign-up {
@@ -791,7 +792,7 @@ header .header-top .left a:hover {
 .my-modal.notification-modal .item {
     position: relative;
     overflow: hidden;
-    padding: 6px 0;
+    padding: 10px 0;
     border-bottom: 1px solid var(--border-color2);
 }
 
@@ -835,7 +836,7 @@ header .header-top .left a:hover {
     text-transform: lowercase;
     color: var(--white);
     transition: .2s linear;
-    animation: base-animation 3s ease-in-out infinite;
+    animation: base-animation 3s ease-in-out infinite !important;
 }
 
 

@@ -535,7 +535,8 @@ textarea::placeholder {
     transform: scale(0);
     transition-delay: .5s;
     transition: transform .2s linear;
-    border: 1px solid var(--white-off)
+    border: 1px solid var(--white-off);
+    padding: 22px 0;
 }
 
 .my-modal .modal-body {
@@ -1327,12 +1328,37 @@ input[type="radio"]:checked::after {
 
 
 .list-view-table {
-    width: 750px;
+    width: 800px;
     overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
+    height: fit-content;
 }
+
+/******   List View  wishlist ******/
+.list-view-table.wishlist-area {
+    width: 100%;
+}
+
+
+.list-view-table.wishlist-area tr input {
+    max-width: 100px !important;
+}
+
+.list-view-table.wishlist-area td,
+.list-view-table.wishlist-area th {
+    text-align: left;
+}
+
 
 .list-view-table table {
     width: 100%;
+    border-collapse: collapse;
+}
+
+.list-view-table table img {
+    border: 1px dotted var(--border-color2);
+    border-radius: 2px;
 }
 
 .list-view-area table tr:nth-child(even) {
@@ -1369,15 +1395,14 @@ input[type="radio"]:checked::after {
 .list-view-area td {
     padding: 8px 14px;
     text-align: center;
-    max-width: 222px;
     min-width: 90px;
-    width: 100%;
     text-wrap: nowrap;
 }
 
 .list-view-area th {
     padding: 20px 14px;
     border-bottom: 1px solid var(--border-color2);
+    height: 60px;
 }
 
 
@@ -1406,6 +1431,16 @@ input[type="radio"]:checked::after {
 .list-view-area .status.pending {
     background-color: var(--border-color2);
     color: var(--gray);
+}
+
+.list-view-area .stock {
+    background-color: var(--secondary-hover);
+    color: var(--white-off);
+}
+
+.list-view-area .out-stock {
+    background-color: var(--red);
+    color: var(--white-off);
 }
 
 
@@ -1475,14 +1510,15 @@ input[type="radio"]:checked::after {
 
 @media (max-width:769px) {
     .list-view-table {
-        width: 460px;
+        width: 7000px;
         margin: 0 auto;
     }
+
 }
 
 @media (max-width:480px) {
     .list-view-table {
-        width: 380px;
+        width: 600px;
         margin: 0 auto;
     }
 }

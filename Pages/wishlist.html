@@ -8,7 +8,7 @@
         <meta name="keywords"
             content="Online shopping, Affordable products, Best deals, Discount offers, Buy products online, Shop now, Order online, Top quality products, Fast delivery, Secure online shopping, Product bazaar">
         <link rel="stylesheet" href="../Static/Css/common.css">
-        <title>Order_Page</title>
+        <title>Wishlist_Page</title>
     </head>
 
     <body>
@@ -690,97 +690,233 @@
                 <div class="my-container">
                     <ul class="my-d-flex my-mt-2 my-align-center my-gap-5 brigtcamp-area">
                         <li><a href="../index.html">Home</a> </li>
-                        <li>Orders</li>
+                        <li><a href="../index.html">Shop</a> </li>
+                        <li>Wishlist</li>
                     </ul>
                 </div>
             </section>
 
 
-            <section class="orders-page">
-                <div class="my-container">
-                    <div class="my-grid-2 my-grid-md-1 my-gap-10">
-                        <div class="">
-                            <h2>My Orders</h2>
-                            <p>There are <strong>5</strong> products in i ordered.</p>
-                        </div>
 
+            <section class="checkout">
+                <div class="my-container">
+                    <div class="head checkout-head my-mt-2">
+                        <h2>Wishlist</h2>
+                        <p class="my-fs-sm">There are 5 products in this wishlist. </p>
+                    </div>
+
+                    <div class=" my-mt-6">
                         <div class="list-view-area ">
-                            <div class="list-view-table my-has-scrollbar-sm ">
+                            <div class="list-view-table wishlist-area my-has-scrollbar-sm ">
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>SL.</th>
-                                            <th>Order ID</th>
-                                            <th>Date</th>
-                                            <th>Quantity</th>
-                                            <th>Status</th>
+                                            <th><input type="checkbox" id="selectAll"></th>
+                                            <th>Image</th>
+                                            <th class="big-th">Product</th>
                                             <th>Amount</th>
+                                            <th>Status</th>
                                             <th>Actions</th>
+                                            <th>Remove</th>
                                         </tr>
                                     </thead>
                                     <tbody class="my-mt-4">
                                         <tr class="">
-                                            <td>1.</td>
-                                            <td>#123456</td>
-                                            <td>2025-01-01</td>
-                                            <td>2</td>
-                                            <td><span class="status pending">pending</span></td>
-                                            <td><i class=" fa-solid fa-bangladeshi-taka-sign"></i>1200.00</td>
+                                            <td><input type="checkbox" class="rowCheckbox"></td>
                                             <td>
-                                                <a class="my-btn my-btn-sm my-primary-btn my-text-nowrap"><span>View
-                                                        Details</span></a>
+                                                <a href="product.html">
+                                                    <img class="w-12" src="../Static/images/product-8.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="">
+                                                <div>
+                                                    <h6>Organic Banana</h6>
+                                                    <p>12pcs</p>
+                                                </div>
+                                            </td>
+
+                                            <!-- price -->
+                                            <td class="my-text-left">
+                                                <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>200</div>
+                                                <del class="my-text-gray"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i>222</del>
+                                            </td>
+
+                                            <td><span class="status stock">in stock</span></td>
+                                            <td>
+                                                <button class="my-btn my-btn-sm my-primary-btn"><span>Add
+                                                        Cart</span></button>
+                                            </td>
+                                            <td>
+                                                <button class="my-tooltip my-p-2">
+                                                    <i class="fa-regular fa-trash-can my-fs-lg"></i>
+                                                    <div class="show-text">Delete</div>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="">
+                                            <td><input type="checkbox" class="rowCheckbox"></td>
+                                            <td>
+                                                <a href="product.html">
+                                                    <img class="w-12" src="../Static/images/product4.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="big-th">
+                                                <h6>Organic Banana</h6>
+                                                <p>12pcs</p>
+                                            </td>
+
+                                            <!-- price -->
+                                            <td class="my-text-left">
+                                                <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>200</div>
+                                                <del class="my-text-gray"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i>222</del>
+                                            </td>
+
+                                            <td><span class="status stock">in stock</span></td>
+                                            <td>
+                                                <button class="my-btn my-btn-sm my-primary-btn"><span>Add
+                                                        Cart</span></button>
+                                            </td>
+                                            <td>
+                                                <button class="my-tooltip my-p-2">
+                                                    <i class="fa-regular fa-trash-can my-fs-lg"></i>
+                                                    <div class="show-text">Delete</div>
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr class="">
-                                            <td>2.</td>
-                                            <td>#1123456</td>
-                                            <td>2025-01-01</td>
-                                            <td>2</td>
-                                            <td><span class="status pending">pending</span></td>
-                                            <td><i class="fa-solid fa-bangladeshi-taka-sign"></i>320.00</td>
+                                            <td><input type="checkbox" class="rowCheckbox"></td>
                                             <td>
-                                                <a class="my-btn my-btn-sm my-primary-btn my-text-nowrap"><span>View
-                                                        Details</span></a>
+                                                <a href="product.html">
+                                                    <img class="w-12" src="../Static/images/product3.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="big-th">
+                                                <h6>Organic Banana</h6>
+                                                <p>12pcs</p>
+                                            </td>
+
+                                            <!-- price -->
+                                            <td class="my-text-left">
+                                                <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>200</div>
+                                                <del class="my-text-gray">
+                                                    <i class="fa-solid fa-bangladeshi-taka-sign"></i>222
+                                                </del>
+                                            </td>
+
+                                            <td>
+                                                <span class="status stock">in stock</span>
+                                            </td>
+
+                                            <td>
+                                                <button class="my-btn my-btn-sm my-primary-btn"><span>Add
+                                                        Cart</span></button>
+                                            </td>
+
+                                            <td>
+                                                <button class="my-tooltip my-p-2">
+                                                    <i class="fa-regular fa-trash-can my-fs-lg"></i>
+                                                    <div class="show-text">Delete</div>
+                                                </button>
                                             </td>
                                         </tr>
+
+
                                         <tr class="">
-                                            <td>3.</td>
-                                            <td>#123456</td>
-                                            <td>2025-01-01</td>
-                                            <td>2</td>
-                                            <td><span class="status delivered">Delivered</span></td>
-                                            <td><i class="fa-solid fa-bangladeshi-taka-sign"></i>140.00</td>
+                                            <td><input type="checkbox" class="rowCheckbox"></td>
                                             <td>
-                                                <a class="my-btn my-btn-sm my-primary-btn my-text-nowrap"><span>View
-                                                        Details</span></a>
+                                                <a href="product.html">
+                                                    <img class="w-12" src="../Static/images/product2.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="big-th">
+                                                <h6>Instand Food Cold</h6>
+                                                <p>500ml</p>
+                                            </td>
+
+                                            <!-- price -->
+                                            <td class="my-text-left">
+                                                <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>422</div>
+                                            </td>
+
+                                            <td><span class="status stock">in stock</span></td>
+                                            <td>
+                                                <button class="my-btn my-btn-sm my-primary-btn"><span>Add
+                                                        Cart</span></button>
+                                            </td>
+                                            <td>
+                                                <button class="my-tooltip my-p-2">
+                                                    <i class="fa-regular fa-trash-can my-fs-lg"></i>
+                                                    <div class="show-text">Delete</div>
+                                                </button>
                                             </td>
                                         </tr>
+
                                         <tr class="">
-                                            <td>4.</td>
-                                            <td>#123456</td>
-                                            <td>2025-01-01</td>
-                                            <td>2</td>
-                                            <td><span class="status way">on way</span></td>
-                                            <td><i class="fa-solid fa-bangladeshi-taka-sign"></i>200.00</td>
+                                            <td><input type="checkbox" class="rowCheckbox"></td>
                                             <td>
-                                                <a class="my-btn my-btn-sm my-primary-btn my-text-nowrap"><span>View
-                                                        Details</span></a>
+                                                <a href="product.html">
+                                                    <img class="w-12" src="../Static/images/product2.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="big-th">
+                                                <h6>Instand Food Cold</h6>
+                                                <p>500ml</p>
+                                            </td>
+
+                                            <!-- price -->
+                                            <td class="my-text-left">
+                                                <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>422</div>
+                                            </td>
+
+                                            <td><span class="status stock">in stock</span></td>
+                                            <td>
+                                                <button class="my-btn my-btn-sm my-primary-btn"><span>Add
+                                                        Cart</span></button>
+                                            </td>
+                                            <td>
+                                                <button class="my-tooltip my-p-2">
+                                                    <i class="fa-regular fa-trash-can my-fs-lg"></i>
+                                                    <div class="show-text">Delete</div>
+                                                </button>
                                             </td>
                                         </tr>
+
+
                                         <tr class="">
-                                            <td>5.</td>
-                                            <td>#123456</td>
-                                            <td>2025-01-01</td>
-                                            <td>2</td>
-                                            <td><span class="status delivered">Delivered</span></td>
-                                            <td><i class="fa-solid fa-bangladeshi-taka-sign"></i>40.00</td>
+                                            <td><input type="checkbox" class="rowCheckbox"></td>
                                             <td>
-                                                <a class="my-btn my-btn-sm my-primary-btn my-text-nowrap"><span>View
-                                                        Details</span></a>
+                                                <a href="product.html">
+                                                    <img class="w-12" src="../Static/images/product1.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="big-th">
+                                                <h6>Baby items</h6>
+                                                <p>200gm</p>
+                                            </td>
+
+                                            <!-- price -->
+                                            <td class="my-text-left">
+                                                <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>200</div>
+                                            </td>
+
+                                            <td>
+                                                <span class="status out-stock">out of stock</span>
+                                            </td>
+                                            <td>
+                                                <button class="my-btn my-btn-sm my-primary-btn my-secendary-btn"><span>Contact
+                                                        Us</span></button>
+                                            </td>
+                                            <td>
+                                                <button class="my-tooltip my-p-2">
+                                                    <i class="fa-regular fa-trash-can my-fs-lg"></i>
+                                                    <div class="show-text">Delete</div>
+                                                </button>
                                             </td>
                                         </tr>
-                                    </tbody>
-                                    <!-- More rows here -->
                                 </table>
                             </div>
 
@@ -798,7 +934,6 @@
                                 </ul>
                             </div>
                         </div>
-
 
                     </div>
                 </div>
@@ -1640,6 +1775,162 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-10">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="https://i.ibb.co.com/bsh2Hg9/card-1.jpg" alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">NutriChoice
+                                                    Digestive</a>
+                                            </h6>
+                                            <p class="my-fs-xs">220g</p>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-10">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-10">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="https://i.ibb.co.com/bsh2Hg9/card-1.jpg" alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">NutriChoice
+                                                    Digestive</a>
+                                            </h6>
+                                            <p class="my-fs-xs">220g</p>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-10">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-10">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="https://i.ibb.co.com/bsh2Hg9/card-1.jpg" alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">NutriChoice
+                                                    Digestive</a>
+                                            </h6>
+                                            <p class="my-fs-xs">220g</p>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-10">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
 
 
                             <!--_______  single cart item  _______-->
@@ -2284,19 +2575,16 @@
 
 
 
-            document.querySelectorAll('input[name="payment-option"]').forEach(radio => {
-                radio.addEventListener('change', () => {
-                    const accountInput = document.getElementById('accountInput');
 
-                    // Show the input field only if the selected radio is a mobile banking option
-                    if (radio.classList.contains('mobile-bank-input') && radio.checked) {
-                        accountInput.style.display = 'block';
-                    } else {
-                        accountInput.style.display = 'none';
-                    }
+            document.getElementById('selectAll').addEventListener('change', function () {
+                // Get all checkboxes with class .rowCheckbox
+                const checkboxes = document.querySelectorAll('.rowCheckbox');
+
+                // Set the checked property of each checkbox to match the state of the "Select All" checkbox
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = this.checked;
                 });
             });
-
 
 
 
