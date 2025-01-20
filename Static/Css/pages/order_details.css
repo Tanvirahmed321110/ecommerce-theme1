@@ -115,6 +115,30 @@
     text-align: left;
 }
 
+/* delivary-bod */
+.delivary-boy {
+    width: fit-content;
+    position: relative;
+}
+
+.delivary-boy .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px 12px;
+    background-color: var(--white-off);
+    border-radius: 4px;
+    font-size: var(--fs-lg);
+}
+
+.delivary-boy .my-card {
+    padding: 14px 20px;
+    background-color: var(--border-color);
+}
+
+.delivary-boy .head {
+    /* padding-top: 20px; */
+}
 
 @media(max-width:769px) {
     .order-details-area {

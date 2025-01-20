@@ -1446,6 +1446,13 @@ input[type="radio"]:checked::after {
 }
 
 
+.profile-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    padding: 2px;
+}
 
 @media (max-width:991px) {
     .brigtcamp {
