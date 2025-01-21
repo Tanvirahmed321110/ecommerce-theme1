@@ -768,6 +768,15 @@ swiper-slide.hero img {
     max-width: 280px;
 }
 
+.blog-area h4,
+.blog-area h3 {
+    transition: .2s;
+}
+
+.blog-area h4:hover,
+.blog-area h3:hover {
+    color: var(--primary-color);
+}
 
 
 
@@ -1031,7 +1040,7 @@ swiper-slide.hero img {
 }
 
 .accordion-item {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color2);
 }
 
 .accordion-item h4 {

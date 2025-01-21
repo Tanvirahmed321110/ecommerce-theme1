@@ -1,18 +1,15 @@
 .contact-page .left-cart {
-    background-color: var(coloor);
     padding: 75px 30px;
     max-width: 400px;
     width: 100%;
     margin-top: -100px;
+    color: var(--border-color2);
 }
 
 .contact-page .contact-area {
     padding: 45px;
 }
 
-.brigtcamp-area.contact-page {
-    background-color: var(--white);
-}
 
 
 .contact-page .right-form {
@@ -25,7 +22,12 @@
 }
 
 
-
+.map {
+    width: 100%;
+    height: 500px;
+    padding: 3px;
+    border: 1px solid var(--border-color);
+}
 
 
 
