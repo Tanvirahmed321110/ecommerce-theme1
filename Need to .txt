@@ -1,0 +1,4 @@
+1. all page html Validation
+2. Comment check and comment style will same. css and html
+3. products page , shop page and other page
+4. 

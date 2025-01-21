@@ -329,6 +329,11 @@ tr {
     width: 100%;
 }
 
+.max-450 {
+    max-width: 450px;
+    width: 100%;
+}
+
 .max-550 {
     max-width: 600px;
     width: 100%;
