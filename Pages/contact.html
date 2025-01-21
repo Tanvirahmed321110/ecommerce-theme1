@@ -8,7 +8,7 @@
         <meta name="keywords"
             content="Online shopping, Affordable products, Best deals, Discount offers, Buy products online, Shop now, Order online, Top quality products, Fast delivery, Secure online shopping, Product bazaar">
         <link rel="stylesheet" href="../Static/Css/common.css">
-        <link rel="stylesheet" href="../Static/Css/pages/checkout.css">
+        <link rel="stylesheet" href="../Static/Css/pages/other-page.css">
         <title>Cart_Page</title>
     </head>
 
@@ -681,384 +681,110 @@
 
 
 
-        <main>
+        <main class="my-bg-white-off">
 
             <!-- ************************************ -->
             <!--         Product Details  Here          -->
             <!-- ************************************ -->
-
-            <section class="brigtcamp my-bg-white">
-                <div class="my-container my-pt-0">
-                    <ul class="my-d-flex my-mt-0 my-align-center my-gap-5 brigtcamp-white-off  brigtcamp-area">
+            <section class="brigtcamp ">
+                <div class="my-container   my-pb-0">
+                    <ul class="my-d-flex my-mt-2 my-align-center my-gap-5   brigtcamp-area contact-page">
                         <li><a href="../index.html">Home</a> </li>
-                        <li><a href="../index.html">Shop</a> </li>
-                        <li>Shopping cart</li>
+                        <li>Contact</li>
                     </ul>
                 </div>
             </section>
 
 
-
-            <section class="checkout">
-                <div class="my-container">
-                    <div class="head checkout-head my-mt-2">
-                        <h2>Shop Cart</h2>
-                        <p class="my-fs-sm">Shopping in tanvir.</p>
+            <section class="">
+                <div class="my-container-sm my-pt-0">
+                    <div class="my-d-none">
+                        <h2>Contact</h2>
+                        <p>24 hour available</p>
                     </div>
 
-                    <div class="my-mt-6 cart-page">
-                        <div class="shopping-cart">
-                            <div class="">
-                                <div class="modal-body my-has-scrollbar">
-                                    <div class="body-content">
+                    <div class="contact-page  my-mt-50">
+                        <div class="contact-area  my-bg-white my-p-6 my-d-flex my-justify-center my-gap-50">
 
-                                        <!-- notice -->
-                                        <div class="my-notice">
-                                            <p>Get discount <strong>12%</strong> go to
-                                                <a href="#"> checkout</a>
-                                            </p>
+                            <!--*****  Left Cart  ***** -->
+                            <div class="left-cart my-p-6 my-bg-secondary">
+                                <h2 class="my-text-white">Contact Info</h2>
+                                <ul class="my-flex-column my-gap-6 my-mt-10">
+                                    <li class="my-d-flex my-align-center my-gap-5">
+                                        <div class="cart-icon my-bg-secondary-hover my-text-border2 my-flex-center"><i
+                                                class="fa-solid fa-location-dot"></i></div>
+                                        <div class="data">
+                                            <p>Block A, Road 12, Mirpur 12</p>
+                                            <p>Dhaka , Bangladesh</p>
                                         </div>
+                                    </li>
 
-                                        <!-- all cart items -->
-                                        <div class="items my-mt-4  my-flex-column my-gap-0">
-
-                                            <!--_______  single cart item  _______-->
-                                            <div class="item my-flex-between my-gap-10">
-
-                                                <div class="left my-d-flex my-align-start my-gap-4">
-                                                    <!-- image -->
-                                                    <div class="img">
-                                                        <img class="w-20 " src="https://i.ibb.co.com/bsh2Hg9/card-1.jpg"
-                                                            alt="card-1">
-                                                    </div>
-
-                                                    <!-- information -->
-                                                    <div class="my-align-start my-gap-2 my-flex-column info">
-                                                        <div>
-                                                            <h6>
-                                                                <a class="" href="./Pages/product.html">NutriChoice
-                                                                    Digestive</a>
-                                                            </h6>
-                                                            <p class="my-fs-xs">220g</p>
-                                                        </div>
-
-                                                        <!-- delete button -->
-                                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
-                                                            <span class="my-fs-xs">Delete</span></button>
-                                                    </div>
-                                                </div>
-
-                                                <!-- right -->
-                                                <div class="right my-flex-between my-gap-10">
-
-                                                    <!-- quantity buttons -->
-                                                    <div class="my-d-flex quantity-buttons">
-                                                        <input type="button" value="-" class="minus-btn">
-                                                        <input type="number" step="1" max="10" class="input-field"
-                                                            value="1">
-                                                        <input type="button" value="+" class="plus-btn">
-                                                    </div>
-
-                                                    <!-- price -->
-                                                    <div class="price my-flex-column my-gap-2">
-                                                        <!-- new price -->
-                                                        <div class="new-price my-fs-md my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <h6>288.00</h6>
-                                                        </div>
-
-                                                        <!-- old price -->
-                                                        <del class="old-price my-fs-xs my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <p class="my-fs-xs">299.00
-                                                            </p>
-                                                        </del>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--_______  single cart item  _______-->
-                                            <div class="item my-flex-between my-gap-10">
-
-                                                <div class="left my-d-flex my-align-start my-gap-4">
-                                                    <!-- image -->
-                                                    <div class="img">
-                                                        <img class="w-20 " src="https://i.ibb.co.com/bsh2Hg9/card-1.jpg"
-                                                            alt="card-1">
-                                                    </div>
-
-                                                    <!-- information -->
-                                                    <div class="my-align-start my-gap-2 my-flex-column info">
-                                                        <div>
-                                                            <h6>
-                                                                <a class="" href="./Pages/product.html">NutriChoice
-                                                                    Digestive</a>
-                                                            </h6>
-                                                            <p class="my-fs-xs">220g</p>
-                                                        </div>
-
-                                                        <!-- delete button -->
-                                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
-                                                            <span class="my-fs-xs">Delete</span></button>
-                                                    </div>
-                                                </div>
-
-                                                <!-- right -->
-                                                <div class="right my-flex-between my-gap-10">
-
-                                                    <!-- quantity buttons -->
-                                                    <div class="my-d-flex quantity-buttons">
-                                                        <input type="button" value="-" class="minus-btn">
-                                                        <input type="number" step="1" max="10" class="input-field"
-                                                            value="1">
-                                                        <input type="button" value="+" class="plus-btn">
-                                                    </div>
-
-                                                    <!-- price -->
-                                                    <div class="price my-flex-column my-gap-2">
-                                                        <!-- new price -->
-                                                        <div class="new-price my-fs-md my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <h6>288.00</h6>
-                                                        </div>
-
-                                                        <!-- old price -->
-                                                        <del class="old-price my-fs-xs my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <p class="my-fs-xs">299.00
-                                                            </p>
-                                                        </del>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--_______  single cart item  _______-->
-                                            <div class="item my-flex-between my-gap-10">
-
-                                                <div class="left my-d-flex my-align-start my-gap-4">
-                                                    <!-- image -->
-                                                    <div class="img">
-                                                        <img class="w-20 " src="../Static/images/product6.jpg"
-                                                            alt="card-1">
-                                                    </div>
-
-                                                    <!-- information -->
-                                                    <div class="my-align-start my-gap-2 my-flex-column info">
-                                                        <div>
-                                                            <h6>
-                                                                <a class="" href="./Pages/product.html">NutriChoice
-                                                                    Digestive</a>
-                                                            </h6>
-                                                            <p class="my-fs-xs">220g</p>
-                                                        </div>
-
-                                                        <!-- delete button -->
-                                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
-                                                            <span class="my-fs-xs">Delete</span></button>
-                                                    </div>
-                                                </div>
-
-                                                <!-- right -->
-                                                <div class="right my-flex-between my-gap-10">
-
-                                                    <!-- quantity buttons -->
-                                                    <div class="my-d-flex quantity-buttons">
-                                                        <input type="button" value="-" class="minus-btn">
-                                                        <input type="number" step="1" max="10" class="input-field"
-                                                            value="1">
-                                                        <input type="button" value="+" class="plus-btn">
-                                                    </div>
-
-                                                    <!-- price -->
-                                                    <div class="price my-flex-column my-gap-2">
-                                                        <!-- new price -->
-                                                        <div class="new-price my-fs-md my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <h6>288.00</h6>
-                                                        </div>
-
-                                                        <!-- old price -->
-                                                        <del class="old-price my-fs-xs my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <p class="my-fs-xs">299.00
-                                                            </p>
-                                                        </del>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                            <!--_______  single cart item  _______-->
-                                            <div class="item my-flex-between my-gap-10">
-
-                                                <div class="left my-d-flex my-align-start my-gap-4">
-                                                    <!-- image -->
-                                                    <div class="img">
-                                                        <img class="w-20" src="../Static/images/product3.jpg"
-                                                            alt="cart-4">
-                                                    </div>
-
-                                                    <!-- information -->
-                                                    <div class="my-align-start my-gap-2 my-flex-column info">
-                                                        <div>
-                                                            <h6>
-                                                                <a class="" href="./Pages/product.html">Baby
-                                                                    Icecrem
-                                                                </a>
-                                                            </h6>
-                                                            <p class="my-fs-xs">100ml
-                                                            </p>
-                                                        </div>
-
-                                                        <!-- delete button -->
-                                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
-                                                            <span class="my-fs-xs">Delete</span></button>
-                                                    </div>
-                                                </div>
-
-                                                <!-- right -->
-                                                <div class="right my-flex-between my-gap-10">
-
-                                                    <!-- quantity buttons -->
-                                                    <div class="my-d-flex quantity-buttons">
-                                                        <input type="button" value="-" class="minus-btn">
-                                                        <input type="number" step="1" max="10" class="input-field"
-                                                            value="1">
-                                                        <input type="button" value="+" class="plus-btn">
-                                                    </div>
-
-                                                    <!-- price -->
-                                                    <div class="price my-flex-column my-gap-2">
-                                                        <!-- new price -->
-                                                        <div class="new-price my-fs-md my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <h6>90.00</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!--_______  single cart item  _______-->
-                                            <div class="item my-flex-between my-gap-10">
-
-                                                <div class="left my-d-flex my-align-start my-gap-4">
-                                                    <!-- image -->
-                                                    <div class="img">
-                                                        <img class="w-20" src="https://i.ibb.co.com/pfqNHWp/cart-5.jpg"
-                                                            alt="cart-5">
-                                                    </div>
-
-                                                    <!-- information -->
-                                                    <div class="my-align-start my-gap-2 my-flex-column info">
-                                                        <div>
-                                                            <h6>
-                                                                <a class="" href="./Pages/product.html">NutriChoice
-                                                                    Digestive</a>
-                                                            </h6>
-                                                            <p class="my-fs-xs">300gm
-                                                            </p>
-                                                        </div>
-
-                                                        <!-- delete button -->
-                                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
-                                                            <span class="my-fs-xs">Delete</span></button>
-                                                    </div>
-                                                </div>
-
-                                                <!-- right -->
-                                                <div class="right my-flex-between my-gap-10">
-
-                                                    <!-- quantity buttons -->
-                                                    <div class="my-d-flex quantity-buttons">
-                                                        <input type="button" value="-" class="minus-btn">
-                                                        <input type="number" step="1" max="10" class="input-field"
-                                                            value="1">
-                                                        <input type="button" value="+" class="plus-btn">
-                                                    </div>
-
-                                                    <!-- price -->
-                                                    <div class="price my-flex-column my-gap-2">
-                                                        <!-- new price -->
-                                                        <div class="new-price my-fs-md my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <h6>260.00</h6>
-                                                        </div>
-
-                                                        <!-- old price -->
-                                                        <del class="old-price my-fs-xs my-align-center ">
-                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                                            <p class="my-fs-xs">290.00
-                                                            </p>
-                                                        </del>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
+                                    <li class="my-d-flex my-align-center my-gap-5">
+                                        <div class="cart-icon my-bg-secondary-hover my-text-border2 my-flex-center"><i
+                                                class="fa-solid fa-mobile-screen"></i></div>
+                                        <div class="data">
+                                            <p>++ 53534 123232 2322</p>
+                                            <p>++ 53534 123232 2222</p>
                                         </div>
-                                    </div>
+                                    </li>
 
+                                    <li class="my-d-flex my-align-center my-gap-5">
+                                        <div class="cart-icon my-bg-secondary-hover my-text-border2 my-flex-center"> <i
+                                                class="fa-regular fa-envelope"></i></div>
+                                        <div class="data">
+                                            <p>example@gmail.com</p>
+                                            <p>example232@gmail.com</p>
+                                        </div>
+                                    </li>
 
-                                </div>
-                            </div>
-                        </div>
+                                    <li class="my-d-flex my-align-center my-gap-5">
+                                        <div class="cart-icon my-bg-secondary-hover my-text-border2 my-flex-center"> <i
+                                                class="fas fa-headset"></i></div>
+                                        <div class="data">
+                                            <p>example@gmail.com</p>
+                                            <p>example232@gmail.com</p>
+                                        </div>
+                                    </li>
 
-                        <div class="cart-summery my-border2 my-p-4 my-radius-md">
-                            <h4>Summery</h4>
-                            <div class="taoal-area my-border2 my-radius-md my-mt-4">
-                                <ul class="my-text-secondary my-fs-md my-fw-bold">
-                                    <li class="my-flex-between my-border-bottom my-p-3">
-                                        <div>Item Subtotal</div>
-                                        <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>200</div>
-                                    </li>
-                                    <li class="my-flex-between my-border-bottom my-p-3">
-                                        <div>Discount</div>
-                                        <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>200</div>
-                                    </li>
-                                    <li class="my-flex-between my-border-bottom my-p-3">
-                                        <div>Shipping</div>
-                                        <div><i class="fa-solid fa-bangladeshi-taka-sign"></i>00</div>
-                                    </li>
-                                    <li class="my-flex-between  my-p-3">
-                                        <h4 class="my-fw-bolder">Total</h4>
-                                        <h4 class="my-fw-bolder"><i class="fa-solid fa-bangladeshi-taka-sign"></i>1300
-                                        </h4>
-                                    </li>
                                 </ul>
-
                             </div>
 
-                            <div class="my-mt-5">
-                                <a class="my-flex-between  checkout-btn my-btn my-primary-btn"
-                                    href="../Pages/checkout.html">
-                                    <span class="my-fs-lg my-fw-bolder">Go to
-                                        Checkout</span>
-                                    <span class="my-fs-lg my-fw-bolder"><i
-                                            class="fa-solid fa-bangladeshi-taka-sign"></i>1300</span>
-                                </a>
 
-                                <p class="my-mt-4">
-                                    By placing your order, you agree to be bound by the Freshcart <a
-                                        class="my-text-primary" href="#">Terms of
-                                        Service</a> and
-                                    <a class="my-text-primary" href="#">Privacy Policy.</a>
-                                </p>
-                            </div>
+                            <!--*****  Right Form  *****-->
+                            <div class="right-form">
+                                <div class="form my-bg-border my-p-6">
+                                    <h3 class="my-title ">Get in Touch</h3>
+                                    <form action=" #" class="card my-flex-column my-gap-5 my-mt-5">
+                                        <div class="my-input-control my-bg-white">
+                                            <label class="label" for="name">Name</label>
+                                            <input type="text" id="name">
+                                        </div>
 
-                            <div class="my-mt-8">
-                                <h4>Add Promo or Gift Card</h4>
+                                        <div class="my-input-control my-bg-white ">
+                                            <label class="label" for="Phone">Phone</label>
+                                            <input type="text" id="Phone">
+                                        </div>
 
-                                <form action="#" class="my-mt-4">
-                                    <div class="my-input-control">
-                                        <input type="email" placeholder="Promo Or Gift Cart">
-                                        <button
-                                            class="my-btn my-secendary-btn my-mt-2 my-w-100"><span>Redeem</span></button>
-                                    </div>
-                                </form>
+                                        <div class="my-input-control my-bg-white">
+                                            <label class="label" for="message">Message</label>
+                                            <textarea name="message" id="message"></textarea>
+                                        </div>
+
+                                        <div class="my-d-flex my-align-center  my-gap-4  my-text-gray">
+                                            <input type="checkbox" class="check-box" id="check">
+                                            <label for="check">Yes, I agree </label>
+                                        </div>
+
+                                        <button class="my-btn my-primary-btn my-mt-6"><span>Submit</span></button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
+
 
         </main>
 

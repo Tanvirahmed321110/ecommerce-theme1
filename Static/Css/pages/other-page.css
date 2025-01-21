@@ -1,0 +1,38 @@
+.contact-page .left-cart {
+    background-color: var(coloor);
+    padding: 75px 30px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.contact-page .contact-area {
+    padding: 45px;
+}
+
+.brigtcamp-area.contact-page {
+    background-color: var(--white);
+}
+
+
+.contact-page .right-form {
+    max-width: 400px;
+    width: 400px;
+}
+
+.contact-page .right-form .my-input-control {
+    border-radius: 10px;
+}
+
+
+
+
+
+
+@media(max-width:991px) {
+    .contact-area {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+}

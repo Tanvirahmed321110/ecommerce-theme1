@@ -543,6 +543,10 @@ tr {
     background-color: var(--secondary-color);
 }
 
+.my-bg-secondary-hover {
+    background-color: var(--secondary-hover);
+}
+
 .my-bg-border2 {
     background-color: var(--border-color2);
 }
@@ -1189,6 +1193,16 @@ tr {
     row-gap: 40px;
 }
 
+
+
+
+/* icon */
+.cart-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: var(--fs-lg);
+}
 
 
 /*____  Animation _____*/

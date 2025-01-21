@@ -955,6 +955,27 @@ swiper-slide.hero img {
 
 
 /* tab area products slider css */
+.tab-products .my-card .my-btn {
+    margin-top: 12px;
+}
+
+.tab-products .my-card .rating {
+    margin-top: 8px !important;
+}
+
+.tab-products .my-card .price {
+    margin-top: 4px;
+}
+
+.tab-products .my-card h4,
+.tab-products .my-card p {
+    text-align: left;
+}
+
+.tab-products .my-card .rating i {
+    font-size: var(--fs-sm);
+}
+
 .tab-products.swiper {
     width: 100%;
     height: 100%;
