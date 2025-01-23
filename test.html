@@ -1,94 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Date Range Picker Example</title>
-
-        <!-- Include CSS for Date Range Picker -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.css">
-
-        <!-- Add custom styling -->
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 20px;
-                padding: 20px;
-                background-color: #f9f9f9;
+            /* our-achivment */
+            .our-achivment .item {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                position: relative;
             }
 
-            .form-group {
-                margin-bottom: 20px;
+            .our-achivment .item::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 200px;
+                padding: 4px;
+                border: 1px dashed #ccc;
+                /* Example border color */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: .3s linear;
+                z-index: 2;
+                animation: rotate 2s linear infinite;
             }
 
-            label {
-                display: block;
-                margin-bottom: 5px;
-                font-weight: bold;
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
             }
 
-            input.form-control {
+            .our-achivment .item .my-card {
                 width: 100%;
-                padding: 10px;
-                font-size: 16px;
-                box-sizing: border-box;
-                border: 1px solid #ccc;
-                border-radius: 4px;
+                height: 100%;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border: 1px dashed #ccc;
+                /* Example border color */
             }
         </style>
     </head>
 
     <body>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                <path
-                    d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
-            </svg>
-        </div>
-        <div class="destination form-group">
-            <label for="select-date" class="font-weight-bolder fs-16">Select Dates</label>
-            <input type="text" id="select-date" class="form-control" placeholder="Select Dates">
+
+        <div class="our-achivment">
+            <div class="item">
+                <div class="my-card">sdfsd
+                </div>
+            </div>
         </div>
 
-        <!-- Include Moment.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-
-        <!-- Include jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-        <!-- Include Date Range Picker JS -->
-        <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
-        <!-- Initialize Date Range Picker -->
-        <script>
-            $(document).ready(function () {
-                // Initialize the Date Range Picker
-                $('#select-date').daterangepicker({
-                    opens: 'center', // Opens in the center
-                    autoApply: false, // Show Apply/Cancel buttons
-                    showDropdowns: true, // Dropdown for years and months
-                    minDate: moment(), // Prevent start date from being in the past
-                    locale: {
-                        format: 'MM/DD/YYYY', // Format for date display
-                        separator: ' - ', // Separator between start and end dates
-                        applyLabel: 'Apply',
-                        cancelLabel: 'Cancel',
-                    }
-                }, function (start, end, label) {
-                    // Custom logic to enforce end date is after start date
-                    const startDate = start.format('MM/DD/YYYY');
-                    const endDate = end.format('MM/DD/YYYY');
-                    console.log('Selected range:', startDate, 'to', endDate);
-                });
-
-                // Optional: Open the picker on input click or focus
-                $('#select-date').on('focus click', function () {
-                    $(this).data('daterangepicker').show();
-                });
-            });
-        </script>
     </body>
 
 </html>
