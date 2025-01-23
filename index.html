@@ -4885,6 +4885,288 @@
 
 
 
+        <!-- ************************************ -->
+        <!--         Product Modal Start  Here        -->
+        <!-- ************************************ -->
+        <div class="my-modal  product-modal" id="product-modal">
+            <div class="modal-content my-p-4 my-has-scrollbar">
+                <button class=" modal-close-btn my-primary-btn my-btn close-btn" id="product-modal-close">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                </button>
+
+
+                <div class="product-page-area">
+
+                    <div class="product-area-top   gap-4">
+                        <!--*****   Big Image  *****-->
+                        <div class="image">
+                            <div class="big-img-area my-w-100">
+                                <img class="big-img my-w-100" id="big-img"
+                                    src="../Static/images/product-single-img-1.jpg" alt="product image">
+                            </div>
+                            <div class="small-img-area my-has-scrollbar">
+                                <div class="small-imgs my-d-flex my-gap-3">
+                                    <img class="small-img active" src="../Static/images/product-single-img-1.jpg"
+                                        alt="product image">
+                                    <img class="small-img" src="../Static/images/product-single-img-2.jpg"
+                                        alt="product image">
+                                    <img class="small-img" src="../Static/images/product-single-img-3.jpg"
+                                        alt="product image">
+                                    <img class="small-img" src="../Static/images/product-single-img-4.jpg"
+                                        alt="product image">
+                                    <img class="small-img" src="../Static/images/product-single-img-1.jpg"
+                                        alt="product image">
+                                    <img class="small-img" src="../Static/images/product-single-img-4.jpg"
+                                        alt="product image">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--*****   Product Details  *****-->
+                        <div class="product-details">
+                            <div class="left">
+                                <h2>Baby Creame Chocolate</h2>
+                                <div class="my-d-flex my-gap-6  my-align-center">
+                                    <p class="my-d-flex my-gap-1  my-mt-1">SKU: <span> #KHI932KU00</span></p>
+                                    <div class="stock-tag my-bg-border   my-radius-sm my-p-1 my-fs-xs ">
+                                        in
+                                        stock
+                                    </div>
+                                </div>
+
+                                <div class="datils-top">
+                                    <!-- ****  Raging  ****-->
+                                    <div class="rating my-mt-3 my-align-center my-w-100 my-d-flex my-gap-3">
+                                        <a href="#" class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </a>
+
+                                        <div class="total-avg my-d-flex my-align-center my-gap-2">
+                                            <div
+                                                class="avg my-bg-primary  my-py-half my-p-1 my-radius-xs my-text-white">
+                                                4.5</div>
+                                            <div class="total-raging my-fs-xs">(137)</div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- ****  Price  ****-->
+                                    <div class="price my-mt-3 my-d-flex my-align-center my-gap-5">
+                                        <h3 class="new-price my-fw-bolder">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign "></i>
+                                            <span>599.00</span>
+                                        </h3>
+                                        <div class="my-d-flex my-align-center my-gap-2">
+                                            <del class="old-price my-fs-sm">
+                                                <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                <span>650.00</span>
+                                            </del>
+                                            <div
+                                                class="discount my-py-half  my-bg-border my-p-1 my-radius-sm my-fs-xs ">
+                                                10% OFF
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="my-mt-5 color-size">
+
+                                    <!-- color -->
+                                    <div class="colors">
+                                        <h4 class="my-fw-bolder">Colors</h4>
+                                        <ul class="colors-area my-d-flex my-gap-1 my-mt-1">
+                                            <li class="active">
+                                                <div class="color"></div>
+                                            </li>
+                                            <li class="">
+                                                <div class="color"></div>
+                                            </li>
+                                            <li class="">
+                                                <div class="color"></div>
+                                            </li>
+                                            <li class="">
+                                                <div class="color"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <!-- Size -->
+                                    <div class="size my-mt-5">
+                                        <h4 class="my-fw-bolder">Size</h4>
+                                        <ul class="size-area my-d-flex my-gap-1 my-mt-1">
+                                            <li class="active">
+                                                <div class="color">M</div>
+                                            </li>
+                                            <li class="">
+                                                <div class="color">L</div>
+                                            </li>
+                                            <li class="">
+                                                <div class="color">XL</div>
+                                            </li>
+                                            <li class="">
+                                                <div class="color">XXL</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="my-d-flex my-mt-5 my-align-center my-gap-5">
+                                        <!-- quantity buttons -->
+                                        <div class="my-d-flex quantity-buttons">
+                                            <input type="button" value="-" class="minus-btn" id="minus-btn">
+                                            <input type="number" step="1" min="0" max="10" class="input-field"
+                                                id="input-quantity" value="1">
+                                            <input type="button" value="+" id="plus-btn" class="plus-btn">
+                                        </div>
+
+                                        <div class="my-d-flex wish-compare my-align-center my-gap-1">
+                                            <div class="hide-icon my-tooltip my-flex-center item">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                                <div class="show-text">Complare Product</div>
+                                            </div>
+                                            <div class="hide-icon my-tooltip  my-flex-center item">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <div class="show-text">Add to love list</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-d-flex my-align-center my-gap-2">
+                                            <div class="sold my-bg-border   my-radius-sm my-p-1 my-fs-xs my-fw-bold">
+                                                5 Sold
+                                            </div>
+                                            <div class="available my-fs-xs">19 available</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--*****  Add To Card Buy Now ***** -->
+                                <div class="my-mt-6">
+                                    <div class="my-d-flex cart-buy-btn my-align-center my-gap-4 my-w-100 ">
+                                        <button class="my-btn my-primary-btn cart">
+                                            <span>Add To Cart</span>
+                                        </button>
+                                        <button class="my-btn my-w-100  my-secendary-btn">
+                                            <span>Buy Now</span>
+                                        </button>
+                                    </div>
+
+
+                                    <!-- share -->
+                                    <div class="my-mt-5 share">
+                                        <h4>Share <span><i class="fa-solid fa-share-nodes"></i></span></h4>
+                                        <div class="my-d-flex wish-compare my-align-center my-mt-1 my-gap-1">
+                                            <a href="" class="hide-icon my-tooltip my-flex-center item">
+                                                <i class="fa-brands fa-facebook"></i>
+                                                <div class="show-text">Facebook</div>
+                                            </a>
+                                            <a href="" class="hide-icon my-tooltip  my-flex-center item">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                                <div class="show-text">What's app</div>
+                                            </a>
+                                            <a href="#" class="hide-icon my-tooltip  my-flex-center item">
+                                                <i class="fa-brands fa-twitter"></i>
+                                                <div class="show-text">Twitter</div>
+                                            </a>
+                                            <a href="" class="hide-icon my-tooltip  my-flex-center item">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <div class="show-text">Instgram</div>
+                                            </a>
+
+                                            <div>
+                                                <button class="hide-icon  my-tooltip  my-flex-center item copy ">
+                                                    <span class="my-mr-2">
+                                                        <i class="fa-regular my-text-white fa-copy"></i></span>
+                                                    Copy
+                                                    <div class="show-text">URL COPY</div>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Short Desc -->
+                            <div class="left-bottom  my-mt-4">
+                                <div class="short-desc">
+                                    <div class="my-d-flex my-card  my-gap-10 my-d-flex my-align-start">
+                                        <div class="item">
+                                            <h5 class="my-d-flex my-gap-2"><span><i
+                                                        class="fa-solid fa-truck-fast"></i></span>Delivary
+                                                Options
+                                            </h5>
+                                            <ul class="my-mt-3 my-flex-column my-gap-3  desc">
+                                                <li class="my-d-flex my-align-center my-gap-1">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    1 to 7 days delivary
+                                                </li>
+                                                <li class="my-d-flex my-align-center my-gap-1">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    Online Delivary
+                                                </li>
+                                                <li class="my-d-flex my-align-center my-gap-1">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    Cash on delivary
+                                                </li>
+                                                <li class="my-d-flex my-align-center my-gap-1 ">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    within dhaka <span>60 Taka</span>
+                                                </li>
+                                                <li class="my-d-flex my-align-center  my-gap-1 ">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    outside dhaka <span>100 Taka</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Return And Warrenty -->
+                                        <div class=" return my-flex-column my-gap-2">
+                                            <div>
+                                                <h5>
+                                                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                                                    Return Warrenty
+                                                </h5>
+                                            </div>
+                                            <ul class="my-flex-column my-gap-1 desc">
+                                                <li class="my-d-flex my-align-center my-gap-1 my-mt-1">
+                                                    <span class="icon">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </span>
+                                                    <p>Condition New</p>
+                                                </li>
+                                                <li class="my-d-flex my-align-center my-gap-1">
+                                                    <span class="icon">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </span>
+                                                    <p>7 Days Return</p>
+                                                </li>
+                                                <li class="my-d-flex my-align-center my-gap-1">
+                                                    <span class="icon">
+                                                        <i class="fa-solid fa-circle-xmark"></i>
+                                                    </span>
+                                                    <p>Warrenty Not Available</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
         <!-- ************************************ -->
         <!--         Login Modal Start  Here        -->

@@ -12,6 +12,7 @@ toggleF('all-department-sidebar', 'all-department-btn')
 
 
 
+
 // close modal
 closeButtonF('shopping-cart')
 closeButtonF('login-register')
@@ -19,6 +20,25 @@ closeButtonF('notification-modal')
 // close mobile sidebar
 closeButtonF('mobile-sidebar')
 
+
+
+// Qlick view
+const productCarts = document.querySelectorAll('.product-cart');
+
+productCarts.forEach((cart) => {
+    const firstHideIcons = cart.querySelectorAll('.hide-icons .hide-icon:first-child');
+    const productModal = document.getElementById('product-modal')
+
+    firstHideIcons.forEach(btn => {
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            productModal.classList.add('active')
+        })
+    })
+
+    closeButtonF('product-modal')
+});
+quickViewF()
 
 
 
@@ -53,6 +73,8 @@ function updateCartItemCount() {
     document.getElementById('total-cart-item').innerText = totalCartItem.length;
 }
 updateCartItemCount()
+
+
 
 
 
