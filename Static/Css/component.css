@@ -711,8 +711,8 @@ textarea::placeholder {
 \*______________________________________*/
 input[type="checkbox"],
 input[type="radio"] {
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
     appearance: none;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -744,7 +744,7 @@ input[type="checkbox"]:checked::after {
     content: '✔';
     /* Checkmark symbol */
     color: var(--white);
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1740,6 +1740,143 @@ input[type="radio"]:checked::after {
 }
 
 
+
+/*________________________________*\
+  ||       Left Sidebar  Here      ||
+\*________________________________*/
+.sticky {
+    position: sticky;
+    top: 40px;
+    left: 0;
+    width: 275px;
+}
+
+.sticky .my-card {
+    background-color: var(--white-off);
+    border-radius: 8px;
+    padding: 0;
+    padding-top: 8px;
+    /* box-shadow: var(--shadow-1); */
+    border-color: var(--border-color);
+}
+
+.sticky .my-card ul li {
+    padding: 2px 0;
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+}
+
+.sticky .my-card ul li a {
+    width: 100%;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-color);
+    font-weight: var(--fw-600);
+    transform: unset;
+}
+
+
+.sticky .my-card ul li a i {
+    font-size: var(--fs-xs);
+    transition: .8s;
+    font-weight: var(--fw-600);
+}
+
+.sticky .my-card ul li a span {
+    transition: .6s;
+}
+
+.sticky .my-card ul li a span.active {
+    transform: rotate(90deg);
+}
+
+.sticky .my-card ul li a:hover {
+    color: var(--primary-color);
+}
+
+.sticky .my-card .nav-btn {
+    position: relative;
+    transition: .4s linear;
+}
+
+.sticky .my-card .nav-btn::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 12px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: .4s linear;
+}
+
+.sticky .my-card .nav-btn:hover::after {
+    left: 5px;
+}
+
+
+/*________   dropdown   ________*/
+.sticky .dropdown {
+    background-color: var(--white-off);
+    padding-bottom: 8px;
+    visibility: hidden;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+    max-height: 0;
+}
+
+.sticky .dropdown.active {
+    visibility: visible;
+    opacity: 1;
+    max-height: 1800px;
+
+
+}
+
+.sticky .dropdown li {
+    border: none !important;
+}
+
+.sticky .dropdown li a {
+    color: var(--gray) !important;
+    font-weight: var(--fw-500) !important;
+    font-size: var(--fs-sm) !important;
+    border-bottom: 1px solid var(--border-color2);
+    padding: 6px 34px !important;
+}
+
+.sticky .dropdown li a:hover {
+    color: var(--primary-color) !important;
+}
+
+
+
+.sticky .tips li {
+    cursor: unset !important;
+    padding: 10px 18px !important;
+}
+
+.sticky .tips div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    box-shadow: var(--shadow-1);
+}
+
+.sticky .tips div i {
+    color: var(--primary-color);
+    font-size: var(--fs-lg);
+}
+
+.sticky .tips p {
+    font-size: 13px;
+    width: 75%;
+    line-height: 18px;
+}
 
 
 
