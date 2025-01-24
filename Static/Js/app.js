@@ -1,4 +1,4 @@
-import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF } from './utilitis.js';
+import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF } from './utilitis.js';
 
 
 // call open modal F
@@ -10,6 +10,26 @@ toggleF('mobile-sidebar', 'mobile-menu-icon');
 // for department
 toggleF('all-department-sidebar', 'all-department-btn')
 
+
+
+// color and size
+activeF('.colors li')
+activeF('.size li')
+
+
+// update qty
+function updateQty() {
+    const inputQuantity = document.getElementById('input-quantity')
+
+    document.getElementById('plus-btn').addEventListener('click', function () {
+        updateQuantity(inputQuantity, 'increment')
+        console.log('click')
+    })
+    document.getElementById('minus-btn').addEventListener('click', function () {
+        updateQuantity(inputQuantity, 'decrement')
+    })
+}
+updateQty()
 
 
 
@@ -25,20 +45,21 @@ closeButtonF('mobile-sidebar')
 // Qlick view
 const productCarts = document.querySelectorAll('.product-cart');
 
-productCarts.forEach((cart) => {
-    const firstHideIcons = cart.querySelectorAll('.hide-icons .hide-icon:first-child');
-    const productModal = document.getElementById('product-modal')
+if (productCarts) {
+    productCarts.forEach((cart) => {
+        const firstHideIcons = cart.querySelectorAll('.hide-icons .hide-icon:first-child');
+        const productModal = document.getElementById('product-modal')
 
-    firstHideIcons.forEach(btn => {
-        btn.addEventListener('click', function (event) {
-            event.preventDefault();
-            productModal.classList.add('active')
+        firstHideIcons.forEach(btn => {
+            btn.addEventListener('click', function (event) {
+                event.preventDefault();
+                productModal.classList.add('active')
+            })
         })
-    })
 
-    closeButtonF('product-modal')
-});
-quickViewF()
+        closeButtonF('product-modal')
+    });
+}
 
 
 

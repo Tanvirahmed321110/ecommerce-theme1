@@ -187,16 +187,6 @@ function dropdwonToggle(wrapperId) {
                         otherIcon.classList.remove('active')
                     }
                 })
-                // btns.forEach((otherBtn) => {
-                //     const otherDropdown = otherBtn.querySelector('.dropdown');
-                //     const otherIcon = otherBtn.querySelector('span');
-
-                //     if (otherDropdown && otherDropdown !== dropdown) {
-                //         otherDropdown.classList.remove('active');
-                //         if (otherIcon) otherIcon.classList.remove('active');
-                //     }
-                // });
-
 
                 if (dropdown) {
                     // Toggle the 'active' class on the dropdown

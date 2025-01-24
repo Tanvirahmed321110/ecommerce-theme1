@@ -1130,12 +1130,17 @@ tr {
 
 
 /*_____  Grid  _____*/
+.my-grid-1,
 .my-grid-2,
 .my-grid-3,
 .my-grid-4,
 .my-grid-5,
 .my-grid-6 {
     display: grid;
+}
+
+.my-grid-1 {
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .my-grid-2 {

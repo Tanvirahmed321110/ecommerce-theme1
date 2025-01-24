@@ -644,6 +644,52 @@ textarea::placeholder {
 
 
 /*______________________________________*\
+  ||        Small Banner Start        ||
+\*______________________________________*/
+.sm-banner {
+    position: relative;
+    padding: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../images/sm-banner1`.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sm-banner::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #2f2c2c52;
+}
+
+/*****  Banner Content  ******/
+.sm-banner .content {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+}
+
+.sm-banner .content h4 {
+    color: var(--white-off);
+}
+
+
+
+
+
+/*______________________________________*\
   ||    Menu Icon Create Start     ||
 \*______________________________________*/
 .menu-icon {
@@ -1093,7 +1139,7 @@ input[type="radio"]:checked::after {
 .product-cart .sold-available .available-range::before {
     position: absolute;
     content: '';
-    top: 2px;
+    top: 3px;
     left: 3px;
     height: 3px;
     width: 20%;
@@ -1104,7 +1150,7 @@ input[type="radio"]:checked::after {
 
 
 
-/***** Base  *****/
+/*****  Base  *****/
 .base {
     position: absolute;
     top: 0px;
@@ -1117,15 +1163,16 @@ input[type="radio"]:checked::after {
     transition: .2s linear;
 }
 
-.product-cart .base {
-    animation: base-animation 4s linear infinite;
-}
 
 .product-cart .base.new {
     animation: unset;
     left: 0;
     right: unset;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-hover);
+}
+
+.product-cart .base {
+    animation: base-animation 4s linear infinite;
 }
 
 
@@ -1168,8 +1215,32 @@ input[type="radio"]:checked::after {
 
 
 
+/*________________________________*\
+  ||      product cart list      ||
+\*________________________________*/
+.product-cart-list.product-cart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+}
 
+.product-cart-list.product-cart .left {
+    width: 45%;
+}
 
+.product-cart-list.product-cart .left .images {
+    max-width: 260px;
+}
+
+.product-cart-list.product-cart .content {
+    max-width: 300px;
+}
+
+.product-cart-list.product-cart .hide-image {
+    max-width: 100%;
+}
 
 
 

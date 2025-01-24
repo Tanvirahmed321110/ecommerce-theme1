@@ -5533,7 +5533,6 @@
 
         <script>
 
-
             // Counter animation
             function animateCounter(counter) {
                 const target = +counter.getAttribute("data-target");
@@ -5563,15 +5562,16 @@
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
                             // Reset counter and start animation
-                            entry.target.innerText = "0"; // Reset to 0
-                            animateCounter(entry.target); // Start animation
+                            entry.target.innerText = "0";
+                            animateCounter(entry.target);
                         }
                     });
                 },
-                { threshold: 0.5 } // Adjust visibility threshold
+                { threshold: 0.5 }
             );
 
             counters.forEach(counter => observer.observe(counter));
+
 
 
 
