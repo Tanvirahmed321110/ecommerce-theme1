@@ -1351,7 +1351,6 @@ footer .footer-pages .footer-head::after {
         position: fixed;
         top: 0px;
         left: 0;
-        width: 100%;
         z-index: 4;
         padding: 12px 20px;
         background-color: var(--white-off);
@@ -1482,8 +1481,11 @@ footer .footer-pages .footer-head::after {
     .footer-top-area .head {
         flex-direction: column;
         gap: 20px;
-        align-items: flex-start;
+        align-items: flex-start
+    }
 
+    .footer-top-area .my-grid-5 {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }

@@ -210,6 +210,10 @@ tr {
     text-align: right;
 }
 
+.my-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Border */
 .my-border {
@@ -1354,6 +1358,10 @@ tr {
         display: block;
     }
 
+    .my-flex-md-between {
+        justify-content: space-between;
+    }
+
     .my-d-md-flex {
         display: flex;
     }
@@ -1400,6 +1408,10 @@ tr {
 
     .my-d-sm-flex {
         display: flex;
+    }
+
+    .my-flex-sm-between {
+        justify-content: space-between;
     }
 
     .my-d-sm-grid {
@@ -1453,6 +1465,10 @@ tr {
 
     .my-d-xs-grid {
         display: grid;
+    }
+
+    .my-flex-xs-between {
+        justify-content: space-between;
     }
 
     .my-flex-xs-column {

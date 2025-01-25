@@ -702,13 +702,25 @@
             <!-- ************************************ -->
             <section class="shop-detials">
                 <div class="my-container">
-                    <div class="shop-details-area ">
+                    <div class="shop-details-area">
 
                         <!--************   Left Sidebar   ************-->
-                        <div class="left-sidebar sticky my-has-scrollbar-sm">
+                        <div class="left-sidebar sticky my-has-scrollbar-sm" id="filter-box">
+
+                            <!--  Head Left  -->
+                            <div class="left">
+                                <form action="#">
+                                    <div class="my-d-flex search my-align-center  my-input-control">
+                                        <input placeholder="search product" type="text">
+                                        <button class="my-btn my-secendary-btn"><span><i
+                                                    class="fa-solid fa-magnifying-glass"></i></span></button>
+                                    </div>
+                                </form>
+                            </div>
 
                             <!--*****  For Categories  *****-->
-                            <div class="" id="category-sticky">
+                            <div class="my-mt-6">
+
                                 <h3>Categories</h3>
                                 <div class="my-card my-mt-3">
                                     <ul class="my-flex-column my-gap-0">
@@ -1107,18 +1119,16 @@
 
                         <!--************   Right Information   ************-->
                         <div class="right-informaiton">
-                            <div class="head my-flex-between  my-pb-2">
 
-                                <!--  Head Left  -->
-                                <div class="left">
-                                    <form action="#">
-                                        <div class="my-d-flex search my-align-center  my-input-control">
-                                            <input placeholder="search product" type="text">
-                                            <button class="my-btn my-secendary-btn"><span>Search</span></button>
-                                        </div>
-                                    </form>
+                            <div class="head my-flex-between  my-flex-md-column my-pb-2">
+                                <div class="my-flex-between my-w-100">
+                                    <p class="found">22 Products Found</p>
+                                    <button class="my-btn my-secendary-btn filter-btn" id="filter-btn">
+                                        <span><i class="fa-solid fa-filter"></i> Filter</span>
+                                    </button>
                                 </div>
-                                <div class="right my-d-flex my-align-center my-gap-2">
+
+                                <div class="right my-d-flex my-align-center my-gap-2 my-w-100 my-flex-md-between">
                                     <select name="" class="my-border2" id="">
                                         <option value="">Select</option>
                                         <option value="">Avg Rating</option>
@@ -1138,7 +1148,7 @@
 
 
 
-                            <div class="grid-items">
+                            <div class="grid-items my-mx-auto">
 
 
 
@@ -2182,6 +2192,26 @@
                                     </div>
                                 </div>
 
+
+
+                                <!-- pagination -->
+                                <div class="pagination my-mt-5">
+                                    <ul class="my-d-flex my-align-center my-gap-1 my-justify-end">
+                                        <li class="disable">
+                                            <a class="" href="#"> <i class="fa-solid fa-chevron-left"></i>
+                                                <span class="my-d-sm-none">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="active"><a class="" href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li>
+                                            <a href="#"><span class="my-d-sm-none">Next</span> <i
+                                                    class="fa-solid fa-chevron-right"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -4101,8 +4131,20 @@
             import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF } from '../Static/Js/utilitis.js';
 
 
+            // Sidebar toggle
+            const filterBtn = document.getElementById('filter-btn');
+            const filterBox = document.getElementById('filter-box');
+            const body = document.querySelector('body');
 
+            filterBtn.addEventListener('click', function () {
+                filterBox.classList.toggle('active');
 
+                if (filterBox.classList.contains('active')) {
+                    body.style.overflow = 'hidden'; // Disable scrolling
+                } else {
+                    body.style.overflow = ''; // Enable scrolling
+                }
+            });
 
 
 

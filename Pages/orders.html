@@ -704,7 +704,7 @@
                             <p>There are <strong>5</strong> products in i ordered.</p>
                         </div>
 
-                        <div class="list-view-area ">
+                        <div class="list-view-area">
                             <div class="list-view-table my-has-scrollbar-sm ">
                                 <table>
                                     <thead>
@@ -788,13 +788,19 @@
                             <!-- pagination -->
                             <div class="pagination my-mt-5">
                                 <ul class="my-d-flex my-align-center my-gap-1 my-justify-end">
-                                    <li><a class="disable" href="#"> <i class="fa-solid fa-chevron-left"></i>
-                                            Previous</a></li>
-                                    <li><a class="active" href="#">1</a></li>
+                                    <li class="disable">
+                                        <a class="" href="#"> <i class="fa-solid fa-chevron-left"></i>
+                                            <span class="my-d-sm-none">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a class="" href="#">1</a></li>
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
-                                    <li><a href="#">Next <i class="fa-solid fa-chevron-right"></i> </a></li>
+                                    <li>
+                                        <a href="#"><span class="my-d-sm-none">Next</span> <i
+                                                class="fa-solid fa-chevron-right"></i> </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

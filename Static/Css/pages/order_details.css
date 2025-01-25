@@ -139,9 +139,6 @@
     background-color: var(--border-color);
 }
 
-.delivary-boy .head {
-    /* padding-top: 20px; */
-}
 
 @media(max-width:769px) {
     .order-details-area {
