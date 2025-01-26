@@ -162,6 +162,72 @@
     text-align: center;
 }
 
+
+
+
+
+
+/*_____________________________
+||      Blogs Page Start      ||
+______________________________*/
+.blogs-area {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    gap: 60px;
+}
+
+.blogs-area .blogs .my-card {
+    box-shadow: unset;
+    border: 1px solid var(--border-color);
+    /* background-color: var(--white-off); */
+    transition: .2s linear;
+
+}
+
+
+.blogs-area .blogs .my-card:hover {
+    transform: scale(.98);
+}
+
+
+/* catagory */
+.blogs-area .catagory {
+    background-color: var(--white-off);
+    padding: 16px;
+}
+
+.blogs-area .catagory li a {
+    padding: 6px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color2);
+}
+
+.blogs-area .catagory li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* top posts */
+.top-posts .sl {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-posts .right {
+    width: calc(100% - 60px);
+}
+
+.instragram img {
+    /* width: 60px; */
+    padding: 2px;
+    border: 1px solid var(--white);
+}
+
 @media(max-width:991px) {
     .contact-area {
         flex-direction: column;
@@ -170,6 +236,14 @@
     }
 
     .management .my-card {
+        margin: 0 auto;
+    }
+
+    .blogs-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 600px;
         margin: 0 auto;
     }
 }

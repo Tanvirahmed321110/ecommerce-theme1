@@ -5,3 +5,4 @@
 5. COMPARE PAGE CREATE
 6. tream and condition , return policy page
 7. time count down
+8. blogs page and banner
