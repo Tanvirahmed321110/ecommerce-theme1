@@ -1,3 +1,6 @@
+/*_______________________________
+||      Contact Page Start      ||
+_________________________________*/
 .contact-page .left-cart {
     padding: 75px 30px;
     max-width: 400px;
@@ -105,7 +108,7 @@
 
 
 
-
+/*****  Mamagement Card  *****/
 .management .my-card {
     width: 100%;
     max-width: 350px;
@@ -231,6 +234,10 @@ ______________________________*/
 
 
 
+
+/*___________________________________
+||     Single   Blog Page Start      ||
+_____________________________________*/
 .single-blog-page {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
@@ -240,12 +247,20 @@ ______________________________*/
 
 
 
+/*________________________________
+||     Privacy Policy Start      ||
+__________________________________*/
+
+.privary-tearm-img {
+    width: 400px;
+    object-position: center;
+    margin: 0 auto;
+}
 
 
-
-
-
-
+/*_____________________________
+||     Responsive 991px       ||
+_______________________________*/
 @media(max-width:991px) {
     .contact-area {
         flex-direction: column;
@@ -269,5 +284,11 @@ ______________________________*/
     .single-blog-page {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .privary-tearm-img {
+        width: 300px;
+        object-position: center;
+        margin: 0 auto;
     }
 }
