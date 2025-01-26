@@ -1330,7 +1330,7 @@ input[type="radio"]:checked::after {
 \*________________________________*/
 .product-modal .modal-content {
     max-width: 1000px;
-    max-height: 1000px;
+    max-height: 2000px !important;
     min-width: 75%;
     min-height: 90%;
     width: 75%;
@@ -1366,8 +1366,7 @@ input[type="radio"]:checked::after {
 
 /*****  Product Details  ******/
 .product-area-top .product-details {
-    display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
 }
 
@@ -2014,7 +2013,7 @@ input[type="radio"]:checked::after {
 /*__________________________________
 ||      Image animation Start      ||
 ___________________________________*/
-.images {
+.animation-image {
     -webkit-animation: imageScrollAnimation 10s linear infinite;
     animation: imageScrollAnimation 10s linear infinite;
     position: absolute;
@@ -2172,6 +2171,43 @@ ___________________________________*/
         width: 640px !important;
     }
 
+
+
+    /****** Product Modal *****/
+    .product-modal .modal-content {
+        min-width: 95%;
+        min-height: 90%;
+        width: 90% !important;
+        height: 80%;
+    }
+
+    .product-page-area {
+        padding: 20px;
+        overflow: auto;
+    }
+
+    .product-area-top {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .product-modal .modal-content {
+        max-width: 1000px;
+        max-height: 2000px;
+        min-width: 75%;
+        min-height: 90%;
+        width: 75%;
+        height: 85%;
+    }
+
+    .product-area-top .image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .cart-buy-btn .cart {
+        width: 240px !important;
+    }
 }
 
 

@@ -1198,7 +1198,6 @@ footer .footer-pages .footer-head::after {
         justify-content: space-between;
     }
 
-
     /* header bottom */
     .header-bottom {
         position: fixed;
@@ -1220,6 +1219,8 @@ footer .footer-pages .footer-head::after {
 
     .header-bottom-area {
         flex-direction: column;
+        height: 100%;
+        gap: 25px;
     }
 
     .header-bottom .left {
@@ -1230,27 +1231,15 @@ footer .footer-pages .footer-head::after {
         height: 100dvh;
     }
 
-    .header-bottom-area {
-        flex-direction: column;
-        height: 100%;
-        gap: 25px;
-    }
-
     .header-bottom .my-dropdown li {
         border: none;
     }
 
     .header-bottom .my-dropdown li:hover a {
-        color: var(--secondary-color)
+        color: var(--secondary-color);
     }
-
-
 
     /*_______  all department  _______*/
-    .header-bottom-area .left {
-        width: 100%;
-    }
-
     .header-bottom .all-department-btn {
         width: 100%;
     }
@@ -1280,6 +1269,7 @@ footer .footer-pages .footer-head::after {
         flex-direction: column;
         align-items: start;
         gap: 30px;
+        height: calc(100% - 140px);
     }
 
     .my-dropdown,
@@ -1298,7 +1288,7 @@ footer .footer-pages .footer-head::after {
         flex-direction: column;
         align-items: start;
         width: 100%;
-        gap: 2px
+        gap: 2px;
     }
 
     .header-bottom-area .right .nav-ul li {
@@ -1328,9 +1318,7 @@ footer .footer-pages .footer-head::after {
     .header-bottom-top .close-modile-sidebar {
         border: none;
     }
-
 }
-
 
 
 

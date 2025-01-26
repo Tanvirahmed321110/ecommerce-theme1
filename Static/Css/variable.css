@@ -77,11 +77,11 @@
 @media (max-width:991px) {
     :root {
         /*______  Font Size  ______ */
-        --fs-xs: 12px;
-        --fs-sm: 15px;
+        --fs-xs: 14px;
+        --fs-sm: 16px;
         --fs-md: 16px;
-        --fs-lg: 18px;
-        --fs-xl: 20px;
+        --fs-lg: 20px;
+        --fs-xl: 21px;
         --fs-xxl: 30px;
         --fs-xxxl: 40px;
     }
