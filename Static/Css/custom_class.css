@@ -626,6 +626,28 @@ tr {
 }
 
 
+.my-p5-1 {
+    padding-top: 4px;
+}
+
+.my-pt-2 {
+    padding-top: 8px;
+}
+
+.my-pt-3 {
+    padding-top: 12px;
+}
+
+.my-pt-4 {
+    padding-top: 16px;
+}
+
+.my-pt-5 {
+    padding-top: 20px;
+}
+
+
+
 .my-pb-1 {
     padding-bottom: 8px;
 }

@@ -228,6 +228,24 @@ ______________________________*/
     border: 1px solid var(--white);
 }
 
+
+
+
+.single-blog-page {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 60px;
+}
+
+
+
+
+
+
+
+
+
+
 @media(max-width:991px) {
     .contact-area {
         flex-direction: column;
@@ -240,10 +258,16 @@ ______________________________*/
     }
 
     .blogs-area {
-        display: grid;
         grid-template-columns: 1fr;
         gap: 40px;
         max-width: 600px;
         margin: 0 auto;
+    }
+
+
+    /* single blog */
+    .single-blog-page {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
