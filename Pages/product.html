@@ -3576,6 +3576,26 @@
 
 
 
+            // big image zoom in when hover
+            document.addEventListener("DOMContentLoaded", function () {
+                const bigImage = document.getElementById('big-img');
+
+                bigImage.addEventListener('mousemove', function (e) {
+                    const { left, top, width, height } = bigImage.getBoundingClientRect();
+                    const x = ((e.clientX - left) / width) * 100;
+                    const y = ((e.clientY - top) / height) * 100;
+
+                    bigImage.style.transformOrigin = `${x}% ${y}%`;
+                    bigImage.style.transform = "scale(2)"; // Zoom level
+                });
+
+                bigImage.addEventListener('mouseleave', function () {
+                    bigImage.style.transform = "scale(1)"; // Reset zoom
+                });
+            });
+
+
+
 
 
 

@@ -178,7 +178,7 @@ tr {
 /*____________  Reused Class  ____________*/
 .my-container,
 .my-container-sm {
-    padding: 20px 16px;
+    padding: 0px 16px;
     margin: 0px auto;
     width: 100%;
     max-width: 1280px;
@@ -1377,7 +1377,7 @@ tr {
     }
 
     .my-grid-lg-4 {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr) !important;
     }
 
     .my-grid-5 {
@@ -1387,12 +1387,27 @@ tr {
     .my-grid-6 {
         grid-template-columns: repeat(5, 1fr);
     }
+
+
+    .my-container,
+    .my-container-sm {
+        width: 100%;
+        max-width: 90%;
+    }
+
 }
 
 
 
 /*_______  responsive for tablet divece  ________ */
 @media (max-width:991px) {
+
+    .my-container,
+    .my-container-sm {
+        width: 100%;
+        max-width: 740px;
+    }
+
     .my-flex-md-column {
         flex-direction: column;
     }
@@ -1470,7 +1485,7 @@ tr {
     }
 
     .my-grid-sm-2 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .my-grid-sm-3 {
@@ -1523,7 +1538,7 @@ tr {
     }
 
     .my-grid-xs-1 {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr) !important;
     }
 
     .my-grid-xs-2 {

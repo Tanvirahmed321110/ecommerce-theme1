@@ -19,6 +19,7 @@
 
 .hero-area .left {
     width: 400px;
+
 }
 
 .hero-area .right {
@@ -130,7 +131,7 @@ swiper-slide.hero img {
 
 
 .support {
-    margin-top: 20;
+    margin-top: 20px;
 }
 
 .support .single-support-item {
@@ -181,7 +182,7 @@ swiper-slide.hero img {
     align-items: center;
     justify-content: center;
     gap: 23px;
-    padding: 14px;
+    padding: 10px 14px;
     border-radius: 12px;
 }
 
@@ -189,6 +190,7 @@ swiper-slide.hero img {
     border: none;
     background-color: transparent;
 }
+
 
 .subcibe-discount-area .left form .my-btn {
     width: 140px;
@@ -393,8 +395,8 @@ swiper-slide.hero img {
 ****    Brand Start Here    ****
 ***********************************/
 .brand-section {
-    /* background-color: var(--border-color) !important; */
     padding: 35px 0;
+    padding-top: 0;
 }
 
 .brand-section .my-container {
@@ -458,12 +460,13 @@ swiper-slide.hero img {
     box-shadow: unset;
     border-radius: 10px;
     border: 1px solid var(--border-color2);
-    max-width: 175px;
+    max-width: 180px;
+    margin: 0 auto;
     width: 100%;
 }
 
 .top-categories .item:hover {
-    transform: translateY(10px);
+    transform: translateY(4px);
     box-shadow: var(--shadow-2);
     border-color: var(--primary-color);
 }
@@ -479,6 +482,9 @@ swiper-slide.hero img {
     border-radius: 12px;
 }
 
+.top-categories .section-head h2 {
+    line-height: 18px;
+}
 
 
 
@@ -553,8 +559,8 @@ swiper-slide.hero img {
 .products-area {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 40px;
-    max-width: 4000px;
+    gap: 24px;
+    /* max-width: 4000px; */
 }
 
 
@@ -590,6 +596,10 @@ swiper-slide.hero img {
     /* border: 1px solid var(--border-color2); */
 }
 
+.about .item h4 {
+    font-size: var(--fs-md);
+    font-weight: 500;
+}
 
 .about .my-grid-4 {
     padding-top: 20px;
@@ -666,13 +676,7 @@ swiper-slide.hero img {
     box-shadow: unset;
 }
 
-.tabs-products {
-    margin-top: 20px;
-}
 
-.tabs-products .my-card {
-    margin: 0 auto;
-}
 
 /* reivew image */
 .customer-reviews .img-wrapper {
@@ -760,9 +764,18 @@ swiper-slide.hero img {
 /*******************************
 ****   Tabs Products Area   ****
 *******************************/
+
+.tabs-products {
+    margin-top: 20px;
+}
+
+.tabs-products .my-card {
+    margin: 0 auto;
+}
+
 .tab-area .tab-buttons {
     /* background-color: var(--white-off); */
-    padding: 10px 14px;
+    padding: 0px 14px;
     width: fit-content;
     margin: 0 auto;
     border-radius: 4px;
@@ -856,13 +869,13 @@ swiper-slide.hero img {
 
 .tab-products .swiper-slide {
     text-align: center;
-    font-size: 18px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background-color: transparent;
     box-shadow: unset;
     padding: 0;
+    align-items: left;
 }
 
 .tab-products .swiper-slide img {
@@ -873,9 +886,19 @@ swiper-slide.hero img {
     align-items: stretch;
 }
 
+.tab-products .swiper-slide .my-card a h4 {
+    width: 100%;
+    margin: 12px 0;
+}
 
+.tab-products .swiper-slide .my-card a {
+    width: 100%;
+}
 
-
+.tab-products .swiper-slide .my-card .rating a {
+    width: fit-content;
+    ;
+}
 
 
 
@@ -885,11 +908,12 @@ swiper-slide.hero img {
 /*******************************
 ****   Accordion  Start Here  ****
 *******************************/
+
 .accordion {
     width: 100%;
     max-width: 640px;
     margin: 0 auto;
-    border: 1px solid var(--border-color2);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     overflow: hidden;
     font-family: Arial, sans-serif;
@@ -902,7 +926,7 @@ swiper-slide.hero img {
 }
 
 .accordion-item {
-    border-bottom: 1px solid var(--border-color2);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .accordion-item h4 {
@@ -918,7 +942,7 @@ swiper-slide.hero img {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s, color 0.3s;
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
 }
 
 .accordion-header span {
@@ -1009,6 +1033,15 @@ swiper-slide.hero img {
     .deal-item.right .rating-wrapper {
         margin-top: -10px;
     }
+
+
+    .products-area .right {
+        max-width: 600px;
+    }
+
+    .popular-products-area .my-card.product-cart {
+        max-width: 300px;
+    }
 }
 
 
@@ -1030,7 +1063,7 @@ swiper-slide.hero img {
 
     .header-top-mobile .area {
         width: 100%;
-        max-width: 600px;
+        max-width: 709px;
         margin: 0 auto;
     }
 
@@ -1048,10 +1081,21 @@ swiper-slide.hero img {
         border-top: 1px solid var(--border-color);
     }
 
-    .header-mediel-area {
-        max-width: 600px;
+    .popular-products-area {
+        max-width: 740px;
         margin: 0 auto;
     }
+
+    .tab-area {
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
+    .header-mediel-area {
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
 
     .header-mediel .search {
         position: relative;
@@ -1060,6 +1104,9 @@ swiper-slide.hero img {
         margin: 0 auto;
     }
 
+    .products-area .right {
+        max-width: 700px;
+    }
 
     .mega-dropdown.my-dropdown ul li {
         padding: 5px;
@@ -1223,7 +1270,7 @@ swiper-slide.hero img {
     }
 
     .tab-products.swiper {
-        max-width: 400px;
+        max-width: 320px;
     }
 }
 
@@ -1300,11 +1347,36 @@ swiper-slide.hero img {
         padding: 10px 5px;
         border-radius: 12px;
     }
+
+
 }
 
 
 
+@media (max-width:480px) {
+    .products-area .left {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 
+    .product-cart {
+        max-width: 90%;
+        margin: 0 auto;
+        border-color: var(--border-color2);
+    }
+
+    .header-top-mobile .area {
+        gap: 0px;
+    }
+
+    .products-area .right {
+        max-width: 85%;
+    }
+
+    .products-area .left .sticky {
+        width: 90%;
+    }
+}
 
 
 
@@ -1376,20 +1448,4 @@ swiper-slide.hero img {
 /* Section Styling */
 .top-sell-products {
     margin-top: 50px;
-}
-
-.section-head {
-    margin-bottom: 20px;
-}
-
-.section-head h2 {
-    font-size: 2rem;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.section-head p {
-    font-size: 1rem;
-    color: #555;
 }

@@ -23,7 +23,10 @@
 }
 
 
-
+.big-img {
+    position: relative;
+    z-index: 4;
+}
 
 
 /*****  information  *****/
@@ -282,7 +285,6 @@
 
     .empty-review .head button {
         width: fit-content;
-        word-wrap: nowrap;
         text-wrap: nowrap;
     }
 

@@ -37,7 +37,7 @@ var testimonialSlider = new Swiper('.testimonial-slider', {
         disableOnInteraction: false,
     },
     breakpoints: {
-        350: {
+        300: {
             slidesPerView: 1,
         },
         768: {
