@@ -1349,18 +1349,26 @@ swiper-slide.hero img {
     }
 
 
+    .tab-products .swiper-slide {
+        margin-right: 0;
+    }
+
+    .tab-area {
+        margin-top: 24px;
+    }
+
 }
 
 
 
 @media (max-width:480px) {
     .products-area .left {
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
     }
 
     .product-cart {
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
         border-color: var(--border-color2);
     }
@@ -1370,11 +1378,19 @@ swiper-slide.hero img {
     }
 
     .products-area .right {
-        max-width: 85%;
+        max-width: 100%;
     }
 
-    .products-area .left .sticky {
+    .products-area {
         width: 90%;
+    }
+
+    .products-area .left {
+        width: 90%;
+    }
+
+    .popular-products-area .my-card.product-cart {
+        max-width: 360px;
     }
 }
 
