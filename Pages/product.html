@@ -1690,6 +1690,96 @@
                                 <!--********  Single Product  ********-->
                                 <div class="my-card product-cart">
                                     <a href="./Pages/product.html" class="images">
+                                        <img class="display-image" src="../Static/images/product1.jpg" alt="product">
+                                        <img class="hide-image" src="../Static/images/product1.jpg" alt="">
+
+                                        <!-- ****  Hide icons  ****-->
+                                        <ul class="hide-icons my-d-flex my-gap-1 ">
+                                            <li class="hide-icon my-tooltip  my-flex-center">
+                                                <i class="fa-regular fa-eye"></i>
+                                                <div class="show-text">Quick View</div>
+                                            </li>
+                                            <li class="hide-icon my-tooltip my-flex-center">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                                <div class="show-text">Complare Product</div>
+                                            </li>
+                                            <li class="hide-icon my-tooltip  my-flex-center">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <div class="show-text">Add to love list</div>
+                                            </li>
+                                        </ul>
+                                    </a>
+
+                                    <!-- ****  Base  ****-->
+                                    <div class="base">12%</div>
+                                    <div class="base new">new</div>
+
+                                    <!-- ****  Name  ****-->
+                                    <div class="my-mt-2">
+                                        <a href="./Pages/product.html" class="name">
+                                            <h4>Instand Food Porata</h4>
+                                        </a>
+                                        <p class="my-mt-0 description">This item is Instand food Lorem, ipsum dolor
+                                            sit amet consectetur adipisicing elit. Ipsam similique consequuntur
+                                            laboriosam. Cum aut harum, incidunt laudantium alias asperiores maiores
+                                            veniam rerum iste est debitis aliquam, neque laborum quaerat dicta!
+                                            Lorem </p>
+                                    </div>
+
+                                    <!-- ****  Raging  ****-->
+                                    <div class="rating my-mt-4 my-align-center my-w-100 my-d-flex my-gap-2">
+                                        <a href="#" class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </a>
+
+                                        <div class="total-avg my-d-flex my-gap-2">
+                                            <div class="avg">4.7</div>
+                                            <div class="total-raging my-fs-xs">(137)</div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- ****  Price  ****-->
+                                    <div class="price my-mt-2 my-d-flex my-align-end my-gap-2">
+                                        <h4 class="new-price my-fw-bolder">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign "></i>
+                                            <span>599.00</span>
+                                        </h4>
+                                        <del class="old-price my-fs-xs">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <span>650.00</span>
+                                        </del>
+                                    </div>
+
+
+
+                                    <!-- ****  Sold available  ****-->
+                                    <div class="sold-available my-mt-4">
+                                        <div class="sold uppercase my-flex-between">
+                                            <span class="my-fs-xs">Already sold: <strong>5</strong></span>
+                                            <span class="my-fs-xs">Avilable: <strong>16</strong></span>
+                                        </div>
+
+                                        <div class="available-range">
+                                            <div class="range"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- ****  Add To Cart  ****-->
+                                    <div class="add-to-cart my-mt-5">
+                                        <button class="my-btn my-primary-btn "><span>Add To Cart</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!--********  Single Product  ********-->
+                                <div class="my-card product-cart">
+                                    <a href="./Pages/product.html" class="images">
                                         <img class="display-image" src="../Static/images/product2.jpg" alt="product">
                                         <img class="hide-image" src="../Static/images/product1.jpg" alt="">
 
@@ -3413,14 +3503,17 @@
 
         <script type="module">
             // Base function for updating quantity
-            import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF } from '../Static/Js/utilitis.js';
+            import { openModalF, closeButtonF, updateQuantity, bigImageChangeF, openSearchDropdown, deleteF, toggleF, activeF } from '../Static/Js/utilitis.js';
 
 
+            // review modal
             openModalF('review-modal', 'review-open-btn')
             closeButtonF('review-modal')
 
 
 
+
+            // update quantity
             function updateQty() {
                 const inputQuantity = document.getElementById('input-quantity')
 
@@ -3437,20 +3530,6 @@
 
 
             // image change
-            function bigImageChangeF() {
-                const bigImage = document.getElementById('big-img')
-                const smallImgs = document.querySelectorAll('.small-imgs img')
-
-                activeF('.small-imgs img')
-
-                smallImgs.forEach(img => {
-                    img.addEventListener('click', function () {
-                        bigImage.src = this.src
-                    })
-                })
-
-
-            }
             bigImageChangeF()
 
 
@@ -3621,7 +3700,8 @@
                     },
                     // For devices >= 768px (medium devices)
                     768: {
-                        slidesPerView: 3, // Show 3 slides for medium to larger devices
+                        slidesPerView: 4
+                        , // Show 3 slides for medium to larger devices
                     },
                 },
             });

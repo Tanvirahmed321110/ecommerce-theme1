@@ -23,10 +23,6 @@
 }
 
 
-.big-img {
-    position: relative;
-    z-index: 4;
-}
 
 
 /*****  information  *****/
@@ -223,6 +219,14 @@
 
 
 
+/* review modal */
+#review-modal .modal-content {
+    padding: 16px;
+}
+
+#review-modal .rating-stars i {
+    font-size: 13px;
+}
 
 
 

@@ -58,6 +58,23 @@ export function toggleF(sidebarId, buttonId) {
 
 
 
+// image change
+export function bigImageChangeF() {
+    const bigImage = document.getElementById('big-img')
+    const smallImgs = document.querySelectorAll('.small-imgs img')
+
+    activeF('.small-imgs img')
+
+    smallImgs.forEach(img => {
+        img.addEventListener('click', function () {
+            bigImage.src = this.src
+        })
+    })
+}
+
+
+
+
 // Base function for updating quantity
 export function updateQuantity(inputField, operation) {
     let currentValue = parseInt(inputField.value) || 0;

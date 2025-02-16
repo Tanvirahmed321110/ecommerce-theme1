@@ -1,6 +1,6 @@
-/**********************************
+/************************************
 ****    Hero SLider Start Here   ****
-***********************************/
+*************************************/
 .hero-section {
     /* margin: 2px 0 55px 0; */
     height: 420px;
@@ -130,6 +130,16 @@ swiper-slide.hero img {
 }
 
 
+
+
+
+
+
+
+
+/****************************************
+****    Support Section Start Here   ****
+****************************************/
 .support {
     margin-top: 20px;
 }
@@ -149,6 +159,13 @@ swiper-slide.hero img {
 
 
 
+
+
+
+
+/****************************************
+****    Subcribe Section Start Here   ****
+****************************************/
 .subcibe-app {
     background-image: url('/Static/images/mobile-bg.svg');
     height: 455px;
@@ -200,6 +217,13 @@ swiper-slide.hero img {
 .subcibe-discount-area .right img {
     max-width: 360px;
 }
+
+
+
+
+
+
+
 
 
 
@@ -391,9 +415,14 @@ swiper-slide.hero img {
 
 
 
-/**********************************
+
+
+
+
+
+/*******************************
 ****    Brand Start Here    ****
-***********************************/
+*******************************/
 .brand-section {
     padding: 35px 0;
     padding-top: 0;
@@ -451,32 +480,37 @@ swiper-slide.hero img {
 
 
 
-/**************************************
+/****************************************
 ****    Top Categories Start Here    ****
-***************************************/
+*****************************************/
 
 .top-categories .item {
     transition: .22s linear;
     box-shadow: unset;
-    border-radius: 10px;
-    border: 1px solid var(--border-color2);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
     max-width: 180px;
     margin: 0 auto;
     width: 100%;
+    box-shadow: var(--shadow-1);
+}
+
+.top-categories .item h6 {
+    margin-top: 16px;
 }
 
 .top-categories .item:hover {
     transform: translateY(4px);
-    box-shadow: var(--shadow-2);
+    box-shadow: var(--shadow-1);
     border-color: var(--primary-color);
 }
 
 
 
 .top-categories .item img {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    height: 120px;
+    height: 110px;
     /* border: 1px solid var(--white-off); */
     padding: 4px;
     border-radius: 12px;
@@ -516,9 +550,9 @@ swiper-slide.hero img {
 
 
 
-/**********************************
+/*******************************
 ****   How to Order Start   ****
-***********************************/
+********************************/
 .how-to-order .my-card {
     padding: 40px 25px;
     background-color: var(--border-color);
@@ -558,17 +592,22 @@ swiper-slide.hero img {
 
 .products-area {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 24px;
-    /* max-width: 4000px; */
+    grid-template-columns: .9fr 3fr;
+    gap: 12px;
 }
 
 
 
 
-/**********************************
+
+
+
+
+
+
+/*****************************
 ****   About Start  Here  ****
-***********************************/
+******************************/
 .about .items {
     max-width: 960px;
     margin: 0 auto;
@@ -610,9 +649,13 @@ swiper-slide.hero img {
 
 
 
-/*_________________________*\
-  ||    Blog Section     ||
-\*_________________________*/
+
+
+
+
+/*************************************
+****     Blog Section Start Here   ****
+**************************************/
 .blog-area .left.my-card {
     box-shadow: unset;
     background-color: var(--white-off);
@@ -654,9 +697,13 @@ swiper-slide.hero img {
 
 
 
-/*_________________________________*\
-  ||     Testimonial Slider     ||
-\*_________________________________*/
+
+
+
+
+/********************************************
+****    Testimonial Slider  Start Here   ****
+********************************************/
 .testimonial-slider .swiper-wrapper {
     width: 100%;
 }
@@ -760,11 +807,9 @@ swiper-slide.hero img {
 
 
 
-
-/*******************************
-****   Tabs Products Area   ****
-*******************************/
-
+/********************************************
+****    Tabs Products Area  Start Here   ****
+********************************************/
 .tabs-products {
     margin-top: 20px;
 }
@@ -905,10 +950,9 @@ swiper-slide.hero img {
 
 
 
-/*******************************
+/*********************************
 ****   Accordion  Start Here  ****
-*******************************/
-
+*********************************/
 .accordion {
     width: 100%;
     max-width: 640px;
@@ -1015,9 +1059,9 @@ swiper-slide.hero img {
 
 
 
-/*******************************
-****  Responsive code 1080px  ****
-*******************************/
+/***********************************
+****   Responsive code 1080px   ****
+***********************************/
 @media (max-width:1080px) {
 
     /**************   Hero Section  ****************/
@@ -1045,6 +1089,15 @@ swiper-slide.hero img {
 }
 
 
+
+
+
+
+
+
+/***********************************
+****   Responsive code 991px    ****
+***********************************/
 @media (max-width:991px) {
     .message-btn {
         bottom: 90px;
@@ -1260,6 +1313,12 @@ swiper-slide.hero img {
 }
 
 
+
+
+
+/***********************************
+****   Responsive code 768px    ****
+***********************************/
 @media (max-width:768px) {
     .hero-section .my-container {
         padding: 15px 0;
@@ -1276,6 +1335,11 @@ swiper-slide.hero img {
 
 
 
+
+
+/***********************************
+****   Responsive code 556px    ****
+***********************************/
 @media (max-width:556px) {
 
     /* shopping cart */
@@ -1361,6 +1425,13 @@ swiper-slide.hero img {
 
 
 
+
+
+
+
+/***********************************
+****   Responsive code 480px    ****
+***********************************/
 @media (max-width:480px) {
     .products-area .left {
         max-width: 100%;

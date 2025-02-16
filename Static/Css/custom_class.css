@@ -175,7 +175,7 @@ tr {
 
 
 
-/*____________  Reused Class  ____________*/
+/*__________  Reused Class  __________*/
 .my-container,
 .my-container-sm {
     padding: 0px 16px;
@@ -201,7 +201,7 @@ tr {
 }
 
 
-/*_____  Text Alignment _____ */
+/*_______  Text Alignment  _______ */
 .my-text-center {
     margin: 0 auto;
     text-align: center;
@@ -220,7 +220,9 @@ tr {
     margin-right: auto;
 }
 
-/* Border */
+
+
+/*________ Border  ________*/
 .my-border {
     border: 1px solid var(--border-color);
 }
@@ -236,6 +238,7 @@ tr {
 .my-border-bottom {
     border-bottom: 1px solid var(--border-color2);
 }
+
 
 /*_____ Title  _____*/
 .my-section-title {
@@ -283,7 +286,9 @@ tr {
     height: 50%;
 }
 
-/* Width */
+
+
+/*_____ Width _____*/
 .my-w-100 {
     width: 100%;
 }
@@ -348,7 +353,7 @@ tr {
     width: 100%;
 }
 
-/* wrap */
+/*_____ wrap _____*/
 .my-text-nowrap {
     text-wrap: nowrap;
 }
@@ -379,7 +384,7 @@ tr {
     color: var(--gray) !important;
 }
 
-/* Ripple effect */
+/*_____ Ripple effect _____*/
 .ripple {
     background-position: center;
     transition: background 0.4s;
@@ -399,7 +404,7 @@ tr {
 
 
 
-/* Button Link */
+/*_____ Button Link _____*/
 .my-btn-gradient {
     text-transform: uppercase;
     color: var(--white);
@@ -904,7 +909,7 @@ tr {
     margin-bottom: 24px;
 }
 
-/* Margin Right */
+/*______  Margin Right _____*/
 .my-mr-1 {
     margin-right: 4px;
 }
@@ -954,7 +959,7 @@ tr {
 }
 
 
-/*_______  Font Class  ________*/
+/*______  Font Class  ______*/
 .my-fs-xs {
     font-size: var(--fs-xs);
 }
@@ -989,7 +994,7 @@ tr {
 }
 
 
-/* hover text */
+/*_____  hover text _____*/
 .hover-primary-color:hover {
     color: var(--primary-color);
 }
@@ -1337,7 +1342,9 @@ tr {
 
 
 
-/*___________||  Responsive Start Here  ||___________ */
+/*__________________________________*\
+  ||     Responsive  Start Here     ||
+\*___________________________________*/
 /*________  responsive for tablet divece  ________*/
 @media (max-width:1080px) {
     .my-flex-lg-column {

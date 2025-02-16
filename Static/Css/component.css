@@ -1,9 +1,8 @@
 @import url('./variable.css');
 
-
-/*_________________________________*\
-  ||     Tooltip  Start Here     ||
-\*_________________________________*/
+/*************************************
+****     Tooltip Start Here       ****
+*************************************/
 .my-tooltip {
     position: relative;
 }
@@ -45,15 +44,20 @@
     visibility: visible;
 }
 
-/*___________||  Tooltip Start Here  ||___________ */
+/*************************************
+****     Tooltip End Here       ****
+*************************************/
 
 
 
 
 
-/*__________________________________*\
-  ||     Dropdown Styles Here     ||
-\*__________________________________*/
+
+
+
+/*************************************
+****     Dropdown Styles Here     ****
+*************************************/
 .my-dropdown {
     border-radius: 4px;
     box-shadow: var(--shadow-2);
@@ -100,9 +104,12 @@
 
 
 
-/*_____________________________________*\
-  ||     Notification Styles Here     ||
-\*_____________________________________*/
+
+
+
+/*****************************************
+****     Notification Styles Here     ****
+*****************************************/
 .notification {
     position: fixed;
     bottom: 20px;
@@ -130,15 +137,14 @@
     padding-left: 29px;
 }
 
-/*___________||  End Start Here  ||___________ */
 
 
 
 
 
-/*______________________________*\
-  ||     Card  Start Here     ||
-\*______________________________*/
+/********************************
+****     Cart Start Here     ****
+*********************************/
 .my-card {
     position: relative;
     overflow: hidden;
@@ -155,9 +161,9 @@
 
 
 
-/*_______________________________*\
-  ||     Spinner  Start Here     ||
-\*_______________________________*/
+/*********************************************
+****     Spinner Start Here Start Here     ****
+**********************************************/
 .my-spinner,
 .my-spinner div {
     box-sizing: border-box;
@@ -216,21 +222,20 @@
     }
 }
 
-/*___________||  Spinner End Here  ||___________ */
 
 
 
 
-/*_______________________________*\
-  ||     Button  Start Here     ||
-\*_______________________________*/
+/*********************************************
+****     Button Start Here Start Here     ****
+**********************************************/
 .my-btn,
 .my-btn-sm {
     cursor: pointer;
     user-select: none;
     font-size: var(--fs-md);
     padding: 12px 20px;
-    font-family: var(--font-inter);
+    font-family: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,9 +328,9 @@
 
 
 
-/*_______________________________*\
-  ||     Input  Start Here     ||
-\*_______________________________*/
+/*********************************************
+****      Input Start Here Start Here     ****
+**********************************************/
 .my-input-control {
     position: relative;
     margin: 5px 0;
@@ -401,9 +406,16 @@ textarea::placeholder {
 }
 
 
-/*_____________________________________________*\
-  ||     Video Play animation Start Here     ||
-\*_____________________________________________*/
+
+
+
+
+
+
+
+/***************************************
+****      Vide Play  Start Here     ****
+****************************************/
 .my-video {
     background-color: wheat;
     width: 400px;
@@ -497,9 +509,9 @@ textarea::placeholder {
 
 
 
-/*_____________________________*\
-  ||     Modal Start Here     ||
-\*______________________________*/
+/****************************************
+****      Modal Play  Start Here     ****
+****************************************/
 .my-modal {
     position: fixed;
     top: 0;
@@ -593,14 +605,13 @@ textarea::placeholder {
     transform: translateX(3px);
 }
 
-/*______ Modal End _____ */
 
 
 
 
-/*_________________________________*\
-  ||     Scrollbar Start Here     ||
-\*__________________________________*/
+/****************************************
+****    Scrollbar Play  Start Here   ****
+****************************************/
 .my-has-scrollbar::-webkit-scrollbar {
     width: 12px;
     height: 14px;
@@ -613,12 +624,12 @@ textarea::placeholder {
     background-color: whitesmoke;
 }
 
-.my-has-scrollbar:hover::-webkit-scrollbar,
+/* .my-has-scrollbar:hover::-webkit-scrollbar,
 .my-has-scrollbar-sm:hover::-webkit-scrollbar {
     background-color: var(--gray);
     border: 1px solid var(--border-color);
     border-radius: 2px;
-}
+} */
 
 
 .my-has-scrollbar::-webkit-scrollbar-thumb,
@@ -632,20 +643,20 @@ textarea::placeholder {
     border-radius: 12px;
 }
 
-.my-has-scrollbar:hover::-webkit-scrollbar-thumb {
+/* .my-has-scrollbar:hover::-webkit-scrollbar-thumb {
     background-color: var(--gray);
-}
-
+} */
+/*
 .my-has-scrollbar::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
-}
+} */
 
 
 
 
-/*______________________________________*\
-  ||        Small Banner Start        ||
-\*______________________________________*/
+/*************************************
+****    Samll Banner Start Here   ****
+**************************************/
 .sm-banner {
     position: relative;
     padding: 12px;
@@ -689,9 +700,9 @@ textarea::placeholder {
 
 
 
-/*______________________________________*\
-  ||    Menu Icon Create Start     ||
-\*______________________________________*/
+/*********************************
+****   Menu Icon Start Here   ****
+**********************************/
 .menu-icon {
     display: flex;
     flex-direction: column;
@@ -727,34 +738,16 @@ textarea::placeholder {
 
 
 
-/*______________________________________*\
-  ||     Component Responsive Start     ||
-\*______________________________________*/
-@media(max-width:991px) {}
-
-
-@media(max-width:767px) {
-    .my-card {
-        padding: 12px;
-    }
-
-    /* button */
-    .my-btn {
-        padding: 13px 15px;
-    }
-
-    .my-btn.my-btn-pill {
-        padding: 10px 20px;
-    }
-}
 
 
 
 
 
-/*______________________________________*\
-  ||     Checkbox and Radio Input     ||
-\*______________________________________*/
+
+
+/************************************************
+****   Checkbox and Radio Input Start Here   ****
+************************************************/
 input[type="checkbox"],
 input[type="radio"] {
     width: 22px;
@@ -822,9 +815,16 @@ input[type="checkbox"]:focus {
 
 
 
-/*_____________________________________*\
-  ||     My Dropdown Start Here      ||
-\*_____________________________________*/
+
+
+
+
+
+
+
+/********************************
+****   Dropdown Start Here   ****
+*********************************/
 .my-dropdown-parent {
     cursor: pointer;
     position: relative;
@@ -910,10 +910,9 @@ input[type="radio"]:checked::after {
 
 
 
-
-/*_____________________________________*\
-  ||   Live Message Start Here      ||
-\*_____________________________________*/
+/***********************************
+****  Live Message Start Here   ****
+***********************************/
 .message-btn {
     position: fixed;
     right: 25px;
@@ -979,10 +978,9 @@ input[type="radio"]:checked::after {
 
 
 
-
-/*________________________________*\
-  ||    Notice  Start Here      ||
-\*________________________________*/
+/*****************************
+****   Notice Start Here   ****
+*****************************/
 .my-notice {
     padding: 8px 16px;
     border-radius: var(--radius-md);
@@ -1042,12 +1040,18 @@ input[type="radio"]:checked::after {
 
 
 
-/*________________________________*\
-  ||     Paroduct Cart  Here      ||
-\*________________________________*/
+
+
+/*************************************
+****   Paroduct Cart Start Here   ****
+**************************************/
 .product-cart {
-    max-width: 370px;
+    max-width: 320px;
     border-color: var(--border-color2);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .product-cart:hover {
@@ -1058,13 +1062,12 @@ input[type="radio"]:checked::after {
 /*****  images  *****/
 .product-cart .images {
     width: 100%;
-    height: 200px;
+    height: 180px;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .product-cart .images img {
-    width: 200px;
+    width: 180px;
     margin: 0 auto;
 }
 
@@ -1221,9 +1224,15 @@ input[type="radio"]:checked::after {
 
 
 
-/*________________________________*\
-  ||      product cart list      ||
-\*________________________________*/
+
+
+
+
+
+
+/*****************************************
+****   product cart list  Start Here   ****
+******************************************/
 .product-cart-list.product-cart {
     display: flex;
     align-items: flex-start;
@@ -1252,9 +1261,13 @@ input[type="radio"]:checked::after {
 
 
 
-/*________________________________*\
-  ||     Brightcamp  Here      ||
-\*________________________________*/
+
+
+
+
+/************************************
+****   Brightcamp   Start Here   ****
+*************************************/
 .brigtcamp-area {
     background-color: var(--white-off);
     padding: 16px;
@@ -1286,6 +1299,8 @@ input[type="radio"]:checked::after {
 
 
 
+
+
 /* subcribe */
 .subcribe {
     background-color: var(--white-off);
@@ -1302,9 +1317,17 @@ input[type="radio"]:checked::after {
 
 
 
-/*________________________________*\
-  ||     Message Box  Here      ||
-\*________________________________*/
+
+
+
+
+
+
+
+
+/************************************
+****   Message Box   Start Here   ****
+*************************************/
 .my-message-box {
     background-color: rgb(237, 234, 234);
     max-width: 400px;
@@ -1331,9 +1354,18 @@ input[type="radio"]:checked::after {
 }
 
 
-/*________________________________*\
-  ||        Product Modal  Here      ||
-\*________________________________*/
+
+
+
+
+
+
+
+
+
+/***************************************
+****   Product Modal   Start Here   ****
+****************************************/
 .product-modal .modal-content {
     max-width: 1000px;
     max-height: 2000px !important;
@@ -1624,9 +1656,17 @@ input[type="radio"]:checked::after {
 
 
 
-/*________________________________*\
-  ||        Popup   Here      ||
-\*________________________________*/
+
+
+
+
+
+
+
+
+/******************************
+****   Popup  Start Here   ****
+*******************************/
 .my-popup.my-card {
     position: fixed !important;
     right: -100%;
@@ -1691,9 +1731,24 @@ input[type="radio"]:checked::after {
 
 
 
-/*________________________________*\
-  ||        List View      ||
-\*________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+****   List View  Start Here   ****
+**********************************/
 .list-view-area table th {
     background-color: var(--border-color);
 }
@@ -1817,9 +1872,15 @@ input[type="radio"]:checked::after {
 
 
 
-/*________________________________*\
-  ||       Left Sidebar  Here      ||
-\*________________________________*/
+
+
+
+
+
+
+/*********************************
+****   Sticky  Start Here   ****
+**********************************/
 .sticky {
     position: sticky;
     top: 40px;
@@ -1958,9 +2019,14 @@ input[type="radio"]:checked::after {
 
 
 
-/*________________________________*\
-  ||        pagination   Here      ||
-\*________________________________*/
+
+
+
+
+
+/*********************************
+****  pagination  Start Here   ****
+**********************************/
 .pagination {
     /* background-color: var(--white-off); */
     padding: 12px;
@@ -2015,10 +2081,9 @@ input[type="radio"]:checked::after {
 
 
 
-
-/*__________________________________
-||      Image animation Start      ||
-___________________________________*/
+/***************************************
+****  Image animation  Start Here   ****
+***************************************/
 .animation-image {
     -webkit-animation: imageScrollAnimation 10s linear infinite;
     animation: imageScrollAnimation 10s linear infinite;
@@ -2052,9 +2117,9 @@ ___________________________________*/
 
 
 
-/*________________________________*\
-  ||     Down arrow animation     ||
-\*________________________________*/
+/*******************************************
+****  Down arrow animation Start Here   ****
+*******************************************/
 /*
         <div id="configurator"><div class="arrow-container"><i class="fas fa-chevron-down chevron"></i><i class="fas fa-chevron-down chevron"></i><i class="fas fa-chevron-down chevron"></i></div></div>
 */
@@ -2128,9 +2193,17 @@ ___________________________________*/
 
 
 
-/*________________________________*\
-  ||     Responsive For 991px     ||
-\*________________________________*/
+
+
+
+
+
+
+
+
+/*******************************************
+**** Responsive  For 991px Start Here   ****
+*******************************************/
 @media (max-width:991px) {
     .brigtcamp {
         max-width: 640px;
@@ -2160,10 +2233,25 @@ ___________________________________*/
 
 
 
-/*________________________________*\
-  ||     Responsive For 769px     ||
-\*________________________________*/
+
+
+/*******************************************
+**** Responsive  For 769px Start Here   ****
+*******************************************/
 @media (max-width:769px) {
+    .my-card {
+        padding: 12px;
+    }
+
+    /* button */
+    .my-btn {
+        padding: 13px 15px;
+    }
+
+    .my-btn.my-btn-pill {
+        padding: 10px 20px;
+    }
+
     .list-view-area {
         width: 100%;
     }
@@ -2217,9 +2305,12 @@ ___________________________________*/
 }
 
 
-/*________________________________*\
-  ||     Responsive For 480px     ||
-\*________________________________*/
+
+
+
+/*******************************************
+**** Responsive  For 480px Start Here   ****
+*******************************************/
 @media (max-width:480px) {
     .list-view-table {
         width: 320px;
