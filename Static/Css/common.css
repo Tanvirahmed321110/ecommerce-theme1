@@ -259,7 +259,7 @@ header .header-top .left a:hover {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 13px 18px;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-sm);
     width: 100%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;

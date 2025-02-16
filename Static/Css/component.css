@@ -1136,6 +1136,10 @@ input[type="radio"]:checked::after {
 
 
 /*****  sold available  *****/
+.product-cart .sold-available {
+    width: 100%;
+}
+
 .product-cart .sold-available .available-range {
     margin-top: 5px;
     height: 8px;

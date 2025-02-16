@@ -479,6 +479,33 @@ swiper-slide.hero img {
 
 
 
+/************************************
+****    Banner Two Start Here    ****
+*************************************/
+.banner-two .item {
+    height: 220px;
+    background-color: rgb(212, 208, 208);
+    background-image: url("https://freshcart.codescandy.com/assets/images/banner/grocery-banner.png");
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.banner-two .item:nth-child(2) {
+    background-image: url("https://freshcart.codescandy.com/assets/images/banner/grocery-banner-2.jpg");
+}
+
+
+
+
+
+
+
+
+
 
 /****************************************
 ****    Top Categories Start Here    ****
@@ -598,8 +625,10 @@ swiper-slide.hero img {
 
 
 
-
-
+/*_______ How to order section  ________*/
+.howo-to-order-area .my-card {
+    border-radius: 8px;
+}
 
 
 
@@ -708,12 +737,16 @@ swiper-slide.hero img {
     width: 100%;
 }
 
+.customer-reviews .section-head {
+    margin-bottom: 0;
+}
+
 .customer-reviews .sigle-review {
     padding: 12px;
     max-width: 380px;
     margin: 0 auto;
     border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: var(--shadow-2);
 }
 
@@ -733,23 +766,32 @@ swiper-slide.hero img {
 }
 
 .customer-reviews .img-wrapper img {
-    border-radius: 16px;
-    padding: 3px;
-    /* border: 1px solid var(--border-color2); */
-    width: 120px;
-    max-height: 96px;
+    border-radius: 4px;
+    border-bottom-right-radius: 12px;
+    /* padding: 3px; */
+    /* border: 1px solid var(--border-color); */
+    width: 104px;
+    max-height: 106px;
 }
 
 
 /* review title */
 .sigle-review .title {
-    background-color: var(--secondary-color);
+    background-color: var(--border-color);
     width: 100%;
     padding: 20px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     border-bottom-left-radius: 0;
     color: var(--border-color2);
+    border-bottom: 5px solid white;
+    position: relative;
+    z-index: 5;
+}
+
+.sigle-review .starts {
+    margin-top: 4px;
+    margin-left: 3px;
 }
 
 .sigle-review .starts i {
@@ -759,18 +801,19 @@ swiper-slide.hero img {
 }
 
 .sigle-review .title h4 {
-    color: var(--white-off);
+    color: var(--secondary-color);
+    font-size: var(--fs-lg);
 }
 
 
 /* review desc */
 .sigle-review .desc {
-    background-color: var(--secondary-color);
+    background-color: var(--border-color);
     padding: 22px;
     padding-top: 12px;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     line-height: 22px;
     position: relative;
     height: 230px;
@@ -780,13 +823,17 @@ swiper-slide.hero img {
     justify-content: center;
     flex-direction: column;
     gap: 12px;
-    color: var(--border-color2);
+    color: var(--gray);
     text-align: left;
+}
+
+.sigle-review p {
+    color: var(--gray);
 }
 
 .sigle-review .desc h3 {
     font-size: calc(var(--fs-xl) - 2px);
-    color: var(--white);
+    color: var(--secondary-color);
 }
 
 .sigle-review .desc::after {
@@ -796,7 +843,7 @@ swiper-slide.hero img {
     left: 112px;
     width: 40px;
     height: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--border-color);
     transform: rotate(-46deg);
 }
 
@@ -954,7 +1001,7 @@ swiper-slide.hero img {
 ****   Accordion  Start Here  ****
 *********************************/
 .accordion {
-    width: 100%;
+    width: 94%;
     max-width: 640px;
     margin: 0 auto;
     border: 1px solid var(--border-color);
