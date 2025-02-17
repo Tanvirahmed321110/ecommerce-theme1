@@ -466,7 +466,7 @@ tr {
 
 /*______ Font Weight  ______*/
 .my-fw-normal {
-    font-weight: var(fw-400);
+    font-weight: var(--fw-400);
 }
 
 .my-fw-medium {

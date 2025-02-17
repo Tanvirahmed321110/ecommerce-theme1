@@ -8,7 +8,8 @@
         <meta name="keywords"
             content="Online shopping, Affordable products, Best deals, Discount offers, Buy products online, Shop now, Order online, Top quality products, Fast delivery, Secure online shopping, Product bazaar">
         <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" <!-- common css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- common css -->
         <link rel="stylesheet" href="../Static/Css/common.css">
         <link rel="stylesheet" href="../Static/Css/pages/product-page.css">
         <title>Product_Page</title>
@@ -902,7 +903,7 @@
                                                         <span class="my-mr-2">
                                                             <i class="fa-regular my-text-white fa-copy"></i></span>
                                                         Copy
-                                                        <div class="show-text">URL COPY</div>
+                                                        <span class="show-text">URL COPY</span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -1294,7 +1295,7 @@
                                                 </div>
                                             </div>
 
-                                            <button class="my-btn my-btn-outline my-mt-4" id="review-open-btn">
+                                            <button class="my-btn my-btn-outline my-mt-4" id="review-open-btn2">
                                                 <span class="my-fw-bold">Write a
                                                     Review</span>
                                             </button>
@@ -2751,7 +2752,6 @@
                     </div>
                 </div>
             </div>
-            </div>
 
             <!--_________  Footer Bottom  ________-->
             <div class="footer-bottom">
@@ -2871,7 +2871,7 @@
                                 <div class="left my-d-flex my-align-start my-gap-4">
                                     <!-- image -->
                                     <div class="img">
-                                        <img src="https://i.ibb.co.com/qgQ6k1b/cart-2.jpg" alt="cart-2" border="0">
+                                        <img src="https://i.ibb.co.com/qgQ6k1b/cart-2.jpg" alt="cart-2">
                                     </div>
 
                                     <!-- information -->
@@ -2920,7 +2920,7 @@
                                 <div class="left my-d-flex my-align-start my-gap-4">
                                     <!-- image -->
                                     <div class="img">
-                                        <img src="https://i.ibb.co.com/Yp1Sgz9/cart-3.jpg" alt="cart-3" border="0">
+                                        <img src="https://i.ibb.co.com/Yp1Sgz9/cart-3.jpg" alt="cart-3">
                                     </div>
 
                                     <!-- information -->
@@ -2973,7 +2973,7 @@
                                 <div class="left my-d-flex my-align-start my-gap-4">
                                     <!-- image -->
                                     <div class="img">
-                                        <img src="https://i.ibb.co.com/LCYvt9w/cart-4.jpg" alt="cart-4" border="0">
+                                        <img src="https://i.ibb.co.com/LCYvt9w/cart-4.jpg" alt="cart-4">
                                     </div>
 
                                     <!-- information -->
@@ -3021,7 +3021,7 @@
                                 <div class="left my-d-flex my-align-start my-gap-4">
                                     <!-- image -->
                                     <div class="img">
-                                        <img src="https://i.ibb.co.com/pfqNHWp/cart-5.jpg" alt="cart-5" border="0">
+                                        <img src="https://i.ibb.co.com/pfqNHWp/cart-5.jpg" alt="cart-5">
                                     </div>
 
                                     <!-- information -->
@@ -3127,10 +3127,10 @@
                     </div>
                 </div>
                 <div class="footer my-flex-between">
-                    <button class="my-btn my-primary-btn"><a href="index.html">Continue
-                            Shopping</a></button>
-                    <button class="my-secendary-btn my-btn"><span>Update
-                            Cart</span></button>
+                    <a class="my-btn my-primary-btn" href="index.html">Continue
+                        Shopping</a>
+                    <a href="./checkout.html" class="my-secendary-btn my-btn"><span>Checkout</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -3164,20 +3164,20 @@
 
                         <form action="#" class="my-mt-10 my-flex-column my-gap-5">
                             <div class="my-input-control">
-                                <input type="text" id="name" required>
-                                <label class="label" for="name">Name</label>
+                                <input type="text" id="signin_name" required>
+                                <label class="label" for="signin_name">Name</label>
                                 <p class="error-text error-text-show">
                                     please enter name</p>
                             </div>
 
                             <div class="my-input-control">
-                                <input type="email" id="email" required>
-                                <label class="label" for="email">Email</label>
+                                <input type="email" id="signin-email" required>
+                                <label class="label" for="signin-email">Email</label>
                             </div>
 
                             <div class="my-input-control">
-                                <input type="text" id="passowrd" required>
-                                <label class="label" for="password">Password</label>
+                                <input type="text" id="password-signup" required>
+                                <label class="label" for="password-signup">Password</label>
                             </div>
 
                             <div>
@@ -3189,10 +3189,10 @@
 
                         <!-- or -->
                         <div>
-                            <div class="border my-mt-4">
-                                -----------------------------
+                            <div class="border my-mt-4 my-flex-between">
+                                -------------------
                                 <span class="my-d-inline-block my-px-1">OR</span>
-                                ----------------------------
+                                -------------------
                             </div>
 
                             <div class="other-option my-flex-between my-mt-2">
@@ -3228,13 +3228,13 @@
                         <form action="#" class="my-mt-10 my-flex-column my-gap-5">
 
                             <div class="my-input-control">
-                                <input type="email" id="email" required>
-                                <label class="label" for="email">Email</label>
+                                <input type="email" id="email-signin" required>
+                                <label class="label" for="email-signin">Email</label>
                             </div>
 
                             <div class="my-input-control">
-                                <input type="text" id="passowrd" required>
-                                <label class="label" for="password">Password</label>
+                                <input type="text" id="password-singin" required>
+                                <label class="label" for="password-singin">Password</label>
                             </div>
 
                             <div>
@@ -3274,7 +3274,7 @@
                                 </p>
 
                                 <p class="my-fs-xs">Loss your password?
-                                    <button id="register-btn" class="my-fw-bold my-text-primary my-fs-xs">forgot
+                                    <button class="my-fw-bold my-text-primary my-fs-xs">forgot
                                         password</button>
                                 </p>
                             </div>
