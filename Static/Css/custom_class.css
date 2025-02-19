@@ -464,6 +464,15 @@ tr {
 
 
 
+
+/*_____ Hover _____*/
+.my-hover-underline:hover {
+    text-decoration: underline;
+}
+
+
+
+
 /*______ Font Weight  ______*/
 .my-fw-normal {
     font-weight: var(--fw-400);
@@ -1185,13 +1194,16 @@ tr {
 }
 
 
+
+
 /*_____  Grid  _____*/
 .my-grid-1,
 .my-grid-2,
 .my-grid-3,
 .my-grid-4,
 .my-grid-5,
-.my-grid-6 {
+.my-grid-6,
+.my-grid-7 {
     display: grid;
 }
 
@@ -1217,6 +1229,10 @@ tr {
 
 .my-grid-6 {
     grid-template-columns: repeat(6, 1fr);
+}
+
+.my-grid-7 {
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .my-row-1 {
@@ -1258,6 +1274,8 @@ tr {
 .my-row-10 {
     row-gap: 40px;
 }
+
+
 
 
 
@@ -1341,10 +1359,9 @@ tr {
 
 
 
-
-/*__________________________________*\
-  ||     Responsive  Start Here     ||
-\*___________________________________*/
+/*************************************
+****     Responsive Start Here    ****
+**************************************/
 /*________  responsive for tablet divece  ________*/
 @media (max-width:1080px) {
     .my-flex-lg-column {
@@ -1392,6 +1409,10 @@ tr {
     }
 
     .my-grid-6 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .my-grid-7 {
         grid-template-columns: repeat(5, 1fr);
     }
 

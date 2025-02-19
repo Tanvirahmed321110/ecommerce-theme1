@@ -515,16 +515,24 @@ swiper-slide.hero img {
     transition: .22s linear;
     box-shadow: unset;
     border-radius: 6px;
-    border: 1px solid var(--border-color);
-    max-width: 180px;
     margin: 0 auto;
     width: 100%;
-    box-shadow: var(--shadow-1);
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.top-categories .item h6 {
-    margin-top: 16px;
+.top-categories .category-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+    gap: 16px;
+    align-items: center;
 }
+
 
 .top-categories .item:hover {
     transform: translateY(4px);
@@ -532,12 +540,14 @@ swiper-slide.hero img {
     border-color: var(--primary-color);
 }
 
+.top-categories .item:hover h6 {
+    color: var(--primary-color);
+}
 
 
 .top-categories .item img {
-    width: 70%;
+    width: 50px;
     margin: 0 auto;
-    height: 110px;
     /* border: 1px solid var(--white-off); */
     padding: 4px;
     border-radius: 12px;
@@ -766,12 +776,12 @@ swiper-slide.hero img {
 }
 
 .customer-reviews .img-wrapper img {
-    border-radius: 4px;
-    border-bottom-right-radius: 12px;
+    border-radius: 12px;
+    border-bottom-right-radius: 0px;
     /* padding: 3px; */
     /* border: 1px solid var(--border-color); */
-    width: 104px;
-    max-height: 106px;
+    width: 108px;
+    max-height: 108px;
 }
 
 
@@ -784,7 +794,7 @@ swiper-slide.hero img {
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0;
     color: var(--border-color2);
-    border-bottom: 5px solid white;
+    border-bottom: 8px solid white;
     position: relative;
     z-index: 5;
 }
@@ -1423,7 +1433,7 @@ swiper-slide.hero img {
 
 
     /*  */
-    .top-categories .my-grid-6 {
+    .top-categories .accordion-item:last-child {
         grid-template-columns: repeat(2, 1fr);
         max-width: 320px;
         width: 100%;
@@ -1431,12 +1441,12 @@ swiper-slide.hero img {
         margin-bottom: 0;
     }
 
-    .top-categories .my-grid-6 .my-card,
-    .top-categories .my-grid-6 .my-card img {
+    .top-categories .top-category .my-card,
+    .top-categories .top-category .my-card img {
         border-radius: 8px;
     }
 
-    .top-categories .my-grid-6 .my-card img {
+    .top-categories .top-category .my-card img {
         width: 100%;
         max-width: 120px;
         border: none;
