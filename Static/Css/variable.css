@@ -8,7 +8,9 @@
 :root {
     /*______  Color  ______ */
     --primary-color: #0aad0a;
+    --primary-color: #fd516e;
     --primary-hover-color: #099309;
+    --primary-hover-color: #d55e72;
     --secondary-color: #01293a;
     --orange: #ffc107;
     --blue: #016bf8;
@@ -21,6 +23,7 @@
     --border-color: #ededed;
     --border-color2: #c7c7c7;
     --red: red;
+    --input: #fd516e7c;
 
 
     /* _______  bg color in section ______ */

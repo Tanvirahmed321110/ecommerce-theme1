@@ -15,8 +15,11 @@
 ****  Header Start Here  ****
 ***************************/
 header .header-top {
-    background-color: var(--white-off);
-    padding: 4px 0;
+    /* background-color: var(--white-off); */
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--primary-hover-color);
+    color: var(--white);
 }
 
 header .header-top .my-container {
@@ -40,10 +43,11 @@ header .header-top .left a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 4px;
     font-size: var(--fs-md);
     color: var(--gray);
-    box-shadow: var(--shadow-2);
+    /* box-shadow: var(--shadow-2); */
+    border: 1px solid var(--border-color);
 }
 
 .header-top .social a i,
@@ -63,7 +67,9 @@ header .header-top .left a:hover {
     outline: 1px solid var(--white);
 }
 
-
+header .header-top .my-dropdown li {
+    color: var(--gray);
+}
 
 /*_______  Header Mediel  _______*/
 .header-mediel .my-container {
@@ -160,6 +166,10 @@ header .header-top .left a:hover {
     display: none;
 }
 
+.search-dropdown .history li {
+    padding: 4px;
+}
+
 .search-dropdown .close-history {
     width: 28px;
     height: 28px;
@@ -178,6 +188,18 @@ header .header-top .left a:hover {
 /* related items */
 .search-form .related-items {
     display: none;
+}
+
+.search-form .related-items li {
+    padding: 0 4px;
+}
+
+.search-form .related-items a {
+    padding: 6px;
+}
+
+.search-form .related-items li:hover {
+    background-color: var(--white-off);
 }
 
 /*_____ added a active class  _____*/
@@ -211,9 +233,9 @@ header .header-top .left a:hover {
 /*_____  header midel right  _____*/
 .header-mediel .right-icons li {
     position: relative;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,7 +352,7 @@ header .header-top .left a:hover {
 
 .header-bottom .all-department .single-dept {
     cursor: pointer;
-    padding: 6px 12px;
+    padding: 6px 18px;
     border-radius: 2px;
 }
 
@@ -408,10 +430,6 @@ header .header-top .left a:hover {
     z-index: 12;
 }
 
-.all-department .dropdown li a:hover {
-    color: var(--primary-color);
-    background-color: var(--white-off);
-}
 
 .all-department .dropdown .col li {
     padding: 6px 14px;
@@ -424,7 +442,7 @@ header .header-top .left a:hover {
 }
 
 .all-department .dropdown .col li:hover {
-    background-color: var(--white-off);
+    background-color: var(--primary-color);
     width: 100%;
 }
 
@@ -439,6 +457,8 @@ header .header-top .left a:hover {
     font-size: var(--fs-sm);
 }
 
+
+
 .header-bottom .all-department .single-dept::after {
     content: '';
     position: absolute;
@@ -446,17 +466,29 @@ header .header-top .left a:hover {
     top: 0;
     width: 0px;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-hover-color);
     transition: .2s linear;
+    z-index: 1;
 }
 
-.header-bottom .all-department .single-dept:hover::after {
-    width: 4px;
+.header-bottom .all-department .single-dept li {
+    color: var(--gray);
+}
+
+.header-bottom .all-department .single-dept li:hover {
+    color: var(--white);
+}
+
+.header-bottom .all-department .single-dept:hover::after,
+.header-bottom .all-department .single-dept li:hover::after {
+    width: 8px;
     left: 0;
+    color: var(--white);
 }
 
 .header-bottom .all-department .single-dept:hover {
-    background-color: var(--white-off);
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
 .header-bottom .all-department-btn i {
@@ -791,7 +823,7 @@ header .header-top .left a:hover {
 .my-modal.notification-modal .header {
     background-color: transparent;
     min-height: 50px;
-    padding: 40px 16px;
+    padding: 30px 16px;
     padding-bottom: 10px;
 }
 
@@ -1340,7 +1372,7 @@ footer .footer-pages .footer-head::after {
         left: 0;
         z-index: 4;
         padding: 12px 20px;
-        background-color: var(--white-off);
+        background-color: var(--primary-hover-color);
         width: 100%;
     }
 
@@ -1365,7 +1397,7 @@ footer .footer-pages .footer-head::after {
     }
 
     .header-mediel-area {
-        max-width: 600px;
+        max-width: 740px;
         margin: 0 auto;
     }
 

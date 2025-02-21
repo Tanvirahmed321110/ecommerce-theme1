@@ -165,8 +165,16 @@ _________________________________*/
     text-align: center;
 }
 
+/*_____________________________
+||      Offer Page Start      ||
+______________________________*/
+.offer-area .offer-item {
+    transition: .3s linear;
+}
 
-
+.offer-area .offer-item:hover {
+    transform: scale(.98);
+}
 
 
 

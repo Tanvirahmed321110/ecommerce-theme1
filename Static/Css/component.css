@@ -369,7 +369,7 @@ textarea::placeholder {
 
 .my-input-control input:focus,
 .my-input-control textarea:focus {
-    outline: 4px solid #0aad0a4d;
+    outline: 4px solid var(--input);
     padding-left: 20px;
 }
 
@@ -395,9 +395,6 @@ textarea::placeholder {
     display: none;
     font-size: calc(var(--fs-sm) - 1px);
     color: red;
-    position: absolute;
-    bottom: -18px;
-    left: 4px;
 }
 
 /* add this class when error */
@@ -889,8 +886,8 @@ input[type="radio"]:checked::after {
 /* base */
 .base-round {
     position: absolute;
-    right: 1px;
-    top: -2px;
+    right: -4px;
+    top: -4px;
     width: 19px;
     height: 17px;
     border-radius: 50%;
@@ -1272,6 +1269,7 @@ input[type="radio"]:checked::after {
 /************************************
 ****   Brightcamp   Start Here   ****
 *************************************/
+
 .brigtcamp-area {
     background-color: var(--white-off);
     padding: 16px;
@@ -2212,7 +2210,7 @@ input[type="radio"]:checked::after {
     .brigtcamp {
         max-width: 640px;
         margin: 0 auto;
-        margin-top: 90px;
+        margin-top: 108px;
     }
 
     .orders-page {

@@ -1155,40 +1155,9 @@ swiper-slide.hero img {
 ****   Responsive code 991px    ****
 ***********************************/
 @media (max-width:991px) {
-    .message-btn {
-        bottom: 90px;
-    }
 
-    .header-top-mobile {
-        position: fixed;
-        top: 0px;
-        left: 0;
-        width: 100%;
-        z-index: 4;
-        padding: 12px 20px;
-        background-color: var(--white-off);
-        width: 100%;
-    }
-
-    .header-top-mobile .area {
-        width: 100%;
-        max-width: 709px;
-        margin: 0 auto;
-    }
 
     /*_____  Header Mediel  _____ */
-    .header-mediel {
-        border-bottom: 1px solid var(--white-off);
-        position: fixed;
-        bottom: 2px;
-        left: 0;
-        z-index: 7;
-        background-color: var(--white);
-        box-shadow: var(--shadow-2);
-        width: 100%;
-        padding: 4px 10px;
-        border-top: 1px solid var(--border-color);
-    }
 
     .popular-products-area {
         max-width: 740px;
@@ -1200,10 +1169,6 @@ swiper-slide.hero img {
         margin: 0 auto;
     }
 
-    .header-mediel-area {
-        max-width: 740px;
-        margin: 0 auto;
-    }
 
 
     .header-mediel .search {
@@ -1232,27 +1197,7 @@ swiper-slide.hero img {
         overflow: auto;
     }
 
-    .header-mediel .search-form {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0 20px;
-        position: fixed;
-        top: 42px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 4;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        background-color: var(--white);
-        box-shadow: var(--shadow-2);
-    }
 
-    .header-mediel .search-form input {
-        max-width: 600px;
-        width: 100%;
-        border-radius: 7px;
-    }
 
     .hero-section {
         margin-top: 80px;
@@ -1448,7 +1393,7 @@ swiper-slide.hero img {
 
     .top-categories .top-category .my-card img {
         width: 100%;
-        max-width: 120px;
+        max-width: 80px;
         border: none;
     }
 
@@ -1509,16 +1454,22 @@ swiper-slide.hero img {
     }
 
     .products-area {
-        width: 90%;
+        width: 100%;
     }
 
     .products-area .left {
-        width: 90%;
+        width: 100%;
     }
 
     .popular-products-area .my-card.product-cart {
         max-width: 360px;
     }
+
+    .popular-products-area {
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
 }
 
 

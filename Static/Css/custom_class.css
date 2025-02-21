@@ -19,6 +19,7 @@ body {
     font-family: var(--font-montserrat);
     font-weight: var(--fw-500);
     color: var(--gray);
+    min-width: 380px;
 }
 
 
@@ -63,7 +64,7 @@ h5 {
 
 h6 {
     font-size: var(--fs-sm);
-    line-height: 17px;
+    line-height: 16px;
 }
 
 ul {
@@ -1364,6 +1365,61 @@ tr {
 **************************************/
 /*________  responsive for tablet divece  ________*/
 @media (max-width:1080px) {
+    .my-align-lg-start {
+        align-items: start;
+    }
+
+    .my-align-lg-center {
+        align-items: center;
+    }
+
+    .my-align-lg-end {
+        align-items: end;
+    }
+
+
+    .my-justify-lg-start {
+        justify-content: start;
+    }
+
+    .my-justify-lg-center {
+        justify-content: center;
+    }
+
+    .my-justify-lg-end {
+        justify-content: end;
+    }
+
+
+    .my-gap-lg-1 {
+        gap: 4px;
+    }
+
+    .my-gap-lg-2 {
+        gap: 8px;
+    }
+
+    .my-gap-lg-3 {
+        gap: 12px;
+    }
+
+    .my-gap-lg-4 {
+        gap: 16px;
+    }
+
+    .my-gap-lg-5 {
+        gap: 20px;
+    }
+
+    .my-gap-lg-6 {
+        gap: 24px;
+    }
+
+    .my-gap-lg-7 {
+        gap: 28px;
+    }
+
+
     .my-flex-lg-column {
         flex-direction: column;
     }
@@ -1430,6 +1486,58 @@ tr {
 /*_______  responsive for tablet divece  ________ */
 @media (max-width:991px) {
 
+    .my-align-md-start {
+        align-items: start;
+    }
+
+    .my-align-md-center {
+        align-items: center;
+    }
+
+    .my-align-md-end {
+        align-items: end;
+    }
+
+    .my-justify-md-start {
+        justify-content: start;
+    }
+
+    .my-justify-md-center {
+        justify-content: center;
+    }
+
+    .my-justify-md-end {
+        justify-content: end;
+    }
+
+    .my-gap-md-1 {
+        gap: 4px;
+    }
+
+    .my-gap-md-2 {
+        gap: 8px;
+    }
+
+    .my-gap-md-3 {
+        gap: 12px;
+    }
+
+    .my-gap-md-4 {
+        gap: 16px;
+    }
+
+    .my-gap-md-5 {
+        gap: 20px;
+    }
+
+    .my-gap-md-6 {
+        gap: 24px;
+    }
+
+    .my-gap-md-7 {
+        gap: 28px;
+    }
+
     .my-container,
     .my-container-sm {
         width: 100%;
@@ -1484,6 +1592,58 @@ tr {
 
 /*________  Responsive for small Device  ________*/
 @media (max-width:767px) {
+    .my-align-sm-start {
+        align-items: start;
+    }
+
+    .my-align-sm-center {
+        align-items: center;
+    }
+
+    .my-align-sm-end {
+        align-items: end;
+    }
+
+    .my-justify-sm-start {
+        justify-content: start;
+    }
+
+    .my-justify-sm-center {
+        justify-content: center;
+    }
+
+    .my-justify-sm-end {
+        justify-content: end;
+    }
+
+    .my-gap-sm-1 {
+        gap: 4px;
+    }
+
+    .my-gap-sm-2 {
+        gap: 8px;
+    }
+
+    .my-gap-sm-3 {
+        gap: 12px;
+    }
+
+    .my-gap-sm-4 {
+        gap: 16px;
+    }
+
+    .my-gap-sm-5 {
+        gap: 20px;
+    }
+
+    .my-gap-sm-6 {
+        gap: 24px;
+    }
+
+    .my-gap-sm-7 {
+        gap: 28px;
+    }
+
     .my-flex-sm-column {
         flex-direction: column;
     }
@@ -1541,6 +1701,58 @@ tr {
 
 /*________  Responsive for xs  Device  ________*/
 @media (max-width:576px) {
+    .my-align-xs-start {
+        align-items: start;
+    }
+
+    .my-align-xs-center {
+        align-items: center;
+    }
+
+    .my-align-xs-end {
+        align-items: end;
+    }
+
+    .my-justify-xs-start {
+        justify-content: start;
+    }
+
+    .my-justify-xs-center {
+        justify-content: center;
+    }
+
+    .my-justify-xs-end {
+        justify-content: end;
+    }
+
+    .my-gap-xs-1 {
+        gap: 4px;
+    }
+
+    .my-gap-xs-2 {
+        gap: 8px;
+    }
+
+    .my-gap-xs-3 {
+        gap: 12px;
+    }
+
+    .my-gap-xs-4 {
+        gap: 16px;
+    }
+
+    .my-gap-xs-5 {
+        gap: 20px;
+    }
+
+    .my-gap-xs-6 {
+        gap: 24px;
+    }
+
+    .my-gap-xs-7 {
+        gap: 28px;
+    }
+
     .my-d-xs-none {
         display: none;
     }
