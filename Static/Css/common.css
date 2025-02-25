@@ -931,8 +931,44 @@ footer {
 
 /*_______  Footer Mediel  _______*/
 .footer-mediel {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     padding: 25px 0;
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+    background-image: url("../images/footerBg.svg");
+    /* height: fit-content; */
+    transition: 1s ease-in-out;
+}
+
+.footer-mediel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(3, 7, 44, 0.922); */
+    animation: lightingEffect 2s infinite ease-in-out;
+}
+
+.footer-mediel .my-container {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes lightingEffect {
+    0% {
+        background: rgba(3, 7, 44, 0.952);
+    }
+
+    50% {
+        background: rgba(3, 7, 44, 0.702);
+    }
+
+    100% {
+        background: rgba(3, 7, 44, 0.952);
+    }
 }
 
 .footer-head {
@@ -1107,11 +1143,13 @@ footer .footer-pages .footer-head::after {
 /*_______  Footer Bottom  _______*/
 .footer-bottom .my-container {
     padding: 6px 16px;
+    color: var(--border-color2);
 }
 
 .footer-bottom {
-    background-color: rgb(26, 26, 49);
+    background-color: rgb(9, 9, 38);
     color: var(--border-color2);
+
 }
 
 .footer-bottom p {

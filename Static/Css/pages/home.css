@@ -381,7 +381,7 @@ swiper-slide.hero img {
 .deal-item .offer-item {
     width: 50px;
     height: 45px;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: var(--primary-color);
     color: var(--white);
     display: flex;
@@ -512,12 +512,11 @@ swiper-slide.hero img {
 *****************************************/
 
 .top-categories .item {
-    transition: .22s linear;
+    transition: .3s linear;
     box-shadow: unset;
     border-radius: 6px;
     margin: 0 auto;
     width: 100%;
-    border-radius: 50%;
     width: 140px;
     height: 140px;
     display: flex;
@@ -535,9 +534,10 @@ swiper-slide.hero img {
 
 
 .top-categories .item:hover {
-    transform: translateY(4px);
+    transform: translateY(3px);
     box-shadow: var(--shadow-1);
     border-color: var(--primary-color);
+    border-top-right-radius: 28px;
 }
 
 .top-categories .item:hover h6 {
@@ -564,9 +564,13 @@ swiper-slide.hero img {
 
 .product-tags .tag a {
     padding: 6px 12px;
-    color: var(--gray);
-    background-color: var(--border-color2);
+    color: var(--white-off);
+    background-color: var(--primary-color);
     border-radius: 6px;
+}
+
+.product-tags ul {
+    justify-content: flex-start;
 }
 
 .product-tags .tag a:hover {
@@ -654,24 +658,27 @@ swiper-slide.hero img {
 
 .about .item {
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 6px;
     width: 200px;
     height: 200px;
-    background-color: var(--white-off);
-    border: 1px solid var(--border-color);
+    /* background-color: var(--primary-color); */
+    /* border: 4px solid var(--primary-color); */
     margin: 0 auto;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--border-color);
 }
 
 .about .item .my-card {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 4px solid var(--border-color) !important;
+    /* border: 6px solid var(--primary-hover-color) !important; */
     flex-direction: column;
-    /* border: 1px solid var(--border-color2); */
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-2);
 }
 
 .about .item h4 {
@@ -718,8 +725,10 @@ swiper-slide.hero img {
 }
 
 .blog-area .right .my-card img {
-    border-radius: 12px;
-    max-width: 280px;
+    border-radius: 8px;
+    width: 240px;
+    height: 140px;
+    object-fit: cover;
 }
 
 .blog-area h4,
@@ -781,7 +790,9 @@ swiper-slide.hero img {
     /* padding: 3px; */
     /* border: 1px solid var(--border-color); */
     width: 108px;
-    max-height: 108px;
+    object-fit: cover;
+    object-position: center;
+    height: 108px;
 }
 
 
@@ -1021,8 +1032,8 @@ swiper-slide.hero img {
 }
 
 .accordion-area.my-grid-2 {
-    align-items: flex-start;
-    margin-top: 40px;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .accordion-item {
